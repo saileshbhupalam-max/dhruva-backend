@@ -35,9 +35,13 @@ class Settings(BaseSettings):
     @field_validator('DATABASE_URL', 'TEST_DATABASE_URL')
     @classmethod
     def validate_database_url(cls, v: Optional[str]) -> Optional[str]:
-        """Validate DATABASE_URL uses asyncpg driver"""
+        """Validate and transform DATABASE_URL to use asyncpg driver"""
         if v is None:
             return v
+
+        # Transform Railway's postgresql:// to postgresql+asyncpg://
+        if v.startswith('postgresql://'):
+            v = v.replace('postgresql://', 'postgresql+asyncpg://', 1)
 
         if not v.startswith('postgresql+asyncpg://'):
             raise ValueError(
