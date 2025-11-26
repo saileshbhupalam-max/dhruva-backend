@@ -24,6 +24,9 @@ COPY . .
 # Create __init__.py in ml directory if missing
 RUN touch /app/ml/__init__.py
 
+# Make start script executable
+RUN chmod +x /app/start.sh
+
 # Ensure ML models directory is accessible
 ENV PYTHONPATH=/app:/app/ml
 
@@ -34,5 +37,5 @@ ENV PYTHONDONTWRITEBYTECODE=1
 # Railway sets PORT env var dynamically
 EXPOSE 8000
 
-# Use shell form for proper variable expansion (Railway compatible)
-CMD ["sh", "-c", "uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8000}"]
+# Use entrypoint script for proper variable expansion
+ENTRYPOINT ["/app/start.sh"]
