@@ -34,6 +34,5 @@ ENV PYTHONDONTWRITEBYTECODE=1
 # Railway sets PORT env var dynamically
 EXPOSE 8000
 
-# Use exec form with shell for variable expansion
-ENTRYPOINT ["/bin/sh", "-c"]
-CMD ["exec uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8000}"]
+# Use shell form for proper variable expansion (Railway compatible)
+CMD ["sh", "-c", "uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8000}"]
