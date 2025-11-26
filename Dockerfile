@@ -30,5 +30,5 @@ ENV PYTHONDONTWRITEBYTECODE=1
 # Railway uses dynamic PORT
 EXPOSE 8000
 
-# Run with uvicorn - Railway sets PORT env var
-CMD ["sh", "-c", "uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8000}"]
+# Startup script with debugging
+CMD ["sh", "-c", "echo 'PORT=$PORT' && echo 'Starting uvicorn...' && python -c 'from app.main import app; print(\"Import successful\")' && exec uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8000}"]
