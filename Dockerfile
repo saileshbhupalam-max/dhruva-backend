@@ -21,6 +21,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy the application code
 COPY . .
 
+# Create __init__.py in ml directory if missing
+RUN touch /app/ml/__init__.py
+
 # Ensure ML models directory is accessible
 ENV PYTHONPATH=/app:/app/ml
 
@@ -28,9 +31,9 @@ ENV PYTHONPATH=/app:/app/ml
 ENV PYTHONUNBUFFERED=1
 ENV PYTHONDONTWRITEBYTECODE=1
 
-# Railway uses dynamic PORT - default to 8000
-ENV PORT=8000
+# Railway sets PORT env var dynamically
 EXPOSE 8000
 
-# Simple direct uvicorn start
-CMD uvicorn app.main:app --host 0.0.0.0 --port $PORT
+# Use exec form with shell for variable expansion
+ENTRYPOINT ["/bin/sh", "-c"]
+CMD ["exec uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8000}"]
