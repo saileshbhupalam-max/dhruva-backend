@@ -1,0 +1,54 @@
+{
+  "created": "2025-11-25T21:43:39.953689",
+  "sentiment": {
+    "total_samples": 14876,
+    "labels": [
+      "NORMAL",
+      "MEDIUM",
+      "HIGH",
+      "CRITICAL"
+    ],
+    "distribution": {
+      "CRITICAL": 3722,
+      "HIGH": 3722,
+      "MEDIUM": 3716,
+      "NORMAL": 3716
+    }
+  },
+  "classification": {
+    "total_samples": 1241,
+    "labels": [
+      "Revenue",
+      "Municipal Administration",
+      "Police",
+      "Agriculture",
+      "Health",
+      "Education",
+      "Energy",
+      "Panchayat Raj",
+      "Social Welfare",
+      "Civil Supplies",
+      "Transport",
+      "Housing",
+      "Water Resources",
+      "Women & Child Welfare",
+      "Animal Husbandry"
+    ],
+    "distribution": {
+      "Agriculture": 107,
+      "Animal Husbandry": 52,
+      "Civil Supplies": 42,
+      "Energy": 90,
+      "Health": 91,
+      "Police": 85,
+      "Housing": 34,
+      "Education": 100,
+      "Municipal Administration": 117,
+      "Panchayat Raj": 85,
+      "Revenue": 219,
+      "Social Welfare": 85,
+      "Transport": 102,
+      "Water Resources": 32
+    }
+  }
+}

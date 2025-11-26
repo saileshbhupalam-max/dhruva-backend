@@ -1,0 +1,33 @@
+"""Message templates package."""
+
+from app.templates.empowerment_messages import (
+    OPT_IN_PROMPT_TE,
+    OPT_IN_PROMPT_EN,
+    RIGHTS_LEVEL_1_TE,
+    RIGHTS_LEVEL_1_EN,
+    LEVEL_UP_AVAILABLE_TE,
+    LEVEL_UP_AVAILABLE_EN,
+    PROACTIVE_SLA_50_TE,
+    PROACTIVE_SLA_50_EN,
+    PROACTIVE_SLA_APPROACHING_TE,
+    PROACTIVE_SLA_APPROACHING_EN,
+    PROACTIVE_NO_UPDATE_TE,
+    PROACTIVE_NO_UPDATE_EN,
+    format_rights_list,
+)
+
+__all__ = [
+    "OPT_IN_PROMPT_TE",
+    "OPT_IN_PROMPT_EN",
+    "RIGHTS_LEVEL_1_TE",
+    "RIGHTS_LEVEL_1_EN",
+    "LEVEL_UP_AVAILABLE_TE",
+    "LEVEL_UP_AVAILABLE_EN",
+    "PROACTIVE_SLA_50_TE",
+    "PROACTIVE_SLA_50_EN",
+    "PROACTIVE_SLA_APPROACHING_TE",
+    "PROACTIVE_SLA_APPROACHING_EN",
+    "PROACTIVE_NO_UPDATE_TE",
+    "PROACTIVE_NO_UPDATE_EN",
+    "format_rights_list",
+]

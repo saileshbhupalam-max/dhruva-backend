@@ -1,0 +1,34 @@
+{
+  "model": "classification_fallback",
+  "version": "1.0",
+  "created": "2025-11-25T22:24:32.080052",
+  "accuracy": 0.8577405857740585,
+  "top3_accuracy": 0.895397489539749,
+  "top5_accuracy": 0.9107391910739191,
+  "cv_mean": 0.8244606250438279,
+  "classes": [
+    "Revenue",
+    "Municipal Administration",
+    "Police",
+    "Agriculture",
+    "Health",
+    "Education",
+    "Energy",
+    "Panchayat Raj",
+    "Social Welfare",
+    "Civil Supplies",
+    "Transport",
+    "Housing",
+    "Water Resources",
+    "Women & Child Welfare",
+    "Animal Husbandry"
+  ],
+  "num_classes": 15,
+  "train_samples": 2866,
+  "test_samples": 717,
+  "individual_models": {
+    "lr": 0.8214783821478382,
+    "rf": 0.5913528591352859,
+    "svm": 0.8591352859135286
+  }
+}

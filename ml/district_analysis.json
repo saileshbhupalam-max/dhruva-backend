@@ -1,0 +1,215 @@
+{
+  "extraction_date": "2025-11-25",
+  "total_unique_districts": 26,
+  "summary": {
+    "in_seed_data": 26,
+    "in_govt_data": 6,
+    "in_both": 6,
+    "only_in_govt": 0,
+    "only_in_seed": 20
+  },
+  "districts": {
+    "Anantapur": {
+      "district_code": "ANT",
+      "district_name": "Anantapur",
+      "in_seed_data": true,
+      "in_govt_data": true,
+      "govt_data_sources": [
+        "Constituency Pre-Audit.district_highlights",
+        "Ananthapur District Department Audit"
+      ]
+    },
+    "Chittoor": {
+      "district_code": "CHT",
+      "district_name": "Chittoor",
+      "in_seed_data": true,
+      "in_govt_data": false,
+      "govt_data_sources": []
+    },
+    "East Godavari": {
+      "district_code": "EG",
+      "district_name": "East Godavari",
+      "in_seed_data": true,
+      "in_govt_data": false,
+      "govt_data_sources": []
+    },
+    "Guntur": {
+      "district_code": "GNT",
+      "district_name": "Guntur",
+      "in_seed_data": true,
+      "in_govt_data": true,
+      "govt_data_sources": [
+        "guntur_audit.district"
+      ]
+    },
+    "Kadapa": {
+      "district_code": "KDP",
+      "district_name": "Kadapa",
+      "in_seed_data": true,
+      "in_govt_data": true,
+      "govt_data_sources": [
+        "Constituency Pre-Audit.district_highlights"
+      ]
+    },
+    "Krishna": {
+      "district_code": "KRS",
+      "district_name": "Krishna",
+      "in_seed_data": true,
+      "in_govt_data": false,
+      "govt_data_sources": []
+    },
+    "Kurnool": {
+      "district_code": "KNL",
+      "district_name": "Kurnool",
+      "in_seed_data": true,
+      "in_govt_data": false,
+      "govt_data_sources": []
+    },
+    "Nellore": {
+      "district_code": "NLR",
+      "district_name": "Nellore",
+      "in_seed_data": true,
+      "in_govt_data": false,
+      "govt_data_sources": []
+    },
+    "Prakasam": {
+      "district_code": "PKM",
+      "district_name": "Prakasam",
+      "in_seed_data": true,
+      "in_govt_data": false,
+      "govt_data_sources": []
+    },
+    "Srikakulam": {
+      "district_code": "SKM",
+      "district_name": "Srikakulam",
+      "in_seed_data": true,
+      "in_govt_data": false,
+      "govt_data_sources": []
+    },
+    "Visakhapatnam": {
+      "district_code": "VSP",
+      "district_name": "Visakhapatnam",
+      "in_seed_data": true,
+      "in_govt_data": true,
+      "govt_data_sources": [
+        "Constituency Pre-Audit.district_highlights"
+      ]
+    },
+    "Vizianagaram": {
+      "district_code": "VZG",
+      "district_name": "Vizianagaram",
+      "in_seed_data": true,
+      "in_govt_data": false,
+      "govt_data_sources": []
+    },
+    "West Godavari": {
+      "district_code": "WG",
+      "district_name": "West Godavari",
+      "in_seed_data": true,
+      "in_govt_data": true,
+      "govt_data_sources": [
+        "Constituency Pre-Audit.district_highlights",
+        "West Godavari Top 10 Officers Pre-Audit Poor Performance"
+      ]
+    },
+    "Alluri Sitharama Raju": {
+      "district_code": "ARL",
+      "district_name": "Alluri Sitharama Raju",
+      "in_seed_data": true,
+      "in_govt_data": false,
+      "govt_data_sources": []
+    },
+    "Anakapalli": {
+      "district_code": "ANA",
+      "district_name": "Anakapalli",
+      "in_seed_data": true,
+      "in_govt_data": false,
+      "govt_data_sources": []
+    },
+    "Annamaya": {
+      "district_code": "ANM",
+      "district_name": "Annamaya",
+      "in_seed_data": true,
+      "in_govt_data": false,
+      "govt_data_sources": []
+    },
+    "Bapatla": {
+      "district_code": "BAP",
+      "district_name": "Bapatla",
+      "in_seed_data": true,
+      "in_govt_data": false,
+      "govt_data_sources": []
+    },
+    "Eluru": {
+      "district_code": "ELR",
+      "district_name": "Eluru",
+      "in_seed_data": true,
+      "in_govt_data": false,
+      "govt_data_sources": []
+    },
+    "Kakinada": {
+      "district_code": "KKN",
+      "district_name": "Kakinada",
+      "in_seed_data": true,
+      "in_govt_data": false,
+      "govt_data_sources": []
+    },
+    "Konaseema": {
+      "district_code": "KNR",
+      "district_name": "Konaseema",
+      "in_seed_data": true,
+      "in_govt_data": false,
+      "govt_data_sources": []
+    },
+    "NTR District": {
+      "district_code": "NTR",
+      "district_name": "NTR District",
+      "in_seed_data": true,
+      "in_govt_data": true,
+      "govt_data_sources": [
+        "Constituency Pre-Audit.district_highlights"
+      ]
+    },
+    "Palnadu": {
+      "district_code": "PLN",
+      "district_name": "Palnadu",
+      "in_seed_data": true,
+      "in_govt_data": false,
+      "govt_data_sources": []
+    },
+    "Parvathipuram Manyam": {
+      "district_code": "PVT",
+      "district_name": "Parvathipuram Manyam",
+      "in_seed_data": true,
+      "in_govt_data": false,
+      "govt_data_sources": []
+    },
+    "Sri Potti Sriramulu Nellore": {
+      "district_code": "NAG",
+      "district_name": "Sri Potti Sriramulu Nellore",
+      "in_seed_data": true,
+      "in_govt_data": false,
+      "govt_data_sources": []
+    },
+    "Sri Satya Sai": {
+      "district_code": "STY",
+      "district_name": "Sri Satya Sai",
+      "in_seed_data": true,
+      "in_govt_data": false,
+      "govt_data_sources": []
+    },
+    "Tirupati": {
+      "district_code": "TPT",
+      "district_name": "Tirupati",
+      "in_seed_data": true,
+      "in_govt_data": false,
+      "govt_data_sources": []
+    }
+  },
+  "notes": [
+    "Seed data is the authoritative source with 26 districts",
+    "Government audit data references a subset of these districts",
+    "All 26 seed districts are valid for Andhra Pradesh (2024)",
+    "District codes follow standard abbreviation conventions"
+  ]
+}

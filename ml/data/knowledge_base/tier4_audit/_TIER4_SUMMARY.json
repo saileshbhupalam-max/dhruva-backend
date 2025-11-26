@@ -1,0 +1,178 @@
+{
+  "_metadata": {
+    "created": "2025-11-25",
+    "version": "1.0",
+    "description": "Tier 4 Audit Data Summary - Historical audit and performance data for analytics",
+    "tier": "tier4_audit",
+    "priority": "medium",
+    "access_frequency": "analytics_only"
+  },
+  "overview": {
+    "description": "Audit and performance data including labeled cases, satisfaction scores, and constituency reports",
+    "total_files": 3,
+    "file_status": {
+      "guntur_audit.json": "to_be_created",
+      "constituency_preaudit.json": "to_be_created",
+      "call_center_feedback.json": "to_be_created"
+    },
+    "total_records": 338323,
+    "data_sources": {
+      "guntur_audit": "backend/ml/data/extracted/audit_reports.json (guntur_audit section)",
+      "constituency_preaudit": "docs/reference/markdown/CONSTITUENCY PRE AUDIT REPORT 11-11-2025 (1).md",
+      "call_center_feedback": "backend/ml/data/extracted/call_center_satisfaction.json"
+    }
+  },
+  "available_data": {
+    "guntur_audit": {
+      "location": "backend/ml/data/extracted/audit_reports.json",
+      "description": "2,298 audited Guntur cases with lapse labels and department breakdown",
+      "records": 2298,
+      "key_metrics": {
+        "district": "Guntur",
+        "audit_date": "2025-11-07",
+        "total_redressed": 17206,
+        "improper_percentage": 22.80,
+        "top_lapse": "GRA did not speak to citizen (42.19%)",
+        "departments_covered": 20,
+        "behavioral_lapses_pct": 4.68,
+        "procedural_lapses_pct": 19.42
+      },
+      "structure": {
+        "audit_metadata": "Overall audit statistics",
+        "lapse_categories": "13 lapse types with counts and percentages",
+        "department_breakdown": "20 departments with improper rates",
+        "mandal_breakdown": "9 mandals with geographic analysis",
+        "top_officers_poor_performance": "5 officers with highest improper rates"
+      },
+      "use_cases": [
+        "Lapse prediction model training (tier2_training/lapse_prediction/)",
+        "Department performance benchmarking",
+        "Officer performance evaluation",
+        "Quality control metrics"
+      ],
+      "extraction_status": "COMPLETE - Already extracted and validated"
+    },
+    "constituency_preaudit": {
+      "location": "docs/reference/markdown/CONSTITUENCY PRE AUDIT REPORT 11-11-2025 (1).md",
+      "description": "243,133 pre-audit cases across 26 districts and constituencies",
+      "records": 243133,
+      "key_metrics": {
+        "districts_covered": 26,
+        "period": "April-October 2025",
+        "improper_rate_range": "5.31% (Vizianagaram Nellimarla) to 85.60% (extreme outlier)",
+        "avg_improper_rate": "~35%",
+        "common_pattern": "GRA did not speak to citizen is top lapse in ALL districts"
+      },
+      "structure": {
+        "district_summaries": "26 districts with overall statistics",
+        "constituency_details": "175+ constituencies with granular data",
+        "lapse_breakdown": "Top lapses by district and constituency",
+        "edge_cases": "Extreme high/low performers identified"
+      },
+      "use_cases": [
+        "State-wide audit analytics",
+        "Geographic performance comparison",
+        "Constituency-level monitoring",
+        "Trend analysis across districts",
+        "Held-out test set for ML models (different districts from Guntur)"
+      ],
+      "extraction_status": "PARTIAL - Extracted in audit_reports.json, needs full constituency-level detail"
+    },
+    "call_center_feedback": {
+      "location": "backend/ml/data/extracted/call_center_satisfaction.json",
+      "description": "93,892 call center (1100) feedback records with department satisfaction scores",
+      "records": 93892,
+      "key_metrics": {
+        "departments_covered": 31,
+        "avg_satisfaction": "1.95 / 5.0",
+        "overall_satisfied_pct": 87.23,
+        "top_volume_dept": "Revenue (31,627 records)",
+        "highest_satisfaction": "Agriculture (2.58/5, 89.17%)",
+        "lowest_satisfaction": "Endowment (1.09/5, 80.18%)"
+      },
+      "structure": {
+        "department_feedback": "31 departments with satisfaction metrics",
+        "computed_metrics": "dept_risk_score, rank, relative_weight for each department",
+        "summary_statistics": "Overall satisfaction distribution",
+        "validation": "Quality gates and cross-checks"
+      },
+      "use_cases": [
+        "Department performance dashboards",
+        "Satisfaction tracking over time",
+        "Risk-based department prioritization",
+        "Public-facing transparency reports",
+        "Correlation with improper redressal rates"
+      ],
+      "extraction_status": "COMPLETE - Already extracted and validated"
+    }
+  },
+  "planned_consolidation": {
+    "guntur_audit.json": {
+      "action": "Copy from extracted/audit_reports.json → guntur_audit section",
+      "schema": "AuditReportSchema",
+      "estimated_size_kb": 250
+    },
+    "constituency_preaudit.json": {
+      "action": "Parse CONSTITUENCY PRE AUDIT REPORT markdown → structured JSON",
+      "schema": "PreAuditSchema",
+      "estimated_size_kb": 2000,
+      "complexity": "HIGH - complex table structure in markdown"
+    },
+    "call_center_feedback.json": {
+      "action": "Copy from extracted/call_center_satisfaction.json",
+      "schema": "CallCenterFeedbackSchema",
+      "estimated_size_kb": 150
+    }
+  },
+  "data_relationships": {
+    "guntur_audit ← lapse_definitions": "Lapse IDs reference tier1_core/lapse_definitions.json",
+    "guntur_audit ← departments": "Department names reference tier1_core/departments.json",
+    "call_center_feedback ← departments": "Department names reference tier1_core/departments.json",
+    "constituency_preaudit ← district_data": "District names reference tier3_reference/district_data.json (when created)",
+    "all_audits → lapse_training": "Audit data feeds tier2_training/lapse_prediction/"
+  },
+  "analytics_use_cases": {
+    "performance_dashboard": [
+      "Load call_center_feedback.json for satisfaction by department",
+      "Load guntur_audit.json for improper rates by department",
+      "Cross-reference to identify departments with low satisfaction AND high improper rates",
+      "Generate risk matrix: Revenue (low satisfaction, high improper) vs Agriculture (high satisfaction, low improper)"
+    ],
+    "geographic_analysis": [
+      "Load constituency_preaudit.json for district-wise improper rates",
+      "Identify districts with >40% improper rates (need intervention)",
+      "Identify best-performing districts (5-10% improper) for best practice sharing",
+      "Trend analysis: Has Guntur improved since Nov 2025 audit?"
+    ],
+    "officer_evaluation": [
+      "Load guntur_audit.json → top_officers_poor_performance",
+      "Cross-reference with lapse_categories to identify behavioral vs procedural issues",
+      "Generate officer scorecards: improper %, top lapses, recommended training",
+      "Track repeat offenders across multiple months"
+    ],
+    "quality_prediction": [
+      "Use guntur_audit.json as training data (2,298 labeled cases)",
+      "Train multi-label lapse prediction model",
+      "Test on constituency_preaudit.json (different districts)",
+      "Deploy model to predict likely lapses before citizen feedback"
+    ]
+  },
+  "implementation_priority": {
+    "immediate": ["guntur_audit.json", "call_center_feedback.json"],
+    "high": ["constituency_preaudit.json"],
+    "notes": "Guntur and call center data are already extracted; constituency report needs parsing"
+  },
+  "interim_solution": {
+    "audit_data": "Use backend/ml/data/extracted/audit_reports.json directly",
+    "satisfaction_data": "Use backend/ml/data/extracted/call_center_satisfaction.json directly",
+    "constituency_data": "Reference markdown file until full extraction complete"
+  },
+  "notes": [
+    "Tier 4 data is for analytics and insights, not real-time processing",
+    "Guntur audit data is single-district; may not generalize to all 26 districts",
+    "Constituency pre-audit provides state-wide coverage but less detail per case",
+    "Call center satisfaction is citizen-reported; may differ from audit findings",
+    "Combining audit + satisfaction data provides comprehensive quality picture",
+    "Ideal ML pipeline: Train on Guntur, validate on other districts, test on held-out constituencies"
+  ]
+}

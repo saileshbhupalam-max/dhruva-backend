@@ -1,0 +1,28 @@
+{
+  "training_date": "2025-11-25T21:07:08.032526",
+  "lapse_model": {
+    "type": "XGBoost",
+    "accuracy": 0.8083538083538083,
+    "features": [
+      "lapse_type",
+      "severity",
+      "percentage",
+      "days_to_resolve",
+      "is_synthetic"
+    ]
+  },
+  "telugu_classifier": {
+    "type": "LogisticRegression",
+    "accuracy": 0.43260188087774293,
+    "num_classes": 52,
+    "vectorizer": "TF-IDF (char_wb, ngram 2-4)"
+  },
+  "data_sources": [
+    "audit_reports.json",
+    "pgrs_book_keywords.json",
+    "call_center_satisfaction.json",
+    "TELUGU_GRIEVANCE_DATASET_RESEARCH.json",
+    "synthetic_lapse_cases.json",
+    "synthetic_telugu_grievances.json"
+  ]
+}

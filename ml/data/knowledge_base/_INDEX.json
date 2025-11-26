@@ -1,0 +1,313 @@
+{
+  "version": "1.0",
+  "created": "2025-11-25",
+  "description": "Master navigator for DHRUVA knowledge base - your single source of truth for all grievance-related data",
+  "total_files": 17,
+  "total_records": 269000,
+  "tiers": {
+    "tier1_core": {
+      "description": "Essential data used in every grievance processing request - departments, types, lapses, templates",
+      "priority": "critical",
+      "access_frequency": "constant",
+      "files": [
+        {
+          "name": "departments.json",
+          "path": "tier1_core/departments.json",
+          "description": "All 30 government departments with Telugu names, 106 subdepartments, 709 bilingual keywords, HOD info",
+          "records": 30,
+          "use_cases": ["classification", "routing", "display", "keyword_matching"],
+          "schema": "DepartmentSchema",
+          "key_fields": ["id", "name_english", "name_telugu", "code", "keywords_english", "keywords_telugu", "subdepartments", "priority_rank"],
+          "size_kb": 85
+        },
+        {
+          "name": "grievance_types.json",
+          "path": "tier1_core/grievance_types.json",
+          "description": "4 distress levels (CRITICAL/HIGH/MEDIUM/NORMAL) with SLAs, 10 common grievance types with frequency data",
+          "records": 14,
+          "use_cases": ["sentiment_detection", "distress_classification", "sla_assignment", "type_routing"],
+          "schema": "GrievanceTypeSchema",
+          "key_fields": ["distress_levels", "common_grievance_types", "status_categories"],
+          "size_kb": 12
+        },
+        {
+          "name": "lapse_definitions.json",
+          "path": "tier1_core/lapse_definitions.json",
+          "description": "13 standardized lapse categories (5 behavioral, 8 procedural) for improper redressal audit",
+          "records": 13,
+          "use_cases": ["lapse_prediction", "audit_classification", "officer_performance", "quality_control"],
+          "schema": "LapseDefinitionSchema",
+          "key_fields": ["id", "name", "telugu", "type", "severity", "frequency_pct", "detection_keywords"],
+          "size_kb": 9
+        },
+        {
+          "name": "response_templates.json",
+          "path": "tier1_core/response_templates.json",
+          "description": "54 official Telugu response templates for different grievance statuses and scenarios",
+          "records": 54,
+          "use_cases": ["template_selection", "automated_responses", "citizen_communication"],
+          "schema": "ResponseTemplateSchema",
+          "key_fields": ["status", "telugu", "english", "variables", "use_case"],
+          "size_kb": 8,
+          "note": "Full templates available at: backend/ml/data/extracted_docs/official_telugu_templates.json (136 KB)"
+        }
+      ]
+    },
+    "tier2_training": {
+      "description": "Data formatted specifically for ML model training - classification, sentiment, lapse prediction, template selection",
+      "priority": "high",
+      "access_frequency": "training_only",
+      "files": [
+        {
+          "name": "classification_training.json",
+          "path": "tier2_training/classification/muril_classification_training.json",
+          "description": "14,876 Telugu grievances with department labels for training classification models",
+          "records": 14876,
+          "use_cases": ["department_classification", "muril_training", "bert_finetuning"],
+          "schema": "ClassificationTrainingSchema",
+          "key_fields": ["text", "department", "department_code"],
+          "source": "backend/ml/data/muril_training/muril_classification_training.json",
+          "labels": 15,
+          "distribution": "See training_data_summary.json for class distribution"
+        },
+        {
+          "name": "sentiment_training.json",
+          "path": "tier2_training/sentiment/muril_sentiment_training.json",
+          "description": "14,876 Telugu grievances with distress levels (CRITICAL/HIGH/MEDIUM/NORMAL) for sentiment training",
+          "records": 14876,
+          "use_cases": ["sentiment_classification", "distress_detection", "priority_assignment"],
+          "schema": "SentimentTrainingSchema",
+          "key_fields": ["text", "sentiment", "distress_level"],
+          "source": "backend/ml/data/muril_training/muril_sentiment_training.json",
+          "labels": 4,
+          "distribution": "Balanced: ~3,700 samples per class"
+        },
+        {
+          "name": "lapse_prediction_training.json",
+          "path": "tier2_training/lapse_prediction/guntur_audit_training.json",
+          "description": "2,298 audited Guntur cases with lapse labels for training lapse prediction models",
+          "records": 2298,
+          "use_cases": ["lapse_prediction", "audit_automation", "quality_prediction"],
+          "schema": "LapseTrainingSchema",
+          "key_fields": ["grievance_text", "officer_endorsement", "lapse_categories", "department"],
+          "source": "backend/ml/data/extracted/audit_reports.json",
+          "labels": 13,
+          "note": "Multi-label classification - cases can have multiple lapse types"
+        },
+        {
+          "name": "template_selection_training.json",
+          "path": "tier2_training/template_selection/response_template_training.json",
+          "description": "Training data for selecting appropriate response template based on grievance status/context",
+          "records": 54,
+          "use_cases": ["template_selection", "automated_response_generation"],
+          "schema": "TemplateSelectionSchema",
+          "key_fields": ["status", "subcase", "template_id", "context_keywords"],
+          "source": "backend/ml/data/extracted_docs/response_template_training.json"
+        }
+      ]
+    },
+    "tier3_reference": {
+      "description": "Supporting reference data - officers, districts, services, SLA rules",
+      "priority": "medium",
+      "access_frequency": "as_needed",
+      "files": [
+        {
+          "name": "officer_hierarchy.json",
+          "path": "tier3_reference/officer_hierarchy.json",
+          "description": "HOD structure, officer designations, reporting hierarchy for grievance assignment",
+          "records": "106+ HODs across 30 departments",
+          "use_cases": ["grievance_assignment", "escalation", "routing"],
+          "schema": "OfficerHierarchySchema",
+          "source": "docs/data_sets/markdown/List of Depts with HOD.md",
+          "note": "Consolidated from department list PDF"
+        },
+        {
+          "name": "district_data.json",
+          "path": "tier3_reference/district_data.json",
+          "description": "26 AP districts with codes, mandals, satisfaction scores, audit data",
+          "records": 26,
+          "use_cases": ["geographic_routing", "district_analytics", "satisfaction_tracking"],
+          "schema": "DistrictDataSchema",
+          "source": "backend/ml/data/extracted/call_center_satisfaction.json + audit reports",
+          "key_fields": ["district_name", "district_code", "mandals", "satisfaction_score", "total_grievances"]
+        },
+        {
+          "name": "service_catalog.json",
+          "path": "tier3_reference/service_catalog.json",
+          "description": "All government services from PGRS book - 96 revenue services, department-wise service list",
+          "records": "200+ services",
+          "use_cases": ["service_identification", "subject_classification", "sla_mapping"],
+          "schema": "ServiceCatalogSchema",
+          "source": "docs/data_sets/markdown/Service Registration reference.md + PGRS BOOK.md",
+          "note": "Revenue department alone has 96 registered services"
+        },
+        {
+          "name": "sla_rules.json",
+          "path": "tier3_reference/sla_rules.json",
+          "description": "SLA timelines by grievance type, distress level, and department",
+          "records": "50+ SLA rules",
+          "use_cases": ["sla_calculation", "deadline_tracking", "breach_detection"],
+          "schema": "SLARulesSchema",
+          "key_fields": ["grievance_type", "distress_level", "department", "sla_hours", "escalation_rules"]
+        }
+      ]
+    },
+    "tier4_audit": {
+      "description": "Audit and performance data - labeled cases, satisfaction scores, constituency reports",
+      "priority": "medium",
+      "access_frequency": "analytics_only",
+      "files": [
+        {
+          "name": "guntur_audit.json",
+          "path": "tier4_audit/guntur_audit.json",
+          "description": "2,298 audited Guntur cases with 13 lapse categories, department breakdown, officer performance",
+          "records": 2298,
+          "use_cases": ["lapse_analysis", "training_data", "quality_benchmarking"],
+          "schema": "AuditReportSchema",
+          "source": "backend/ml/data/extracted/audit_reports.json (guntur_audit section)",
+          "key_metrics": {
+            "improper_percentage": 22.80,
+            "top_lapse": "GRA did not speak to citizen (42.19%)",
+            "departments_covered": 20,
+            "behavioral_lapses_pct": 4.68,
+            "procedural_lapses_pct": 19.42
+          }
+        },
+        {
+          "name": "constituency_preaudit.json",
+          "path": "tier4_audit/constituency_preaudit.json",
+          "description": "243,133 pre-audit cases across 26 districts and constituencies, improper redressal rates",
+          "records": 243133,
+          "use_cases": ["state_analytics", "constituency_comparison", "trend_analysis"],
+          "schema": "PreAuditSchema",
+          "source": "docs/reference/markdown/CONSTITUENCY PRE AUDIT REPORT 11-11-2025 (1).md",
+          "key_metrics": {
+            "districts_covered": 26,
+            "improper_rate_range": "5.31% to 85.60%",
+            "period": "April-October 2025"
+          }
+        },
+        {
+          "name": "call_center_feedback.json",
+          "path": "tier4_audit/call_center_feedback.json",
+          "description": "93,892 call center feedback records across 31 departments with satisfaction scores",
+          "records": 93892,
+          "use_cases": ["satisfaction_analysis", "department_benchmarking", "quality_metrics"],
+          "schema": "CallCenterFeedbackSchema",
+          "source": "backend/ml/data/extracted/call_center_satisfaction.json",
+          "key_metrics": {
+            "departments_covered": 31,
+            "avg_satisfaction": 1.95,
+            "overall_satisfied_pct": 87.23,
+            "top_volume_dept": "Revenue (31,627 records)"
+          }
+        }
+      ]
+    }
+  },
+  "quick_lookup": {
+    "telugu_keywords": "tier1_core/departments.json → keywords_telugu field (709 keywords)",
+    "response_templates": "tier1_core/response_templates.json (54 templates) OR backend/ml/data/extracted_docs/official_telugu_templates.json (full)",
+    "lapse_types": "tier1_core/lapse_definitions.json → lapses array (13 types)",
+    "distress_levels": "tier1_core/grievance_types.json → distress_levels array (4 levels)",
+    "training_sentiment": "tier2_training/sentiment/ → muril_sentiment_training.json (14,876 samples)",
+    "training_classification": "tier2_training/classification/ → muril_classification_training.json (14,876 samples)",
+    "training_lapses": "tier2_training/lapse_prediction/ → guntur_audit_training.json (2,298 cases)",
+    "department_list": "tier1_core/departments.json → departments array (30 depts)",
+    "satisfaction_scores": "tier4_audit/call_center_feedback.json (93,892 records)",
+    "audit_data": "tier4_audit/guntur_audit.json (2,298 cases)",
+    "district_data": "tier3_reference/district_data.json (26 districts)"
+  },
+  "data_statistics": {
+    "total_departments": 30,
+    "total_subdepartments": 106,
+    "total_keywords": 709,
+    "telugu_keywords": 354,
+    "english_keywords": 355,
+    "total_lapses": 13,
+    "behavioral_lapses": 5,
+    "procedural_lapses": 8,
+    "distress_levels": 4,
+    "response_templates": 54,
+    "training_samples_classification": 14876,
+    "training_samples_sentiment": 14876,
+    "training_samples_lapse": 2298,
+    "audit_cases": 2298,
+    "preaudit_cases": 243133,
+    "call_center_records": 93892,
+    "total_districts": 26,
+    "total_services": "200+"
+  },
+  "usage_patterns": {
+    "new_grievance_processing": [
+      "1. Load tier1_core/departments.json for department classification",
+      "2. Load tier1_core/grievance_types.json for distress level detection",
+      "3. Use training models from tier2_training/ for predictions",
+      "4. Select template from tier1_core/response_templates.json",
+      "5. Calculate SLA from tier3_reference/sla_rules.json"
+    ],
+    "audit_process": [
+      "1. Load tier1_core/lapse_definitions.json for lapse categories",
+      "2. Use tier2_training/lapse_prediction/ models for predictions",
+      "3. Compare against tier4_audit/guntur_audit.json benchmarks",
+      "4. Check officer performance from tier3_reference/officer_hierarchy.json"
+    ],
+    "analytics_dashboard": [
+      "1. Load tier4_audit/call_center_feedback.json for satisfaction metrics",
+      "2. Load tier4_audit/constituency_preaudit.json for geographic analysis",
+      "3. Load tier3_reference/district_data.json for district comparisons",
+      "4. Use tier1_core/departments.json for department-wise breakdowns"
+    ],
+    "model_training": [
+      "1. Load tier2_training/classification/ for department classification training",
+      "2. Load tier2_training/sentiment/ for distress level prediction training",
+      "3. Load tier2_training/lapse_prediction/ for audit quality prediction",
+      "4. Use tier1_core/ files for feature engineering (keywords, types)"
+    ]
+  },
+  "file_relationships": {
+    "departments.json": {
+      "used_by": ["classification models", "routing logic", "display components"],
+      "related_files": ["officer_hierarchy.json", "district_data.json", "call_center_feedback.json"]
+    },
+    "grievance_types.json": {
+      "used_by": ["sentiment models", "SLA calculation", "priority assignment"],
+      "related_files": ["sla_rules.json", "sentiment_training.json"]
+    },
+    "lapse_definitions.json": {
+      "used_by": ["audit models", "quality prediction", "officer evaluation"],
+      "related_files": ["guntur_audit.json", "lapse_prediction_training.json"]
+    },
+    "response_templates.json": {
+      "used_by": ["automated responses", "citizen communication", "template selection models"],
+      "related_files": ["grievance_types.json", "template_selection_training.json"]
+    }
+  },
+  "access_instructions": {
+    "python": "import json\\nwith open('D:/projects/dhruva/backend/ml/data/knowledge_base/tier1_core/departments.json', 'r', encoding='utf-8') as f:\\n    data = json.load(f)",
+    "typescript": "import fs from 'fs';\\nconst data = JSON.parse(fs.readFileSync('D:/projects/dhruva/backend/ml/data/knowledge_base/tier1_core/departments.json', 'utf-8'));",
+    "api": "GET /api/knowledge-base/tier1_core/departments.json",
+    "note": "All JSON files are UTF-8 encoded to properly handle Telugu text"
+  },
+  "maintenance": {
+    "last_updated": "2025-11-25",
+    "update_frequency": "quarterly",
+    "update_process": "Re-extract from source docs, validate schemas, regenerate index",
+    "data_owners": {
+      "departments": "PGRS Admin / Department Secretaries",
+      "lapses": "PGRS Audit Team / Chief Secretary Office",
+      "templates": "PGRS IT Team / Language Services",
+      "audit_data": "District Collectors / Audit Officers"
+    }
+  },
+  "notes": [
+    "All Telugu text is UTF-8 encoded (Unicode range U+0C00 to U+0C7F)",
+    "Department keywords support code-mixing (Telugu-English hybrid queries)",
+    "Lapse frequency percentages based on Guntur district audit (Nov 2025)",
+    "Training data is balanced for sentiment (4 classes), imbalanced for classification (15 classes)",
+    "Response templates include [VARIABLE] placeholders for dynamic content",
+    "District data includes 243K+ pre-audit cases for statistical benchmarking",
+    "Call center satisfaction scores are on 0-5 scale (higher = better)",
+    "SLA hours: CRITICAL=24h, HIGH=72h, MEDIUM=168h (7 days), NORMAL=336h (14 days)"
+  ]
+}

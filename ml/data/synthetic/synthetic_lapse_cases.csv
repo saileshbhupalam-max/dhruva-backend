@@ -1,0 +1,1001 @@
+id,department_code,department_name,district_code,district_name,grievance_category,days_to_resolve,officer_response_count,escalation_level,lapse_type,lapse_type_id,confidence
+1,AGRI,Agriculture And Co-operation,GNT,Guntur,fertilizer_issue,14,3,RDO,GRA did not speak to citizen directly,1,0.94
+2,REVENUE,Revenue (CCLA),VZG,Vizianagaram,land_mutation,13,1,Tahsildar,GRA did not speak to citizen directly,1,0.87
+3,MUNI,Municipal Administration And Urban Development,TPT,Tirupati,water_supply,16,2,Tahsildar,Wrong/Blank/Not related comments,3,0.87
+4,HOUSING,Housing,NLR,Nellore,house_site,24,5,RDO,GRA did not speak to citizen directly,1,0.88
+5,REVENUE,Revenue (CCLA),ARL,Alluri Sitharama Raju,encroachment,14,2,Collector,GRA did not speak to citizen directly,1,0.91
+6,PNCHRAJ,Panchayat Raj And Rural Development,VSP,Visakhapatnam,community_hall,27,2,Mandal,Wrong/Blank/Not related comments,3,0.89
+7,SOC_WELF,Social Welfare,PKM,Prakasam,pension_delay,13,1,Tahsildar,GRA did not speak to citizen directly,1,0.86
+8,AGRI,Agriculture And Co-operation,BAP,Bapatla,subsidy_delay,1,1,Mandal,GRA did not speak to citizen directly,1,0.92
+9,REVENUE,Revenue (CCLA),NLR,Nellore,land_mutation,18,3,RDO,GRA did not speak to citizen directly,1,0.87
+10,SOC_WELF,Social Welfare,KNR,Konaseema,scholarship_issue,20,4,Collector,GRA did not speak to citizen directly,1,0.91
+11,HEALTH,"Health, Medical And Family Welfare",SKM,Srikakulam,doctor_absence,21,2,Mandal,GRA did not speak to citizen directly,1,0.93
+12,WATER,Water Resources,WG,West Godavari,water_shortage,9,1,Mandal,Inadequate action taken,8,0.91
+13,SOC_WELF,Social Welfare,KRS,Krishna,welfare_scheme,24,4,RDO,Premature closure,6,0.93
+14,PNCHRAJ,Panchayat Raj And Rural Development,NLR,Nellore,village_roads,12,1,RDO,GRA did not speak to citizen directly,1,0.94
+15,REVENUE,Revenue (CCLA),ANM,Annamaya,property_dispute,66,20,HOD,Not visited site / No field verification,2,0.91
+16,REVENUE,Revenue (CCLA),STY,Sri Satya Sai,property_dispute,49,8,HOD,Not visited site / No field verification,2,0.85
+17,RNB,"Transport, Roads And Buildings",TPT,Tirupati,highway_maintenance,12,1,GRA,GRA did not speak to citizen directly,1,0.86
+18,SOC_WELF,Social Welfare,ANT,Anantapur,welfare_scheme,18,2,Tahsildar,Closed without required documents,4,0.9
+19,MUNI,Municipal Administration And Urban Development,CHT,Chittoor,road_repair,7,1,Mandal,Wrong/Blank/Not related comments,3,0.95
+20,AGRI,Agriculture And Co-operation,ARL,Alluri Sitharama Raju,crop_insurance,12,1,GRA,Wrong/Blank/Not related comments,3,0.91
+21,REVENUE,Revenue (CCLA),EG,East Godavari,land_mutation,8,1,Mandal,GRA did not speak to citizen directly,1,0.86
+22,REVENUE,Revenue (CCLA),PLN,Palnadu,land_records,24,6,RDO,GRA did not speak to citizen directly,1,0.87
+23,SOC_WELF,Social Welfare,VZG,Vizianagaram,pension_delay,7,1,RDO,GRA did not speak to citizen directly,1,0.86
+24,AGRI,Agriculture And Co-operation,KNR,Konaseema,crop_compensation,10,1,GRA,GRA did not speak to citizen directly,1,0.87
+25,REVENUE,Revenue (CCLA),ARL,Alluri Sitharama Raju,property_dispute,10,1,Mandal,GRA did not speak to citizen directly,1,0.93
+26,WATER,Water Resources,KDP,Kadapa,irrigation_canal,10,1,GRA,Wrong/Blank/Not related comments,3,0.94
+27,WATER,Water Resources,NTR,NTR District,tank_maintenance,13,1,GRA,Wrong/Blank/Not related comments,3,0.87
+28,REVENUE,Revenue (CCLA),SKM,Srikakulam,revenue_certificate,48,9,HOD,Inordinate delay,9,0.95
+29,MUNI,Municipal Administration And Urban Development,PVT,Parvathipuram Manyam,street_lights,5,1,Mandal,GRA did not speak to citizen directly,1,0.92
+30,REVENUE,Revenue (CCLA),NLR,Nellore,land_mutation,1,1,GRA,GRA did not speak to citizen directly,1,0.95
+31,REVENUE,Revenue (CCLA),NTR,NTR District,land_mutation,38,8,HOD,Not visited site / No field verification,2,0.91
+32,REVENUE,Revenue (CCLA),ANT,Anantapur,land_records,5,1,RDO,Wrong/Blank/Not related comments,3,0.87
+33,SOC_WELF,Social Welfare,PLN,Palnadu,disability_certificate,28,4,Collector,GRA did not speak to citizen directly,1,0.86
+34,REVENUE,Revenue (CCLA),KRS,Krishna,property_dispute,75,10,Collector,Inordinate delay,9,0.89
+35,MUNI,Municipal Administration And Urban Development,KNL,Kurnool,road_repair,15,1,Collector,Poor quality of work,12,0.93
+36,REVENUE,Revenue (CCLA),PLN,Palnadu,land_mutation,51,15,HOD,Inordinate delay,9,0.88
+37,MUNI,Municipal Administration And Urban Development,PVT,Parvathipuram Manyam,garbage_collection,7,1,Mandal,GRA did not speak to citizen directly,1,0.88
+38,RNB,"Transport, Roads And Buildings",VSP,Visakhapatnam,road_pothole,13,1,Mandal,Wrong/Blank/Not related comments,3,0.93
+39,AGRI,Agriculture And Co-operation,KRS,Krishna,subsidy_delay,3,1,GRA,Premature closure,6,0.86
+40,HOME,Home (Police),PVT,Parvathipuram Manyam,fir_delay,17,1,Mandal,Wrong/Blank/Not related comments,3,0.89
+41,REVENUE,Revenue (CCLA),PKM,Prakasam,land_mutation,13,2,HOD,Action not taken as per rules,7,0.95
+42,PNCHRAJ,Panchayat Raj And Rural Development,EG,East Godavari,community_hall,18,1,Mandal,No action letter issued,11,0.87
+43,RNB,"Transport, Roads And Buildings",TPT,Tirupati,bus_service,68,9,Collector,No proper enquiry conducted,5,0.87
+44,PNCHRAJ,Panchayat Raj And Rural Development,SKM,Srikakulam,village_roads,14,3,Mandal,Premature closure,6,0.88
+45,ENERGY,Energy,EG,East Godavari,meter_issue,14,2,GRA,GRA did not speak to citizen directly,1,0.95
+46,REVENUE,Revenue (CCLA),KNR,Konaseema,encroachment,21,2,Mandal,GRA did not speak to citizen directly,1,0.94
+47,REVENUE,Revenue (CCLA),ELR,Eluru,revenue_certificate,5,1,GRA,GRA did not speak to citizen directly,1,0.91
+48,MUNI,Municipal Administration And Urban Development,SKM,Srikakulam,road_repair,20,3,RDO,GRA did not speak to citizen directly,1,0.94
+49,MUNI,Municipal Administration And Urban Development,NAG,Sri Potti Sriramulu Nellore,building_permission,14,2,Tahsildar,Wrong/Blank/Not related comments,3,0.94
+50,AGRI,Agriculture And Co-operation,PLN,Palnadu,crop_compensation,39,11,Collector,No proper enquiry conducted,5,0.88
+51,AGRI,Agriculture And Co-operation,BAP,Bapatla,subsidy_delay,8,1,RDO,GRA did not speak to citizen directly,1,0.94
+52,MUNI,Municipal Administration And Urban Development,KNL,Kurnool,street_lights,61,16,HOD,Not visited site / No field verification,2,0.93
+53,MUNI,Municipal Administration And Urban Development,NLR,Nellore,street_lights,7,1,RDO,GRA did not speak to citizen directly,1,0.87
+54,REVENUE,Revenue (CCLA),ANM,Annamaya,tax_assessment,4,1,Mandal,Wrong/Blank/Not related comments,3,0.88
+55,ENERGY,Energy,WG,West Godavari,power_outage,22,4,Collector,GRA did not speak to citizen directly,1,0.86
+56,SOC_WELF,Social Welfare,KNR,Konaseema,welfare_scheme,8,1,RDO,GRA did not speak to citizen directly,1,0.94
+57,WATER,Water Resources,KDP,Kadapa,tank_maintenance,16,1,Tahsildar,GRA did not speak to citizen directly,1,0.86
+58,REVENUE,Revenue (CCLA),KDP,Kadapa,land_records,2,1,GRA,GRA did not speak to citizen directly,1,0.95
+59,HEALTH,"Health, Medical And Family Welfare",KKN,Kakinada,ambulance_service,63,13,Collector,Not visited site / No field verification,2,0.92
+60,SOC_WELF,Social Welfare,KRS,Krishna,pension_delay,9,1,GRA,Premature closure,6,0.88
+61,REVENUE,Revenue (CCLA),KNL,Kurnool,property_dispute,7,1,Tahsildar,GRA did not speak to citizen directly,1,0.92
+62,PNCHRAJ,Panchayat Raj And Rural Development,ANT,Anantapur,drinking_water,4,1,GRA,GRA did not speak to citizen directly,1,0.93
+63,SOC_WELF,Social Welfare,STY,Sri Satya Sai,welfare_scheme,28,6,RDO,Incorrect routing,10,0.85
+64,SOC_WELF,Social Welfare,STY,Sri Satya Sai,scholarship_issue,19,2,RDO,Premature closure,6,0.93
+65,HEALTH,"Health, Medical And Family Welfare",ANA,Anakapalli,medicine_shortage,4,1,Mandal,GRA did not speak to citizen directly,1,0.92
+66,SOC_WELF,Social Welfare,NTR,NTR District,scholarship_issue,69,17,HOD,Inordinate delay,9,0.91
+67,REVENUE,Revenue (CCLA),KNR,Konaseema,land_records,9,1,GRA,GRA did not speak to citizen directly,1,0.9
+68,REVENUE,Revenue (CCLA),SKM,Srikakulam,revenue_certificate,15,1,Tahsildar,Closed without required documents,4,0.95
+69,REVENUE,Revenue (CCLA),KNR,Konaseema,land_mutation,4,1,GRA,Closed without required documents,4,0.93
+70,AGRI,Agriculture And Co-operation,EG,East Godavari,subsidy_delay,26,4,Tahsildar,Wrong/Blank/Not related comments,3,0.92
+71,PNCHRAJ,Panchayat Raj And Rural Development,NTR,NTR District,village_development,44,7,RDO,Not visited site / No field verification,2,0.95
+72,REVENUE,Revenue (CCLA),GNT,Guntur,revenue_certificate,61,11,Collector,Not visited site / No field verification,2,0.86
+73,AGRI,Agriculture And Co-operation,KNR,Konaseema,subsidy_delay,14,1,Tahsildar,GRA did not speak to citizen directly,1,0.93
+74,ENERGY,Energy,ELR,Eluru,power_outage,27,4,RDO,Not visited site / No field verification,2,0.91
+75,REVENUE,Revenue (CCLA),VZG,Vizianagaram,land_records,23,4,Collector,GRA did not speak to citizen directly,1,0.87
+76,REVENUE,Revenue (CCLA),ANM,Annamaya,tax_assessment,15,1,Tahsildar,GRA did not speak to citizen directly,1,0.93
+77,MUNI,Municipal Administration And Urban Development,NLR,Nellore,drainage_issue,80,20,Collector,No proper enquiry conducted,5,0.93
+78,MUNI,Municipal Administration And Urban Development,PLN,Palnadu,street_lights,4,1,GRA,GRA did not speak to citizen directly,1,0.87
+79,ENERGY,Energy,NLR,Nellore,billing_dispute,40,4,Tahsildar,Inordinate delay,9,0.9
+80,REVENUE,Revenue (CCLA),EG,East Godavari,tax_assessment,6,1,Tahsildar,GRA did not speak to citizen directly,1,0.9
+81,ENERGY,Energy,ANT,Anantapur,billing_dispute,9,1,Tahsildar,GRA did not speak to citizen directly,1,0.89
+82,MUNI,Municipal Administration And Urban Development,PKM,Prakasam,street_lights,4,1,GRA,Poor quality of work,12,0.88
+83,REVENUE,Revenue (CCLA),KDP,Kadapa,tax_assessment,19,2,Mandal,GRA did not speak to citizen directly,1,0.87
+84,PNCHRAJ,Panchayat Raj And Rural Development,KRS,Krishna,village_development,5,1,GRA,No action letter issued,11,0.93
+85,REVENUE,Revenue (CCLA),PKM,Prakasam,property_dispute,10,1,Tahsildar,GRA did not speak to citizen directly,1,0.92
+86,REVENUE,Revenue (CCLA),STY,Sri Satya Sai,land_records,18,2,Tahsildar,GRA did not speak to citizen directly,1,0.87
+87,REVENUE,Revenue (CCLA),ANA,Anakapalli,land_mutation,38,6,Tahsildar,No proper enquiry conducted,5,0.87
+88,ENERGY,Energy,KNL,Kurnool,power_outage,22,5,RDO,Poor quality of work,12,0.91
+89,MUNI,Municipal Administration And Urban Development,STY,Sri Satya Sai,road_repair,17,2,RDO,GRA did not speak to citizen directly,1,0.95
+90,REVENUE,Revenue (CCLA),KKN,Kakinada,land_mutation,10,1,Tahsildar,Wrong/Blank/Not related comments,3,0.92
+91,REVENUE,Revenue (CCLA),NTR,NTR District,encroachment,20,2,Tahsildar,GRA did not speak to citizen directly,1,0.85
+92,REVENUE,Revenue (CCLA),KNL,Kurnool,tax_assessment,17,4,HOD,Premature closure,6,0.89
+93,MUNI,Municipal Administration And Urban Development,KNR,Konaseema,drainage_issue,48,8,RDO,Inordinate delay,9,0.93
+94,MUNI,Municipal Administration And Urban Development,ELR,Eluru,garbage_collection,5,1,GRA,GRA did not speak to citizen directly,1,0.94
+95,MUNI,Municipal Administration And Urban Development,ANA,Anakapalli,street_lights,20,2,Tahsildar,GRA did not speak to citizen directly,1,0.91
+96,REVENUE,Revenue (CCLA),EG,East Godavari,tax_assessment,1,1,Mandal,No proper enquiry conducted,5,0.93
+97,MUNI,Municipal Administration And Urban Development,STY,Sri Satya Sai,drainage_issue,19,1,Mandal,Not visited site / No field verification,2,0.95
+98,SOC_WELF,Social Welfare,ANA,Anakapalli,pension_not_received,6,1,Tahsildar,GRA did not speak to citizen directly,1,0.89
+99,SOC_WELF,Social Welfare,PLN,Palnadu,scholarship_issue,24,2,Tahsildar,No proper enquiry conducted,5,0.86
+100,PNCHRAJ,Panchayat Raj And Rural Development,ANM,Annamaya,village_roads,25,2,Mandal,Not visited site / No field verification,2,0.9
+101,AGRI,Agriculture And Co-operation,ANA,Anakapalli,irrigation_problem,14,2,GRA,Premature closure,6,0.89
+102,AGRI,Agriculture And Co-operation,KDP,Kadapa,crop_compensation,7,1,GRA,No action letter issued,11,0.88
+103,REVENUE,Revenue (CCLA),VZG,Vizianagaram,land_mutation,14,1,Tahsildar,GRA did not speak to citizen directly,1,0.93
+104,SOC_WELF,Social Welfare,PVT,Parvathipuram Manyam,disability_certificate,9,1,GRA,GRA did not speak to citizen directly,1,0.9
+105,REVENUE,Revenue (CCLA),CHT,Chittoor,encroachment,74,14,CM,Not visited site / No field verification,2,0.94
+106,MUNI,Municipal Administration And Urban Development,GNT,Guntur,garbage_collection,17,1,Collector,Wrong/Blank/Not related comments,3,0.9
+107,REVENUE,Revenue (CCLA),BAP,Bapatla,land_records,2,1,GRA,GRA did not speak to citizen directly,1,0.94
+108,BC_WELF,Backward Classes Welfare,EG,East Godavari,reservation_issue,57,9,RDO,Not visited site / No field verification,2,0.92
+109,PNCHRAJ,Panchayat Raj And Rural Development,TPT,Tirupati,drinking_water,4,1,GRA,GRA did not speak to citizen directly,1,0.9
+110,REVENUE,Revenue (CCLA),ANM,Annamaya,encroachment,24,5,RDO,GRA did not speak to citizen directly,1,0.92
+111,SOC_WELF,Social Welfare,KNR,Konaseema,pension_delay,13,1,Mandal,GRA did not speak to citizen directly,1,0.91
+112,WATER,Water Resources,PLN,Palnadu,flood_control,32,11,HOD,Not visited site / No field verification,2,0.9
+113,MUNI,Municipal Administration And Urban Development,KKN,Kakinada,water_supply,9,1,GRA,GRA did not speak to citizen directly,1,0.92
+114,SOC_WELF,Social Welfare,KDP,Kadapa,pension_not_received,6,1,Tahsildar,GRA did not speak to citizen directly,1,0.89
+115,SOC_WELF,Social Welfare,EG,East Godavari,welfare_scheme,9,1,Collector,GRA did not speak to citizen directly,1,0.91
+116,REVENUE,Revenue (CCLA),ELR,Eluru,property_dispute,6,1,GRA,GRA did not speak to citizen directly,1,0.94
+117,AGRI,Agriculture And Co-operation,NTR,NTR District,crop_compensation,5,1,Mandal,Wrong/Blank/Not related comments,3,0.95
+118,AGRI,Agriculture And Co-operation,ARL,Alluri Sitharama Raju,fertilizer_issue,5,1,GRA,GRA did not speak to citizen directly,1,0.89
+119,SOC_WELF,Social Welfare,KNL,Kurnool,disability_certificate,15,2,HOD,GRA did not speak to citizen directly,1,0.94
+120,PNCHRAJ,Panchayat Raj And Rural Development,KNL,Kurnool,community_hall,27,5,RDO,Not visited site / No field verification,2,0.88
+121,PNCHRAJ,Panchayat Raj And Rural Development,STY,Sri Satya Sai,community_hall,68,12,Collector,Not visited site / No field verification,2,0.93
+122,REVENUE,Revenue (CCLA),PKM,Prakasam,tax_assessment,17,1,Mandal,GRA did not speak to citizen directly,1,0.86
+123,MUNI,Municipal Administration And Urban Development,PKM,Prakasam,road_repair,43,11,Collector,Not visited site / No field verification,2,0.95
+124,REVENUE,Revenue (CCLA),NLR,Nellore,land_mutation,74,20,CM,Not visited site / No field verification,2,0.95
+125,ENERGY,Energy,PKM,Prakasam,power_outage,21,3,Tahsildar,Premature closure,6,0.89
+126,PNCHRAJ,Panchayat Raj And Rural Development,KRS,Krishna,village_development,7,1,Tahsildar,GRA did not speak to citizen directly,1,0.87
+127,REVENUE,Revenue (CCLA),BAP,Bapatla,revenue_certificate,12,1,Tahsildar,Inadequate action taken,8,0.88
+128,SOC_WELF,Social Welfare,WG,West Godavari,pension_not_received,8,1,Tahsildar,Incorrect routing,10,0.89
+129,SOC_WELF,Social Welfare,NAG,Sri Potti Sriramulu Nellore,welfare_scheme,11,1,GRA,GRA did not speak to citizen directly,1,0.93
+130,MUNI,Municipal Administration And Urban Development,KRS,Krishna,water_supply,13,1,GRA,Wrong/Blank/Not related comments,3,0.94
+131,REVENUE,Revenue (CCLA),PLN,Palnadu,revenue_certificate,63,15,Collector,Not visited site / No field verification,2,0.95
+132,HOME,Home (Police),ARL,Alluri Sitharama Raju,police_complaint,5,1,GRA,Closed without required documents,4,0.86
+133,REVENUE,Revenue (CCLA),WG,West Godavari,encroachment,16,1,Mandal,GRA did not speak to citizen directly,1,0.88
+134,REVENUE,Revenue (CCLA),KKN,Kakinada,land_mutation,35,6,RDO,GRA did not speak to citizen directly,1,0.86
+135,WATER,Water Resources,WG,West Godavari,irrigation_canal,51,5,Tahsildar,Not visited site / No field verification,2,0.87
+136,REVENUE,Revenue (CCLA),NAG,Sri Potti Sriramulu Nellore,land_records,44,6,Collector,Not visited site / No field verification,2,0.91
+137,SOC_WELF,Social Welfare,EG,East Godavari,welfare_scheme,15,1,Tahsildar,GRA did not speak to citizen directly,1,0.91
+138,REVENUE,Revenue (CCLA),ANA,Anakapalli,land_records,21,3,Mandal,GRA did not speak to citizen directly,1,0.88
+139,REVENUE,Revenue (CCLA),WG,West Godavari,revenue_certificate,1,1,Mandal,Wrong/Blank/Not related comments,3,0.9
+140,SOC_WELF,Social Welfare,KKN,Kakinada,scholarship_issue,7,1,RDO,GRA did not speak to citizen directly,1,0.91
+141,WATER,Water Resources,VZG,Vizianagaram,tank_maintenance,12,1,Mandal,Inordinate delay,9,0.89
+142,REVENUE,Revenue (CCLA),VZG,Vizianagaram,revenue_certificate,8,1,GRA,Wrong/Blank/Not related comments,3,0.86
+143,REVENUE,Revenue (CCLA),VZG,Vizianagaram,land_mutation,9,1,Collector,Closed without required documents,4,0.92
+144,SOC_WELF,Social Welfare,PLN,Palnadu,scholarship_issue,8,1,Mandal,Premature closure,6,0.86
+145,MUNI,Municipal Administration And Urban Development,WG,West Godavari,building_permission,55,9,Collector,Not visited site / No field verification,2,0.89
+146,PNCHRAJ,Panchayat Raj And Rural Development,ELR,Eluru,community_hall,24,1,RDO,Wrong/Blank/Not related comments,3,0.91
+147,AGRI,Agriculture And Co-operation,GNT,Guntur,crop_insurance,15,1,Mandal,Incorrect routing,10,0.88
+148,PNCHRAJ,Panchayat Raj And Rural Development,NLR,Nellore,sanitation,19,1,Tahsildar,GRA did not speak to citizen directly,1,0.86
+149,PNCHRAJ,Panchayat Raj And Rural Development,GNT,Guntur,village_roads,13,1,Mandal,Wrong/Blank/Not related comments,3,0.87
+150,REVENUE,Revenue (CCLA),NLR,Nellore,encroachment,53,7,Tahsildar,Not visited site / No field verification,2,0.92
+151,REVENUE,Revenue (CCLA),PLN,Palnadu,land_records,30,5,Tahsildar,Not visited site / No field verification,2,0.88
+152,REVENUE,Revenue (CCLA),PLN,Palnadu,tax_assessment,28,6,Collector,Not visited site / No field verification,2,0.85
+153,REVENUE,Revenue (CCLA),CHT,Chittoor,property_dispute,11,1,Mandal,Closed without required documents,4,0.87
+154,SOC_WELF,Social Welfare,PVT,Parvathipuram Manyam,pension_delay,19,2,HOD,GRA did not speak to citizen directly,1,0.89
+155,SOC_WELF,Social Welfare,ANT,Anantapur,disability_certificate,16,1,Mandal,Not visited site / No field verification,2,0.89
+156,HOUSING,Housing,NTR,NTR District,building_quality,9,1,Mandal,Wrong/Blank/Not related comments,3,0.93
+157,REVENUE,Revenue (CCLA),ELR,Eluru,land_records,31,6,RDO,Not visited site / No field verification,2,0.93
+158,REVENUE,Revenue (CCLA),KNR,Konaseema,land_mutation,56,20,Collector,Not visited site / No field verification,2,0.93
+159,REVENUE,Revenue (CCLA),WG,West Godavari,revenue_certificate,1,1,GRA,GRA did not speak to citizen directly,1,0.95
+160,AGRI,Agriculture And Co-operation,ARL,Alluri Sitharama Raju,crop_insurance,1,1,Mandal,Premature closure,6,0.91
+161,BC_WELF,Backward Classes Welfare,NLR,Nellore,scholarship,19,2,Tahsildar,GRA did not speak to citizen directly,1,0.93
+162,MUNI,Municipal Administration And Urban Development,PKM,Prakasam,road_repair,9,1,Mandal,GRA did not speak to citizen directly,1,0.93
+163,REVENUE,Revenue (CCLA),ANT,Anantapur,encroachment,25,6,Collector,Not visited site / No field verification,2,0.94
+164,SOC_WELF,Social Welfare,TPT,Tirupati,welfare_scheme,8,1,Tahsildar,Wrong/Blank/Not related comments,3,0.86
+165,HEALTH,"Health, Medical And Family Welfare",NLR,Nellore,hospital_service,14,2,Mandal,Wrong/Blank/Not related comments,3,0.95
+166,MUNI,Municipal Administration And Urban Development,KKN,Kakinada,drainage_issue,18,2,Collector,GRA did not speak to citizen directly,1,0.88
+167,MUNI,Municipal Administration And Urban Development,TPT,Tirupati,building_permission,15,3,Collector,Wrong/Blank/Not related comments,3,0.89
+168,REVENUE,Revenue (CCLA),PLN,Palnadu,encroachment,6,1,Tahsildar,Premature closure,6,0.95
+169,AGRI,Agriculture And Co-operation,SKM,Srikakulam,subsidy_delay,18,1,Tahsildar,Wrong/Blank/Not related comments,3,0.91
+170,REVENUE,Revenue (CCLA),WG,West Godavari,tax_assessment,37,3,Tahsildar,Wrong/Blank/Not related comments,3,0.91
+171,SOC_WELF,Social Welfare,PKM,Prakasam,pension_not_received,14,2,Mandal,GRA did not speak to citizen directly,1,0.87
+172,WOMEN,"Women, Children, Disabled And Senior Citizens",WG,West Godavari,anganwadi_service,14,1,Mandal,GRA did not speak to citizen directly,1,0.93
+173,HEALTH,"Health, Medical And Family Welfare",VSP,Visakhapatnam,doctor_absence,25,2,Mandal,Inordinate delay,9,0.87
+174,WATER,Water Resources,STY,Sri Satya Sai,flood_control,16,2,Tahsildar,Inadequate action taken,8,0.89
+175,PNCHRAJ,Panchayat Raj And Rural Development,ARL,Alluri Sitharama Raju,village_development,11,1,Mandal,GRA did not speak to citizen directly,1,0.87
+176,HOUSING,Housing,TPT,Tirupati,allotment_issue,55,17,Collector,Inordinate delay,9,0.95
+177,SOC_WELF,Social Welfare,KNL,Kurnool,scholarship_issue,7,1,RDO,GRA did not speak to citizen directly,1,0.94
+178,REVENUE,Revenue (CCLA),ANA,Anakapalli,revenue_certificate,75,20,Collector,Not visited site / No field verification,2,0.86
+179,REVENUE,Revenue (CCLA),ARL,Alluri Sitharama Raju,encroachment,1,1,Tahsildar,GRA did not speak to citizen directly,1,0.94
+180,SOC_WELF,Social Welfare,SKM,Srikakulam,welfare_scheme,9,1,Tahsildar,GRA did not speak to citizen directly,1,0.93
+181,AGRI,Agriculture And Co-operation,TPT,Tirupati,subsidy_delay,8,1,Tahsildar,GRA did not speak to citizen directly,1,0.93
+182,PNCHRAJ,Panchayat Raj And Rural Development,ANA,Anakapalli,drinking_water,48,8,RDO,Not visited site / No field verification,2,0.93
+183,MUNI,Municipal Administration And Urban Development,NAG,Sri Potti Sriramulu Nellore,road_repair,57,13,RDO,Not visited site / No field verification,2,0.86
+184,REVENUE,Revenue (CCLA),KNR,Konaseema,encroachment,78,20,RDO,Not visited site / No field verification,2,0.91
+185,MUNI,Municipal Administration And Urban Development,PVT,Parvathipuram Manyam,drainage_issue,19,3,RDO,GRA did not speak to citizen directly,1,0.89
+186,AGRI,Agriculture And Co-operation,ANT,Anantapur,crop_insurance,20,3,RDO,No action letter issued,11,0.93
+187,MUNI,Municipal Administration And Urban Development,GNT,Guntur,street_lights,19,2,Tahsildar,Action not taken as per rules,7,0.88
+188,REVENUE,Revenue (CCLA),TPT,Tirupati,land_mutation,10,1,RDO,GRA did not speak to citizen directly,1,0.93
+189,REVENUE,Revenue (CCLA),PKM,Prakasam,encroachment,2,1,Mandal,GRA did not speak to citizen directly,1,0.9
+190,REVENUE,Revenue (CCLA),WG,West Godavari,land_mutation,14,1,Mandal,Wrong/Blank/Not related comments,3,0.88
+191,REVENUE,Revenue (CCLA),SKM,Srikakulam,encroachment,73,20,CM,Not visited site / No field verification,2,0.94
+192,REVENUE,Revenue (CCLA),KDP,Kadapa,revenue_certificate,27,3,Tahsildar,Not visited site / No field verification,2,0.95
+193,SOC_WELF,Social Welfare,ANA,Anakapalli,disability_certificate,9,1,GRA,Inordinate delay,9,0.89
+194,WOMEN,"Women, Children, Disabled And Senior Citizens",NTR,NTR District,daycare_center,17,2,Tahsildar,GRA did not speak to citizen directly,1,0.88
+195,MUNI,Municipal Administration And Urban Development,VZG,Vizianagaram,drainage_issue,10,1,Mandal,Wrong/Blank/Not related comments,3,0.91
+196,SOC_WELF,Social Welfare,KNR,Konaseema,pension_not_received,7,1,Tahsildar,GRA did not speak to citizen directly,1,0.87
+197,REVENUE,Revenue (CCLA),KKN,Kakinada,tax_assessment,14,2,Mandal,Closed without required documents,4,0.89
+198,HOME,Home (Police),VSP,Visakhapatnam,police_harassment,4,1,GRA,GRA did not speak to citizen directly,1,0.93
+199,MUNI,Municipal Administration And Urban Development,ANM,Annamaya,garbage_collection,8,1,GRA,GRA did not speak to citizen directly,1,0.85
+200,REVENUE,Revenue (CCLA),ANM,Annamaya,land_records,22,4,Mandal,Inadequate action taken,8,0.95
+201,REVENUE,Revenue (CCLA),ANA,Anakapalli,property_dispute,17,1,Tahsildar,GRA did not speak to citizen directly,1,0.95
+202,ENERGY,Energy,NLR,Nellore,billing_dispute,5,1,GRA,Closed without required documents,4,0.94
+203,PNCHRAJ,Panchayat Raj And Rural Development,PVT,Parvathipuram Manyam,community_hall,7,1,GRA,Wrong/Blank/Not related comments,3,0.93
+204,REVENUE,Revenue (CCLA),ANA,Anakapalli,land_mutation,3,1,GRA,GRA did not speak to citizen directly,1,0.91
+205,REVENUE,Revenue (CCLA),KNL,Kurnool,land_records,10,1,Tahsildar,Beneficiary not contacted,13,0.86
+206,LABOUR,"Labour, Factories, Boilers And Insurance Medical Services",KNR,Konaseema,wage_dispute,8,1,RDO,Wrong/Blank/Not related comments,3,0.91
+207,MUNI,Municipal Administration And Urban Development,STY,Sri Satya Sai,drainage_issue,14,1,GRA,GRA did not speak to citizen directly,1,0.9
+208,REVENUE,Revenue (CCLA),NTR,NTR District,revenue_certificate,52,17,RDO,Inordinate delay,9,0.93
+209,REVENUE,Revenue (CCLA),KNR,Konaseema,encroachment,4,1,Tahsildar,GRA did not speak to citizen directly,1,0.91
+210,MUNI,Municipal Administration And Urban Development,NTR,NTR District,building_permission,59,11,Collector,Not visited site / No field verification,2,0.85
+211,WATER,Water Resources,ANT,Anantapur,irrigation_canal,12,1,GRA,Incorrect routing,10,0.93
+212,SOC_WELF,Social Welfare,KNR,Konaseema,pension_not_received,7,1,Mandal,GRA did not speak to citizen directly,1,0.87
+213,ENERGY,Energy,SKM,Srikakulam,billing_dispute,10,1,Mandal,Wrong/Blank/Not related comments,3,0.9
+214,REVENUE,Revenue (CCLA),KKN,Kakinada,property_dispute,9,1,Mandal,GRA did not speak to citizen directly,1,0.86
+215,SOC_WELF,Social Welfare,BAP,Bapatla,pension_not_received,5,1,Mandal,GRA did not speak to citizen directly,1,0.88
+216,SOC_WELF,Social Welfare,KKN,Kakinada,scholarship_issue,15,2,RDO,GRA did not speak to citizen directly,1,0.92
+217,REVENUE,Revenue (CCLA),NTR,NTR District,land_records,1,1,GRA,Poor quality of work,12,0.94
+218,MUNI,Municipal Administration And Urban Development,EG,East Godavari,drainage_issue,60,17,HOD,Not visited site / No field verification,2,0.94
+219,AGRI,Agriculture And Co-operation,ANA,Anakapalli,fertilizer_issue,16,1,Tahsildar,Wrong/Blank/Not related comments,3,0.92
+220,PNCHRAJ,Panchayat Raj And Rural Development,PKM,Prakasam,village_roads,7,1,Tahsildar,GRA did not speak to citizen directly,1,0.88
+221,SOC_WELF,Social Welfare,ARL,Alluri Sitharama Raju,welfare_scheme,24,3,RDO,GRA did not speak to citizen directly,1,0.89
+222,BC_WELF,Backward Classes Welfare,BAP,Bapatla,scholarship,52,16,Collector,No proper enquiry conducted,5,0.85
+223,REVENUE,Revenue (CCLA),PVT,Parvathipuram Manyam,revenue_certificate,33,4,Tahsildar,No proper enquiry conducted,5,0.88
+224,MUNI,Municipal Administration And Urban Development,NTR,NTR District,street_lights,11,1,Mandal,Poor quality of work,12,0.9
+225,MUNI,Municipal Administration And Urban Development,ANA,Anakapalli,building_permission,41,7,RDO,Not visited site / No field verification,2,0.92
+226,LABOUR,"Labour, Factories, Boilers And Insurance Medical Services",ELR,Eluru,labour_welfare,10,1,GRA,Action not taken as per rules,7,0.91
+227,REVENUE,Revenue (CCLA),KNR,Konaseema,encroachment,40,7,CM,Not visited site / No field verification,2,0.86
+228,AGRI,Agriculture And Co-operation,VSP,Visakhapatnam,crop_insurance,13,1,Mandal,Incorrect routing,10,0.89
+229,SOC_WELF,Social Welfare,CHT,Chittoor,scholarship_issue,5,1,Tahsildar,GRA did not speak to citizen directly,1,0.86
+230,REVENUE,Revenue (CCLA),CHT,Chittoor,encroachment,6,1,GRA,GRA did not speak to citizen directly,1,0.9
+231,MUNI,Municipal Administration And Urban Development,BAP,Bapatla,garbage_collection,20,1,Collector,Wrong/Blank/Not related comments,3,0.88
+232,SOC_WELF,Social Welfare,EG,East Godavari,disability_certificate,53,20,Collector,Not visited site / No field verification,2,0.92
+233,SOC_WELF,Social Welfare,ANA,Anakapalli,disability_certificate,74,20,CM,Not visited site / No field verification,2,0.94
+234,SOC_WELF,Social Welfare,PKM,Prakasam,pension_delay,9,1,Mandal,GRA did not speak to citizen directly,1,0.92
+235,PNCHRAJ,Panchayat Raj And Rural Development,CHT,Chittoor,community_hall,10,1,GRA,Closed without required documents,4,0.86
+236,MUNI,Municipal Administration And Urban Development,ELR,Eluru,drainage_issue,7,1,Tahsildar,GRA did not speak to citizen directly,1,0.87
+237,REVENUE,Revenue (CCLA),NLR,Nellore,tax_assessment,40,5,RDO,Not visited site / No field verification,2,0.89
+238,HOME,Home (Police),ANA,Anakapalli,law_order,12,1,GRA,Closed without required documents,4,0.91
+239,RNB,"Transport, Roads And Buildings",ANT,Anantapur,contractor_issue,10,1,GRA,GRA did not speak to citizen directly,1,0.94
+240,REVENUE,Revenue (CCLA),NTR,NTR District,land_mutation,4,1,GRA,Poor quality of work,12,0.94
+241,REVENUE,Revenue (CCLA),ELR,Eluru,encroachment,18,2,RDO,GRA did not speak to citizen directly,1,0.9
+242,HEALTH,"Health, Medical And Family Welfare",WG,West Godavari,ambulance_service,13,1,GRA,Wrong/Blank/Not related comments,3,0.92
+243,AGRI,Agriculture And Co-operation,PVT,Parvathipuram Manyam,subsidy_delay,8,1,Tahsildar,GRA did not speak to citizen directly,1,0.93
+244,REVENUE,Revenue (CCLA),KNR,Konaseema,land_records,36,6,RDO,No proper enquiry conducted,5,0.95
+245,SOC_WELF,Social Welfare,EG,East Godavari,pension_not_received,13,1,GRA,GRA did not speak to citizen directly,1,0.91
+246,MUNI,Municipal Administration And Urban Development,KRS,Krishna,building_permission,13,1,Mandal,GRA did not speak to citizen directly,1,0.88
+247,SOC_WELF,Social Welfare,ANM,Annamaya,disability_certificate,1,1,GRA,Wrong/Blank/Not related comments,3,0.87
+248,REVENUE,Revenue (CCLA),WG,West Godavari,land_records,5,1,GRA,Closed without required documents,4,0.93
+249,ENERGY,Energy,CHT,Chittoor,meter_issue,1,1,GRA,Wrong/Blank/Not related comments,3,0.89
+250,PNCHRAJ,Panchayat Raj And Rural Development,ANT,Anantapur,village_development,20,1,Mandal,GRA did not speak to citizen directly,1,0.91
+251,REVENUE,Revenue (CCLA),NLR,Nellore,encroachment,31,3,Collector,Not visited site / No field verification,2,0.89
+252,REVENUE,Revenue (CCLA),WG,West Godavari,encroachment,2,1,GRA,GRA did not speak to citizen directly,1,0.92
+253,SOC_WELF,Social Welfare,GNT,Guntur,pension_delay,62,15,Collector,Not visited site / No field verification,2,0.95
+254,SOC_WELF,Social Welfare,KNL,Kurnool,scholarship_issue,19,2,Tahsildar,GRA did not speak to citizen directly,1,0.89
+255,HEALTH,"Health, Medical And Family Welfare",ARL,Alluri Sitharama Raju,medical_reimbursement,32,4,Collector,Not visited site / No field verification,2,0.86
+256,WATER,Water Resources,KDP,Kadapa,water_shortage,8,1,GRA,Poor quality of work,12,0.93
+257,PNCHRAJ,Panchayat Raj And Rural Development,KNL,Kurnool,drinking_water,2,1,GRA,Wrong/Blank/Not related comments,3,0.87
+258,REVENUE,Revenue (CCLA),KRS,Krishna,property_dispute,43,8,Collector,Inordinate delay,9,0.91
+259,HOME,Home (Police),GNT,Guntur,fir_delay,13,1,Tahsildar,GRA did not speak to citizen directly,1,0.92
+260,HEALTH,"Health, Medical And Family Welfare",EG,East Godavari,hospital_service,46,14,HOD,Not visited site / No field verification,2,0.86
+261,MUNI,Municipal Administration And Urban Development,KNL,Kurnool,drainage_issue,42,7,Collector,No proper enquiry conducted,5,0.93
+262,ENERGY,Energy,EG,East Godavari,billing_dispute,69,17,HOD,Inordinate delay,9,0.88
+263,REVENUE,Revenue (CCLA),ELR,Eluru,tax_assessment,6,1,GRA,Inadequate action taken,8,0.94
+264,AGRI,Agriculture And Co-operation,TPT,Tirupati,crop_insurance,35,7,RDO,Not visited site / No field verification,2,0.87
+265,MUNI,Municipal Administration And Urban Development,EG,East Godavari,drainage_issue,8,1,GRA,GRA did not speak to citizen directly,1,0.91
+266,HOUSING,Housing,BAP,Bapatla,building_quality,12,1,Tahsildar,GRA did not speak to citizen directly,1,0.86
+267,SOC_WELF,Social Welfare,PKM,Prakasam,pension_not_received,48,9,Collector,Not visited site / No field verification,2,0.91
+268,HEALTH,"Health, Medical And Family Welfare",CHT,Chittoor,ambulance_service,3,1,GRA,Closed without required documents,4,0.88
+269,RNB,"Transport, Roads And Buildings",CHT,Chittoor,bridge_repair,35,16,Collector,No action letter issued,11,0.94
+270,AGRI,Agriculture And Co-operation,PVT,Parvathipuram Manyam,subsidy_delay,46,11,RDO,Not visited site / No field verification,2,0.89
+271,MUNI,Municipal Administration And Urban Development,PKM,Prakasam,garbage_collection,2,1,GRA,GRA did not speak to citizen directly,1,0.93
+272,PNCHRAJ,Panchayat Raj And Rural Development,STY,Sri Satya Sai,sanitation,6,1,Mandal,Inadequate action taken,8,0.94
+273,PNCHRAJ,Panchayat Raj And Rural Development,GNT,Guntur,sanitation,17,1,Tahsildar,Not visited site / No field verification,2,0.87
+274,REVENUE,Revenue (CCLA),SKM,Srikakulam,encroachment,15,2,Tahsildar,No proper enquiry conducted,5,0.93
+275,SOC_WELF,Social Welfare,NAG,Sri Potti Sriramulu Nellore,scholarship_issue,11,1,RDO,GRA did not speak to citizen directly,1,0.87
+276,HEALTH,"Health, Medical And Family Welfare",KNR,Konaseema,hospital_service,13,1,Tahsildar,Wrong/Blank/Not related comments,3,0.85
+277,REVENUE,Revenue (CCLA),WG,West Godavari,tax_assessment,11,1,Mandal,GRA did not speak to citizen directly,1,0.86
+278,AGRI,Agriculture And Co-operation,KKN,Kakinada,irrigation_problem,21,3,Tahsildar,Closed without required documents,4,0.85
+279,MUNI,Municipal Administration And Urban Development,KRS,Krishna,road_repair,26,5,Collector,No action letter issued,11,0.89
+280,HOME,Home (Police),NTR,NTR District,police_complaint,30,6,Collector,Inordinate delay,9,0.9
+281,ENERGY,Energy,KRS,Krishna,new_connection,20,1,Tahsildar,GRA did not speak to citizen directly,1,0.95
+282,REVENUE,Revenue (CCLA),PLN,Palnadu,land_mutation,20,1,Collector,Wrong/Blank/Not related comments,3,0.91
+283,REVENUE,Revenue (CCLA),GNT,Guntur,tax_assessment,3,1,Mandal,GRA did not speak to citizen directly,1,0.95
+284,LABOUR,"Labour, Factories, Boilers And Insurance Medical Services",ANM,Annamaya,wage_dispute,21,2,RDO,GRA did not speak to citizen directly,1,0.9
+285,REVENUE,Revenue (CCLA),ANT,Anantapur,tax_assessment,65,13,HOD,Inordinate delay,9,0.95
+286,MUNI,Municipal Administration And Urban Development,STY,Sri Satya Sai,building_permission,60,14,HOD,No proper enquiry conducted,5,0.87
+287,WATER,Water Resources,SKM,Srikakulam,flood_control,45,8,Collector,Not visited site / No field verification,2,0.92
+288,MUNI,Municipal Administration And Urban Development,PKM,Prakasam,water_supply,12,1,Tahsildar,GRA did not speak to citizen directly,1,0.93
+289,HOUSING,Housing,SKM,Srikakulam,construction_delay,8,1,Mandal,GRA did not speak to citizen directly,1,0.87
+290,MUNI,Municipal Administration And Urban Development,SKM,Srikakulam,street_lights,5,1,Tahsildar,GRA did not speak to citizen directly,1,0.91
+291,ENERGY,Energy,PVT,Parvathipuram Manyam,power_outage,19,4,Collector,GRA did not speak to citizen directly,1,0.87
+292,SOC_WELF,Social Welfare,PKM,Prakasam,pension_not_received,20,1,Mandal,GRA did not speak to citizen directly,1,0.86
+293,REVENUE,Revenue (CCLA),ARL,Alluri Sitharama Raju,encroachment,41,6,Tahsildar,Not visited site / No field verification,2,0.91
+294,ENERGY,Energy,SKM,Srikakulam,power_outage,9,1,Tahsildar,GRA did not speak to citizen directly,1,0.94
+295,LABOUR,"Labour, Factories, Boilers And Insurance Medical Services",ELR,Eluru,contractor_payment,8,1,GRA,GRA did not speak to citizen directly,1,0.88
+296,REVENUE,Revenue (CCLA),NTR,NTR District,land_records,7,1,GRA,GRA did not speak to citizen directly,1,0.92
+297,SOC_WELF,Social Welfare,KKN,Kakinada,pension_delay,12,1,Tahsildar,GRA did not speak to citizen directly,1,0.89
+298,WATER,Water Resources,ARL,Alluri Sitharama Raju,bore_well,17,1,RDO,Wrong/Blank/Not related comments,3,0.86
+299,REVENUE,Revenue (CCLA),PVT,Parvathipuram Manyam,property_dispute,53,17,HOD,Not visited site / No field verification,2,0.92
+300,SOC_WELF,Social Welfare,ELR,Eluru,pension_delay,9,1,Tahsildar,GRA did not speak to citizen directly,1,0.87
+301,WOMEN,"Women, Children, Disabled And Senior Citizens",NTR,NTR District,daycare_center,9,1,GRA,GRA did not speak to citizen directly,1,0.89
+302,REVENUE,Revenue (CCLA),PVT,Parvathipuram Manyam,land_mutation,50,8,Collector,No proper enquiry conducted,5,0.88
+303,REVENUE,Revenue (CCLA),WG,West Godavari,tax_assessment,5,1,Mandal,GRA did not speak to citizen directly,1,0.89
+304,MUNI,Municipal Administration And Urban Development,PVT,Parvathipuram Manyam,street_lights,49,8,Collector,Not visited site / No field verification,2,0.91
+305,RNB,"Transport, Roads And Buildings",KDP,Kadapa,bridge_repair,4,1,GRA,Wrong/Blank/Not related comments,3,0.91
+306,AGRI,Agriculture And Co-operation,KNR,Konaseema,irrigation_problem,5,1,GRA,No action letter issued,11,0.85
+307,REVENUE,Revenue (CCLA),ANM,Annamaya,tax_assessment,22,2,Tahsildar,Not visited site / No field verification,2,0.9
+308,AGRI,Agriculture And Co-operation,PVT,Parvathipuram Manyam,crop_insurance,21,2,Tahsildar,GRA did not speak to citizen directly,1,0.89
+309,HOUSING,Housing,KDP,Kadapa,housing_scheme,25,5,RDO,Not visited site / No field verification,2,0.9
+310,SOC_WELF,Social Welfare,ARL,Alluri Sitharama Raju,scholarship_issue,7,1,Tahsildar,GRA did not speak to citizen directly,1,0.92
+311,REVENUE,Revenue (CCLA),NAG,Sri Potti Sriramulu Nellore,property_dispute,28,4,Tahsildar,Not visited site / No field verification,2,0.87
+312,SOC_WELF,Social Welfare,NTR,NTR District,pension_delay,10,1,GRA,Wrong/Blank/Not related comments,3,0.89
+313,SOC_WELF,Social Welfare,GNT,Guntur,pension_delay,12,1,Mandal,GRA did not speak to citizen directly,1,0.89
+314,REVENUE,Revenue (CCLA),KDP,Kadapa,revenue_certificate,1,1,GRA,Wrong/Blank/Not related comments,3,0.91
+315,MUNI,Municipal Administration And Urban Development,PKM,Prakasam,garbage_collection,17,1,Collector,No proper enquiry conducted,5,0.93
+316,RNB,"Transport, Roads And Buildings",ELR,Eluru,road_pothole,9,1,GRA,Wrong/Blank/Not related comments,3,0.87
+317,AGRI,Agriculture And Co-operation,ANM,Annamaya,irrigation_problem,17,2,Mandal,Wrong/Blank/Not related comments,3,0.9
+318,MUNI,Municipal Administration And Urban Development,KNR,Konaseema,drainage_issue,34,6,RDO,Not visited site / No field verification,2,0.93
+319,MUNI,Municipal Administration And Urban Development,PKM,Prakasam,water_supply,51,15,Collector,Not visited site / No field verification,2,0.9
+320,SOC_WELF,Social Welfare,PLN,Palnadu,scholarship_issue,16,1,Tahsildar,GRA did not speak to citizen directly,1,0.88
+321,REVENUE,Revenue (CCLA),BAP,Bapatla,revenue_certificate,1,1,Mandal,GRA did not speak to citizen directly,1,0.9
+322,MUNI,Municipal Administration And Urban Development,KRS,Krishna,road_repair,20,2,Mandal,No proper enquiry conducted,5,0.93
+323,SOC_WELF,Social Welfare,CHT,Chittoor,scholarship_issue,18,1,RDO,GRA did not speak to citizen directly,1,0.88
+324,WATER,Water Resources,ANT,Anantapur,tank_maintenance,72,20,Collector,Inordinate delay,9,0.93
+325,MUNI,Municipal Administration And Urban Development,PKM,Prakasam,building_permission,20,2,Mandal,Not visited site / No field verification,2,0.93
+326,ENERGY,Energy,ELR,Eluru,billing_dispute,8,1,RDO,Wrong/Blank/Not related comments,3,0.88
+327,MUNI,Municipal Administration And Urban Development,ANM,Annamaya,building_permission,66,20,HOD,No proper enquiry conducted,5,0.94
+328,WOMEN,"Women, Children, Disabled And Senior Citizens",KNR,Konaseema,child_welfare,15,2,Tahsildar,Wrong/Blank/Not related comments,3,0.93
+329,PNCHRAJ,Panchayat Raj And Rural Development,PLN,Palnadu,drinking_water,31,6,Collector,Not visited site / No field verification,2,0.89
+330,REVENUE,Revenue (CCLA),TPT,Tirupati,land_mutation,11,1,Mandal,GRA did not speak to citizen directly,1,0.95
+331,REVENUE,Revenue (CCLA),GNT,Guntur,tax_assessment,23,2,Mandal,GRA did not speak to citizen directly,1,0.93
+332,SOC_WELF,Social Welfare,VZG,Vizianagaram,pension_delay,9,1,GRA,GRA did not speak to citizen directly,1,0.91
+333,SOC_WELF,Social Welfare,NLR,Nellore,pension_not_received,1,1,Tahsildar,GRA did not speak to citizen directly,1,0.9
+334,WOMEN,"Women, Children, Disabled And Senior Citizens",VZG,Vizianagaram,child_welfare,25,1,Tahsildar,Beneficiary not contacted,13,0.87
+335,HOME,Home (Police),KRS,Krishna,police_complaint,11,1,Tahsildar,Closed without required documents,4,0.87
+336,SOC_WELF,Social Welfare,KNL,Kurnool,pension_delay,15,2,Tahsildar,GRA did not speak to citizen directly,1,0.91
+337,MUNI,Municipal Administration And Urban Development,ARL,Alluri Sitharama Raju,water_supply,9,1,Mandal,GRA did not speak to citizen directly,1,0.92
+338,SOC_WELF,Social Welfare,EG,East Godavari,scholarship_issue,13,1,GRA,GRA did not speak to citizen directly,1,0.86
+339,PNCHRAJ,Panchayat Raj And Rural Development,STY,Sri Satya Sai,community_hall,41,8,Collector,Not visited site / No field verification,2,0.85
+340,AGRI,Agriculture And Co-operation,ARL,Alluri Sitharama Raju,fertilizer_issue,37,7,Collector,No proper enquiry conducted,5,0.91
+341,SOC_WELF,Social Welfare,CHT,Chittoor,pension_not_received,14,2,Mandal,Inadequate action taken,8,0.95
+342,REVENUE,Revenue (CCLA),WG,West Godavari,property_dispute,20,3,RDO,GRA did not speak to citizen directly,1,0.88
+343,HOME,Home (Police),GNT,Guntur,traffic_issue,7,1,Mandal,GRA did not speak to citizen directly,1,0.88
+344,REVENUE,Revenue (CCLA),TPT,Tirupati,property_dispute,62,19,HOD,Not visited site / No field verification,2,0.94
+345,REVENUE,Revenue (CCLA),PKM,Prakasam,revenue_certificate,18,2,Collector,GRA did not speak to citizen directly,1,0.87
+346,SOC_WELF,Social Welfare,STY,Sri Satya Sai,pension_not_received,17,3,RDO,GRA did not speak to citizen directly,1,0.9
+347,AGRI,Agriculture And Co-operation,ANM,Annamaya,irrigation_problem,2,1,GRA,Wrong/Blank/Not related comments,3,0.91
+348,REVENUE,Revenue (CCLA),KNL,Kurnool,land_mutation,55,18,Collector,Not visited site / No field verification,2,0.91
+349,PNCHRAJ,Panchayat Raj And Rural Development,KNR,Konaseema,village_roads,1,1,GRA,GRA did not speak to citizen directly,1,0.86
+350,REVENUE,Revenue (CCLA),VZG,Vizianagaram,land_mutation,31,6,HOD,Not visited site / No field verification,2,0.87
+351,REVENUE,Revenue (CCLA),WG,West Godavari,tax_assessment,4,1,Tahsildar,GRA did not speak to citizen directly,1,0.88
+352,SOC_WELF,Social Welfare,NAG,Sri Potti Sriramulu Nellore,disability_certificate,24,4,Tahsildar,Wrong/Blank/Not related comments,3,0.88
+353,REVENUE,Revenue (CCLA),PVT,Parvathipuram Manyam,encroachment,2,1,Tahsildar,Wrong/Blank/Not related comments,3,0.89
+354,REVENUE,Revenue (CCLA),KDP,Kadapa,encroachment,21,3,Tahsildar,Wrong/Blank/Not related comments,3,0.85
+355,SOC_WELF,Social Welfare,WG,West Godavari,pension_delay,18,2,Collector,Incorrect routing,10,0.92
+356,REVENUE,Revenue (CCLA),EG,East Godavari,land_records,5,1,GRA,Inadequate action taken,8,0.9
+357,RNB,"Transport, Roads And Buildings",NTR,NTR District,bridge_repair,94,17,RDO,No proper enquiry conducted,5,0.94
+358,WATER,Water Resources,STY,Sri Satya Sai,bore_well,42,8,RDO,Not visited site / No field verification,2,0.88
+359,ENERGY,Energy,NAG,Sri Potti Sriramulu Nellore,transformer_problem,1,1,Tahsildar,GRA did not speak to citizen directly,1,0.93
+360,PNCHRAJ,Panchayat Raj And Rural Development,BAP,Bapatla,community_hall,13,1,Mandal,GRA did not speak to citizen directly,1,0.88
+361,WATER,Water Resources,GNT,Guntur,bore_well,3,1,Tahsildar,GRA did not speak to citizen directly,1,0.88
+362,REVENUE,Revenue (CCLA),EG,East Godavari,land_records,108,20,Collector,Not visited site / No field verification,2,0.85
+363,REVENUE,Revenue (CCLA),ANM,Annamaya,land_records,1,1,Mandal,Wrong/Blank/Not related comments,3,0.91
+364,SOC_WELF,Social Welfare,ELR,Eluru,welfare_scheme,9,1,RDO,GRA did not speak to citizen directly,1,0.92
+365,PNCHRAJ,Panchayat Raj And Rural Development,NLR,Nellore,drinking_water,16,3,Collector,GRA did not speak to citizen directly,1,0.93
+366,REVENUE,Revenue (CCLA),KDP,Kadapa,property_dispute,41,11,HOD,Not visited site / No field verification,2,0.87
+367,REVENUE,Revenue (CCLA),KRS,Krishna,land_mutation,14,1,Tahsildar,GRA did not speak to citizen directly,1,0.85
+368,WATER,Water Resources,NLR,Nellore,water_shortage,12,1,Mandal,GRA did not speak to citizen directly,1,0.85
+369,REVENUE,Revenue (CCLA),NTR,NTR District,land_mutation,18,1,Mandal,Incorrect routing,10,0.9
+370,ENERGY,Energy,WG,West Godavari,power_outage,23,1,Mandal,GRA did not speak to citizen directly,1,0.87
+371,SOC_WELF,Social Welfare,PLN,Palnadu,pension_not_received,11,1,Mandal,Wrong/Blank/Not related comments,3,0.94
+372,SOC_WELF,Social Welfare,WG,West Godavari,pension_not_received,53,10,HOD,Inordinate delay,9,0.87
+373,MUNI,Municipal Administration And Urban Development,NAG,Sri Potti Sriramulu Nellore,street_lights,29,6,Tahsildar,Not visited site / No field verification,2,0.87
+374,REVENUE,Revenue (CCLA),KRS,Krishna,land_records,22,5,Collector,Action not taken as per rules,7,0.89
+375,MUNI,Municipal Administration And Urban Development,VSP,Visakhapatnam,water_supply,15,3,RDO,GRA did not speak to citizen directly,1,0.87
+376,WOMEN,"Women, Children, Disabled And Senior Citizens",BAP,Bapatla,anganwadi_service,13,1,Mandal,Poor quality of work,12,0.93
+377,REVENUE,Revenue (CCLA),ELR,Eluru,encroachment,11,1,GRA,GRA did not speak to citizen directly,1,0.94
+378,PNCHRAJ,Panchayat Raj And Rural Development,VSP,Visakhapatnam,drinking_water,53,1,RDO,Not visited site / No field verification,2,0.86
+379,AGRI,Agriculture And Co-operation,KRS,Krishna,crop_insurance,14,1,GRA,Premature closure,6,0.91
+380,BC_WELF,Backward Classes Welfare,SKM,Srikakulam,scholarship,16,1,Tahsildar,Incorrect routing,10,0.91
+381,ENERGY,Energy,PVT,Parvathipuram Manyam,billing_dispute,75,20,HOD,Inordinate delay,9,0.91
+382,MUNI,Municipal Administration And Urban Development,CHT,Chittoor,street_lights,47,7,Tahsildar,Not visited site / No field verification,2,0.87
+383,REVENUE,Revenue (CCLA),ANM,Annamaya,land_records,16,3,HOD,GRA did not speak to citizen directly,1,0.94
+384,WATER,Water Resources,NLR,Nellore,irrigation_canal,1,1,Tahsildar,GRA did not speak to citizen directly,1,0.86
+385,MUNI,Municipal Administration And Urban Development,PKM,Prakasam,water_supply,19,1,Mandal,GRA did not speak to citizen directly,1,0.88
+386,REVENUE,Revenue (CCLA),NTR,NTR District,tax_assessment,17,1,Mandal,Incorrect routing,10,0.92
+387,MUNI,Municipal Administration And Urban Development,KKN,Kakinada,garbage_collection,7,1,GRA,GRA did not speak to citizen directly,1,0.92
+388,REVENUE,Revenue (CCLA),NTR,NTR District,tax_assessment,8,1,RDO,GRA did not speak to citizen directly,1,0.95
+389,REVENUE,Revenue (CCLA),KKN,Kakinada,revenue_certificate,58,13,Collector,Inordinate delay,9,0.86
+390,PNCHRAJ,Panchayat Raj And Rural Development,EG,East Godavari,sanitation,20,3,Mandal,Poor quality of work,12,0.93
+391,AGRI,Agriculture And Co-operation,NAG,Sri Potti Sriramulu Nellore,fertilizer_issue,11,1,GRA,Wrong/Blank/Not related comments,3,0.89
+392,ENERGY,Energy,NAG,Sri Potti Sriramulu Nellore,power_outage,4,1,GRA,GRA did not speak to citizen directly,1,0.94
+393,SOC_WELF,Social Welfare,SKM,Srikakulam,disability_certificate,63,20,CM,Not visited site / No field verification,2,0.93
+394,REVENUE,Revenue (CCLA),ARL,Alluri Sitharama Raju,land_mutation,48,9,RDO,No proper enquiry conducted,5,0.88
+395,HEALTH,"Health, Medical And Family Welfare",NTR,NTR District,hospital_service,14,1,Tahsildar,Wrong/Blank/Not related comments,3,0.95
+396,HEALTH,"Health, Medical And Family Welfare",PVT,Parvathipuram Manyam,hospital_service,5,1,GRA,Wrong/Blank/Not related comments,3,0.87
+397,REVENUE,Revenue (CCLA),CHT,Chittoor,property_dispute,1,1,Mandal,GRA did not speak to citizen directly,1,0.88
+398,REVENUE,Revenue (CCLA),VSP,Visakhapatnam,land_records,51,10,Collector,Not visited site / No field verification,2,0.86
+399,ENERGY,Energy,KNR,Konaseema,transformer_problem,16,3,Collector,Wrong/Blank/Not related comments,3,0.88
+400,REVENUE,Revenue (CCLA),KDP,Kadapa,revenue_certificate,1,1,RDO,Closed without required documents,4,0.87
+401,HEALTH,"Health, Medical And Family Welfare",PKM,Prakasam,medicine_shortage,11,1,GRA,Wrong/Blank/Not related comments,3,0.93
+402,MUNI,Municipal Administration And Urban Development,WG,West Godavari,building_permission,18,3,RDO,Wrong/Blank/Not related comments,3,0.89
+403,PNCHRAJ,Panchayat Raj And Rural Development,EG,East Godavari,village_development,4,1,GRA,GRA did not speak to citizen directly,1,0.92
+404,HOME,Home (Police),ELR,Eluru,fir_delay,27,6,Collector,Wrong/Blank/Not related comments,3,0.85
+405,MUNI,Municipal Administration And Urban Development,ANM,Annamaya,road_repair,9,1,RDO,Wrong/Blank/Not related comments,3,0.89
+406,HOME,Home (Police),NTR,NTR District,fir_delay,17,3,Collector,Action not taken as per rules,7,0.89
+407,WOMEN,"Women, Children, Disabled And Senior Citizens",KNR,Konaseema,child_welfare,11,1,GRA,Action not taken as per rules,7,0.86
+408,MUNI,Municipal Administration And Urban Development,BAP,Bapatla,garbage_collection,1,1,GRA,Premature closure,6,0.93
+409,AGRI,Agriculture And Co-operation,ANM,Annamaya,irrigation_problem,18,3,RDO,GRA did not speak to citizen directly,1,0.93
+410,HOME,Home (Police),KDP,Kadapa,police_harassment,15,1,Tahsildar,Premature closure,6,0.94
+411,REVENUE,Revenue (CCLA),KNR,Konaseema,land_records,32,7,Collector,Not visited site / No field verification,2,0.91
+412,AGRI,Agriculture And Co-operation,VSP,Visakhapatnam,irrigation_problem,37,11,HOD,Inordinate delay,9,0.9
+413,REVENUE,Revenue (CCLA),PKM,Prakasam,land_mutation,13,1,Tahsildar,GRA did not speak to citizen directly,1,0.92
+414,LABOUR,"Labour, Factories, Boilers And Insurance Medical Services",EG,East Godavari,factory_safety,43,4,RDO,Not visited site / No field verification,2,0.88
+415,SOC_WELF,Social Welfare,KNR,Konaseema,pension_not_received,15,4,Collector,GRA did not speak to citizen directly,1,0.9
+416,SOC_WELF,Social Welfare,VSP,Visakhapatnam,welfare_scheme,23,5,Collector,Closed without required documents,4,0.94
+417,HEALTH,"Health, Medical And Family Welfare",GNT,Guntur,medicine_shortage,19,1,Tahsildar,GRA did not speak to citizen directly,1,0.85
+418,REVENUE,Revenue (CCLA),PKM,Prakasam,tax_assessment,5,1,GRA,GRA did not speak to citizen directly,1,0.92
+419,REVENUE,Revenue (CCLA),ANA,Anakapalli,encroachment,66,14,Collector,Not visited site / No field verification,2,0.87
+420,HEALTH,"Health, Medical And Family Welfare",NAG,Sri Potti Sriramulu Nellore,hospital_service,8,1,Tahsildar,GRA did not speak to citizen directly,1,0.93
+421,REVENUE,Revenue (CCLA),EG,East Godavari,tax_assessment,15,4,Collector,GRA did not speak to citizen directly,1,0.95
+422,AGRI,Agriculture And Co-operation,ANA,Anakapalli,subsidy_delay,11,1,GRA,Wrong/Blank/Not related comments,3,0.91
+423,HOME,Home (Police),PVT,Parvathipuram Manyam,traffic_issue,6,1,GRA,Wrong/Blank/Not related comments,3,0.87
+424,REVENUE,Revenue (CCLA),ANM,Annamaya,encroachment,19,2,Tahsildar,GRA did not speak to citizen directly,1,0.91
+425,MUNI,Municipal Administration And Urban Development,KNL,Kurnool,garbage_collection,4,1,GRA,Wrong/Blank/Not related comments,3,0.91
+426,WATER,Water Resources,KRS,Krishna,bore_well,6,1,GRA,GRA did not speak to citizen directly,1,0.93
+427,ENERGY,Energy,KKN,Kakinada,new_connection,6,1,Mandal,Wrong/Blank/Not related comments,3,0.9
+428,REVENUE,Revenue (CCLA),VZG,Vizianagaram,land_records,24,3,Mandal,GRA did not speak to citizen directly,1,0.88
+429,PNCHRAJ,Panchayat Raj And Rural Development,PLN,Palnadu,village_development,1,1,GRA,Not visited site / No field verification,2,0.9
+430,WATER,Water Resources,PLN,Palnadu,flood_control,15,2,Tahsildar,GRA did not speak to citizen directly,1,0.92
+431,MUNI,Municipal Administration And Urban Development,NTR,NTR District,building_permission,8,1,GRA,Inadequate action taken,8,0.92
+432,REVENUE,Revenue (CCLA),TPT,Tirupati,revenue_certificate,4,1,Mandal,GRA did not speak to citizen directly,1,0.9
+433,REVENUE,Revenue (CCLA),KDP,Kadapa,tax_assessment,11,1,GRA,GRA did not speak to citizen directly,1,0.95
+434,REVENUE,Revenue (CCLA),ELR,Eluru,land_records,15,2,RDO,GRA did not speak to citizen directly,1,0.88
+435,REVENUE,Revenue (CCLA),ARL,Alluri Sitharama Raju,revenue_certificate,13,1,Collector,GRA did not speak to citizen directly,1,0.86
+436,SOC_WELF,Social Welfare,VZG,Vizianagaram,scholarship_issue,11,1,RDO,GRA did not speak to citizen directly,1,0.89
+437,REVENUE,Revenue (CCLA),NLR,Nellore,encroachment,7,1,Collector,GRA did not speak to citizen directly,1,0.88
+438,REVENUE,Revenue (CCLA),ANM,Annamaya,encroachment,14,2,Mandal,GRA did not speak to citizen directly,1,0.92
+439,MUNI,Municipal Administration And Urban Development,NLR,Nellore,street_lights,19,2,RDO,Inadequate action taken,8,0.89
+440,REVENUE,Revenue (CCLA),TPT,Tirupati,land_records,15,3,Tahsildar,GRA did not speak to citizen directly,1,0.86
+441,PNCHRAJ,Panchayat Raj And Rural Development,TPT,Tirupati,village_roads,3,1,Mandal,GRA did not speak to citizen directly,1,0.85
+442,WOMEN,"Women, Children, Disabled And Senior Citizens",PLN,Palnadu,anganwadi_service,24,3,Tahsildar,Wrong/Blank/Not related comments,3,0.89
+443,REVENUE,Revenue (CCLA),KRS,Krishna,land_records,15,4,RDO,Wrong/Blank/Not related comments,3,0.92
+444,REVENUE,Revenue (CCLA),KKN,Kakinada,tax_assessment,13,1,GRA,GRA did not speak to citizen directly,1,0.88
+445,ENERGY,Energy,ANA,Anakapalli,meter_issue,14,1,GRA,Wrong/Blank/Not related comments,3,0.89
+446,SOC_WELF,Social Welfare,NTR,NTR District,pension_not_received,70,13,Collector,Not visited site / No field verification,2,0.85
+447,AGRI,Agriculture And Co-operation,KDP,Kadapa,crop_insurance,14,2,Mandal,Closed without required documents,4,0.86
+448,PNCHRAJ,Panchayat Raj And Rural Development,KRS,Krishna,community_hall,18,1,Mandal,GRA did not speak to citizen directly,1,0.86
+449,REVENUE,Revenue (CCLA),VSP,Visakhapatnam,revenue_certificate,8,1,Collector,GRA did not speak to citizen directly,1,0.85
+450,REVENUE,Revenue (CCLA),KNR,Konaseema,property_dispute,27,3,HOD,GRA did not speak to citizen directly,1,0.89
+451,REVENUE,Revenue (CCLA),KDP,Kadapa,land_records,1,1,GRA,GRA did not speak to citizen directly,1,0.93
+452,AGRI,Agriculture And Co-operation,TPT,Tirupati,subsidy_delay,11,1,GRA,GRA did not speak to citizen directly,1,0.86
+453,RNB,"Transport, Roads And Buildings",ANA,Anakapalli,contractor_issue,15,2,Tahsildar,Wrong/Blank/Not related comments,3,0.91
+454,WATER,Water Resources,NAG,Sri Potti Sriramulu Nellore,water_shortage,1,1,GRA,Wrong/Blank/Not related comments,3,0.85
+455,REVENUE,Revenue (CCLA),NLR,Nellore,land_mutation,6,1,Mandal,Wrong/Blank/Not related comments,3,0.87
+456,HOUSING,Housing,NLR,Nellore,building_quality,10,1,Tahsildar,Wrong/Blank/Not related comments,3,0.92
+457,SOC_WELF,Social Welfare,PLN,Palnadu,scholarship_issue,19,1,Mandal,GRA did not speak to citizen directly,1,0.91
+458,REVENUE,Revenue (CCLA),ANA,Anakapalli,land_records,20,3,RDO,Premature closure,6,0.9
+459,MUNI,Municipal Administration And Urban Development,SKM,Srikakulam,street_lights,64,20,HOD,No proper enquiry conducted,5,0.89
+460,WATER,Water Resources,ARL,Alluri Sitharama Raju,bore_well,1,1,GRA,GRA did not speak to citizen directly,1,0.89
+461,REVENUE,Revenue (CCLA),BAP,Bapatla,land_mutation,58,3,Collector,No proper enquiry conducted,5,0.91
+462,AGRI,Agriculture And Co-operation,ARL,Alluri Sitharama Raju,fertilizer_issue,58,14,Collector,Not visited site / No field verification,2,0.88
+463,PNCHRAJ,Panchayat Raj And Rural Development,KKN,Kakinada,drinking_water,6,1,GRA,Wrong/Blank/Not related comments,3,0.93
+464,REVENUE,Revenue (CCLA),NLR,Nellore,revenue_certificate,61,18,CM,No proper enquiry conducted,5,0.86
+465,HEALTH,"Health, Medical And Family Welfare",ANA,Anakapalli,medicine_shortage,11,1,GRA,Action not taken as per rules,7,0.91
+466,REVENUE,Revenue (CCLA),SKM,Srikakulam,property_dispute,51,7,HOD,Not visited site / No field verification,2,0.94
+467,WATER,Water Resources,ELR,Eluru,irrigation_canal,1,1,GRA,Action not taken as per rules,7,0.86
+468,SOC_WELF,Social Welfare,ANM,Annamaya,pension_not_received,20,3,Collector,Not visited site / No field verification,2,0.94
+469,REVENUE,Revenue (CCLA),ELR,Eluru,property_dispute,17,2,Tahsildar,Closed without required documents,4,0.9
+470,SOC_WELF,Social Welfare,KKN,Kakinada,pension_delay,32,4,Tahsildar,GRA did not speak to citizen directly,1,0.86
+471,MUNI,Municipal Administration And Urban Development,NAG,Sri Potti Sriramulu Nellore,road_repair,7,1,RDO,GRA did not speak to citizen directly,1,0.92
+472,MUNI,Municipal Administration And Urban Development,CHT,Chittoor,drainage_issue,9,1,Tahsildar,GRA did not speak to citizen directly,1,0.86
+473,PNCHRAJ,Panchayat Raj And Rural Development,NTR,NTR District,village_development,24,3,Collector,Not visited site / No field verification,2,0.89
+474,SOC_WELF,Social Welfare,ELR,Eluru,scholarship_issue,19,1,Tahsildar,Wrong/Blank/Not related comments,3,0.93
+475,MUNI,Municipal Administration And Urban Development,GNT,Guntur,street_lights,9,1,RDO,GRA did not speak to citizen directly,1,0.93
+476,BC_WELF,Backward Classes Welfare,PLN,Palnadu,scholarship,24,3,Mandal,GRA did not speak to citizen directly,1,0.93
+477,REVENUE,Revenue (CCLA),ARL,Alluri Sitharama Raju,land_mutation,7,1,Collector,Wrong/Blank/Not related comments,3,0.87
+478,ENERGY,Energy,TPT,Tirupati,billing_dispute,19,2,Tahsildar,Wrong/Blank/Not related comments,3,0.95
+479,LABOUR,"Labour, Factories, Boilers And Insurance Medical Services",NLR,Nellore,contractor_payment,11,1,RDO,GRA did not speak to citizen directly,1,0.94
+480,SOC_WELF,Social Welfare,EG,East Godavari,disability_certificate,1,1,GRA,Closed without required documents,4,0.88
+481,REVENUE,Revenue (CCLA),PLN,Palnadu,land_mutation,16,2,Tahsildar,GRA did not speak to citizen directly,1,0.88
+482,REVENUE,Revenue (CCLA),NTR,NTR District,encroachment,20,2,Mandal,Premature closure,6,0.87
+483,REVENUE,Revenue (CCLA),VSP,Visakhapatnam,tax_assessment,7,1,Mandal,Wrong/Blank/Not related comments,3,0.86
+484,PNCHRAJ,Panchayat Raj And Rural Development,ANM,Annamaya,community_hall,1,1,GRA,Incorrect routing,10,0.89
+485,MUNI,Municipal Administration And Urban Development,ANT,Anantapur,garbage_collection,13,1,Mandal,GRA did not speak to citizen directly,1,0.88
+486,HOUSING,Housing,KKN,Kakinada,building_quality,1,1,Mandal,Wrong/Blank/Not related comments,3,0.85
+487,AGRI,Agriculture And Co-operation,ARL,Alluri Sitharama Raju,subsidy_delay,23,2,Mandal,Inordinate delay,9,0.92
+488,REVENUE,Revenue (CCLA),TPT,Tirupati,land_mutation,5,1,Tahsildar,GRA did not speak to citizen directly,1,0.89
+489,ENERGY,Energy,ARL,Alluri Sitharama Raju,new_connection,16,2,RDO,GRA did not speak to citizen directly,1,0.86
+490,REVENUE,Revenue (CCLA),STY,Sri Satya Sai,encroachment,35,5,RDO,Not visited site / No field verification,2,0.94
+491,SOC_WELF,Social Welfare,KDP,Kadapa,pension_delay,28,1,Collector,Not visited site / No field verification,2,0.93
+492,REVENUE,Revenue (CCLA),PLN,Palnadu,property_dispute,11,1,Tahsildar,GRA did not speak to citizen directly,1,0.91
+493,MUNI,Municipal Administration And Urban Development,EG,East Godavari,garbage_collection,4,1,GRA,GRA did not speak to citizen directly,1,0.85
+494,AGRI,Agriculture And Co-operation,BAP,Bapatla,crop_compensation,2,1,Mandal,Wrong/Blank/Not related comments,3,0.85
+495,WATER,Water Resources,PKM,Prakasam,flood_control,13,1,GRA,GRA did not speak to citizen directly,1,0.88
+496,RNB,"Transport, Roads And Buildings",SKM,Srikakulam,bus_service,16,2,Mandal,Premature closure,6,0.86
+497,SOC_WELF,Social Welfare,TPT,Tirupati,welfare_scheme,7,1,RDO,GRA did not speak to citizen directly,1,0.91
+498,HOUSING,Housing,GNT,Guntur,building_quality,48,10,Collector,Inordinate delay,9,0.91
+499,MUNI,Municipal Administration And Urban Development,ANT,Anantapur,garbage_collection,11,1,GRA,GRA did not speak to citizen directly,1,0.89
+500,AGRI,Agriculture And Co-operation,ANM,Annamaya,subsidy_delay,14,3,GRA,GRA did not speak to citizen directly,1,0.86
+501,AGRI,Agriculture And Co-operation,ELR,Eluru,crop_compensation,35,5,Collector,Inadequate action taken,8,0.91
+502,REVENUE,Revenue (CCLA),PLN,Palnadu,land_mutation,15,2,Tahsildar,GRA did not speak to citizen directly,1,0.86
+503,AGRI,Agriculture And Co-operation,KDP,Kadapa,fertilizer_issue,17,1,Tahsildar,Wrong/Blank/Not related comments,3,0.88
+504,AGRI,Agriculture And Co-operation,PVT,Parvathipuram Manyam,crop_insurance,1,1,GRA,GRA did not speak to citizen directly,1,0.87
+505,REVENUE,Revenue (CCLA),TPT,Tirupati,property_dispute,7,1,Tahsildar,Wrong/Blank/Not related comments,3,0.92
+506,HEALTH,"Health, Medical And Family Welfare",ARL,Alluri Sitharama Raju,medical_reimbursement,36,9,RDO,Not visited site / No field verification,2,0.91
+507,REVENUE,Revenue (CCLA),KRS,Krishna,property_dispute,16,4,Collector,Action not taken as per rules,7,0.86
+508,REVENUE,Revenue (CCLA),ANM,Annamaya,tax_assessment,4,1,GRA,GRA did not speak to citizen directly,1,0.91
+509,MUNI,Municipal Administration And Urban Development,BAP,Bapatla,street_lights,16,3,Collector,Wrong/Blank/Not related comments,3,0.91
+510,WATER,Water Resources,WG,West Godavari,tank_maintenance,18,2,Mandal,Wrong/Blank/Not related comments,3,0.92
+511,WATER,Water Resources,TPT,Tirupati,flood_control,12,1,GRA,Closed without required documents,4,0.87
+512,HOME,Home (Police),PLN,Palnadu,fir_delay,26,3,Mandal,No proper enquiry conducted,5,0.93
+513,REVENUE,Revenue (CCLA),KRS,Krishna,revenue_certificate,7,1,Mandal,GRA did not speak to citizen directly,1,0.9
+514,SOC_WELF,Social Welfare,VSP,Visakhapatnam,pension_not_received,6,1,GRA,No action letter issued,11,0.93
+515,REVENUE,Revenue (CCLA),BAP,Bapatla,encroachment,7,1,GRA,GRA did not speak to citizen directly,1,0.9
+516,SOC_WELF,Social Welfare,EG,East Godavari,welfare_scheme,15,2,RDO,GRA did not speak to citizen directly,1,0.85
+517,HEALTH,"Health, Medical And Family Welfare",ARL,Alluri Sitharama Raju,medicine_shortage,5,1,GRA,GRA did not speak to citizen directly,1,0.87
+518,SOC_WELF,Social Welfare,PVT,Parvathipuram Manyam,pension_not_received,5,1,RDO,Wrong/Blank/Not related comments,3,0.9
+519,MUNI,Municipal Administration And Urban Development,KNR,Konaseema,street_lights,22,3,Mandal,GRA did not speak to citizen directly,1,0.86
+520,MUNI,Municipal Administration And Urban Development,ELR,Eluru,drainage_issue,11,1,Mandal,GRA did not speak to citizen directly,1,0.91
+521,MUNI,Municipal Administration And Urban Development,GNT,Guntur,building_permission,20,1,Mandal,Wrong/Blank/Not related comments,3,0.89
+522,WOMEN,"Women, Children, Disabled And Senior Citizens",ANA,Anakapalli,child_welfare,8,1,Tahsildar,GRA did not speak to citizen directly,1,0.93
+523,REVENUE,Revenue (CCLA),PLN,Palnadu,encroachment,10,1,Tahsildar,GRA did not speak to citizen directly,1,0.86
+524,SOC_WELF,Social Welfare,WG,West Godavari,pension_not_received,1,1,GRA,GRA did not speak to citizen directly,1,0.91
+525,REVENUE,Revenue (CCLA),KKN,Kakinada,encroachment,13,1,Tahsildar,GRA did not speak to citizen directly,1,0.94
+526,MUNI,Municipal Administration And Urban Development,GNT,Guntur,building_permission,4,1,GRA,Wrong/Blank/Not related comments,3,0.92
+527,SOC_WELF,Social Welfare,TPT,Tirupati,scholarship_issue,4,1,Tahsildar,Closed without required documents,4,0.93
+528,MUNI,Municipal Administration And Urban Development,VZG,Vizianagaram,drainage_issue,13,1,GRA,GRA did not speak to citizen directly,1,0.88
+529,HEALTH,"Health, Medical And Family Welfare",VZG,Vizianagaram,doctor_absence,8,1,Tahsildar,GRA did not speak to citizen directly,1,0.9
+530,MUNI,Municipal Administration And Urban Development,SKM,Srikakulam,building_permission,14,1,GRA,GRA did not speak to citizen directly,1,0.87
+531,AGRI,Agriculture And Co-operation,KRS,Krishna,fertilizer_issue,5,1,GRA,Inadequate action taken,8,0.95
+532,SOC_WELF,Social Welfare,CHT,Chittoor,scholarship_issue,33,6,Collector,Not visited site / No field verification,2,0.88
+533,REVENUE,Revenue (CCLA),PKM,Prakasam,tax_assessment,22,5,RDO,GRA did not speak to citizen directly,1,0.93
+534,HOME,Home (Police),KDP,Kadapa,fir_delay,15,1,RDO,Wrong/Blank/Not related comments,3,0.92
+535,PNCHRAJ,Panchayat Raj And Rural Development,NTR,NTR District,drinking_water,15,2,Mandal,Incorrect routing,10,0.9
+536,MUNI,Municipal Administration And Urban Development,ANT,Anantapur,water_supply,4,1,Tahsildar,GRA did not speak to citizen directly,1,0.89
+537,BC_WELF,Backward Classes Welfare,KKN,Kakinada,reservation_issue,14,2,RDO,GRA did not speak to citizen directly,1,0.93
+538,AGRI,Agriculture And Co-operation,ARL,Alluri Sitharama Raju,crop_compensation,4,1,GRA,GRA did not speak to citizen directly,1,0.87
+539,ENERGY,Energy,ANM,Annamaya,transformer_problem,3,1,GRA,Wrong/Blank/Not related comments,3,0.87
+540,REVENUE,Revenue (CCLA),NTR,NTR District,land_mutation,13,1,Tahsildar,Poor quality of work,12,0.87
+541,REVENUE,Revenue (CCLA),PVT,Parvathipuram Manyam,land_mutation,1,1,Mandal,Inadequate action taken,8,0.88
+542,HOUSING,Housing,KRS,Krishna,housing_scheme,18,4,RDO,Wrong/Blank/Not related comments,3,0.85
+543,REVENUE,Revenue (CCLA),ANM,Annamaya,land_mutation,26,5,HOD,Not visited site / No field verification,2,0.94
+544,ENERGY,Energy,ELR,Eluru,billing_dispute,22,4,Collector,Wrong/Blank/Not related comments,3,0.87
+545,REVENUE,Revenue (CCLA),STY,Sri Satya Sai,land_records,24,1,Tahsildar,Wrong/Blank/Not related comments,3,0.86
+546,AGRI,Agriculture And Co-operation,EG,East Godavari,subsidy_delay,5,1,GRA,Premature closure,6,0.85
+547,WATER,Water Resources,EG,East Godavari,bore_well,5,1,GRA,GRA did not speak to citizen directly,1,0.91
+548,REVENUE,Revenue (CCLA),NLR,Nellore,revenue_certificate,7,1,GRA,GRA did not speak to citizen directly,1,0.9
+549,REVENUE,Revenue (CCLA),NAG,Sri Potti Sriramulu Nellore,property_dispute,13,1,Collector,Premature closure,6,0.87
+550,REVENUE,Revenue (CCLA),ANT,Anantapur,tax_assessment,11,1,GRA,Incorrect routing,10,0.93
+551,SOC_WELF,Social Welfare,NLR,Nellore,scholarship_issue,19,2,RDO,Inadequate action taken,8,0.89
+552,PNCHRAJ,Panchayat Raj And Rural Development,WG,West Godavari,village_roads,3,1,GRA,Not visited site / No field verification,2,0.9
+553,SOC_WELF,Social Welfare,PLN,Palnadu,pension_delay,19,2,Mandal,GRA did not speak to citizen directly,1,0.85
+554,REVENUE,Revenue (CCLA),ELR,Eluru,land_mutation,7,1,GRA,GRA did not speak to citizen directly,1,0.88
+555,HOUSING,Housing,NLR,Nellore,construction_delay,4,1,Tahsildar,GRA did not speak to citizen directly,1,0.89
+556,WATER,Water Resources,KRS,Krishna,tank_maintenance,19,2,Mandal,GRA did not speak to citizen directly,1,0.93
+557,PNCHRAJ,Panchayat Raj And Rural Development,TPT,Tirupati,community_hall,53,11,HOD,Not visited site / No field verification,2,0.86
+558,ENERGY,Energy,NTR,NTR District,new_connection,27,3,RDO,Wrong/Blank/Not related comments,3,0.9
+559,REVENUE,Revenue (CCLA),ANA,Anakapalli,revenue_certificate,13,1,Mandal,GRA did not speak to citizen directly,1,0.87
+560,REVENUE,Revenue (CCLA),KNR,Konaseema,land_mutation,35,8,RDO,Not visited site / No field verification,2,0.88
+561,SOC_WELF,Social Welfare,PKM,Prakasam,welfare_scheme,1,1,Collector,GRA did not speak to citizen directly,1,0.89
+562,AGRI,Agriculture And Co-operation,ANA,Anakapalli,irrigation_problem,32,8,Collector,Inordinate delay,9,0.95
+563,WATER,Water Resources,KNR,Konaseema,bore_well,5,1,GRA,Wrong/Blank/Not related comments,3,0.86
+564,REVENUE,Revenue (CCLA),NLR,Nellore,revenue_certificate,9,1,Mandal,Wrong/Blank/Not related comments,3,0.93
+565,HOME,Home (Police),NAG,Sri Potti Sriramulu Nellore,police_harassment,7,1,GRA,Wrong/Blank/Not related comments,3,0.86
+566,REVENUE,Revenue (CCLA),KRS,Krishna,tax_assessment,16,3,RDO,Wrong/Blank/Not related comments,3,0.9
+567,REVENUE,Revenue (CCLA),SKM,Srikakulam,encroachment,17,5,CM,Closed without required documents,4,0.88
+568,REVENUE,Revenue (CCLA),KNL,Kurnool,land_records,22,9,CM,Wrong/Blank/Not related comments,3,0.94
+569,REVENUE,Revenue (CCLA),ANA,Anakapalli,land_records,5,1,Mandal,No action letter issued,11,0.9
+570,MUNI,Municipal Administration And Urban Development,ARL,Alluri Sitharama Raju,building_permission,18,2,Collector,Wrong/Blank/Not related comments,3,0.91
+571,REVENUE,Revenue (CCLA),PKM,Prakasam,land_records,52,6,RDO,Not visited site / No field verification,2,0.87
+572,REVENUE,Revenue (CCLA),ANM,Annamaya,property_dispute,10,1,RDO,GRA did not speak to citizen directly,1,0.9
+573,REVENUE,Revenue (CCLA),VZG,Vizianagaram,revenue_certificate,52,10,CM,Not visited site / No field verification,2,0.89
+574,REVENUE,Revenue (CCLA),NAG,Sri Potti Sriramulu Nellore,tax_assessment,7,1,GRA,GRA did not speak to citizen directly,1,0.9
+575,ENERGY,Energy,KKN,Kakinada,billing_dispute,11,1,Mandal,GRA did not speak to citizen directly,1,0.87
+576,REVENUE,Revenue (CCLA),WG,West Godavari,revenue_certificate,3,1,GRA,GRA did not speak to citizen directly,1,0.87
+577,REVENUE,Revenue (CCLA),VSP,Visakhapatnam,encroachment,18,2,RDO,GRA did not speak to citizen directly,1,0.87
+578,REVENUE,Revenue (CCLA),ANA,Anakapalli,property_dispute,6,1,GRA,GRA did not speak to citizen directly,1,0.92
+579,REVENUE,Revenue (CCLA),ANT,Anantapur,property_dispute,12,1,GRA,GRA did not speak to citizen directly,1,0.94
+580,REVENUE,Revenue (CCLA),SKM,Srikakulam,land_mutation,12,1,Mandal,GRA did not speak to citizen directly,1,0.87
+581,WOMEN,"Women, Children, Disabled And Senior Citizens",CHT,Chittoor,maternity_benefit,21,3,Mandal,Closed without required documents,4,0.9
+582,AGRI,Agriculture And Co-operation,KNL,Kurnool,fertilizer_issue,10,1,Tahsildar,GRA did not speak to citizen directly,1,0.9
+583,REVENUE,Revenue (CCLA),KNR,Konaseema,revenue_certificate,24,1,Tahsildar,GRA did not speak to citizen directly,1,0.91
+584,REVENUE,Revenue (CCLA),NTR,NTR District,revenue_certificate,33,7,Collector,Not visited site / No field verification,2,0.93
+585,SOC_WELF,Social Welfare,KKN,Kakinada,pension_delay,15,4,HOD,GRA did not speak to citizen directly,1,0.94
+586,WOMEN,"Women, Children, Disabled And Senior Citizens",KNR,Konaseema,anganwadi_service,4,1,GRA,GRA did not speak to citizen directly,1,0.86
+587,REVENUE,Revenue (CCLA),BAP,Bapatla,tax_assessment,14,2,Collector,Closed without required documents,4,0.89
+588,REVENUE,Revenue (CCLA),VSP,Visakhapatnam,land_records,2,1,Mandal,Wrong/Blank/Not related comments,3,0.87
+589,REVENUE,Revenue (CCLA),NAG,Sri Potti Sriramulu Nellore,land_records,20,1,Mandal,GRA did not speak to citizen directly,1,0.9
+590,SOC_WELF,Social Welfare,KRS,Krishna,welfare_scheme,23,3,Mandal,GRA did not speak to citizen directly,1,0.94
+591,MUNI,Municipal Administration And Urban Development,PKM,Prakasam,road_repair,9,1,Mandal,GRA did not speak to citizen directly,1,0.93
+592,REVENUE,Revenue (CCLA),PLN,Palnadu,land_records,15,2,Tahsildar,Closed without required documents,4,0.86
+593,MUNI,Municipal Administration And Urban Development,ANT,Anantapur,water_supply,72,20,Collector,No proper enquiry conducted,5,0.86
+594,REVENUE,Revenue (CCLA),VSP,Visakhapatnam,encroachment,4,1,Mandal,Wrong/Blank/Not related comments,3,0.88
+595,SOC_WELF,Social Welfare,KKN,Kakinada,pension_not_received,22,2,Mandal,GRA did not speak to citizen directly,1,0.9
+596,AGRI,Agriculture And Co-operation,PKM,Prakasam,crop_insurance,23,3,Collector,Premature closure,6,0.86
+597,MUNI,Municipal Administration And Urban Development,ANM,Annamaya,water_supply,13,1,GRA,Wrong/Blank/Not related comments,3,0.95
+598,REVENUE,Revenue (CCLA),NAG,Sri Potti Sriramulu Nellore,property_dispute,54,18,HOD,Not visited site / No field verification,2,0.91
+599,MUNI,Municipal Administration And Urban Development,NAG,Sri Potti Sriramulu Nellore,water_supply,1,1,Mandal,Wrong/Blank/Not related comments,3,0.92
+600,HEALTH,"Health, Medical And Family Welfare",NTR,NTR District,medicine_shortage,1,1,GRA,Wrong/Blank/Not related comments,3,0.95
+601,SOC_WELF,Social Welfare,PKM,Prakasam,disability_certificate,83,20,CM,Not visited site / No field verification,2,0.89
+602,PNCHRAJ,Panchayat Raj And Rural Development,KKN,Kakinada,community_hall,52,20,HOD,Not visited site / No field verification,2,0.88
+603,HOUSING,Housing,ARL,Alluri Sitharama Raju,allotment_issue,18,2,Mandal,GRA did not speak to citizen directly,1,0.9
+604,WOMEN,"Women, Children, Disabled And Senior Citizens",KNL,Kurnool,anganwadi_service,14,3,GRA,GRA did not speak to citizen directly,1,0.93
+605,HOME,Home (Police),KRS,Krishna,police_harassment,2,1,GRA,Wrong/Blank/Not related comments,3,0.85
+606,SOC_WELF,Social Welfare,WG,West Godavari,disability_certificate,6,1,GRA,GRA did not speak to citizen directly,1,0.91
+607,MUNI,Municipal Administration And Urban Development,CHT,Chittoor,building_permission,7,1,Mandal,GRA did not speak to citizen directly,1,0.93
+608,AGRI,Agriculture And Co-operation,ELR,Eluru,crop_compensation,7,1,Tahsildar,Wrong/Blank/Not related comments,3,0.89
+609,ENERGY,Energy,STY,Sri Satya Sai,billing_dispute,53,6,Tahsildar,Not visited site / No field verification,2,0.94
+610,REVENUE,Revenue (CCLA),KNR,Konaseema,encroachment,26,3,Collector,Inordinate delay,9,0.88
+611,MUNI,Municipal Administration And Urban Development,NLR,Nellore,road_repair,18,2,Tahsildar,Wrong/Blank/Not related comments,3,0.95
+612,PNCHRAJ,Panchayat Raj And Rural Development,ELR,Eluru,village_development,1,1,GRA,GRA did not speak to citizen directly,1,0.86
+613,REVENUE,Revenue (CCLA),ELR,Eluru,tax_assessment,9,1,RDO,GRA did not speak to citizen directly,1,0.92
+614,PNCHRAJ,Panchayat Raj And Rural Development,ANA,Anakapalli,village_development,3,1,Mandal,GRA did not speak to citizen directly,1,0.91
+615,PNCHRAJ,Panchayat Raj And Rural Development,EG,East Godavari,community_hall,13,1,Tahsildar,GRA did not speak to citizen directly,1,0.86
+616,AGRI,Agriculture And Co-operation,VZG,Vizianagaram,fertilizer_issue,33,6,Tahsildar,Not visited site / No field verification,2,0.93
+617,REVENUE,Revenue (CCLA),PKM,Prakasam,encroachment,54,6,RDO,No proper enquiry conducted,5,0.87
+618,SOC_WELF,Social Welfare,STY,Sri Satya Sai,pension_not_received,30,7,RDO,GRA did not speak to citizen directly,1,0.85
+619,AGRI,Agriculture And Co-operation,KDP,Kadapa,fertilizer_issue,17,3,RDO,Wrong/Blank/Not related comments,3,0.87
+620,MUNI,Municipal Administration And Urban Development,STY,Sri Satya Sai,garbage_collection,1,1,Mandal,Not visited site / No field verification,2,0.92
+621,REVENUE,Revenue (CCLA),ELR,Eluru,tax_assessment,44,16,CM,Not visited site / No field verification,2,0.86
+622,AGRI,Agriculture And Co-operation,GNT,Guntur,crop_compensation,39,14,Collector,Not visited site / No field verification,2,0.89
+623,REVENUE,Revenue (CCLA),KNL,Kurnool,tax_assessment,21,2,Tahsildar,GRA did not speak to citizen directly,1,0.9
+624,MUNI,Municipal Administration And Urban Development,ANT,Anantapur,drainage_issue,22,4,Collector,GRA did not speak to citizen directly,1,0.85
+625,REVENUE,Revenue (CCLA),ANM,Annamaya,revenue_certificate,8,1,Mandal,GRA did not speak to citizen directly,1,0.89
+626,REVENUE,Revenue (CCLA),ANM,Annamaya,revenue_certificate,16,1,Mandal,No proper enquiry conducted,5,0.94
+627,HOME,Home (Police),EG,East Godavari,fir_delay,36,11,HOD,Not visited site / No field verification,2,0.89
+628,HOUSING,Housing,KKN,Kakinada,housing_scheme,4,1,GRA,Wrong/Blank/Not related comments,3,0.94
+629,REVENUE,Revenue (CCLA),BAP,Bapatla,property_dispute,18,2,Mandal,GRA did not speak to citizen directly,1,0.88
+630,PNCHRAJ,Panchayat Raj And Rural Development,ANM,Annamaya,community_hall,23,3,Collector,GRA did not speak to citizen directly,1,0.94
+631,RNB,"Transport, Roads And Buildings",NLR,Nellore,road_pothole,15,1,Tahsildar,Wrong/Blank/Not related comments,3,0.93
+632,REVENUE,Revenue (CCLA),GNT,Guntur,revenue_certificate,4,1,Mandal,Premature closure,6,0.94
+633,REVENUE,Revenue (CCLA),STY,Sri Satya Sai,property_dispute,17,2,Tahsildar,GRA did not speak to citizen directly,1,0.91
+634,MUNI,Municipal Administration And Urban Development,KKN,Kakinada,drainage_issue,15,3,Collector,GRA did not speak to citizen directly,1,0.9
+635,MUNI,Municipal Administration And Urban Development,KKN,Kakinada,street_lights,1,1,GRA,Wrong/Blank/Not related comments,3,0.9
+636,REVENUE,Revenue (CCLA),EG,East Godavari,land_mutation,29,3,Mandal,GRA did not speak to citizen directly,1,0.92
+637,BC_WELF,Backward Classes Welfare,STY,Sri Satya Sai,hostel_admission,32,4,Collector,GRA did not speak to citizen directly,1,0.9
+638,REVENUE,Revenue (CCLA),ARL,Alluri Sitharama Raju,property_dispute,13,1,RDO,GRA did not speak to citizen directly,1,0.88
+639,MUNI,Municipal Administration And Urban Development,NAG,Sri Potti Sriramulu Nellore,road_repair,4,1,GRA,Not visited site / No field verification,2,0.9
+640,SOC_WELF,Social Welfare,VSP,Visakhapatnam,pension_delay,19,3,RDO,Not visited site / No field verification,2,0.93
+641,HOUSING,Housing,CHT,Chittoor,construction_delay,22,1,Tahsildar,Wrong/Blank/Not related comments,3,0.9
+642,SOC_WELF,Social Welfare,KKN,Kakinada,pension_not_received,19,1,Mandal,Wrong/Blank/Not related comments,3,0.92
+643,REVENUE,Revenue (CCLA),STY,Sri Satya Sai,encroachment,41,7,Collector,Inordinate delay,9,0.85
+644,SOC_WELF,Social Welfare,PVT,Parvathipuram Manyam,pension_delay,17,3,Collector,Action not taken as per rules,7,0.93
+645,PNCHRAJ,Panchayat Raj And Rural Development,KDP,Kadapa,village_roads,4,1,GRA,GRA did not speak to citizen directly,1,0.92
+646,PNCHRAJ,Panchayat Raj And Rural Development,ANM,Annamaya,village_development,6,1,Tahsildar,Incorrect routing,10,0.87
+647,REVENUE,Revenue (CCLA),PLN,Palnadu,property_dispute,20,4,Collector,GRA did not speak to citizen directly,1,0.92
+648,HOUSING,Housing,KNL,Kurnool,housing_scheme,15,3,RDO,GRA did not speak to citizen directly,1,0.93
+649,REVENUE,Revenue (CCLA),ANA,Anakapalli,land_records,86,20,CM,Not visited site / No field verification,2,0.9
+650,SOC_WELF,Social Welfare,KKN,Kakinada,welfare_scheme,16,1,Mandal,GRA did not speak to citizen directly,1,0.85
+651,REVENUE,Revenue (CCLA),KNR,Konaseema,revenue_certificate,19,1,Tahsildar,GRA did not speak to citizen directly,1,0.88
+652,REVENUE,Revenue (CCLA),KDP,Kadapa,land_records,15,3,Collector,Poor quality of work,12,0.91
+653,ENERGY,Energy,NTR,NTR District,new_connection,10,1,RDO,Closed without required documents,4,0.88
+654,SOC_WELF,Social Welfare,SKM,Srikakulam,pension_not_received,13,1,GRA,Closed without required documents,4,0.92
+655,REVENUE,Revenue (CCLA),ANM,Annamaya,land_records,35,7,CM,Not visited site / No field verification,2,0.9
+656,AGRI,Agriculture And Co-operation,TPT,Tirupati,fertilizer_issue,15,2,RDO,Wrong/Blank/Not related comments,3,0.95
+657,SOC_WELF,Social Welfare,WG,West Godavari,welfare_scheme,16,1,Mandal,Not visited site / No field verification,2,0.94
+658,REVENUE,Revenue (CCLA),KNL,Kurnool,property_dispute,23,4,RDO,GRA did not speak to citizen directly,1,0.89
+659,REVENUE,Revenue (CCLA),BAP,Bapatla,tax_assessment,4,1,Tahsildar,GRA did not speak to citizen directly,1,0.88
+660,MUNI,Municipal Administration And Urban Development,STY,Sri Satya Sai,water_supply,7,1,Tahsildar,GRA did not speak to citizen directly,1,0.91
+661,REVENUE,Revenue (CCLA),NTR,NTR District,property_dispute,5,1,GRA,GRA did not speak to citizen directly,1,0.91
+662,SOC_WELF,Social Welfare,KNR,Konaseema,scholarship_issue,4,1,GRA,Inadequate action taken,8,0.94
+663,REVENUE,Revenue (CCLA),ANM,Annamaya,revenue_certificate,33,6,CM,Not visited site / No field verification,2,0.93
+664,HEALTH,"Health, Medical And Family Welfare",PKM,Prakasam,hospital_service,11,1,Mandal,Incorrect routing,10,0.91
+665,WATER,Water Resources,ELR,Eluru,flood_control,11,1,RDO,Not visited site / No field verification,2,0.88
+666,WATER,Water Resources,PVT,Parvathipuram Manyam,irrigation_canal,26,3,Tahsildar,GRA did not speak to citizen directly,1,0.9
+667,HOUSING,Housing,CHT,Chittoor,building_quality,71,20,CM,Not visited site / No field verification,2,0.87
+668,REVENUE,Revenue (CCLA),ANM,Annamaya,land_mutation,54,10,Collector,No proper enquiry conducted,5,0.92
+669,MUNI,Municipal Administration And Urban Development,STY,Sri Satya Sai,garbage_collection,22,2,RDO,GRA did not speak to citizen directly,1,0.92
+670,REVENUE,Revenue (CCLA),NAG,Sri Potti Sriramulu Nellore,land_mutation,39,4,RDO,Not visited site / No field verification,2,0.88
+671,HEALTH,"Health, Medical And Family Welfare",KDP,Kadapa,ambulance_service,44,11,HOD,No proper enquiry conducted,5,0.88
+672,HEALTH,"Health, Medical And Family Welfare",NLR,Nellore,medicine_shortage,10,1,Mandal,GRA did not speak to citizen directly,1,0.92
+673,REVENUE,Revenue (CCLA),NTR,NTR District,revenue_certificate,21,5,HOD,GRA did not speak to citizen directly,1,0.9
+674,REVENUE,Revenue (CCLA),PVT,Parvathipuram Manyam,revenue_certificate,53,14,Collector,Not visited site / No field verification,2,0.89
+675,REVENUE,Revenue (CCLA),ANA,Anakapalli,tax_assessment,9,1,RDO,GRA did not speak to citizen directly,1,0.91
+676,MUNI,Municipal Administration And Urban Development,PVT,Parvathipuram Manyam,building_permission,7,1,GRA,GRA did not speak to citizen directly,1,0.92
+677,AGRI,Agriculture And Co-operation,BAP,Bapatla,crop_compensation,12,1,GRA,No action letter issued,11,0.86
+678,ENERGY,Energy,PVT,Parvathipuram Manyam,new_connection,7,1,RDO,GRA did not speak to citizen directly,1,0.9
+679,REVENUE,Revenue (CCLA),EG,East Godavari,property_dispute,1,1,Mandal,Premature closure,6,0.94
+680,REVENUE,Revenue (CCLA),NLR,Nellore,land_records,53,10,RDO,Not visited site / No field verification,2,0.88
+681,REVENUE,Revenue (CCLA),ELR,Eluru,property_dispute,18,3,Collector,Not visited site / No field verification,2,0.93
+682,MUNI,Municipal Administration And Urban Development,SKM,Srikakulam,road_repair,4,1,GRA,GRA did not speak to citizen directly,1,0.89
+683,REVENUE,Revenue (CCLA),PVT,Parvathipuram Manyam,encroachment,22,4,Collector,GRA did not speak to citizen directly,1,0.87
+684,AGRI,Agriculture And Co-operation,ANT,Anantapur,crop_insurance,20,2,Tahsildar,Action not taken as per rules,7,0.91
+685,ENERGY,Energy,NTR,NTR District,billing_dispute,15,3,RDO,Incorrect routing,10,0.93
+686,SOC_WELF,Social Welfare,ANA,Anakapalli,pension_not_received,18,1,Collector,GRA did not speak to citizen directly,1,0.93
+687,PNCHRAJ,Panchayat Raj And Rural Development,PLN,Palnadu,community_hall,9,1,Mandal,GRA did not speak to citizen directly,1,0.87
+688,AGRI,Agriculture And Co-operation,NLR,Nellore,fertilizer_issue,17,1,Tahsildar,Wrong/Blank/Not related comments,3,0.92
+689,RNB,"Transport, Roads And Buildings",ANT,Anantapur,contractor_issue,20,1,Mandal,GRA did not speak to citizen directly,1,0.94
+690,REVENUE,Revenue (CCLA),BAP,Bapatla,land_mutation,1,1,Mandal,GRA did not speak to citizen directly,1,0.87
+691,PNCHRAJ,Panchayat Raj And Rural Development,SKM,Srikakulam,sanitation,4,1,GRA,Wrong/Blank/Not related comments,3,0.92
+692,SOC_WELF,Social Welfare,CHT,Chittoor,welfare_scheme,25,4,HOD,GRA did not speak to citizen directly,1,0.86
+693,REVENUE,Revenue (CCLA),GNT,Guntur,property_dispute,3,1,GRA,Wrong/Blank/Not related comments,3,0.86
+694,ENERGY,Energy,ARL,Alluri Sitharama Raju,transformer_problem,5,1,GRA,Incorrect routing,10,0.91
+695,SOC_WELF,Social Welfare,PKM,Prakasam,pension_delay,3,1,GRA,GRA did not speak to citizen directly,1,0.92
+696,REVENUE,Revenue (CCLA),BAP,Bapatla,encroachment,22,2,Mandal,GRA did not speak to citizen directly,1,0.91
+697,HOUSING,Housing,ANT,Anantapur,housing_scheme,1,1,Tahsildar,Closed without required documents,4,0.93
+698,SOC_WELF,Social Welfare,ANT,Anantapur,welfare_scheme,19,3,Collector,Inadequate action taken,8,0.86
+699,AGRI,Agriculture And Co-operation,TPT,Tirupati,crop_insurance,62,20,CM,Not visited site / No field verification,2,0.85
+700,SOC_WELF,Social Welfare,ANA,Anakapalli,welfare_scheme,1,1,GRA,Wrong/Blank/Not related comments,3,0.87
+701,AGRI,Agriculture And Co-operation,KKN,Kakinada,fertilizer_issue,38,8,Collector,No proper enquiry conducted,5,0.91
+702,MUNI,Municipal Administration And Urban Development,PLN,Palnadu,garbage_collection,33,4,Tahsildar,No proper enquiry conducted,5,0.86
+703,REVENUE,Revenue (CCLA),TPT,Tirupati,revenue_certificate,7,1,Collector,GRA did not speak to citizen directly,1,0.91
+704,RNB,"Transport, Roads And Buildings",NAG,Sri Potti Sriramulu Nellore,bridge_repair,8,1,Tahsildar,Wrong/Blank/Not related comments,3,0.87
+705,REVENUE,Revenue (CCLA),ANM,Annamaya,land_mutation,15,2,Mandal,GRA did not speak to citizen directly,1,0.93
+706,PNCHRAJ,Panchayat Raj And Rural Development,VZG,Vizianagaram,drinking_water,1,1,GRA,GRA did not speak to citizen directly,1,0.91
+707,WATER,Water Resources,VSP,Visakhapatnam,bore_well,15,2,Tahsildar,Premature closure,6,0.9
+708,SOC_WELF,Social Welfare,STY,Sri Satya Sai,welfare_scheme,8,1,RDO,GRA did not speak to citizen directly,1,0.85
+709,RNB,"Transport, Roads And Buildings",ARL,Alluri Sitharama Raju,bus_service,23,2,Mandal,Wrong/Blank/Not related comments,3,0.86
+710,MUNI,Municipal Administration And Urban Development,PKM,Prakasam,street_lights,35,5,RDO,Not visited site / No field verification,2,0.88
+711,REVENUE,Revenue (CCLA),KNR,Konaseema,encroachment,13,1,Tahsildar,GRA did not speak to citizen directly,1,0.93
+712,MUNI,Municipal Administration And Urban Development,PLN,Palnadu,building_permission,11,1,GRA,Poor quality of work,12,0.93
+713,REVENUE,Revenue (CCLA),KDP,Kadapa,encroachment,6,1,Mandal,GRA did not speak to citizen directly,1,0.85
+714,REVENUE,Revenue (CCLA),KKN,Kakinada,tax_assessment,14,2,Mandal,Action not taken as per rules,7,0.94
+715,REVENUE,Revenue (CCLA),PLN,Palnadu,tax_assessment,86,18,Collector,Not visited site / No field verification,2,0.88
+716,AGRI,Agriculture And Co-operation,ANT,Anantapur,irrigation_problem,10,1,Tahsildar,Incorrect routing,10,0.93
+717,REVENUE,Revenue (CCLA),NTR,NTR District,land_mutation,19,2,Tahsildar,GRA did not speak to citizen directly,1,0.95
+718,REVENUE,Revenue (CCLA),ARL,Alluri Sitharama Raju,land_mutation,69,18,CM,Not visited site / No field verification,2,0.86
+719,PNCHRAJ,Panchayat Raj And Rural Development,CHT,Chittoor,village_development,72,13,Collector,Not visited site / No field verification,2,0.85
+720,REVENUE,Revenue (CCLA),NAG,Sri Potti Sriramulu Nellore,revenue_certificate,21,3,Mandal,Closed without required documents,4,0.94
+721,AGRI,Agriculture And Co-operation,KRS,Krishna,subsidy_delay,66,14,HOD,No proper enquiry conducted,5,0.92
+722,PNCHRAJ,Panchayat Raj And Rural Development,ANA,Anakapalli,drinking_water,9,1,GRA,GRA did not speak to citizen directly,1,0.9
+723,REVENUE,Revenue (CCLA),PVT,Parvathipuram Manyam,land_records,1,1,GRA,GRA did not speak to citizen directly,1,0.89
+724,AGRI,Agriculture And Co-operation,KNR,Konaseema,crop_compensation,56,10,Collector,Not visited site / No field verification,2,0.93
+725,REVENUE,Revenue (CCLA),CHT,Chittoor,property_dispute,73,18,HOD,Not visited site / No field verification,2,0.91
+726,SOC_WELF,Social Welfare,ANT,Anantapur,scholarship_issue,15,3,RDO,Closed without required documents,4,0.87
+727,SOC_WELF,Social Welfare,TPT,Tirupati,welfare_scheme,1,1,GRA,Wrong/Blank/Not related comments,3,0.85
+728,REVENUE,Revenue (CCLA),TPT,Tirupati,tax_assessment,22,4,Tahsildar,GRA did not speak to citizen directly,1,0.94
+729,HEALTH,"Health, Medical And Family Welfare",BAP,Bapatla,medicine_shortage,12,1,RDO,Closed without required documents,4,0.86
+730,AGRI,Agriculture And Co-operation,ANA,Anakapalli,crop_insurance,10,1,GRA,GRA did not speak to citizen directly,1,0.91
+731,RNB,"Transport, Roads And Buildings",TPT,Tirupati,road_pothole,57,13,Tahsildar,Not visited site / No field verification,2,0.86
+732,MUNI,Municipal Administration And Urban Development,KKN,Kakinada,drainage_issue,14,3,RDO,GRA did not speak to citizen directly,1,0.92
+733,REVENUE,Revenue (CCLA),PLN,Palnadu,encroachment,22,5,Tahsildar,Not visited site / No field verification,2,0.88
+734,REVENUE,Revenue (CCLA),WG,West Godavari,land_records,8,1,RDO,GRA did not speak to citizen directly,1,0.86
+735,ENERGY,Energy,KNR,Konaseema,transformer_problem,67,20,Collector,Not visited site / No field verification,2,0.85
+736,REVENUE,Revenue (CCLA),ANT,Anantapur,tax_assessment,18,2,Collector,Wrong/Blank/Not related comments,3,0.9
+737,REVENUE,Revenue (CCLA),WG,West Godavari,tax_assessment,6,1,Tahsildar,GRA did not speak to citizen directly,1,0.91
+738,PNCHRAJ,Panchayat Raj And Rural Development,KKN,Kakinada,village_roads,48,5,Tahsildar,Not visited site / No field verification,2,0.91
+739,REVENUE,Revenue (CCLA),ANM,Annamaya,land_mutation,27,1,Tahsildar,Wrong/Blank/Not related comments,3,0.93
+740,AGRI,Agriculture And Co-operation,KRS,Krishna,crop_compensation,15,1,RDO,GRA did not speak to citizen directly,1,0.9
+741,REVENUE,Revenue (CCLA),VSP,Visakhapatnam,land_mutation,10,1,RDO,Wrong/Blank/Not related comments,3,0.9
+742,REVENUE,Revenue (CCLA),VSP,Visakhapatnam,encroachment,14,1,Tahsildar,GRA did not speak to citizen directly,1,0.91
+743,REVENUE,Revenue (CCLA),CHT,Chittoor,tax_assessment,5,1,GRA,Wrong/Blank/Not related comments,3,0.87
+744,SOC_WELF,Social Welfare,CHT,Chittoor,scholarship_issue,21,4,RDO,Inadequate action taken,8,0.87
+745,MUNI,Municipal Administration And Urban Development,NTR,NTR District,street_lights,6,1,GRA,GRA did not speak to citizen directly,1,0.95
+746,REVENUE,Revenue (CCLA),WG,West Godavari,land_mutation,16,2,Tahsildar,Wrong/Blank/Not related comments,3,0.89
+747,PNCHRAJ,Panchayat Raj And Rural Development,EG,East Godavari,sanitation,52,7,Collector,Not visited site / No field verification,2,0.94
+748,MUNI,Municipal Administration And Urban Development,BAP,Bapatla,drainage_issue,17,1,Mandal,GRA did not speak to citizen directly,1,0.91
+749,WATER,Water Resources,KRS,Krishna,irrigation_canal,43,6,RDO,No proper enquiry conducted,5,0.89
+750,REVENUE,Revenue (CCLA),ELR,Eluru,property_dispute,18,2,Collector,Inadequate action taken,8,0.89
+751,SOC_WELF,Social Welfare,TPT,Tirupati,pension_not_received,12,2,HOD,GRA did not speak to citizen directly,1,0.94
+752,REVENUE,Revenue (CCLA),KNL,Kurnool,property_dispute,19,3,Collector,Wrong/Blank/Not related comments,3,0.9
+753,MUNI,Municipal Administration And Urban Development,ELR,Eluru,water_supply,7,1,RDO,No action letter issued,11,0.89
+754,ENERGY,Energy,PKM,Prakasam,new_connection,23,3,Tahsildar,Wrong/Blank/Not related comments,3,0.94
+755,REVENUE,Revenue (CCLA),VSP,Visakhapatnam,revenue_certificate,9,1,GRA,GRA did not speak to citizen directly,1,0.93
+756,REVENUE,Revenue (CCLA),NLR,Nellore,tax_assessment,1,1,GRA,Inordinate delay,9,0.86
+757,SOC_WELF,Social Welfare,KKN,Kakinada,pension_not_received,16,5,HOD,GRA did not speak to citizen directly,1,0.86
+758,REVENUE,Revenue (CCLA),BAP,Bapatla,land_mutation,10,1,Tahsildar,Wrong/Blank/Not related comments,3,0.87
+759,PNCHRAJ,Panchayat Raj And Rural Development,EG,East Godavari,sanitation,10,1,GRA,GRA did not speak to citizen directly,1,0.86
+760,SOC_WELF,Social Welfare,ARL,Alluri Sitharama Raju,scholarship_issue,16,2,RDO,GRA did not speak to citizen directly,1,0.94
+761,SOC_WELF,Social Welfare,PKM,Prakasam,pension_not_received,14,1,GRA,GRA did not speak to citizen directly,1,0.88
+762,HOUSING,Housing,KDP,Kadapa,housing_scheme,8,1,GRA,GRA did not speak to citizen directly,1,0.9
+763,AGRI,Agriculture And Co-operation,KNL,Kurnool,irrigation_problem,7,1,Mandal,No action letter issued,11,0.89
+764,PNCHRAJ,Panchayat Raj And Rural Development,GNT,Guntur,sanitation,26,4,RDO,GRA did not speak to citizen directly,1,0.91
+765,SOC_WELF,Social Welfare,NLR,Nellore,disability_certificate,7,1,Mandal,GRA did not speak to citizen directly,1,0.88
+766,REVENUE,Revenue (CCLA),TPT,Tirupati,revenue_certificate,11,1,RDO,GRA did not speak to citizen directly,1,0.93
+767,REVENUE,Revenue (CCLA),KNL,Kurnool,land_records,8,1,GRA,Incorrect routing,10,0.95
+768,WATER,Water Resources,PVT,Parvathipuram Manyam,water_shortage,30,11,Collector,GRA did not speak to citizen directly,1,0.86
+769,REVENUE,Revenue (CCLA),NTR,NTR District,property_dispute,62,14,Collector,Not visited site / No field verification,2,0.89
+770,LABOUR,"Labour, Factories, Boilers And Insurance Medical Services",BAP,Bapatla,labour_welfare,30,8,HOD,GRA did not speak to citizen directly,1,0.86
+771,SOC_WELF,Social Welfare,NLR,Nellore,pension_delay,10,1,RDO,GRA did not speak to citizen directly,1,0.88
+772,HEALTH,"Health, Medical And Family Welfare",STY,Sri Satya Sai,ambulance_service,15,1,Tahsildar,Wrong/Blank/Not related comments,3,0.88
+773,REVENUE,Revenue (CCLA),ANA,Anakapalli,land_mutation,5,1,GRA,GRA did not speak to citizen directly,1,0.89
+774,REVENUE,Revenue (CCLA),VSP,Visakhapatnam,encroachment,7,1,GRA,Wrong/Blank/Not related comments,3,0.87
+775,REVENUE,Revenue (CCLA),ARL,Alluri Sitharama Raju,tax_assessment,20,3,RDO,Wrong/Blank/Not related comments,3,0.94
+776,SOC_WELF,Social Welfare,WG,West Godavari,scholarship_issue,7,1,Mandal,GRA did not speak to citizen directly,1,0.94
+777,REVENUE,Revenue (CCLA),NAG,Sri Potti Sriramulu Nellore,land_records,4,1,Collector,Closed without required documents,4,0.92
+778,SOC_WELF,Social Welfare,ELR,Eluru,welfare_scheme,14,2,Mandal,GRA did not speak to citizen directly,1,0.86
+779,HOUSING,Housing,STY,Sri Satya Sai,allotment_issue,1,1,GRA,GRA did not speak to citizen directly,1,0.87
+780,SOC_WELF,Social Welfare,ELR,Eluru,pension_delay,15,1,Tahsildar,GRA did not speak to citizen directly,1,0.93
+781,REVENUE,Revenue (CCLA),BAP,Bapatla,tax_assessment,46,15,CM,Not visited site / No field verification,2,0.86
+782,AGRI,Agriculture And Co-operation,KNL,Kurnool,irrigation_problem,21,2,Mandal,GRA did not speak to citizen directly,1,0.86
+783,REVENUE,Revenue (CCLA),ANT,Anantapur,encroachment,2,1,Mandal,Closed without required documents,4,0.92
+784,LABOUR,"Labour, Factories, Boilers And Insurance Medical Services",KDP,Kadapa,labour_welfare,1,1,GRA,Wrong/Blank/Not related comments,3,0.91
+785,REVENUE,Revenue (CCLA),ARL,Alluri Sitharama Raju,tax_assessment,15,2,Tahsildar,GRA did not speak to citizen directly,1,0.85
+786,REVENUE,Revenue (CCLA),KNR,Konaseema,land_mutation,46,12,CM,Not visited site / No field verification,2,0.9
+787,HEALTH,"Health, Medical And Family Welfare",PLN,Palnadu,doctor_absence,9,1,Mandal,GRA did not speak to citizen directly,1,0.91
+788,ENERGY,Energy,GNT,Guntur,meter_issue,5,1,GRA,Wrong/Blank/Not related comments,3,0.94
+789,REVENUE,Revenue (CCLA),CHT,Chittoor,property_dispute,62,10,CM,Not visited site / No field verification,2,0.93
+790,MUNI,Municipal Administration And Urban Development,BAP,Bapatla,building_permission,45,8,Collector,Not visited site / No field verification,2,0.94
+791,REVENUE,Revenue (CCLA),WG,West Godavari,land_mutation,37,11,Collector,Not visited site / No field verification,2,0.9
+792,LABOUR,"Labour, Factories, Boilers And Insurance Medical Services",NTR,NTR District,labour_welfare,14,1,Tahsildar,GRA did not speak to citizen directly,1,0.86
+793,REVENUE,Revenue (CCLA),WG,West Godavari,property_dispute,22,3,Mandal,GRA did not speak to citizen directly,1,0.85
+794,SOC_WELF,Social Welfare,VZG,Vizianagaram,pension_not_received,23,4,RDO,GRA did not speak to citizen directly,1,0.86
+795,REVENUE,Revenue (CCLA),ANT,Anantapur,revenue_certificate,12,1,GRA,Wrong/Blank/Not related comments,3,0.91
+796,REVENUE,Revenue (CCLA),PLN,Palnadu,revenue_certificate,20,5,HOD,GRA did not speak to citizen directly,1,0.89
+797,WATER,Water Resources,STY,Sri Satya Sai,flood_control,8,1,Tahsildar,GRA did not speak to citizen directly,1,0.93
+798,MUNI,Municipal Administration And Urban Development,PVT,Parvathipuram Manyam,drainage_issue,18,2,Mandal,No action letter issued,11,0.95
+799,REVENUE,Revenue (CCLA),CHT,Chittoor,encroachment,1,1,Tahsildar,Premature closure,6,0.87
+800,SOC_WELF,Social Welfare,SKM,Srikakulam,scholarship_issue,12,1,GRA,GRA did not speak to citizen directly,1,0.9
+801,MUNI,Municipal Administration And Urban Development,ANA,Anakapalli,garbage_collection,9,1,Mandal,Wrong/Blank/Not related comments,3,0.9
+802,SOC_WELF,Social Welfare,ARL,Alluri Sitharama Raju,welfare_scheme,6,1,Tahsildar,Closed without required documents,4,0.95
+803,SOC_WELF,Social Welfare,ANT,Anantapur,scholarship_issue,11,1,Tahsildar,Incorrect routing,10,0.86
+804,SOC_WELF,Social Welfare,PLN,Palnadu,pension_not_received,2,1,Tahsildar,GRA did not speak to citizen directly,1,0.94
+805,LABOUR,"Labour, Factories, Boilers And Insurance Medical Services",ANT,Anantapur,labour_welfare,6,1,GRA,No action letter issued,11,0.86
+806,WATER,Water Resources,NAG,Sri Potti Sriramulu Nellore,tank_maintenance,9,1,GRA,GRA did not speak to citizen directly,1,0.93
+807,ENERGY,Energy,SKM,Srikakulam,billing_dispute,5,1,GRA,Wrong/Blank/Not related comments,3,0.9
+808,REVENUE,Revenue (CCLA),ARL,Alluri Sitharama Raju,land_mutation,6,1,GRA,GRA did not speak to citizen directly,1,0.86
+809,REVENUE,Revenue (CCLA),ANT,Anantapur,land_records,19,1,Mandal,Wrong/Blank/Not related comments,3,0.88
+810,AGRI,Agriculture And Co-operation,STY,Sri Satya Sai,crop_compensation,2,1,GRA,Closed without required documents,4,0.87
+811,AGRI,Agriculture And Co-operation,ANA,Anakapalli,crop_insurance,3,1,GRA,GRA did not speak to citizen directly,1,0.85
+812,PNCHRAJ,Panchayat Raj And Rural Development,VZG,Vizianagaram,village_roads,8,1,Mandal,GRA did not speak to citizen directly,1,0.85
+813,REVENUE,Revenue (CCLA),PLN,Palnadu,revenue_certificate,16,2,Tahsildar,Action not taken as per rules,7,0.9
+814,REVENUE,Revenue (CCLA),PLN,Palnadu,land_records,7,1,GRA,Wrong/Blank/Not related comments,3,0.9
+815,SOC_WELF,Social Welfare,ANA,Anakapalli,welfare_scheme,6,1,GRA,No action letter issued,11,0.86
+816,MUNI,Municipal Administration And Urban Development,WG,West Godavari,garbage_collection,11,1,Tahsildar,GRA did not speak to citizen directly,1,0.88
+817,REVENUE,Revenue (CCLA),PKM,Prakasam,revenue_certificate,17,3,RDO,GRA did not speak to citizen directly,1,0.94
+818,REVENUE,Revenue (CCLA),KNL,Kurnool,land_mutation,19,2,Tahsildar,GRA did not speak to citizen directly,1,0.91
+819,RNB,"Transport, Roads And Buildings",KRS,Krishna,road_pothole,1,1,GRA,Wrong/Blank/Not related comments,3,0.91
+820,REVENUE,Revenue (CCLA),KDP,Kadapa,land_records,8,1,RDO,GRA did not speak to citizen directly,1,0.92
+821,REVENUE,Revenue (CCLA),KNL,Kurnool,revenue_certificate,15,2,Mandal,Incorrect routing,10,0.93
+822,MUNI,Municipal Administration And Urban Development,KNL,Kurnool,garbage_collection,20,1,Mandal,GRA did not speak to citizen directly,1,0.91
+823,HOUSING,Housing,PVT,Parvathipuram Manyam,building_quality,10,1,Mandal,GRA did not speak to citizen directly,1,0.9
+824,REVENUE,Revenue (CCLA),TPT,Tirupati,land_mutation,7,1,Mandal,Wrong/Blank/Not related comments,3,0.88
+825,SOC_WELF,Social Welfare,KRS,Krishna,welfare_scheme,7,1,Tahsildar,GRA did not speak to citizen directly,1,0.92
+826,WATER,Water Resources,ELR,Eluru,tank_maintenance,24,2,Tahsildar,GRA did not speak to citizen directly,1,0.88
+827,AGRI,Agriculture And Co-operation,TPT,Tirupati,crop_insurance,27,3,Collector,Inadequate action taken,8,0.91
+828,MUNI,Municipal Administration And Urban Development,PKM,Prakasam,street_lights,19,2,Tahsildar,GRA did not speak to citizen directly,1,0.93
+829,SOC_WELF,Social Welfare,ANT,Anantapur,pension_delay,11,1,RDO,Premature closure,6,0.89
+830,REVENUE,Revenue (CCLA),CHT,Chittoor,land_mutation,16,1,Tahsildar,GRA did not speak to citizen directly,1,0.89
+831,RNB,"Transport, Roads And Buildings",CHT,Chittoor,bridge_repair,79,20,Collector,Not visited site / No field verification,2,0.92
+832,REVENUE,Revenue (CCLA),VSP,Visakhapatnam,tax_assessment,84,20,CM,Not visited site / No field verification,2,0.94
+833,RNB,"Transport, Roads And Buildings",VZG,Vizianagaram,highway_maintenance,18,2,Collector,Wrong/Blank/Not related comments,3,0.93
+834,REVENUE,Revenue (CCLA),ELR,Eluru,tax_assessment,66,20,CM,Not visited site / No field verification,2,0.94
+835,REVENUE,Revenue (CCLA),ANT,Anantapur,property_dispute,13,1,RDO,Wrong/Blank/Not related comments,3,0.89
+836,PNCHRAJ,Panchayat Raj And Rural Development,EG,East Godavari,drinking_water,16,2,Tahsildar,GRA did not speak to citizen directly,1,0.89
+837,REVENUE,Revenue (CCLA),ELR,Eluru,land_mutation,10,1,Mandal,Not visited site / No field verification,2,0.9
+838,REVENUE,Revenue (CCLA),KRS,Krishna,property_dispute,8,1,RDO,GRA did not speak to citizen directly,1,0.93
+839,AGRI,Agriculture And Co-operation,VSP,Visakhapatnam,subsidy_delay,3,1,Mandal,GRA did not speak to citizen directly,1,0.89
+840,ENERGY,Energy,KDP,Kadapa,transformer_problem,57,10,Collector,Inordinate delay,9,0.94
+841,RNB,"Transport, Roads And Buildings",KNL,Kurnool,road_pothole,12,1,GRA,Incorrect routing,10,0.94
+842,AGRI,Agriculture And Co-operation,TPT,Tirupati,irrigation_problem,11,1,RDO,Premature closure,6,0.94
+843,SOC_WELF,Social Welfare,VZG,Vizianagaram,disability_certificate,22,3,Collector,Wrong/Blank/Not related comments,3,0.88
+844,REVENUE,Revenue (CCLA),VZG,Vizianagaram,encroachment,5,1,Tahsildar,Closed without required documents,4,0.86
+845,AGRI,Agriculture And Co-operation,KNR,Konaseema,irrigation_problem,17,3,Collector,Premature closure,6,0.88
+846,MUNI,Municipal Administration And Urban Development,KDP,Kadapa,drainage_issue,8,1,Tahsildar,GRA did not speak to citizen directly,1,0.93
+847,WATER,Water Resources,PLN,Palnadu,tank_maintenance,8,1,RDO,Inadequate action taken,8,0.86
+848,REVENUE,Revenue (CCLA),ELR,Eluru,revenue_certificate,51,15,Collector,No proper enquiry conducted,5,0.85
+849,REVENUE,Revenue (CCLA),BAP,Bapatla,tax_assessment,12,1,GRA,Wrong/Blank/Not related comments,3,0.92
+850,REVENUE,Revenue (CCLA),SKM,Srikakulam,encroachment,11,1,Tahsildar,GRA did not speak to citizen directly,1,0.86
+851,PNCHRAJ,Panchayat Raj And Rural Development,VZG,Vizianagaram,drinking_water,6,1,GRA,Closed without required documents,4,0.87
+852,WATER,Water Resources,TPT,Tirupati,bore_well,7,1,GRA,GRA did not speak to citizen directly,1,0.91
+853,WOMEN,"Women, Children, Disabled And Senior Citizens",KNL,Kurnool,child_welfare,35,7,RDO,Not visited site / No field verification,2,0.95
+854,REVENUE,Revenue (CCLA),ARL,Alluri Sitharama Raju,property_dispute,8,1,Tahsildar,GRA did not speak to citizen directly,1,0.95
+855,SOC_WELF,Social Welfare,CHT,Chittoor,scholarship_issue,11,1,Mandal,Wrong/Blank/Not related comments,3,0.88
+856,REVENUE,Revenue (CCLA),PKM,Prakasam,encroachment,71,13,RDO,Inordinate delay,9,0.85
+857,MUNI,Municipal Administration And Urban Development,SKM,Srikakulam,garbage_collection,9,1,Tahsildar,No action letter issued,11,0.85
+858,REVENUE,Revenue (CCLA),NTR,NTR District,encroachment,33,12,CM,Not visited site / No field verification,2,0.86
+859,REVENUE,Revenue (CCLA),VSP,Visakhapatnam,property_dispute,61,15,HOD,Not visited site / No field verification,2,0.88
+860,HEALTH,"Health, Medical And Family Welfare",KKN,Kakinada,doctor_absence,7,1,RDO,Wrong/Blank/Not related comments,3,0.95
+861,PNCHRAJ,Panchayat Raj And Rural Development,WG,West Godavari,village_development,25,1,Mandal,No proper enquiry conducted,5,0.87
+862,REVENUE,Revenue (CCLA),NTR,NTR District,land_mutation,56,20,HOD,Not visited site / No field verification,2,0.89
+863,BC_WELF,Backward Classes Welfare,BAP,Bapatla,welfare_benefit,21,3,Mandal,Wrong/Blank/Not related comments,3,0.86
+864,REVENUE,Revenue (CCLA),KNL,Kurnool,property_dispute,44,4,Collector,No proper enquiry conducted,5,0.91
+865,MUNI,Municipal Administration And Urban Development,GNT,Guntur,road_repair,19,3,Tahsildar,Wrong/Blank/Not related comments,3,0.93
+866,AGRI,Agriculture And Co-operation,NLR,Nellore,crop_compensation,16,1,Tahsildar,GRA did not speak to citizen directly,1,0.91
+867,HOUSING,Housing,NLR,Nellore,housing_scheme,1,1,GRA,GRA did not speak to citizen directly,1,0.9
+868,HOUSING,Housing,KKN,Kakinada,house_site,71,20,HOD,Not visited site / No field verification,2,0.88
+869,PNCHRAJ,Panchayat Raj And Rural Development,NAG,Sri Potti Sriramulu Nellore,village_development,21,1,Tahsildar,GRA did not speak to citizen directly,1,0.88
+870,REVENUE,Revenue (CCLA),ANT,Anantapur,encroachment,6,1,Collector,Incorrect routing,10,0.86
+871,WATER,Water Resources,NTR,NTR District,tank_maintenance,9,1,Tahsildar,Action not taken as per rules,7,0.87
+872,REVENUE,Revenue (CCLA),TPT,Tirupati,land_records,27,2,Tahsildar,Closed without required documents,4,0.92
+873,WATER,Water Resources,ANM,Annamaya,water_shortage,18,2,RDO,Wrong/Blank/Not related comments,3,0.91
+874,REVENUE,Revenue (CCLA),VZG,Vizianagaram,revenue_certificate,4,1,Tahsildar,Wrong/Blank/Not related comments,3,0.92
+875,AGRI,Agriculture And Co-operation,PVT,Parvathipuram Manyam,subsidy_delay,1,1,GRA,Incorrect routing,10,0.88
+876,SOC_WELF,Social Welfare,TPT,Tirupati,scholarship_issue,24,2,Tahsildar,GRA did not speak to citizen directly,1,0.9
+877,REVENUE,Revenue (CCLA),VSP,Visakhapatnam,encroachment,15,2,Mandal,GRA did not speak to citizen directly,1,0.9
+878,PNCHRAJ,Panchayat Raj And Rural Development,KRS,Krishna,sanitation,20,2,Mandal,GRA did not speak to citizen directly,1,0.92
+879,SOC_WELF,Social Welfare,TPT,Tirupati,pension_delay,19,2,Tahsildar,Premature closure,6,0.91
+880,SOC_WELF,Social Welfare,PLN,Palnadu,scholarship_issue,10,1,GRA,Wrong/Blank/Not related comments,3,0.87
+881,REVENUE,Revenue (CCLA),KKN,Kakinada,revenue_certificate,19,2,Tahsildar,Premature closure,6,0.87
+882,SOC_WELF,Social Welfare,PVT,Parvathipuram Manyam,scholarship_issue,22,3,RDO,Premature closure,6,0.93
+883,MUNI,Municipal Administration And Urban Development,PVT,Parvathipuram Manyam,building_permission,5,1,GRA,No action letter issued,11,0.86
+884,REVENUE,Revenue (CCLA),KDP,Kadapa,land_mutation,12,1,GRA,Wrong/Blank/Not related comments,3,0.91
+885,SOC_WELF,Social Welfare,KNR,Konaseema,welfare_scheme,9,1,GRA,GRA did not speak to citizen directly,1,0.86
+886,RNB,"Transport, Roads And Buildings",NAG,Sri Potti Sriramulu Nellore,bus_service,1,1,Mandal,No action letter issued,11,0.87
+887,REVENUE,Revenue (CCLA),SKM,Srikakulam,land_mutation,24,4,Tahsildar,GRA did not speak to citizen directly,1,0.93
+888,PNCHRAJ,Panchayat Raj And Rural Development,KKN,Kakinada,village_development,19,3,RDO,Beneficiary not contacted,13,0.91
+889,MUNI,Municipal Administration And Urban Development,PLN,Palnadu,street_lights,13,1,Tahsildar,GRA did not speak to citizen directly,1,0.88
+890,REVENUE,Revenue (CCLA),KNR,Konaseema,land_records,20,2,Tahsildar,Action not taken as per rules,7,0.92
+891,REVENUE,Revenue (CCLA),KNL,Kurnool,tax_assessment,8,1,Collector,GRA did not speak to citizen directly,1,0.94
+892,WATER,Water Resources,PVT,Parvathipuram Manyam,tank_maintenance,8,1,Mandal,GRA did not speak to citizen directly,1,0.93
+893,AGRI,Agriculture And Co-operation,NAG,Sri Potti Sriramulu Nellore,fertilizer_issue,16,1,RDO,Premature closure,6,0.87
+894,AGRI,Agriculture And Co-operation,ANT,Anantapur,irrigation_problem,15,2,Mandal,GRA did not speak to citizen directly,1,0.93
+895,HOME,Home (Police),ANA,Anakapalli,traffic_issue,1,1,GRA,GRA did not speak to citizen directly,1,0.94
+896,SOC_WELF,Social Welfare,NTR,NTR District,pension_delay,13,1,Tahsildar,Premature closure,6,0.91
+897,REVENUE,Revenue (CCLA),EG,East Godavari,land_records,7,1,Collector,GRA did not speak to citizen directly,1,0.94
+898,WATER,Water Resources,ANM,Annamaya,flood_control,7,1,Mandal,Closed without required documents,4,0.93
+899,HOUSING,Housing,STY,Sri Satya Sai,house_site,14,1,GRA,No action letter issued,11,0.93
+900,REVENUE,Revenue (CCLA),KDP,Kadapa,property_dispute,24,2,Collector,Wrong/Blank/Not related comments,3,0.93
+901,SOC_WELF,Social Welfare,KDP,Kadapa,pension_delay,9,1,Mandal,Wrong/Blank/Not related comments,3,0.95
+902,PNCHRAJ,Panchayat Raj And Rural Development,GNT,Guntur,community_hall,5,1,GRA,Closed without required documents,4,0.86
+903,SOC_WELF,Social Welfare,STY,Sri Satya Sai,scholarship_issue,9,1,Mandal,GRA did not speak to citizen directly,1,0.93
+904,REVENUE,Revenue (CCLA),VZG,Vizianagaram,land_records,27,2,Collector,Inadequate action taken,8,0.89
+905,REVENUE,Revenue (CCLA),WG,West Godavari,land_mutation,8,1,Mandal,Wrong/Blank/Not related comments,3,0.95
+906,REVENUE,Revenue (CCLA),VSP,Visakhapatnam,land_records,5,1,GRA,Closed without required documents,4,0.95
+907,BC_WELF,Backward Classes Welfare,TPT,Tirupati,reservation_issue,1,1,Mandal,No action letter issued,11,0.91
+908,REVENUE,Revenue (CCLA),NAG,Sri Potti Sriramulu Nellore,revenue_certificate,18,2,Mandal,Action not taken as per rules,7,0.92
+909,SOC_WELF,Social Welfare,CHT,Chittoor,welfare_scheme,5,1,Mandal,Wrong/Blank/Not related comments,3,0.89
+910,REVENUE,Revenue (CCLA),KNL,Kurnool,land_mutation,5,1,GRA,GRA did not speak to citizen directly,1,0.9
+911,MUNI,Municipal Administration And Urban Development,CHT,Chittoor,water_supply,38,11,Collector,Not visited site / No field verification,2,0.87
+912,REVENUE,Revenue (CCLA),TPT,Tirupati,encroachment,46,15,Collector,Not visited site / No field verification,2,0.86
+913,REVENUE,Revenue (CCLA),PKM,Prakasam,revenue_certificate,10,1,GRA,Wrong/Blank/Not related comments,3,0.89
+914,MUNI,Municipal Administration And Urban Development,GNT,Guntur,street_lights,13,1,Tahsildar,GRA did not speak to citizen directly,1,0.91
+915,HEALTH,"Health, Medical And Family Welfare",KNR,Konaseema,ambulance_service,12,1,Tahsildar,Inadequate action taken,8,0.93
+916,PNCHRAJ,Panchayat Raj And Rural Development,PLN,Palnadu,community_hall,6,1,GRA,Wrong/Blank/Not related comments,3,0.9
+917,REVENUE,Revenue (CCLA),STY,Sri Satya Sai,revenue_certificate,57,12,Tahsildar,Not visited site / No field verification,2,0.86
+918,HEALTH,"Health, Medical And Family Welfare",ANA,Anakapalli,medicine_shortage,5,1,Mandal,Wrong/Blank/Not related comments,3,0.91
+919,PNCHRAJ,Panchayat Raj And Rural Development,KRS,Krishna,village_development,25,4,RDO,Not visited site / No field verification,2,0.92
+920,SOC_WELF,Social Welfare,NTR,NTR District,pension_delay,3,1,GRA,GRA did not speak to citizen directly,1,0.94
+921,REVENUE,Revenue (CCLA),CHT,Chittoor,land_records,43,1,Tahsildar,Not visited site / No field verification,2,0.91
+922,SOC_WELF,Social Welfare,KDP,Kadapa,disability_certificate,56,12,RDO,Not visited site / No field verification,2,0.88
+923,SOC_WELF,Social Welfare,TPT,Tirupati,pension_delay,9,1,GRA,GRA did not speak to citizen directly,1,0.87
+924,ENERGY,Energy,ANA,Anakapalli,power_outage,2,1,GRA,GRA did not speak to citizen directly,1,0.9
+925,REVENUE,Revenue (CCLA),ARL,Alluri Sitharama Raju,revenue_certificate,1,1,Tahsildar,Closed without required documents,4,0.86
+926,AGRI,Agriculture And Co-operation,STY,Sri Satya Sai,irrigation_problem,19,2,Mandal,Closed without required documents,4,0.93
+927,AGRI,Agriculture And Co-operation,VZG,Vizianagaram,irrigation_problem,4,1,Mandal,GRA did not speak to citizen directly,1,0.94
+928,PNCHRAJ,Panchayat Raj And Rural Development,KNR,Konaseema,village_roads,9,1,RDO,Premature closure,6,0.92
+929,MUNI,Municipal Administration And Urban Development,KDP,Kadapa,building_permission,54,16,Collector,Not visited site / No field verification,2,0.93
+930,HOUSING,Housing,ANM,Annamaya,housing_scheme,10,1,Tahsildar,Closed without required documents,4,0.94
+931,REVENUE,Revenue (CCLA),GNT,Guntur,revenue_certificate,12,1,Mandal,Closed without required documents,4,0.86
+932,MUNI,Municipal Administration And Urban Development,NLR,Nellore,street_lights,1,1,GRA,Not visited site / No field verification,2,0.89
+933,SOC_WELF,Social Welfare,ANM,Annamaya,disability_certificate,30,8,RDO,GRA did not speak to citizen directly,1,0.86
+934,REVENUE,Revenue (CCLA),ANT,Anantapur,property_dispute,7,1,Mandal,GRA did not speak to citizen directly,1,0.87
+935,PNCHRAJ,Panchayat Raj And Rural Development,KNL,Kurnool,drinking_water,22,4,Tahsildar,GRA did not speak to citizen directly,1,0.89
+936,ENERGY,Energy,KDP,Kadapa,power_outage,12,1,Mandal,GRA did not speak to citizen directly,1,0.9
+937,MUNI,Municipal Administration And Urban Development,KDP,Kadapa,garbage_collection,4,1,GRA,GRA did not speak to citizen directly,1,0.85
+938,AGRI,Agriculture And Co-operation,GNT,Guntur,fertilizer_issue,8,1,RDO,Wrong/Blank/Not related comments,3,0.91
+939,ENERGY,Energy,KNL,Kurnool,transformer_problem,69,19,Collector,Not visited site / No field verification,2,0.93
+940,REVENUE,Revenue (CCLA),BAP,Bapatla,property_dispute,3,1,GRA,Closed without required documents,4,0.85
+941,ENERGY,Energy,KKN,Kakinada,billing_dispute,13,1,Mandal,Wrong/Blank/Not related comments,3,0.88
+942,REVENUE,Revenue (CCLA),PLN,Palnadu,land_records,15,1,Tahsildar,Beneficiary not contacted,13,0.85
+943,PNCHRAJ,Panchayat Raj And Rural Development,ELR,Eluru,village_roads,8,1,GRA,GRA did not speak to citizen directly,1,0.92
+944,WOMEN,"Women, Children, Disabled And Senior Citizens",VZG,Vizianagaram,child_welfare,18,2,Collector,Wrong/Blank/Not related comments,3,0.94
+945,AGRI,Agriculture And Co-operation,STY,Sri Satya Sai,irrigation_problem,8,1,GRA,GRA did not speak to citizen directly,1,0.9
+946,MUNI,Municipal Administration And Urban Development,GNT,Guntur,building_permission,21,2,Mandal,GRA did not speak to citizen directly,1,0.94
+947,AGRI,Agriculture And Co-operation,VZG,Vizianagaram,crop_insurance,35,4,Collector,Inordinate delay,9,0.86
+948,HEALTH,"Health, Medical And Family Welfare",KNR,Konaseema,hospital_service,23,1,Tahsildar,Wrong/Blank/Not related comments,3,0.92
+949,SOC_WELF,Social Welfare,SKM,Srikakulam,welfare_scheme,18,2,Mandal,GRA did not speak to citizen directly,1,0.86
+950,SOC_WELF,Social Welfare,CHT,Chittoor,scholarship_issue,11,1,RDO,GRA did not speak to citizen directly,1,0.89
+951,REVENUE,Revenue (CCLA),KKN,Kakinada,tax_assessment,10,1,Mandal,GRA did not speak to citizen directly,1,0.85
+952,SOC_WELF,Social Welfare,PVT,Parvathipuram Manyam,welfare_scheme,16,3,Tahsildar,GRA did not speak to citizen directly,1,0.91
+953,SOC_WELF,Social Welfare,BAP,Bapatla,pension_delay,1,1,GRA,Wrong/Blank/Not related comments,3,0.91
+954,PNCHRAJ,Panchayat Raj And Rural Development,WG,West Godavari,sanitation,70,12,CM,Inordinate delay,9,0.93
+955,REVENUE,Revenue (CCLA),PLN,Palnadu,land_mutation,8,1,Collector,No action letter issued,11,0.85
+956,SOC_WELF,Social Welfare,PLN,Palnadu,pension_not_received,5,1,GRA,Premature closure,6,0.92
+957,SOC_WELF,Social Welfare,PKM,Prakasam,welfare_scheme,16,2,Collector,Closed without required documents,4,0.88
+958,SOC_WELF,Social Welfare,NLR,Nellore,pension_not_received,20,1,CM,Action not taken as per rules,7,0.95
+959,RNB,"Transport, Roads And Buildings",CHT,Chittoor,bridge_repair,70,17,RDO,Not visited site / No field verification,2,0.9
+960,ENERGY,Energy,ELR,Eluru,billing_dispute,12,1,Mandal,Inadequate action taken,8,0.93
+961,ENERGY,Energy,ANM,Annamaya,meter_issue,13,1,RDO,Incorrect routing,10,0.86
+962,SOC_WELF,Social Welfare,KDP,Kadapa,pension_not_received,18,2,Collector,No action letter issued,11,0.86
+963,REVENUE,Revenue (CCLA),TPT,Tirupati,land_records,5,1,Mandal,GRA did not speak to citizen directly,1,0.88
+964,SOC_WELF,Social Welfare,KDP,Kadapa,welfare_scheme,13,1,GRA,Closed without required documents,4,0.9
+965,SOC_WELF,Social Welfare,VZG,Vizianagaram,welfare_scheme,1,1,GRA,Wrong/Blank/Not related comments,3,0.9
+966,MUNI,Municipal Administration And Urban Development,KDP,Kadapa,water_supply,9,1,GRA,GRA did not speak to citizen directly,1,0.94
+967,REVENUE,Revenue (CCLA),ANM,Annamaya,revenue_certificate,1,1,Mandal,GRA did not speak to citizen directly,1,0.86
+968,REVENUE,Revenue (CCLA),VZG,Vizianagaram,encroachment,12,1,RDO,Incorrect routing,10,0.86
+969,SOC_WELF,Social Welfare,KKN,Kakinada,disability_certificate,21,2,Mandal,GRA did not speak to citizen directly,1,0.86
+970,MUNI,Municipal Administration And Urban Development,BAP,Bapatla,water_supply,13,1,GRA,GRA did not speak to citizen directly,1,0.93
+971,REVENUE,Revenue (CCLA),PLN,Palnadu,land_records,22,3,RDO,Wrong/Blank/Not related comments,3,0.91
+972,REVENUE,Revenue (CCLA),KNL,Kurnool,land_records,24,5,RDO,GRA did not speak to citizen directly,1,0.87
+973,REVENUE,Revenue (CCLA),EG,East Godavari,tax_assessment,7,1,Mandal,GRA did not speak to citizen directly,1,0.93
+974,SOC_WELF,Social Welfare,SKM,Srikakulam,pension_delay,47,10,Collector,No proper enquiry conducted,5,0.86
+975,REVENUE,Revenue (CCLA),CHT,Chittoor,tax_assessment,45,10,HOD,Not visited site / No field verification,2,0.87
+976,HEALTH,"Health, Medical And Family Welfare",NAG,Sri Potti Sriramulu Nellore,medicine_shortage,33,4,Tahsildar,Not visited site / No field verification,2,0.87
+977,REVENUE,Revenue (CCLA),KDP,Kadapa,land_mutation,63,20,Collector,No proper enquiry conducted,5,0.94
+978,REVENUE,Revenue (CCLA),EG,East Godavari,revenue_certificate,19,1,RDO,No proper enquiry conducted,5,0.94
+979,HEALTH,"Health, Medical And Family Welfare",ANT,Anantapur,hospital_service,24,2,Mandal,GRA did not speak to citizen directly,1,0.9
+980,AGRI,Agriculture And Co-operation,NLR,Nellore,crop_insurance,1,1,Tahsildar,Wrong/Blank/Not related comments,3,0.91
+981,REVENUE,Revenue (CCLA),BAP,Bapatla,revenue_certificate,41,6,Tahsildar,No proper enquiry conducted,5,0.94
+982,HOUSING,Housing,ANA,Anakapalli,housing_scheme,15,1,RDO,Closed without required documents,4,0.86
+983,MUNI,Municipal Administration And Urban Development,STY,Sri Satya Sai,building_permission,5,1,GRA,Wrong/Blank/Not related comments,3,0.88
+984,SOC_WELF,Social Welfare,PVT,Parvathipuram Manyam,scholarship_issue,5,1,Mandal,Wrong/Blank/Not related comments,3,0.91
+985,REVENUE,Revenue (CCLA),CHT,Chittoor,land_records,6,1,Mandal,Premature closure,6,0.87
+986,WATER,Water Resources,KRS,Krishna,flood_control,12,1,Mandal,GRA did not speak to citizen directly,1,0.89
+987,MUNI,Municipal Administration And Urban Development,ARL,Alluri Sitharama Raju,road_repair,24,3,Tahsildar,Not visited site / No field verification,2,0.89
+988,SOC_WELF,Social Welfare,KRS,Krishna,scholarship_issue,6,1,Tahsildar,GRA did not speak to citizen directly,1,0.93
+989,MUNI,Municipal Administration And Urban Development,KNR,Konaseema,water_supply,15,1,Mandal,Closed without required documents,4,0.89
+990,MUNI,Municipal Administration And Urban Development,NLR,Nellore,drainage_issue,11,1,RDO,Wrong/Blank/Not related comments,3,0.92
+991,REVENUE,Revenue (CCLA),PVT,Parvathipuram Manyam,encroachment,25,2,Tahsildar,Beneficiary not contacted,13,0.85
+992,REVENUE,Revenue (CCLA),PKM,Prakasam,land_records,59,8,HOD,Inordinate delay,9,0.94
+993,REVENUE,Revenue (CCLA),NAG,Sri Potti Sriramulu Nellore,tax_assessment,13,1,Mandal,GRA did not speak to citizen directly,1,0.92
+994,SOC_WELF,Social Welfare,TPT,Tirupati,pension_not_received,17,2,Mandal,GRA did not speak to citizen directly,1,0.89
+995,WATER,Water Resources,GNT,Guntur,bore_well,16,2,Collector,GRA did not speak to citizen directly,1,0.85
+996,ENERGY,Energy,PKM,Prakasam,billing_dispute,1,1,Tahsildar,GRA did not speak to citizen directly,1,0.93
+997,MUNI,Municipal Administration And Urban Development,NLR,Nellore,road_repair,15,1,Mandal,GRA did not speak to citizen directly,1,0.95
+998,WOMEN,"Women, Children, Disabled And Senior Citizens",ELR,Eluru,daycare_center,27,2,Tahsildar,Inordinate delay,9,0.87
+999,SOC_WELF,Social Welfare,BAP,Bapatla,scholarship_issue,20,2,Tahsildar,GRA did not speak to citizen directly,1,0.86
+1000,REVENUE,Revenue (CCLA),BAP,Bapatla,property_dispute,8,1,Tahsildar,GRA did not speak to citizen directly,1,0.88

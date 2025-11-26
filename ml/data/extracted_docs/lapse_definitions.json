@@ -1,0 +1,79 @@
+{
+  "source": "Improper Redressal lapses.md",
+  "extracted_at": "2025-11-25T21:47:35.710156",
+  "count": 12,
+  "lapses": [
+    {
+      "id": 1,
+      "type": "behavioral",
+      "name": "GRA did not speak properly / scolded / used abusive language",
+      "severity": "critical"
+    },
+    {
+      "id": 2,
+      "type": "behavioral",
+      "name": "GRA threatened / pleaded / persuaded the applicant",
+      "severity": "critical"
+    },
+    {
+      "id": 3,
+      "type": "behavioral",
+      "name": "GRA took a bribe / asked for a bribe",
+      "severity": "critical"
+    },
+    {
+      "id": 4,
+      "type": "behavioral",
+      "name": "GRA did not work and involved political persons",
+      "severity": "critical"
+    },
+    {
+      "id": 5,
+      "type": "behavioral",
+      "name": "GRA intentionally avoided doing work",
+      "severity": "critical"
+    },
+    {
+      "id": 6,
+      "type": "procedural",
+      "name": "GRA did not speak directly with the citizen",
+      "severity": "high"
+    },
+    {
+      "id": 7,
+      "type": "procedural",
+      "name": "GRA did not provide the endorsement personally",
+      "severity": "medium"
+    },
+    {
+      "id": 8,
+      "type": "procedural",
+      "name": "GRA did not spend time explaining the issue",
+      "severity": "medium"
+    },
+    {
+      "id": 9,
+      "type": "procedural",
+      "name": "GRA gave WRONG/BLANK/NOT RELATED endorsement",
+      "severity": "high"
+    },
+    {
+      "id": 10,
+      "type": "procedural",
+      "name": "GRA uploaded improper enquiry photo/report",
+      "severity": "high"
+    },
+    {
+      "id": 11,
+      "type": "procedural",
+      "name": "GRA closed by forwarding to lower-level official",
+      "severity": "high"
+    },
+    {
+      "id": 12,
+      "type": "procedural",
+      "name": "GRA closed stating not under jurisdiction",
+      "severity": "medium"
+    }
+  ]
+}

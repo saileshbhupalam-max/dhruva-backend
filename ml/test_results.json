@@ -1,0 +1,589 @@
+{
+  "timestamp": "2025-11-25T23:23:32.734971",
+  "thresholds": {
+    "classification_min": 0.8,
+    "sentiment_min": 0.85,
+    "top3_min": 0.9
+  },
+  "results": {
+    "classification": {
+      "passed": 35,
+      "failed": 9,
+      "cases": [
+        {
+          "desc": "Pattadar passbook request",
+          "expected": "Revenue",
+          "predicted": "Revenue",
+          "confidence": 0.28419066019027267,
+          "correct": true,
+          "top3": true
+        },
+        {
+          "desc": "Land records issue",
+          "expected": "Revenue",
+          "predicted": "Revenue",
+          "confidence": 0.6341133837117915,
+          "correct": true,
+          "top3": true
+        },
+        {
+          "desc": "ROR certificate request",
+          "expected": "Revenue",
+          "predicted": "Revenue",
+          "confidence": 0.5736547416750292,
+          "correct": true,
+          "top3": true
+        },
+        {
+          "desc": "Mutation request",
+          "expected": "Revenue",
+          "predicted": "Revenue",
+          "confidence": 0.22077942279128396,
+          "correct": true,
+          "top3": true
+        },
+        {
+          "desc": "Land survey request",
+          "expected": "Revenue",
+          "predicted": "Revenue",
+          "confidence": 0.7469689039263075,
+          "correct": true,
+          "top3": true
+        },
+        {
+          "desc": "Old age pension",
+          "expected": "Social Welfare",
+          "predicted": "Social Welfare",
+          "confidence": 0.9161041880702046,
+          "correct": true,
+          "top3": true
+        },
+        {
+          "desc": "Widow pension",
+          "expected": "Social Welfare",
+          "predicted": "Social Welfare",
+          "confidence": 0.8818817545540102,
+          "correct": true,
+          "top3": true
+        },
+        {
+          "desc": "Disability pension",
+          "expected": "Social Welfare",
+          "predicted": "Social Welfare",
+          "confidence": 0.849000449814339,
+          "correct": true,
+          "top3": true
+        },
+        {
+          "desc": "Aasara pension stopped",
+          "expected": "Social Welfare",
+          "predicted": "Social Welfare",
+          "confidence": 0.8280798771203486,
+          "correct": true,
+          "top3": true
+        },
+        {
+          "desc": "Road potholes",
+          "expected": "Municipal Administration",
+          "predicted": "Transport",
+          "confidence": 0.40785121403303665,
+          "correct": false,
+          "top3": true
+        },
+        {
+          "desc": "Drainage not working",
+          "expected": "Municipal Administration",
+          "predicted": "Municipal Administration",
+          "confidence": 0.3381178605144541,
+          "correct": true,
+          "top3": true
+        },
+        {
+          "desc": "Street light request",
+          "expected": "Municipal Administration",
+          "predicted": "Municipal Administration",
+          "confidence": 0.32655766320032525,
+          "correct": true,
+          "top3": true
+        },
+        {
+          "desc": "Garbage not collected",
+          "expected": "Municipal Administration",
+          "predicted": "Municipal Administration",
+          "confidence": 0.544486155897013,
+          "correct": true,
+          "top3": true
+        },
+        {
+          "desc": "Ration card request",
+          "expected": "Civil Supplies",
+          "predicted": "Civil Supplies",
+          "confidence": 0.310629375597868,
+          "correct": true,
+          "top3": true
+        },
+        {
+          "desc": "Rice not received",
+          "expected": "Civil Supplies",
+          "predicted": "Civil Supplies",
+          "confidence": 0.3232922208676334,
+          "correct": true,
+          "top3": true
+        },
+        {
+          "desc": "Dealer not giving rice",
+          "expected": "Civil Supplies",
+          "predicted": "Civil Supplies",
+          "confidence": 0.5839480033887319,
+          "correct": true,
+          "top3": true
+        },
+        {
+          "desc": "New ration card",
+          "expected": "Civil Supplies",
+          "predicted": "Civil Supplies",
+          "confidence": 0.32596393719936817,
+          "correct": true,
+          "top3": true
+        },
+        {
+          "desc": "Rythu Bandhu not received",
+          "expected": "Agriculture",
+          "predicted": "Agriculture",
+          "confidence": 0.6243356628479101,
+          "correct": true,
+          "top3": true
+        },
+        {
+          "desc": "Crop loss compensation",
+          "expected": "Agriculture",
+          "predicted": "Agriculture",
+          "confidence": 0.7037099288824078,
+          "correct": true,
+          "top3": true
+        },
+        {
+          "desc": "Seeds not received properly",
+          "expected": "Agriculture",
+          "predicted": "Agriculture",
+          "confidence": 0.28515967974741563,
+          "correct": true,
+          "top3": true
+        },
+        {
+          "desc": "Pesticides needed",
+          "expected": "Agriculture",
+          "predicted": "Health",
+          "confidence": 0.5801393662776451,
+          "correct": false,
+          "top3": true
+        },
+        {
+          "desc": "No doctor in hospital",
+          "expected": "Health",
+          "predicted": "Health",
+          "confidence": 0.6754209769382146,
+          "correct": true,
+          "top3": true
+        },
+        {
+          "desc": "No medicines in PHC",
+          "expected": "Health",
+          "predicted": "Health",
+          "confidence": 0.7895596938707121,
+          "correct": true,
+          "top3": true
+        },
+        {
+          "desc": "Arogyasri card needed",
+          "expected": "Health",
+          "predicted": "Health",
+          "confidence": 0.5927026692708538,
+          "correct": true,
+          "top3": true
+        },
+        {
+          "desc": "Ambulance didn't come",
+          "expected": "Health",
+          "predicted": "Health",
+          "confidence": 0.5605786066508504,
+          "correct": true,
+          "top3": true
+        },
+        {
+          "desc": "No teacher in school",
+          "expected": "Education",
+          "predicted": "Revenue",
+          "confidence": 0.22522347903466525,
+          "correct": false,
+          "top3": false
+        },
+        {
+          "desc": "Mid-day meal issue",
+          "expected": "Education",
+          "predicted": "Education",
+          "confidence": 0.6080168282437518,
+          "correct": true,
+          "top3": true
+        },
+        {
+          "desc": "School building damaged",
+          "expected": "Education",
+          "predicted": "Revenue",
+          "confidence": 0.18123202568492,
+          "correct": false,
+          "top3": true
+        },
+        {
+          "desc": "No electricity",
+          "expected": "Energy",
+          "predicted": "Energy",
+          "confidence": 0.23443747486646305,
+          "correct": true,
+          "top3": true
+        },
+        {
+          "desc": "Transformer burnt",
+          "expected": "Energy",
+          "predicted": "Energy",
+          "confidence": 0.4403041128612477,
+          "correct": true,
+          "top3": true
+        },
+        {
+          "desc": "High electricity bill",
+          "expected": "Energy",
+          "predicted": "Energy",
+          "confidence": 0.5599552073079811,
+          "correct": true,
+          "top3": true
+        },
+        {
+          "desc": "New connection needed",
+          "expected": "Energy",
+          "predicted": "Municipal Administration",
+          "confidence": 0.3573082194922707,
+          "correct": false,
+          "top3": true
+        },
+        {
+          "desc": "File police case",
+          "expected": "Police",
+          "predicted": "Police",
+          "confidence": 0.8238452277261601,
+          "correct": true,
+          "top3": true
+        },
+        {
+          "desc": "Theft occurred",
+          "expected": "Police",
+          "predicted": "Police",
+          "confidence": 0.5617441821363309,
+          "correct": true,
+          "top3": true
+        },
+        {
+          "desc": "Harassment happening",
+          "expected": "Police",
+          "predicted": "Municipal Administration",
+          "confidence": 0.4241811672152617,
+          "correct": false,
+          "top3": false
+        },
+        {
+          "desc": "No water supply",
+          "expected": "Water Resources",
+          "predicted": "Municipal Administration",
+          "confidence": 0.1718264961270433,
+          "correct": false,
+          "top3": false
+        },
+        {
+          "desc": "Bore well needed",
+          "expected": "Water Resources",
+          "predicted": "Revenue",
+          "confidence": 0.17370261890140878,
+          "correct": false,
+          "top3": true
+        },
+        {
+          "desc": "Pipeline leakage",
+          "expected": "Water Resources",
+          "predicted": "Revenue",
+          "confidence": 0.34890465035423285,
+          "correct": false,
+          "top3": false
+        },
+        {
+          "desc": "House collapsed",
+          "expected": "Housing",
+          "predicted": "Housing",
+          "confidence": 0.40932114713730156,
+          "correct": true,
+          "top3": true
+        },
+        {
+          "desc": "PMAY house needed",
+          "expected": "Housing",
+          "predicted": "Housing",
+          "confidence": 0.4730865587212647,
+          "correct": true,
+          "top3": true
+        },
+        {
+          "desc": "House patta needed",
+          "expected": "Housing",
+          "predicted": "Housing",
+          "confidence": 0.2801284432785676,
+          "correct": true,
+          "top3": true
+        },
+        {
+          "desc": "Bus not coming",
+          "expected": "Transport",
+          "predicted": "Transport",
+          "confidence": 0.22574118788830863,
+          "correct": true,
+          "top3": true
+        },
+        {
+          "desc": "Driving license needed",
+          "expected": "Transport",
+          "predicted": "Transport",
+          "confidence": 0.6508700142832206,
+          "correct": true,
+          "top3": true
+        },
+        {
+          "desc": "Road tax refund",
+          "expected": "Transport",
+          "predicted": "Transport",
+          "confidence": 0.3453745453730915,
+          "correct": true,
+          "top3": true
+        }
+      ],
+      "accuracy": 0.7954545454545454,
+      "top3_accuracy": 0.9090909090909091
+    },
+    "sentiment": {
+      "passed": 15,
+      "failed": 5,
+      "cases": [
+        {
+          "desc": "Dying of hunger",
+          "expected": "CRITICAL",
+          "predicted": "CRITICAL",
+          "confidence": 0.9587371968526283,
+          "correct": true
+        },
+        {
+          "desc": "Suicide threat",
+          "expected": "CRITICAL",
+          "predicted": "MEDIUM",
+          "confidence": 0.33238104701643745,
+          "correct": false
+        },
+        {
+          "desc": "Children starving",
+          "expected": "CRITICAL",
+          "predicted": "CRITICAL",
+          "confidence": 0.6862549518376833,
+          "correct": true
+        },
+        {
+          "desc": "Nothing to eat, will die",
+          "expected": "CRITICAL",
+          "predicted": "HIGH",
+          "confidence": 0.3971546600124162,
+          "correct": false
+        },
+        {
+          "desc": "Dying without medical help",
+          "expected": "CRITICAL",
+          "predicted": "CRITICAL",
+          "confidence": 0.8482458274921516,
+          "correct": true
+        },
+        {
+          "desc": "Pension 6 months pending",
+          "expected": "HIGH",
+          "predicted": "HIGH",
+          "confidence": 0.8893936213891176,
+          "correct": true
+        },
+        {
+          "desc": "Salary 3 months pending",
+          "expected": "HIGH",
+          "predicted": "HIGH",
+          "confidence": 0.976862303293268,
+          "correct": true
+        },
+        {
+          "desc": "No electricity for weeks",
+          "expected": "HIGH",
+          "predicted": "HIGH",
+          "confidence": 0.6005597898731128,
+          "correct": true
+        },
+        {
+          "desc": "Ration 4 months not received",
+          "expected": "HIGH",
+          "predicted": "HIGH",
+          "confidence": 0.9332325130932072,
+          "correct": true
+        },
+        {
+          "desc": "Need emergency treatment",
+          "expected": "HIGH",
+          "predicted": "CRITICAL",
+          "confidence": 0.45667167739293685,
+          "correct": false
+        },
+        {
+          "desc": "Road repair needed",
+          "expected": "MEDIUM",
+          "predicted": "NORMAL",
+          "confidence": 0.4610318235626634,
+          "correct": false
+        },
+        {
+          "desc": "Drainage problem",
+          "expected": "MEDIUM",
+          "predicted": "MEDIUM",
+          "confidence": 0.511670856295683,
+          "correct": true
+        },
+        {
+          "desc": "Street light not working",
+          "expected": "MEDIUM",
+          "predicted": "MEDIUM",
+          "confidence": 0.4007198146612025,
+          "correct": true
+        },
+        {
+          "desc": "Garbage collection issue",
+          "expected": "MEDIUM",
+          "predicted": "MEDIUM",
+          "confidence": 0.3771899931003977,
+          "correct": true
+        },
+        {
+          "desc": "Park maintenance poor",
+          "expected": "MEDIUM",
+          "predicted": "MEDIUM",
+          "confidence": 0.37956870691219496,
+          "correct": true
+        },
+        {
+          "desc": "Certificate needed",
+          "expected": "NORMAL",
+          "predicted": "NORMAL",
+          "confidence": 0.6302842290349239,
+          "correct": true
+        },
+        {
+          "desc": "New connection needed",
+          "expected": "NORMAL",
+          "predicted": "NORMAL",
+          "confidence": 0.6708221040613264,
+          "correct": true
+        },
+        {
+          "desc": "Information needed",
+          "expected": "NORMAL",
+          "predicted": "NORMAL",
+          "confidence": 0.9983975606354387,
+          "correct": true
+        },
+        {
+          "desc": "Application status query",
+          "expected": "NORMAL",
+          "predicted": "NORMAL",
+          "confidence": 0.8425575748700562,
+          "correct": true
+        },
+        {
+          "desc": "Where to get form",
+          "expected": "NORMAL",
+          "predicted": "MEDIUM",
+          "confidence": 0.5969390199195912,
+          "correct": false
+        }
+      ],
+      "accuracy": 0.75
+    },
+    "integration": {
+      "passed": 1,
+      "failed": 2,
+      "cases": [
+        {
+          "desc": "Pension + children hungry",
+          "dept_correct": true,
+          "distress_correct": false,
+          "has_sla": true
+        },
+        {
+          "desc": "Road potholes + accidents",
+          "dept_correct": false,
+          "distress_correct": false,
+          "has_sla": true
+        },
+        {
+          "desc": "New ration card request",
+          "dept_correct": true,
+          "distress_correct": true,
+          "has_sla": true
+        }
+      ]
+    },
+    "edge_cases": {
+      "passed": 7,
+      "failed": 0,
+      "cases": [
+        {
+          "desc": "Code-mixing English",
+          "success": true,
+          "has_classification": true,
+          "has_sentiment": true
+        },
+        {
+          "desc": "Code-mixing Telugu-English",
+          "success": true,
+          "has_classification": true,
+          "has_sentiment": true
+        },
+        {
+          "desc": "Very short request",
+          "success": true,
+          "has_classification": true,
+          "has_sentiment": true
+        },
+        {
+          "desc": "Very long grievance",
+          "success": true,
+          "has_classification": true,
+          "has_sentiment": true
+        },
+        {
+          "desc": "Multiple issues",
+          "success": true,
+          "has_classification": true,
+          "has_sentiment": true
+        },
+        {
+          "desc": "With dates",
+          "success": true,
+          "has_classification": true,
+          "has_sentiment": true
+        },
+        {
+          "desc": "Special characters",
+          "success": true,
+          "has_classification": true,
+          "has_sentiment": true
+        }
+      ]
+    }
+  }
+}

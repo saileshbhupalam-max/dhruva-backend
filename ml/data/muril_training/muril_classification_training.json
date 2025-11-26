@@ -1,0 +1,4988 @@
+{
+  "version": "1.0",
+  "created": "2025-11-25T21:43:39.936807",
+  "task": "department_classification",
+  "labels": [
+    "Revenue",
+    "Municipal Administration",
+    "Police",
+    "Agriculture",
+    "Health",
+    "Education",
+    "Energy",
+    "Panchayat Raj",
+    "Social Welfare",
+    "Civil Supplies",
+    "Transport",
+    "Housing",
+    "Water Resources",
+    "Women & Child Welfare",
+    "Animal Husbandry"
+  ],
+  "samples": [
+    {
+      "text": "పంట",
+      "label": "Agriculture"
+    },
+    {
+      "text": "బీమా",
+      "label": "Agriculture"
+    },
+    {
+      "text": "క్లెయిమ్",
+      "label": "Agriculture"
+    },
+    {
+      "text": "పరిహారం",
+      "label": "Agriculture"
+    },
+    {
+      "text": "నష్టం",
+      "label": "Agriculture"
+    },
+    {
+      "text": "ప్రీమియం",
+      "label": "Agriculture"
+    },
+    {
+      "text": "దిగుబడి",
+      "label": "Agriculture"
+    },
+    {
+      "text": "వ్యవసాయం",
+      "label": "Agriculture"
+    },
+    {
+      "text": "crop",
+      "label": "Agriculture"
+    },
+    {
+      "text": "insurance",
+      "label": "Agriculture"
+    },
+    {
+      "text": "claim",
+      "label": "Agriculture"
+    },
+    {
+      "text": "compensation",
+      "label": "Agriculture"
+    },
+    {
+      "text": "damage",
+      "label": "Agriculture"
+    },
+    {
+      "text": "loss",
+      "label": "Agriculture"
+    },
+    {
+      "text": "premium",
+      "label": "Agriculture"
+    },
+    {
+      "text": "yield",
+      "label": "Agriculture"
+    },
+    {
+      "text": "agriculture",
+      "label": "Agriculture"
+    },
+    {
+      "text": "ఎరువులు",
+      "label": "Agriculture"
+    },
+    {
+      "text": "సబ్సిడీ",
+      "label": "Agriculture"
+    },
+    {
+      "text": "పంపిణీ",
+      "label": "Agriculture"
+    },
+    {
+      "text": "కొరత",
+      "label": "Agriculture"
+    },
+    {
+      "text": "లభ్యత",
+      "label": "Agriculture"
+    },
+    {
+      "text": "యూరియా",
+      "label": "Agriculture"
+    },
+    {
+      "text": "fertilizer",
+      "label": "Agriculture"
+    },
+    {
+      "text": "subsidy",
+      "label": "Agriculture"
+    },
+    {
+      "text": "distribution",
+      "label": "Agriculture"
+    },
+    {
+      "text": "shortage",
+      "label": "Agriculture"
+    },
+    {
+      "text": "availability",
+      "label": "Agriculture"
+    },
+    {
+      "text": "urea",
+      "label": "Agriculture"
+    },
+    {
+      "text": "dap",
+      "label": "Agriculture"
+    },
+    {
+      "text": "రుణం",
+      "label": "Agriculture"
+    },
+    {
+      "text": "క్రెడిట్",
+      "label": "Agriculture"
+    },
+    {
+      "text": "కిసాన్",
+      "label": "Agriculture"
+    },
+    {
+      "text": "వడ్డీ",
+      "label": "Agriculture"
+    },
+    {
+      "text": "మాఫీ",
+      "label": "Agriculture"
+    },
+    {
+      "text": "అప్పు",
+      "label": "Agriculture"
+    },
+    {
+      "text": "రైతు",
+      "label": "Agriculture"
+    },
+    {
+      "text": "loan",
+      "label": "Agriculture"
+    },
+    {
+      "text": "credit",
+      "label": "Agriculture"
+    },
+    {
+      "text": "kisan",
+      "label": "Agriculture"
+    },
+    {
+      "text": "interest",
+      "label": "Agriculture"
+    },
+    {
+      "text": "waiver",
+      "label": "Agriculture"
+    },
+    {
+      "text": "debt",
+      "label": "Agriculture"
+    },
+    {
+      "text": "repayment",
+      "label": "Agriculture"
+    },
+    {
+      "text": "farmer",
+      "label": "Agriculture"
+    },
+    {
+      "text": "పశువైద్యం",
+      "label": "Animal Husbandry"
+    },
+    {
+      "text": "జంతువు",
+      "label": "Animal Husbandry"
+    },
+    {
+      "text": "ఆరోగ్యం",
+      "label": "Animal Husbandry"
+    },
+    {
+      "text": "డాక్టర్",
+      "label": "Animal Husbandry"
+    },
+    {
+      "text": "క్లినిక్",
+      "label": "Animal Husbandry"
+    },
+    {
+      "text": "టీకా",
+      "label": "Animal Husbandry"
+    },
+    {
+      "text": "చికిత్స",
+      "label": "Animal Husbandry"
+    },
+    {
+      "text": "పశువులు",
+      "label": "Animal Husbandry"
+    },
+    {
+      "text": "veterinary",
+      "label": "Animal Husbandry"
+    },
+    {
+      "text": "animal",
+      "label": "Animal Husbandry"
+    },
+    {
+      "text": "health",
+      "label": "Animal Husbandry"
+    },
+    {
+      "text": "doctor",
+      "label": "Animal Husbandry"
+    },
+    {
+      "text": "clinic",
+      "label": "Animal Husbandry"
+    },
+    {
+      "text": "vaccination",
+      "label": "Animal Husbandry"
+    },
+    {
+      "text": "treatment",
+      "label": "Animal Husbandry"
+    },
+    {
+      "text": "livestock",
+      "label": "Animal Husbandry"
+    },
+    {
+      "text": "డైరీ",
+      "label": "Animal Husbandry"
+    },
+    {
+      "text": "పాలు",
+      "label": "Animal Husbandry"
+    },
+    {
+      "text": "సహకార",
+      "label": "Animal Husbandry"
+    },
+    {
+      "text": "సేకరణ",
+      "label": "Animal Husbandry"
+    },
+    {
+      "text": "ధర",
+      "label": "Animal Husbandry"
+    },
+    {
+      "text": "సబ్సిడీ",
+      "label": "Animal Husbandry"
+    },
+    {
+      "text": "పశువులు",
+      "label": "Animal Husbandry"
+    },
+    {
+      "text": "dairy",
+      "label": "Animal Husbandry"
+    },
+    {
+      "text": "milk",
+      "label": "Animal Husbandry"
+    },
+    {
+      "text": "cooperative",
+      "label": "Animal Husbandry"
+    },
+    {
+      "text": "collection",
+      "label": "Animal Husbandry"
+    },
+    {
+      "text": "price",
+      "label": "Animal Husbandry"
+    },
+    {
+      "text": "subsidy",
+      "label": "Animal Husbandry"
+    },
+    {
+      "text": "cattle",
+      "label": "Animal Husbandry"
+    },
+    {
+      "text": "చేప",
+      "label": "Animal Husbandry"
+    },
+    {
+      "text": "చేపలు పట్టడం",
+      "label": "Animal Husbandry"
+    },
+    {
+      "text": "చెరువు",
+      "label": "Animal Husbandry"
+    },
+    {
+      "text": "సబ్సిడీ",
+      "label": "Animal Husbandry"
+    },
+    {
+      "text": "లైసెన్సు",
+      "label": "Animal Husbandry"
+    },
+    {
+      "text": "మత్స్య పెంపకం",
+      "label": "Animal Husbandry"
+    },
+    {
+      "text": "జాలర",
+      "label": "Animal Husbandry"
+    },
+    {
+      "text": "fish",
+      "label": "Animal Husbandry"
+    },
+    {
+      "text": "fishing",
+      "label": "Animal Husbandry"
+    },
+    {
+      "text": "pond",
+      "label": "Animal Husbandry"
+    },
+    {
+      "text": "subsidy",
+      "label": "Animal Husbandry"
+    },
+    {
+      "text": "license",
+      "label": "Animal Husbandry"
+    },
+    {
+      "text": "aquaculture",
+      "label": "Animal Husbandry"
+    },
+    {
+      "text": "fisherman",
+      "label": "Animal Husbandry"
+    },
+    {
+      "text": "రేషన్",
+      "label": "Civil Supplies"
+    },
+    {
+      "text": "కార్డు",
+      "label": "Civil Supplies"
+    },
+    {
+      "text": "బియ్యం",
+      "label": "Civil Supplies"
+    },
+    {
+      "text": "పిడిఎస్",
+      "label": "Civil Supplies"
+    },
+    {
+      "text": "సబ్సిడీ",
+      "label": "Civil Supplies"
+    },
+    {
+      "text": "ఆహారం",
+      "label": "Civil Supplies"
+    },
+    {
+      "text": "ధాన్యం",
+      "label": "Civil Supplies"
+    },
+    {
+      "text": "కోటా",
+      "label": "Civil Supplies"
+    },
+    {
+      "text": "ఆధార్",
+      "label": "Civil Supplies"
+    },
+    {
+      "text": "లింకింగ్",
+      "label": "Civil Supplies"
+    },
+    {
+      "text": "ration",
+      "label": "Civil Supplies"
+    },
+    {
+      "text": "card",
+      "label": "Civil Supplies"
+    },
+    {
+      "text": "rice",
+      "label": "Civil Supplies"
+    },
+    {
+      "text": "pds",
+      "label": "Civil Supplies"
+    },
+    {
+      "text": "subsidy",
+      "label": "Civil Supplies"
+    },
+    {
+      "text": "food",
+      "label": "Civil Supplies"
+    },
+    {
+      "text": "grain",
+      "label": "Civil Supplies"
+    },
+    {
+      "text": "quota",
+      "label": "Civil Supplies"
+    },
+    {
+      "text": "aadhar",
+      "label": "Civil Supplies"
+    },
+    {
+      "text": "linking",
+      "label": "Civil Supplies"
+    },
+    {
+      "text": "దుకాణం",
+      "label": "Civil Supplies"
+    },
+    {
+      "text": "డీలర్",
+      "label": "Civil Supplies"
+    },
+    {
+      "text": "ధర",
+      "label": "Civil Supplies"
+    },
+    {
+      "text": "నాణ్యత",
+      "label": "Civil Supplies"
+    },
+    {
+      "text": "కొరత",
+      "label": "Civil Supplies"
+    },
+    {
+      "text": "న్యాయ వెల",
+      "label": "Civil Supplies"
+    },
+    {
+      "text": "ఫిర్యాదు",
+      "label": "Civil Supplies"
+    },
+    {
+      "text": "సరఫరా",
+      "label": "Civil Supplies"
+    },
+    {
+      "text": "shop",
+      "label": "Civil Supplies"
+    },
+    {
+      "text": "dealer",
+      "label": "Civil Supplies"
+    },
+    {
+      "text": "price",
+      "label": "Civil Supplies"
+    },
+    {
+      "text": "quality",
+      "label": "Civil Supplies"
+    },
+    {
+      "text": "shortage",
+      "label": "Civil Supplies"
+    },
+    {
+      "text": "fair",
+      "label": "Civil Supplies"
+    },
+    {
+      "text": "complaint",
+      "label": "Civil Supplies"
+    },
+    {
+      "text": "supplies",
+      "label": "Civil Supplies"
+    },
+    {
+      "text": "విద్యుత్",
+      "label": "Energy"
+    },
+    {
+      "text": "పవర్",
+      "label": "Energy"
+    },
+    {
+      "text": "కనెక్షన్",
+      "label": "Energy"
+    },
+    {
+      "text": "మీటర్",
+      "label": "Energy"
+    },
+    {
+      "text": "బిల్లు",
+      "label": "Energy"
+    },
+    {
+      "text": "సరఫరా",
+      "label": "Energy"
+    },
+    {
+      "text": "వోల్టేజ్",
+      "label": "Energy"
+    },
+    {
+      "text": "ట్రాన్స్‌ఫార్మర్",
+      "label": "Energy"
+    },
+    {
+      "text": "అంతరాయం",
+      "label": "Energy"
+    },
+    {
+      "text": "electricity",
+      "label": "Energy"
+    },
+    {
+      "text": "power",
+      "label": "Energy"
+    },
+    {
+      "text": "connection",
+      "label": "Energy"
+    },
+    {
+      "text": "meter",
+      "label": "Energy"
+    },
+    {
+      "text": "bill",
+      "label": "Energy"
+    },
+    {
+      "text": "supply",
+      "label": "Energy"
+    },
+    {
+      "text": "voltage",
+      "label": "Energy"
+    },
+    {
+      "text": "transformer",
+      "label": "Energy"
+    },
+    {
+      "text": "outage",
+      "label": "Energy"
+    },
+    {
+      "text": "సౌర",
+      "label": "Energy"
+    },
+    {
+      "text": "ప్యానెల్",
+      "label": "Energy"
+    },
+    {
+      "text": "సబ్సిడీ",
+      "label": "Energy"
+    },
+    {
+      "text": "స్థాపన",
+      "label": "Energy"
+    },
+    {
+      "text": "పునరుత్పాదక",
+      "label": "Energy"
+    },
+    {
+      "text": "శక్తి",
+      "label": "Energy"
+    },
+    {
+      "text": "solar",
+      "label": "Energy"
+    },
+    {
+      "text": "panel",
+      "label": "Energy"
+    },
+    {
+      "text": "subsidy",
+      "label": "Energy"
+    },
+    {
+      "text": "installation",
+      "label": "Energy"
+    },
+    {
+      "text": "renewable",
+      "label": "Energy"
+    },
+    {
+      "text": "energy",
+      "label": "Energy"
+    },
+    {
+      "text": "ఆసుపత్రి",
+      "label": "Health"
+    },
+    {
+      "text": "డాక్టర్",
+      "label": "Health"
+    },
+    {
+      "text": "చికిత్స",
+      "label": "Health"
+    },
+    {
+      "text": "మందు",
+      "label": "Health"
+    },
+    {
+      "text": "అత్యవసరం",
+      "label": "Health"
+    },
+    {
+      "text": "మంచం",
+      "label": "Health"
+    },
+    {
+      "text": "అంబులెన్స్",
+      "label": "Health"
+    },
+    {
+      "text": "ఆరోగ్యం",
+      "label": "Health"
+    },
+    {
+      "text": "hospital",
+      "label": "Health"
+    },
+    {
+      "text": "doctor",
+      "label": "Health"
+    },
+    {
+      "text": "treatment",
+      "label": "Health"
+    },
+    {
+      "text": "medicine",
+      "label": "Health"
+    },
+    {
+      "text": "emergency",
+      "label": "Health"
+    },
+    {
+      "text": "bed",
+      "label": "Health"
+    },
+    {
+      "text": "ambulance",
+      "label": "Health"
+    },
+    {
+      "text": "health",
+      "label": "Health"
+    },
+    {
+      "text": "ఆరోగ్యశ్రీ",
+      "label": "Health"
+    },
+    {
+      "text": "ఆరోగ్యం",
+      "label": "Health"
+    },
+    {
+      "text": "బీమా",
+      "label": "Health"
+    },
+    {
+      "text": "కార్డు",
+      "label": "Health"
+    },
+    {
+      "text": "చికిత్స",
+      "label": "Health"
+    },
+    {
+      "text": "పథకం",
+      "label": "Health"
+    },
+    {
+      "text": "క్లెయిమ్",
+      "label": "Health"
+    },
+    {
+      "text": "arogyasri",
+      "label": "Health"
+    },
+    {
+      "text": "health",
+      "label": "Health"
+    },
+    {
+      "text": "insurance",
+      "label": "Health"
+    },
+    {
+      "text": "card",
+      "label": "Health"
+    },
+    {
+      "text": "treatment",
+      "label": "Health"
+    },
+    {
+      "text": "scheme",
+      "label": "Health"
+    },
+    {
+      "text": "claim",
+      "label": "Health"
+    },
+    {
+      "text": "నేరం",
+      "label": "Police"
+    },
+    {
+      "text": "ఎఫ్ఐఆర్",
+      "label": "Police"
+    },
+    {
+      "text": "పోలీస్",
+      "label": "Police"
+    },
+    {
+      "text": "ఫిర్యాదు",
+      "label": "Police"
+    },
+    {
+      "text": "దొంగతనం",
+      "label": "Police"
+    },
+    {
+      "text": "దాడి",
+      "label": "Police"
+    },
+    {
+      "text": "దర్యాప్తు",
+      "label": "Police"
+    },
+    {
+      "text": "కేసు",
+      "label": "Police"
+    },
+    {
+      "text": "crime",
+      "label": "Police"
+    },
+    {
+      "text": "fir",
+      "label": "Police"
+    },
+    {
+      "text": "police",
+      "label": "Police"
+    },
+    {
+      "text": "complaint",
+      "label": "Police"
+    },
+    {
+      "text": "theft",
+      "label": "Police"
+    },
+    {
+      "text": "assault",
+      "label": "Police"
+    },
+    {
+      "text": "investigation",
+      "label": "Police"
+    },
+    {
+      "text": "case",
+      "label": "Police"
+    },
+    {
+      "text": "చట్టం",
+      "label": "Police"
+    },
+    {
+      "text": "క్రమం",
+      "label": "Police"
+    },
+    {
+      "text": "శాంతి",
+      "label": "Police"
+    },
+    {
+      "text": "భద్రత",
+      "label": "Police"
+    },
+    {
+      "text": "రక్షణ",
+      "label": "Police"
+    },
+    {
+      "text": "పెట్రోలింగ్",
+      "label": "Police"
+    },
+    {
+      "text": "సంరక్షణ",
+      "label": "Police"
+    },
+    {
+      "text": "law",
+      "label": "Police"
+    },
+    {
+      "text": "order",
+      "label": "Police"
+    },
+    {
+      "text": "peace",
+      "label": "Police"
+    },
+    {
+      "text": "safety",
+      "label": "Police"
+    },
+    {
+      "text": "security",
+      "label": "Police"
+    },
+    {
+      "text": "patrol",
+      "label": "Police"
+    },
+    {
+      "text": "protection",
+      "label": "Police"
+    },
+    {
+      "text": "ఇల్లు",
+      "label": "Housing"
+    },
+    {
+      "text": "స్థలం",
+      "label": "Housing"
+    },
+    {
+      "text": "ప్లాటు",
+      "label": "Housing"
+    },
+    {
+      "text": "కేటాయింపు",
+      "label": "Housing"
+    },
+    {
+      "text": "పట్టా",
+      "label": "Housing"
+    },
+    {
+      "text": "కేటాయింపు",
+      "label": "Housing"
+    },
+    {
+      "text": "ప్రభుత్వం",
+      "label": "Housing"
+    },
+    {
+      "text": "భూమి",
+      "label": "Housing"
+    },
+    {
+      "text": "house",
+      "label": "Housing"
+    },
+    {
+      "text": "site",
+      "label": "Housing"
+    },
+    {
+      "text": "plot",
+      "label": "Housing"
+    },
+    {
+      "text": "assignment",
+      "label": "Housing"
+    },
+    {
+      "text": "patta",
+      "label": "Housing"
+    },
+    {
+      "text": "allotment",
+      "label": "Housing"
+    },
+    {
+      "text": "government",
+      "label": "Housing"
+    },
+    {
+      "text": "land",
+      "label": "Housing"
+    },
+    {
+      "text": "పథకం",
+      "label": "Housing"
+    },
+    {
+      "text": "సబ్సిడీ",
+      "label": "Housing"
+    },
+    {
+      "text": "నిర్మాణం",
+      "label": "Housing"
+    },
+    {
+      "text": "రుణం",
+      "label": "Housing"
+    },
+    {
+      "text": "ఇందిరమ్మ",
+      "label": "Housing"
+    },
+    {
+      "text": "గృహం",
+      "label": "Housing"
+    },
+    {
+      "text": "పిఎంఏవై",
+      "label": "Housing"
+    },
+    {
+      "text": "scheme",
+      "label": "Housing"
+    },
+    {
+      "text": "subsidy",
+      "label": "Housing"
+    },
+    {
+      "text": "construction",
+      "label": "Housing"
+    },
+    {
+      "text": "loan",
+      "label": "Housing"
+    },
+    {
+      "text": "indiramma",
+      "label": "Housing"
+    },
+    {
+      "text": "housing",
+      "label": "Housing"
+    },
+    {
+      "text": "pmay",
+      "label": "Housing"
+    },
+    {
+      "text": "ప్రవేశం",
+      "label": "Education"
+    },
+    {
+      "text": "కళాశాల",
+      "label": "Education"
+    },
+    {
+      "text": "సీటు",
+      "label": "Education"
+    },
+    {
+      "text": "కౌన్సెలింగ్",
+      "label": "Education"
+    },
+    {
+      "text": "ఫీజు",
+      "label": "Education"
+    },
+    {
+      "text": "స్కాలర్‌షిప్",
+      "label": "Education"
+    },
+    {
+      "text": "కోర్సు",
+      "label": "Education"
+    },
+    {
+      "text": "admission",
+      "label": "Education"
+    },
+    {
+      "text": "college",
+      "label": "Education"
+    },
+    {
+      "text": "seat",
+      "label": "Education"
+    },
+    {
+      "text": "counseling",
+      "label": "Education"
+    },
+    {
+      "text": "fee",
+      "label": "Education"
+    },
+    {
+      "text": "scholarship",
+      "label": "Education"
+    },
+    {
+      "text": "course",
+      "label": "Education"
+    },
+    {
+      "text": "పాఠశాల",
+      "label": "Education"
+    },
+    {
+      "text": "భవనం",
+      "label": "Education"
+    },
+    {
+      "text": "తరగతి గది",
+      "label": "Education"
+    },
+    {
+      "text": "మరుగుదొడ్డి",
+      "label": "Education"
+    },
+    {
+      "text": "నీరు",
+      "label": "Education"
+    },
+    {
+      "text": "మౌలిక సదుపాయాలు",
+      "label": "Education"
+    },
+    {
+      "text": "సౌకర్యం",
+      "label": "Education"
+    },
+    {
+      "text": "school",
+      "label": "Education"
+    },
+    {
+      "text": "building",
+      "label": "Education"
+    },
+    {
+      "text": "classroom",
+      "label": "Education"
+    },
+    {
+      "text": "toilet",
+      "label": "Education"
+    },
+    {
+      "text": "water",
+      "label": "Education"
+    },
+    {
+      "text": "infrastructure",
+      "label": "Education"
+    },
+    {
+      "text": "facility",
+      "label": "Education"
+    },
+    {
+      "text": "భోజనం",
+      "label": "Education"
+    },
+    {
+      "text": "ఆహారం",
+      "label": "Education"
+    },
+    {
+      "text": "ఎండిఎం",
+      "label": "Education"
+    },
+    {
+      "text": "మధ్యాహ్న",
+      "label": "Education"
+    },
+    {
+      "text": "నాణ్యత",
+      "label": "Education"
+    },
+    {
+      "text": "సరఫరా",
+      "label": "Education"
+    },
+    {
+      "text": "పిల్లలు",
+      "label": "Education"
+    },
+    {
+      "text": "meal",
+      "label": "Education"
+    },
+    {
+      "text": "food",
+      "label": "Education"
+    },
+    {
+      "text": "mdm",
+      "label": "Education"
+    },
+    {
+      "text": "mid-day",
+      "label": "Education"
+    },
+    {
+      "text": "quality",
+      "label": "Education"
+    },
+    {
+      "text": "supply",
+      "label": "Education"
+    },
+    {
+      "text": "children",
+      "label": "Education"
+    },
+    {
+      "text": "నీరు",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "సరఫరా",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "కనెక్షన్",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "కుళాయి",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "పైప్‌లైన్",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "కొరత",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "నాణ్యత",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "water",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "supply",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "connection",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "tap",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "pipeline",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "shortage",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "quality",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "డ్రైనేజీ",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "మురుగునీరు",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "అడ్డుకట్ట",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "పొంగిపొర్లడం",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "పారిశుధ్యం",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "శుభ్రపరచడం",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "drainage",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "sewerage",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "blockage",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "overflow",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "sanitation",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "cleaning",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "రోడ్డు",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "గుంత",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "మరమ్మతులు",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "నిర్వహణ",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "వీధి",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "లైట్",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "నిర్మాణం",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "road",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "pothole",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "repair",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "maintenance",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "street",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "light",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "construction",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "వ్యర్థాలు",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "చెత్త",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "సేకరణ",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "పారవేయడం",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "డంప్",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "పారిశుధ్యం",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "శుభ్రపరచడం",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "waste",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "garbage",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "collection",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "disposal",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "dump",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "sanitation",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "cleaning",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "గ్రామీణ",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "రోడ్డు",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "గ్రామం",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "రాయి రోడ్డు",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "మరమ్మతులు",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "నిర్మాణం",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "పంచాయతీ",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "rural",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "road",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "village",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "gravel",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "repair",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "construction",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "panchayat",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "ఎన్ఆర్‌ఈజిఎస్",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "మగ్నేర్గా",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "ఉద్యోగం",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "కార్డు",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "వేతనం",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "పని",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "ఉపాధి",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "nregs",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "mgnregs",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "job",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "card",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "wages",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "work",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "employment",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "రికార్డు",
+      "label": "Revenue"
+    },
+    {
+      "text": "హక్కులు",
+      "label": "Revenue"
+    },
+    {
+      "text": "ఆర్ఓఆర్",
+      "label": "Revenue"
+    },
+    {
+      "text": "పాస్‌బుక్",
+      "label": "Revenue"
+    },
+    {
+      "text": "పట్టాదారు",
+      "label": "Revenue"
+    },
+    {
+      "text": "భూమి",
+      "label": "Revenue"
+    },
+    {
+      "text": "పత్రం",
+      "label": "Revenue"
+    },
+    {
+      "text": "మ్యూటేషన్",
+      "label": "Revenue"
+    },
+    {
+      "text": "దిద్దుబాటు",
+      "label": "Revenue"
+    },
+    {
+      "text": "పేరు",
+      "label": "Revenue"
+    },
+    {
+      "text": "విస్తీర్ణం",
+      "label": "Revenue"
+    },
+    {
+      "text": "record",
+      "label": "Revenue"
+    },
+    {
+      "text": "rights",
+      "label": "Revenue"
+    },
+    {
+      "text": "ror",
+      "label": "Revenue"
+    },
+    {
+      "text": "passbook",
+      "label": "Revenue"
+    },
+    {
+      "text": "pattadar",
+      "label": "Revenue"
+    },
+    {
+      "text": "land",
+      "label": "Revenue"
+    },
+    {
+      "text": "document",
+      "label": "Revenue"
+    },
+    {
+      "text": "mutation",
+      "label": "Revenue"
+    },
+    {
+      "text": "correction",
+      "label": "Revenue"
+    },
+    {
+      "text": "name",
+      "label": "Revenue"
+    },
+    {
+      "text": "extent",
+      "label": "Revenue"
+    },
+    {
+      "text": "భూమి",
+      "label": "Revenue"
+    },
+    {
+      "text": "పట్టా",
+      "label": "Revenue"
+    },
+    {
+      "text": "సర్వే",
+      "label": "Revenue"
+    },
+    {
+      "text": "రికార్డు",
+      "label": "Revenue"
+    },
+    {
+      "text": "టైటిల్",
+      "label": "Revenue"
+    },
+    {
+      "text": "డీడ్",
+      "label": "Revenue"
+    },
+    {
+      "text": "యాజమాన్యం",
+      "label": "Revenue"
+    },
+    {
+      "text": "ఆస్తి",
+      "label": "Revenue"
+    },
+    {
+      "text": "land",
+      "label": "Revenue"
+    },
+    {
+      "text": "patta",
+      "label": "Revenue"
+    },
+    {
+      "text": "survey",
+      "label": "Revenue"
+    },
+    {
+      "text": "record",
+      "label": "Revenue"
+    },
+    {
+      "text": "title",
+      "label": "Revenue"
+    },
+    {
+      "text": "deed",
+      "label": "Revenue"
+    },
+    {
+      "text": "ownership",
+      "label": "Revenue"
+    },
+    {
+      "text": "property",
+      "label": "Revenue"
+    },
+    {
+      "text": "పునర్సర్వే",
+      "label": "Revenue"
+    },
+    {
+      "text": "ఎస్ఎస్ఎల్ఆర్",
+      "label": "Revenue"
+    },
+    {
+      "text": "సర్వే",
+      "label": "Revenue"
+    },
+    {
+      "text": "సరిహద్దు",
+      "label": "Revenue"
+    },
+    {
+      "text": "గుర్తింపు",
+      "label": "Revenue"
+    },
+    {
+      "text": "భూమి",
+      "label": "Revenue"
+    },
+    {
+      "text": "పార్సెల్",
+      "label": "Revenue"
+    },
+    {
+      "text": "ఎల్పిఎం",
+      "label": "Revenue"
+    },
+    {
+      "text": "resurvey",
+      "label": "Revenue"
+    },
+    {
+      "text": "sslr",
+      "label": "Revenue"
+    },
+    {
+      "text": "survey",
+      "label": "Revenue"
+    },
+    {
+      "text": "boundary",
+      "label": "Revenue"
+    },
+    {
+      "text": "demarcation",
+      "label": "Revenue"
+    },
+    {
+      "text": "land",
+      "label": "Revenue"
+    },
+    {
+      "text": "parcel",
+      "label": "Revenue"
+    },
+    {
+      "text": "lpm",
+      "label": "Revenue"
+    },
+    {
+      "text": "ఎఫ్-లైన్",
+      "label": "Revenue"
+    },
+    {
+      "text": "సరిహద్దు",
+      "label": "Revenue"
+    },
+    {
+      "text": "బోర్డర్",
+      "label": "Revenue"
+    },
+    {
+      "text": "గుర్తింపు",
+      "label": "Revenue"
+    },
+    {
+      "text": "వివాదం",
+      "label": "Revenue"
+    },
+    {
+      "text": "సర్వే",
+      "label": "Revenue"
+    },
+    {
+      "text": "ఫీల్డ్",
+      "label": "Revenue"
+    },
+    {
+      "text": "f-line",
+      "label": "Revenue"
+    },
+    {
+      "text": "boundary",
+      "label": "Revenue"
+    },
+    {
+      "text": "border",
+      "label": "Revenue"
+    },
+    {
+      "text": "demarcation",
+      "label": "Revenue"
+    },
+    {
+      "text": "dispute",
+      "label": "Revenue"
+    },
+    {
+      "text": "survey",
+      "label": "Revenue"
+    },
+    {
+      "text": "field",
+      "label": "Revenue"
+    },
+    {
+      "text": "ఆక్రమణ",
+      "label": "Revenue"
+    },
+    {
+      "text": "అక్రమ",
+      "label": "Revenue"
+    },
+    {
+      "text": "ఆక్రమణ",
+      "label": "Revenue"
+    },
+    {
+      "text": "ప్రభుత్వం",
+      "label": "Revenue"
+    },
+    {
+      "text": "భూమి",
+      "label": "Revenue"
+    },
+    {
+      "text": "తొలగింపు",
+      "label": "Revenue"
+    },
+    {
+      "text": "తొలగించడం",
+      "label": "Revenue"
+    },
+    {
+      "text": "encroachment",
+      "label": "Revenue"
+    },
+    {
+      "text": "illegal",
+      "label": "Revenue"
+    },
+    {
+      "text": "occupation",
+      "label": "Revenue"
+    },
+    {
+      "text": "government",
+      "label": "Revenue"
+    },
+    {
+      "text": "land",
+      "label": "Revenue"
+    },
+    {
+      "text": "removal",
+      "label": "Revenue"
+    },
+    {
+      "text": "eviction",
+      "label": "Revenue"
+    },
+    {
+      "text": "గ్రాబింగ్",
+      "label": "Revenue"
+    },
+    {
+      "text": "భూమి",
+      "label": "Revenue"
+    },
+    {
+      "text": "అక్రమ",
+      "label": "Revenue"
+    },
+    {
+      "text": "ఆక్రమణ",
+      "label": "Revenue"
+    },
+    {
+      "text": "ఫిర్యాదు",
+      "label": "Revenue"
+    },
+    {
+      "text": "వివాదం",
+      "label": "Revenue"
+    },
+    {
+      "text": "మోసం",
+      "label": "Revenue"
+    },
+    {
+      "text": "grabbing",
+      "label": "Revenue"
+    },
+    {
+      "text": "land",
+      "label": "Revenue"
+    },
+    {
+      "text": "illegal",
+      "label": "Revenue"
+    },
+    {
+      "text": "occupation",
+      "label": "Revenue"
+    },
+    {
+      "text": "complaint",
+      "label": "Revenue"
+    },
+    {
+      "text": "dispute",
+      "label": "Revenue"
+    },
+    {
+      "text": "fraud",
+      "label": "Revenue"
+    },
+    {
+      "text": "పట్టా",
+      "label": "Revenue"
+    },
+    {
+      "text": "పత్రం",
+      "label": "Revenue"
+    },
+    {
+      "text": "జారీ",
+      "label": "Revenue"
+    },
+    {
+      "text": "దిద్దుబాటు",
+      "label": "Revenue"
+    },
+    {
+      "text": "బదిలీ",
+      "label": "Revenue"
+    },
+    {
+      "text": "ఉపవిభజన",
+      "label": "Revenue"
+    },
+    {
+      "text": "మార్పిడి",
+      "label": "Revenue"
+    },
+    {
+      "text": "patta",
+      "label": "Revenue"
+    },
+    {
+      "text": "document",
+      "label": "Revenue"
+    },
+    {
+      "text": "issuance",
+      "label": "Revenue"
+    },
+    {
+      "text": "correction",
+      "label": "Revenue"
+    },
+    {
+      "text": "transfer",
+      "label": "Revenue"
+    },
+    {
+      "text": "subdivision",
+      "label": "Revenue"
+    },
+    {
+      "text": "conversion",
+      "label": "Revenue"
+    },
+    {
+      "text": "సర్టిఫికేట్",
+      "label": "Revenue"
+    },
+    {
+      "text": "ఆదాయం",
+      "label": "Revenue"
+    },
+    {
+      "text": "కులం",
+      "label": "Revenue"
+    },
+    {
+      "text": "నివాసం",
+      "label": "Revenue"
+    },
+    {
+      "text": "జన్మస్థలం",
+      "label": "Revenue"
+    },
+    {
+      "text": "జననం",
+      "label": "Revenue"
+    },
+    {
+      "text": "మరణం",
+      "label": "Revenue"
+    },
+    {
+      "text": "నివాస",
+      "label": "Revenue"
+    },
+    {
+      "text": "certificate",
+      "label": "Revenue"
+    },
+    {
+      "text": "income",
+      "label": "Revenue"
+    },
+    {
+      "text": "caste",
+      "label": "Revenue"
+    },
+    {
+      "text": "residence",
+      "label": "Revenue"
+    },
+    {
+      "text": "nativity",
+      "label": "Revenue"
+    },
+    {
+      "text": "birth",
+      "label": "Revenue"
+    },
+    {
+      "text": "death",
+      "label": "Revenue"
+    },
+    {
+      "text": "domicile",
+      "label": "Revenue"
+    },
+    {
+      "text": "కేటాయింపు",
+      "label": "Revenue"
+    },
+    {
+      "text": "ప్రభుత్వం",
+      "label": "Revenue"
+    },
+    {
+      "text": "భూమి",
+      "label": "Revenue"
+    },
+    {
+      "text": "కేటాయింపు",
+      "label": "Revenue"
+    },
+    {
+      "text": "పట్టా",
+      "label": "Revenue"
+    },
+    {
+      "text": "పంపిణీ",
+      "label": "Revenue"
+    },
+    {
+      "text": "అర్హత",
+      "label": "Revenue"
+    },
+    {
+      "text": "assignment",
+      "label": "Revenue"
+    },
+    {
+      "text": "government",
+      "label": "Revenue"
+    },
+    {
+      "text": "land",
+      "label": "Revenue"
+    },
+    {
+      "text": "allotment",
+      "label": "Revenue"
+    },
+    {
+      "text": "patta",
+      "label": "Revenue"
+    },
+    {
+      "text": "distribution",
+      "label": "Revenue"
+    },
+    {
+      "text": "eligibility",
+      "label": "Revenue"
+    },
+    {
+      "text": "ఆలయం",
+      "label": "Revenue"
+    },
+    {
+      "text": "ఎండోమెంట్",
+      "label": "Revenue"
+    },
+    {
+      "text": "ప్రసాదం",
+      "label": "Revenue"
+    },
+    {
+      "text": "విరాళం",
+      "label": "Revenue"
+    },
+    {
+      "text": "గోశాల",
+      "label": "Revenue"
+    },
+    {
+      "text": "లీజు",
+      "label": "Revenue"
+    },
+    {
+      "text": "ఫిర్యాదు",
+      "label": "Revenue"
+    },
+    {
+      "text": "నిర్వహణ",
+      "label": "Revenue"
+    },
+    {
+      "text": "temple",
+      "label": "Revenue"
+    },
+    {
+      "text": "endowment",
+      "label": "Revenue"
+    },
+    {
+      "text": "prasadam",
+      "label": "Revenue"
+    },
+    {
+      "text": "donation",
+      "label": "Revenue"
+    },
+    {
+      "text": "gosala",
+      "label": "Revenue"
+    },
+    {
+      "text": "lease",
+      "label": "Revenue"
+    },
+    {
+      "text": "complaint",
+      "label": "Revenue"
+    },
+    {
+      "text": "maintenance",
+      "label": "Revenue"
+    },
+    {
+      "text": "పెన్షన్",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "వృద్ధాప్య",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "విధవ",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "వైకల్యం",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "పెన్షన్",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "భత్యం",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "చెల్లింపు",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "సామాజిక",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "pension",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "old-age",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "widow",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "disability",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "pension",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "allowance",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "payment",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "social",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "సంక్షేమం",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "పథకం",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "ప్రయోజనం",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "సబ్సిడీ",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "సహాయం",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "మద్దతు",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "సామాజిక",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "welfare",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "scheme",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "benefit",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "subsidy",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "assistance",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "support",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "social",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "డ్రైవింగ్",
+      "label": "Transport"
+    },
+    {
+      "text": "లైసెన్స్",
+      "label": "Transport"
+    },
+    {
+      "text": "డిఎల్",
+      "label": "Transport"
+    },
+    {
+      "text": "పునరుద్ధరణ",
+      "label": "Transport"
+    },
+    {
+      "text": "లర్నర్",
+      "label": "Transport"
+    },
+    {
+      "text": "పరీక్ష",
+      "label": "Transport"
+    },
+    {
+      "text": "వాహనం",
+      "label": "Transport"
+    },
+    {
+      "text": "ఆర్టిఓ",
+      "label": "Transport"
+    },
+    {
+      "text": "driving",
+      "label": "Transport"
+    },
+    {
+      "text": "license",
+      "label": "Transport"
+    },
+    {
+      "text": "dl",
+      "label": "Transport"
+    },
+    {
+      "text": "renewal",
+      "label": "Transport"
+    },
+    {
+      "text": "learner",
+      "label": "Transport"
+    },
+    {
+      "text": "test",
+      "label": "Transport"
+    },
+    {
+      "text": "vehicle",
+      "label": "Transport"
+    },
+    {
+      "text": "rto",
+      "label": "Transport"
+    },
+    {
+      "text": "రిజిస్ట్రేషన్",
+      "label": "Transport"
+    },
+    {
+      "text": "ఆర్సి",
+      "label": "Transport"
+    },
+    {
+      "text": "వాహనం",
+      "label": "Transport"
+    },
+    {
+      "text": "బదిలీ",
+      "label": "Transport"
+    },
+    {
+      "text": "యాజమాన్యం",
+      "label": "Transport"
+    },
+    {
+      "text": "పన్ను",
+      "label": "Transport"
+    },
+    {
+      "text": "అనుమతి",
+      "label": "Transport"
+    },
+    {
+      "text": "registration",
+      "label": "Transport"
+    },
+    {
+      "text": "rc",
+      "label": "Transport"
+    },
+    {
+      "text": "vehicle",
+      "label": "Transport"
+    },
+    {
+      "text": "transfer",
+      "label": "Transport"
+    },
+    {
+      "text": "ownership",
+      "label": "Transport"
+    },
+    {
+      "text": "tax",
+      "label": "Transport"
+    },
+    {
+      "text": "permit",
+      "label": "Transport"
+    },
+    {
+      "text": "రోడ్డు",
+      "label": "Transport"
+    },
+    {
+      "text": "నిర్మాణం",
+      "label": "Transport"
+    },
+    {
+      "text": "హైవే",
+      "label": "Transport"
+    },
+    {
+      "text": "వంతెన",
+      "label": "Transport"
+    },
+    {
+      "text": "మరమ్మతులు",
+      "label": "Transport"
+    },
+    {
+      "text": "నిర్వహణ",
+      "label": "Transport"
+    },
+    {
+      "text": "నాణ్యత",
+      "label": "Transport"
+    },
+    {
+      "text": "road",
+      "label": "Transport"
+    },
+    {
+      "text": "construction",
+      "label": "Transport"
+    },
+    {
+      "text": "highway",
+      "label": "Transport"
+    },
+    {
+      "text": "bridge",
+      "label": "Transport"
+    },
+    {
+      "text": "repair",
+      "label": "Transport"
+    },
+    {
+      "text": "maintenance",
+      "label": "Transport"
+    },
+    {
+      "text": "quality",
+      "label": "Transport"
+    },
+    {
+      "text": "నీటిపారుదల",
+      "label": "Water Resources"
+    },
+    {
+      "text": "కాలువ",
+      "label": "Water Resources"
+    },
+    {
+      "text": "నీరు",
+      "label": "Water Resources"
+    },
+    {
+      "text": "సరఫరా",
+      "label": "Water Resources"
+    },
+    {
+      "text": "వ్యవసాయం",
+      "label": "Water Resources"
+    },
+    {
+      "text": "పంట",
+      "label": "Water Resources"
+    },
+    {
+      "text": "చెరువు",
+      "label": "Water Resources"
+    },
+    {
+      "text": "రిజర్వాయర్",
+      "label": "Water Resources"
+    },
+    {
+      "text": "irrigation",
+      "label": "Water Resources"
+    },
+    {
+      "text": "canal",
+      "label": "Water Resources"
+    },
+    {
+      "text": "water",
+      "label": "Water Resources"
+    },
+    {
+      "text": "supply",
+      "label": "Water Resources"
+    },
+    {
+      "text": "agriculture",
+      "label": "Water Resources"
+    },
+    {
+      "text": "crop",
+      "label": "Water Resources"
+    },
+    {
+      "text": "tank",
+      "label": "Water Resources"
+    },
+    {
+      "text": "reservoir",
+      "label": "Water Resources"
+    },
+    {
+      "text": "త్రాగు",
+      "label": "Water Resources"
+    },
+    {
+      "text": "నీరు",
+      "label": "Water Resources"
+    },
+    {
+      "text": "త్రాగదగిన",
+      "label": "Water Resources"
+    },
+    {
+      "text": "సరఫరా",
+      "label": "Water Resources"
+    },
+    {
+      "text": "బోరు",
+      "label": "Water Resources"
+    },
+    {
+      "text": "బావి",
+      "label": "Water Resources"
+    },
+    {
+      "text": "నాణ్యత",
+      "label": "Water Resources"
+    },
+    {
+      "text": "drinking",
+      "label": "Water Resources"
+    },
+    {
+      "text": "water",
+      "label": "Water Resources"
+    },
+    {
+      "text": "potable",
+      "label": "Water Resources"
+    },
+    {
+      "text": "supply",
+      "label": "Water Resources"
+    },
+    {
+      "text": "bore",
+      "label": "Water Resources"
+    },
+    {
+      "text": "well",
+      "label": "Water Resources"
+    },
+    {
+      "text": "quality",
+      "label": "Water Resources"
+    },
+    {
+      "text": "పొలానికి దారి ఇవ్వడం లేదని సబ్ కలెక్టర్ కు ఫిర్యాదు చేశారు. ఇస్నాపూర్ మండలం అన్నారం గ్రామంలో సర్వే నెంబర్ 144లో ఒక ఎకరం భూమిని సాగు చేయడానికి వెళ్లినప్పుడు ఇతరులు నిరోధించారు",
+      "label": "Revenue"
+    },
+    {
+      "text": "విద్యుత్ సమస్య ఉంటే 1912 టోల్ ఫ్రీ నెంబర్ కు ఫోన్ చేసి ఫిర్యాదు చేయవచ్చు. విద్యుత్ బిల్లులు అధికంగా వచ్చినా, కరెంటు మోటరు ట్రాన్స్ఫార్మర్ సమస్య ఉన్నా ఫిర్యాదు చేయవచ్చు",
+      "label": "Energy"
+    },
+    {
+      "text": "విద్యుత్ సమస్య పరిష్కరించాలని ప్రజావాణిలో ఫిర్యాదు చేశారు. ప్రతిరోజు విద్యుత్తు అంతరాయం ఏర్పడుతూ, ప్రజలు తీవ్ర ఇబ్బందులు పడుతున్నారు",
+      "label": "Energy"
+    },
+    {
+      "text": "తమకు వారానికి ఒక్కసారి మాత్రమే నీటి సరఫరా జరుగుతుందని యాదాద్రి-భువనగిరి జిల్లా కలెక్టర్‌కు చౌటుప్పల్‌ వాసులు ఫిర్యాదు చేశారు",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "గ్రామానికి నెలరోజులుగా తాగునీరు రాక తీవ్ర ఇబ్బందులు పడుతున్నామని చిట్కుల్‌ గ్రామస్తులు మిషన్‌ భగీరథ అధికారులపై ఆగ్రహం వ్యక్తం చేశారు",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "15రోజులుగా మిషన్‌ భగీరథ తాగునీటి సరఫరా కాకపోవటంతో తండావాసులు ఖాళీబిందెలతో ఆందోళనకు దిగారు",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "ఓరుగల్లు కోట ప్రాంతవాసులు గత ఆరు రోజులుగా తీవ్ర తాగునీటి ఎద్దడితో అల్లాడుతున్నారు. తక్షణ ప్రత్యామ్నాయ చర్యగా ట్యాంకర్ల ద్వారా నీటి సరఫరా చేయాలని డిమాండ్ చేస్తున్నారు",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "పోలీసులు ఏదైనా నేరానికి సంబంధించి సమాచారం తెలిస్తే FIR నమోదు చేస్తారు. FIR అంటే ఫస్ట్‌ ఇన్ఫర్మేషన్‌ రిపోర్టు. ఎఫ్‌ఐఆర్‌లో తేది, ఫిర్యాదు ఇచ్చిన వారిపేరు, సమయం, సెక్షన్లు, నేరం వివరాలు ఉంటాయి",
+      "label": "Police"
+    },
+    {
+      "text": "మీ భూమి పోర్టల్ ద్వారా 1-బి, అడంగలు, గ్రామ మ్యాప్‌లు, ఇ-పాస్‌బుక్‌లు చూడవచ్చు. భూ వివాదాల స్థితిని తనిఖీ చేయవచ్చు, మ్యూటేషన్ మరియు భూమి మార్పిడి కోసం దరఖాస్తు చేసుకోవచ్చు",
+      "label": "Revenue"
+    },
+    {
+      "text": "వ్యవసాయం మరియు సహకారం శాఖకు సంబంధించిన ఫిర్యాదు",
+      "label": "Agriculture"
+    },
+    {
+      "text": "ఆరోగ్యం, వైద్యం మరియు కుటుంబ సంక్షేమం శాఖలో సమస్య",
+      "label": "Health"
+    },
+    {
+      "text": "పశుపోషణ, డైరీ అభివృద్ధి మరియు మత్స్య సంపద శాఖ",
+      "label": "Animal Husbandry"
+    },
+    {
+      "text": "వినియోగదారుల వ్యవహారాలు, ఆహారం మరియు సివిల్ సప్లైస్ శాఖ",
+      "label": "Civil Supplies"
+    },
+    {
+      "text": "మానవ వనరులు (పాఠశాల విద్య) శాఖ",
+      "label": "Education"
+    },
+    {
+      "text": "పాఠశాల భవనం మరమ్మత్తులు అవసరం. రాష్టం పడుతోంది",
+      "label": "Education"
+    },
+    {
+      "text": "ప్రాథమిక ఆరోగ్య కేంద్రంలో వైద్యులు హాజరుకావటం లేదు",
+      "label": "Health"
+    },
+    {
+      "text": "మా గ్రామానికి రోడ్లు మరమ్మత్తు చేయాలి. గుంతలు పడ్డాయి",
+      "label": "Transport"
+    },
+    {
+      "text": "పంట నష్టం పరిహారం ఇవ్వలేదు. రైతు భరోసా పథకం డబ్బు రాలేదు",
+      "label": "Agriculture"
+    },
+    {
+      "text": "పాత వయస్సు పెన్షన్ గత రెండు నెలలుగా రాలేదు",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "కుల ధృవీకరణ పత్రం కోసం దరఖాస్తు చేసాను. ఇంకా రాలేదు",
+      "label": "Revenue"
+    },
+    {
+      "text": "ఆదాయ ధృవీకరణ పత్రం అవసరం. త్వరగా జారీ చేయాలి",
+      "label": "Revenue"
+    },
+    {
+      "text": "రేషన్ కార్డు కోసం దరఖాస్తు చేసాను. ప్రాసెస్ అవుతోందా తెలపండి",
+      "label": "Civil Supplies"
+    },
+    {
+      "text": "నీటి కనెక్షన్ ఇవ్వాలి. దరఖాస్తు చేసి రెండు నెలలైంది",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "కరెంటు బిల్లు అధికంగా వచ్చింది. తనిఖీ చేయండి",
+      "label": "Energy"
+    },
+    {
+      "text": "కరెంటు మీటర్ సరిగా పని చేయడం లేదు. మార్చాలి",
+      "label": "Energy"
+    },
+    {
+      "text": "పంచాయతీ కార్యాలయంలో పనులు ఆలస్యం అవుతున్నాయి",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "గృహ నిర్మాణ పథకం కింద ఇల్లు కట్టుకోవాలి. సహాయం కావాలి",
+      "label": "Housing"
+    },
+    {
+      "text": "పోలీసు స్టేషన్‌లో FIR రిజిస్టర్ చేయడం లేదు",
+      "label": "Police"
+    },
+    {
+      "text": "బస్సు సర్వీస్ లేదు. మా గ్రామానికి బస్సులు నడవాలి",
+      "label": "Transport"
+    },
+    {
+      "text": "పట్టా పత్రం జారీ చేయాలి. భూమికి చట్టబద్ధ హక్కులు కావాలి",
+      "label": "Revenue"
+    },
+    {
+      "text": "భూ సర్వే తప్పులు సరిదిద్దాలి. సర్వే నంబర్ సరైనది కాదు",
+      "label": "Revenue"
+    },
+    {
+      "text": "విత్తన సబ్సిడీ అందలేదు. సరైన సమయానికి విత్తనాలు కావాలి",
+      "label": "Agriculture"
+    },
+    {
+      "text": "మధ్యాహ్న భోజన పథకంలో నాణ్యత లేదు. పిల్లలకు మంచి ఆహారం కావాలి",
+      "label": "Education"
+    },
+    {
+      "text": "విద్యార్థి వేతనం ఖాతాలోకి జమ కాలేదు. స్కాలర్‌షిప్ డబ్బు కావాలి",
+      "label": "Education"
+    },
+    {
+      "text": "వైద్య సదుపాయాలు లేవు. 108 ఆంబులెన్స్ సేవ బాగా లేదు",
+      "label": "Health"
+    },
+    {
+      "text": "ఉచిత మందులు లభించడం లేదు. మందుల దుకాణంలో స్టాక్ లేదు",
+      "label": "Health"
+    },
+    {
+      "text": "వైకల్య పెన్షన్ కోసం దరఖాస్తు చేసాను. ఆమోదం కావాలి",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "విధవ పెన్షన్ ఆగిపోయింది. తిరిగి ప్రారంభించాలి",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "గృహ సైట్ కేటాయింపు జరగలేదు. నా పేరు లిస్ట్‌లో ఉంది",
+      "label": "Housing"
+    },
+    {
+      "text": "వాణిజ్య లైసెన్స్ పొందాలి. దుకాణం తెరవడానికి అనుమతి కావాలి",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "భవన అనుమతి కోసం దరఖాస్తు చేసాను. ఆమోదించాలి",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "స్థానిక పన్ను బిల్లు అధికంగా ఉంది. పునఃపరిశీలన కావాలి",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "కాలువ శుభ్రం చేయాలి. ఆరోగ్య సమస్యలు వస్తున్నాయి",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "చెత్త సేకరణ సక్రమంగా జరగడం లేదు",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "వీధి దీపాలు పని చేయడం లేదు. రాత్రి చీకటిగా ఉంది",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "రైతు భీమా క్లెయిమ్ పొందాలి. పంట నష్టమైంది",
+      "label": "Agriculture"
+    },
+    {
+      "text": "పంట సేద కనీస మద్దతు ధర రాలేదు. త్వరగా చెల్లించాలి",
+      "label": "Agriculture"
+    },
+    {
+      "text": "పేటేంట్ మందులు అధిక ధరలకు అమ్ముతున్నారు",
+      "label": "Health"
+    },
+    {
+      "text": "బస్ ప్రమాదంలో గాయపడ్డారు. పరిహారం కావాలి",
+      "label": "Transport"
+    },
+    {
+      "text": "డ్రైవింగ్ లైసెన్స్ పొందాలి. పరీక్ష తేదీ కావాలి",
+      "label": "Transport"
+    },
+    {
+      "text": "వాహన రిజిస్ట్రేషన్ ఆలస్యం అవుతోంది. త్వరగా జారీ చేయాలి",
+      "label": "Transport"
+    },
+    {
+      "text": "సహకార సంఘం నుండి రుణం కావాలి. వ్యవసాయం కోసం అవసరం",
+      "label": "Agriculture"
+    },
+    {
+      "text": "ఇంధన సబ్సిడీ అందలేదు. రైతులకు డీజిల్ సబ్సిడీ కావాలి",
+      "label": "Agriculture"
+    },
+    {
+      "text": "సేద మార్కెట్ సౌకర్యాలు లేవు. రైతులకు ఇబ్బంది",
+      "label": "Agriculture"
+    },
+    {
+      "text": "తాతకాలంపు అవినీతి చెక్ పోస్ట్ తొలగించాలి",
+      "label": "Police"
+    },
+    {
+      "text": "నీటి వనరుల శాఖ కాలువలు నిర్వహించడం లేదు. నీటి ధార్ల నిర్వహణ చేయాలి",
+      "label": "Water Resources"
+    },
+    {
+      "text": "వ్యాధి నియంత్రణ కార్యక్రమాలు నిర్వహించాలి. డెంగ్యూ వ్యాపిస్తోంది",
+      "label": "Health"
+    },
+    {
+      "text": "టీకా కార్యక్రమం సక్రమంగా జరగడం లేదు. పిల్లలకు టీకాలు కావాలి",
+      "label": "Health"
+    },
+    {
+      "text": "మత్స్య సంపద శాఖ నుండి చేపల వ్యాపారానికి రుణం కావాలి",
+      "label": "Animal Husbandry"
+    },
+    {
+      "text": "పశువుల వైద్య సౌకర్యాలు లేవు. పశు వైద్య కేంద్రం కావాలి",
+      "label": "Animal Husbandry"
+    },
+    {
+      "text": "విద్యుత్ కనెక్షన్ కోసం దరఖాస్తు చేసాను. త్వరగా ఇవ్వాలి",
+      "label": "Energy"
+    },
+    {
+      "text": "సౌర విద్యుత్ సబ్సిడీ కోసం దరఖాస్తు చేయాలి. సమాచారం కావాలి",
+      "label": "Energy"
+    },
+    {
+      "text": "పొలానికి దారి ఇవ్వడం లేదని సబ్ కలెక్టర్ కు ఫిర్యాదు చేశారు. ఇస్నాపూర్ మండలం అన్నారం గ్రామంలో సర్వే నెంబర్ 144లో ఒక ఎకరం భూమిని సాగు చేయడానికి వెళ్లినప్పుడు ఇతరులు నిరోధించారు",
+      "label": "Revenue"
+    },
+    {
+      "text": "విద్యుత్ సమస్య ఉంటే 1912 టోల్ ఫ్రీ నెంబర్ కు ఫోన్ చేసి ఫిర్యాదు చేయవచ్చు. విద్యుత్ బిల్లులు అధికంగా వచ్చినా, కరెంటు మోటరు ట్రాన్స్ఫార్మర్ సమస్య ఉన్నా ఫిర్యాదు చేయవచ్చు",
+      "label": "Energy"
+    },
+    {
+      "text": "విద్యుత్ సమస్య పరిష్కరించాలని ప్రజావాణిలో ఫిర్యాదు చేశారు. ప్రతిరోజు విద్యుత్తు అంతరాయం ఏర్పడుతూ, ప్రజలు తీవ్ర ఇబ్బందులు పడుతున్నారు",
+      "label": "Energy"
+    },
+    {
+      "text": "తమకు వారానికి ఒక్కసారి మాత్రమే నీటి సరఫరా జరుగుతుందని యాదాద్రి-భువనగిరి జిల్లా కలెక్టర్‌కు చౌటుప్పల్‌ వాసులు ఫిర్యాదు చేశారు",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "గ్రామానికి నెలరోజులుగా తాగునీరు రాక తీవ్ర ఇబ్బందులు పడుతున్నామని చిట్కుల్‌ గ్రామస్తులు మిషన్‌ భగీరథ అధికారులపై ఆగ్రహం వ్యక్తం చేశారు",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "15రోజులుగా మిషన్‌ భగీరథ తాగునీటి సరఫరా కాకపోవటంతో తండావాసులు ఖాళీబిందెలతో ఆందోళనకు దిగారు",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "ఓరుగల్లు కోట ప్రాంతవాసులు గత ఆరు రోజులుగా తీవ్ర తాగునీటి ఎద్దడితో అల్లాడుతున్నారు. తక్షణ ప్రత్యామ్నాయ చర్యగా ట్యాంకర్ల ద్వారా నీటి సరఫరా చేయాలని డిమాండ్ చేస్తున్నారు",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "పోలీసులు ఏదైనా నేరానికి సంబంధించి సమాచారం తెలిస్తే FIR నమోదు చేస్తారు. FIR అంటే ఫస్ట్‌ ఇన్ఫర్మేషన్‌ రిపోర్టు. ఎఫ్‌ఐఆర్‌లో తేది, ఫిర్యాదు ఇచ్చిన వారిపేరు, సమయం, సెక్షన్లు, నేరం వివరాలు ఉంటాయి",
+      "label": "Police"
+    },
+    {
+      "text": "మీ భూమి పోర్టల్ ద్వారా 1-బి, అడంగలు, గ్రామ మ్యాప్‌లు, ఇ-పాస్‌బుక్‌లు చూడవచ్చు. భూ వివాదాల స్థితిని తనిఖీ చేయవచ్చు, మ్యూటేషన్ మరియు భూమి మార్పిడి కోసం దరఖాస్తు చేసుకోవచ్చు",
+      "label": "Revenue"
+    },
+    {
+      "text": "వ్యవసాయం మరియు సహకారం శాఖకు సంబంధించిన ఫిర్యాదు",
+      "label": "Agriculture"
+    },
+    {
+      "text": "ఆరోగ్యం, వైద్యం మరియు కుటుంబ సంక్షేమం శాఖలో సమస్య",
+      "label": "Health"
+    },
+    {
+      "text": "పశుపోషణ, డైరీ అభివృద్ధి మరియు మత్స్య సంపద శాఖ",
+      "label": "Animal Husbandry"
+    },
+    {
+      "text": "వినియోగదారుల వ్యవహారాలు, ఆహారం మరియు సివిల్ సప్లైస్ శాఖ",
+      "label": "Civil Supplies"
+    },
+    {
+      "text": "మానవ వనరులు (పాఠశాల విద్య) శాఖ",
+      "label": "Education"
+    },
+    {
+      "text": "పాఠశాల భవనం మరమ్మత్తులు అవసరం. రాష్టం పడుతోంది",
+      "label": "Education"
+    },
+    {
+      "text": "ప్రాథమిక ఆరోగ్య కేంద్రంలో వైద్యులు హాజరుకావటం లేదు",
+      "label": "Health"
+    },
+    {
+      "text": "మా గ్రామానికి రోడ్లు మరమ్మత్తు చేయాలి. గుంతలు పడ్డాయి",
+      "label": "Transport"
+    },
+    {
+      "text": "పంట నష్టం పరిహారం ఇవ్వలేదు. రైతు భరోసా పథకం డబ్బు రాలేదు",
+      "label": "Agriculture"
+    },
+    {
+      "text": "పాత వయస్సు పెన్షన్ గత రెండు నెలలుగా రాలేదు",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "కుల ధృవీకరణ పత్రం కోసం దరఖాస్తు చేసాను. ఇంకా రాలేదు",
+      "label": "Revenue"
+    },
+    {
+      "text": "ఆదాయ ధృవీకరణ పత్రం అవసరం. త్వరగా జారీ చేయాలి",
+      "label": "Revenue"
+    },
+    {
+      "text": "రేషన్ కార్డు కోసం దరఖాస్తు చేసాను. ప్రాసెస్ అవుతోందా తెలపండి",
+      "label": "Civil Supplies"
+    },
+    {
+      "text": "నీటి కనెక్షన్ ఇవ్వాలి. దరఖాస్తు చేసి రెండు నెలలైంది",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "కరెంటు బిల్లు అధికంగా వచ్చింది. తనిఖీ చేయండి",
+      "label": "Energy"
+    },
+    {
+      "text": "కరెంటు మీటర్ సరిగా పని చేయడం లేదు. మార్చాలి",
+      "label": "Energy"
+    },
+    {
+      "text": "పంచాయతీ కార్యాలయంలో పనులు ఆలస్యం అవుతున్నాయి",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "గృహ నిర్మాణ పథకం కింద ఇల్లు కట్టుకోవాలి. సహాయం కావాలి",
+      "label": "Housing"
+    },
+    {
+      "text": "పోలీసు స్టేషన్‌లో FIR రిజిస్టర్ చేయడం లేదు",
+      "label": "Police"
+    },
+    {
+      "text": "బస్సు సర్వీస్ లేదు. మా గ్రామానికి బస్సులు నడవాలి",
+      "label": "Transport"
+    },
+    {
+      "text": "పట్టా పత్రం జారీ చేయాలి. భూమికి చట్టబద్ధ హక్కులు కావాలి",
+      "label": "Revenue"
+    },
+    {
+      "text": "భూ సర్వే తప్పులు సరిదిద్దాలి. సర్వే నంబర్ సరైనది కాదు",
+      "label": "Revenue"
+    },
+    {
+      "text": "విత్తన సబ్సిడీ అందలేదు. సరైన సమయానికి విత్తనాలు కావాలి",
+      "label": "Agriculture"
+    },
+    {
+      "text": "మధ్యాహ్న భోజన పథకంలో నాణ్యత లేదు. పిల్లలకు మంచి ఆహారం కావాలి",
+      "label": "Education"
+    },
+    {
+      "text": "విద్యార్థి వేతనం ఖాతాలోకి జమ కాలేదు. స్కాలర్‌షిప్ డబ్బు కావాలి",
+      "label": "Education"
+    },
+    {
+      "text": "వైద్య సదుపాయాలు లేవు. 108 ఆంబులెన్స్ సేవ బాగా లేదు",
+      "label": "Health"
+    },
+    {
+      "text": "ఉచిత మందులు లభించడం లేదు. మందుల దుకాణంలో స్టాక్ లేదు",
+      "label": "Health"
+    },
+    {
+      "text": "వైకల్య పెన్షన్ కోసం దరఖాస్తు చేసాను. ఆమోదం కావాలి",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "విధవ పెన్షన్ ఆగిపోయింది. తిరిగి ప్రారంభించాలి",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "గృహ సైట్ కేటాయింపు జరగలేదు. నా పేరు లిస్ట్‌లో ఉంది",
+      "label": "Housing"
+    },
+    {
+      "text": "వాణిజ్య లైసెన్స్ పొందాలి. దుకాణం తెరవడానికి అనుమతి కావాలి",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "భవన అనుమతి కోసం దరఖాస్తు చేసాను. ఆమోదించాలి",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "స్థానిక పన్ను బిల్లు అధికంగా ఉంది. పునఃపరిశీలన కావాలి",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "కాలువ శుభ్రం చేయాలి. ఆరోగ్య సమస్యలు వస్తున్నాయి",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "చెత్త సేకరణ సక్రమంగా జరగడం లేదు",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "వీధి దీపాలు పని చేయడం లేదు. రాత్రి చీకటిగా ఉంది",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "రైతు భీమా క్లెయిమ్ పొందాలి. పంట నష్టమైంది",
+      "label": "Agriculture"
+    },
+    {
+      "text": "పంట సేద కనీస మద్దతు ధర రాలేదు. త్వరగా చెల్లించాలి",
+      "label": "Agriculture"
+    },
+    {
+      "text": "పేటేంట్ మందులు అధిక ధరలకు అమ్ముతున్నారు",
+      "label": "Health"
+    },
+    {
+      "text": "బస్ ప్రమాదంలో గాయపడ్డారు. పరిహారం కావాలి",
+      "label": "Transport"
+    },
+    {
+      "text": "డ్రైవింగ్ లైసెన్స్ పొందాలి. పరీక్ష తేదీ కావాలి",
+      "label": "Transport"
+    },
+    {
+      "text": "వాహన రిజిస్ట్రేషన్ ఆలస్యం అవుతోంది. త్వరగా జారీ చేయాలి",
+      "label": "Transport"
+    },
+    {
+      "text": "సహకార సంఘం నుండి రుణం కావాలి. వ్యవసాయం కోసం అవసరం",
+      "label": "Agriculture"
+    },
+    {
+      "text": "ఇంధన సబ్సిడీ అందలేదు. రైతులకు డీజిల్ సబ్సిడీ కావాలి",
+      "label": "Agriculture"
+    },
+    {
+      "text": "సేద మార్కెట్ సౌకర్యాలు లేవు. రైతులకు ఇబ్బంది",
+      "label": "Agriculture"
+    },
+    {
+      "text": "తాతకాలంపు అవినీతి చెక్ పోస్ట్ తొలగించాలి",
+      "label": "Police"
+    },
+    {
+      "text": "నీటి వనరుల శాఖ కాలువలు నిర్వహించడం లేదు. నీటి ధార్ల నిర్వహణ చేయాలి",
+      "label": "Water Resources"
+    },
+    {
+      "text": "వ్యాధి నియంత్రణ కార్యక్రమాలు నిర్వహించాలి. డెంగ్యూ వ్యాపిస్తోంది",
+      "label": "Health"
+    },
+    {
+      "text": "టీకా కార్యక్రమం సక్రమంగా జరగడం లేదు. పిల్లలకు టీకాలు కావాలి",
+      "label": "Health"
+    },
+    {
+      "text": "మత్స్య సంపద శాఖ నుండి చేపల వ్యాపారానికి రుణం కావాలి",
+      "label": "Animal Husbandry"
+    },
+    {
+      "text": "పశువుల వైద్య సౌకర్యాలు లేవు. పశు వైద్య కేంద్రం కావాలి",
+      "label": "Animal Husbandry"
+    },
+    {
+      "text": "విద్యుత్ కనెక్షన్ కోసం దరఖాస్తు చేసాను. త్వరగా ఇవ్వాలి",
+      "label": "Energy"
+    },
+    {
+      "text": "సౌర విద్యుత్ సబ్సిడీ కోసం దరఖాస్తు చేయాలి. సమాచారం కావాలి",
+      "label": "Energy"
+    },
+    {
+      "text": "మ్యూటేషన్ జరగలేదు. భూ రికార్డులు సరిదిద్దాలి",
+      "label": "Revenue"
+    },
+    {
+      "text": "కుల ధృవీకరణ పత్రం కోసం దరఖాస్తు చేసాను. గత మూడు నెలలుగా అయింది",
+      "label": "Revenue"
+    },
+    {
+      "text": "దయచేసి తెలపండి రెవిన్యూ సర్టిఫికెట్ తక్షణం జారీ చేయండి",
+      "label": "Revenue"
+    },
+    {
+      "text": "మ్యూటేషన్ జరగలేదు. భూ రికార్డులు సరిదిద్దాలి",
+      "label": "Revenue"
+    },
+    {
+      "text": "భూ సర్వే తప్పులు సరిదిద్దాలి. వెంటనే చర్య తీసుకోండి",
+      "label": "Revenue"
+    },
+    {
+      "text": "భూ సర్వే తప్పులు సరిదిద్దాలి. త్వరగా చర్య తీసుకోండి",
+      "label": "Revenue"
+    },
+    {
+      "text": "ఆదాయ ధృవీకరణ పత్రం కోసం దరఖాస్తు చేసాను. రెండు నెలలుగా అయింది",
+      "label": "Revenue"
+    },
+    {
+      "text": "మరణ ధృవీకరణ పత్రం కోసం దరఖాస్తు చేసాను. రెండు వారాలుగా అయింది",
+      "label": "Revenue"
+    },
+    {
+      "text": "పట్టా పత్రం జారీ చేయాలి. భూమికి చట్టబద్ధ హక్కులు కావాలి",
+      "label": "Revenue"
+    },
+    {
+      "text": "పట్టా పత్రం జారీ చేయాలి. భూమికి చట్టబద్ధ హక్కులు కావాలి",
+      "label": "Revenue"
+    },
+    {
+      "text": "వినమ్రంగా కోరుకుంటున్నాను రెవిన్యూ సర్టిఫికెట్ అత్యవసరం జారీ చేయండి",
+      "label": "Revenue"
+    },
+    {
+      "text": "దయచేసి రెవిన్యూ సర్టిఫికెట్ త్వరగా జారీ చేయండి",
+      "label": "Revenue"
+    },
+    {
+      "text": "కుల ధృవీకరణ పత్రం కోసం దరఖాస్తు చేసాను. పదిహేను రోజులుగా అయింది",
+      "label": "Revenue"
+    },
+    {
+      "text": "మ్యూటేషన్ జరగలేదు. భూ రికార్డులు సరిదిద్దాలి",
+      "label": "Revenue"
+    },
+    {
+      "text": "వినమ్రంగా కోరుకుంటున్నాను రెవిన్యూ సర్టిఫికెట్ శీఘ్రంగా జారీ చేయండి",
+      "label": "Revenue"
+    },
+    {
+      "text": "వినమ్రంగా కోరుకుంటున్నాను రెవిన్యూ సర్టిఫికెట్ అత్యవసరం జారీ చేయండి",
+      "label": "Revenue"
+    },
+    {
+      "text": "భూ సర్వే తప్పులు సరిదిద్దాలి. అత్యవసరం చర్య తీసుకోండి",
+      "label": "Revenue"
+    },
+    {
+      "text": "పట్టా పత్రం జారీ చేయాలి. భూమికి చట్టబద్ధ హక్కులు కావాలి",
+      "label": "Revenue"
+    },
+    {
+      "text": "మ్యూటేషన్ జరగలేదు. భూ రికార్డులు సరిదిద్దాలి",
+      "label": "Revenue"
+    },
+    {
+      "text": "కుల ధృవీకరణ పత్రం కోసం దరఖాస్తు చేసాను. రెండు నెలలుగా అయింది",
+      "label": "Revenue"
+    },
+    {
+      "text": "పట్టా పత్రం జారీ చేయాలి. భూమికి చట్టబద్ధ హక్కులు కావాలి",
+      "label": "Revenue"
+    },
+    {
+      "text": "మ్యూటేషన్ జరగలేదు. భూ రికార్డులు సరిదిద్దాలి",
+      "label": "Revenue"
+    },
+    {
+      "text": "మ్యూటేషన్ జరగలేదు. భూ రికార్డులు సరిదిద్దాలి",
+      "label": "Revenue"
+    },
+    {
+      "text": "ఆదాయ ధృవీకరణ పత్రం కోసం దరఖాస్తు చేసాను. రెండు నెలలుగా అయింది",
+      "label": "Revenue"
+    },
+    {
+      "text": "దయచేసి రెవిన్యూ సర్టిఫికెట్ త్వరగా జారీ చేయండి",
+      "label": "Revenue"
+    },
+    {
+      "text": "పట్టా పత్రం జారీ చేయాలి. భూమికి చట్టబద్ధ హక్కులు కావాలి",
+      "label": "Revenue"
+    },
+    {
+      "text": "భూ సర్వే తప్పులు సరిదిద్దాలి. అత్యవసరం చర్య తీసుకోండి",
+      "label": "Revenue"
+    },
+    {
+      "text": "మ్యూటేషన్ జరగలేదు. భూ రికార్డులు సరిదిద్దాలి",
+      "label": "Revenue"
+    },
+    {
+      "text": "విద్యా సర్టిఫికెట్ కోసం దరఖాస్తు చేసాను. ఒక నెలగా అయింది",
+      "label": "Revenue"
+    },
+    {
+      "text": "మ్యూటేషన్ జరగలేదు. భూ రికార్డులు సరిదిద్దాలి",
+      "label": "Revenue"
+    },
+    {
+      "text": "దయచేసి రెవిన్యూ సర్టిఫికెట్ తక్షణం జారీ చేయండి",
+      "label": "Revenue"
+    },
+    {
+      "text": "పట్టా పత్రం జారీ చేయాలి. భూమికి చట్టబద్ధ హక్కులు కావాలి",
+      "label": "Revenue"
+    },
+    {
+      "text": "విద్యా సర్టిఫికెట్ కోసం దరఖాస్తు చేసాను. రెండు వారాలుగా అయింది",
+      "label": "Revenue"
+    },
+    {
+      "text": "దయచేసి రెవిన్యూ సర్టిఫికెట్ శీఘ్రంగా జారీ చేయండి",
+      "label": "Revenue"
+    },
+    {
+      "text": "విద్యా సర్టిఫికెట్ కోసం దరఖాస్తు చేసాను. ఒక నెలగా అయింది",
+      "label": "Revenue"
+    },
+    {
+      "text": "దయచేసి రెవిన్యూ సర్టిఫికెట్ అత్యవసరం జారీ చేయండి",
+      "label": "Revenue"
+    },
+    {
+      "text": "పట్టా పత్రం కోసం దరఖాస్తు చేసాను. రెండు వారాలుగా అయింది",
+      "label": "Revenue"
+    },
+    {
+      "text": "భూ సర్వే తప్పులు సరిదిద్దాలి. శీఘ్రంగా చర్య తీసుకోండి",
+      "label": "Revenue"
+    },
+    {
+      "text": "పట్టా పత్రం జారీ చేయాలి. భూమికి చట్టబద్ధ హక్కులు కావాలి",
+      "label": "Revenue"
+    },
+    {
+      "text": "మ్యూటేషన్ జరగలేదు. భూ రికార్డులు సరిదిద్దాలి",
+      "label": "Revenue"
+    },
+    {
+      "text": "పట్టా పత్రం జారీ చేయాలి. భూమికి చట్టబద్ధ హక్కులు కావాలి",
+      "label": "Revenue"
+    },
+    {
+      "text": "మరణ ధృవీకరణ పత్రం కోసం దరఖాస్తు చేసాను. పది రోజులుగా అయింది",
+      "label": "Revenue"
+    },
+    {
+      "text": "భూ సర్వే తప్పులు సరిదిద్దాలి. ఆలస్యం చేయకుండా చర్య తీసుకోండి",
+      "label": "Revenue"
+    },
+    {
+      "text": "దయచేసి రెవిన్యూ సర్టిఫికెట్ త్వరగా జారీ చేయండి",
+      "label": "Revenue"
+    },
+    {
+      "text": "కృపయా రైతు భరోసా పథకం డబ్బు జారీ చేయండి",
+      "label": "Agriculture"
+    },
+    {
+      "text": "దయచేసి రైతు భరోసా పథకం డబ్బు జారీ చేయండి",
+      "label": "Agriculture"
+    },
+    {
+      "text": "రైతు భీమా క్లెయిమ్ పొందాలి. పంట నష్టమైంది",
+      "label": "Agriculture"
+    },
+    {
+      "text": "పంట నష్టం పరిహారం గత మూడు నెలలుగా రాలేదు. త్వరగా చెల్లించాలి",
+      "label": "Agriculture"
+    },
+    {
+      "text": "రైతు భీమా క్లెయిమ్ పొందాలి. పంట నష్టమైంది",
+      "label": "Agriculture"
+    },
+    {
+      "text": "విత్తన సబ్సిడీ అందలేదు. సరైన సమయానికి విత్తనాలు కావాలి",
+      "label": "Agriculture"
+    },
+    {
+      "text": "కనీస మద్దతు ధర గత మూడు నెలలుగా చెల్లించలేదు",
+      "label": "Agriculture"
+    },
+    {
+      "text": "సహకార సంఘం నుండి రుణం కావాలి. వ్యవసాయం కోసం అవసరం",
+      "label": "Agriculture"
+    },
+    {
+      "text": "దయచేసి రైతు భరోసా పథకం డబ్బు జారీ చేయండి",
+      "label": "Agriculture"
+    },
+    {
+      "text": "సహకార సంఘం నుండి రుణం కావాలి. వ్యవసాయం కోసం అవసరం",
+      "label": "Agriculture"
+    },
+    {
+      "text": "వినమ్రంగా కోరుకుంటున్నాను రైతు భరోసా పథకం డబ్బు జారీ చేయండి",
+      "label": "Agriculture"
+    },
+    {
+      "text": "విత్తన సబ్సిడీ అందలేదు. సరైన సమయానికి విత్తనాలు కావాలి",
+      "label": "Agriculture"
+    },
+    {
+      "text": "సహకార సంఘం నుండి రుణం కావాలి. వ్యవసాయం కోసం అవసరం",
+      "label": "Agriculture"
+    },
+    {
+      "text": "సహకార సంఘం నుండి రుణం కావాలి. వ్యవసాయం కోసం అవసరం",
+      "label": "Agriculture"
+    },
+    {
+      "text": "సహకార సంఘం నుండి రుణం కావాలి. వ్యవసాయం కోసం అవసరం",
+      "label": "Agriculture"
+    },
+    {
+      "text": "సహకార సంఘం నుండి రుణం కావాలి. వ్యవసాయం కోసం అవసరం",
+      "label": "Agriculture"
+    },
+    {
+      "text": "వినమ్రంగా కోరుకుంటున్నాను రైతు భరోసా పథకం డబ్బు జారీ చేయండి",
+      "label": "Agriculture"
+    },
+    {
+      "text": "విత్తన సబ్సిడీ అందలేదు. సరైన సమయానికి విత్తనాలు కావాలి",
+      "label": "Agriculture"
+    },
+    {
+      "text": "విత్తన సబ్సిడీ అందలేదు. సరైన సమయానికి విత్తనాలు కావాలి",
+      "label": "Agriculture"
+    },
+    {
+      "text": "రైతు భీమా క్లెయిమ్ పొందాలి. పంట నష్టమైంది",
+      "label": "Agriculture"
+    },
+    {
+      "text": "కనీస మద్దతు ధర ఒక నెలగా చెల్లించలేదు",
+      "label": "Agriculture"
+    },
+    {
+      "text": "కనీస మద్దతు ధర పదిహేను రోజులుగా చెల్లించలేదు",
+      "label": "Agriculture"
+    },
+    {
+      "text": "పంట నష్టం పరిహారం రెండు వారాలుగా రాలేదు. వెంటనే చెల్లించాలి",
+      "label": "Agriculture"
+    },
+    {
+      "text": "పంట నష్టం పరిహారం ఒక నెలగా రాలేదు. అత్యవసరం చెల్లించాలి",
+      "label": "Agriculture"
+    },
+    {
+      "text": "విత్తన సబ్సిడీ అందలేదు. సరైన సమయానికి విత్తనాలు కావాలి",
+      "label": "Agriculture"
+    },
+    {
+      "text": "రైతు భీమా క్లెయిమ్ పొందాలి. పంట నష్టమైంది",
+      "label": "Agriculture"
+    },
+    {
+      "text": "విత్తన సబ్సిడీ అందలేదు. సరైన సమయానికి విత్తనాలు కావాలి",
+      "label": "Agriculture"
+    },
+    {
+      "text": "పంట నష్టం పరిహారం పదిహేను రోజులుగా రాలేదు. ఆలస్యం చేయకుండా చెల్లించాలి",
+      "label": "Agriculture"
+    },
+    {
+      "text": "కనీస మద్దతు ధర పదిహేను రోజులుగా చెల్లించలేదు",
+      "label": "Agriculture"
+    },
+    {
+      "text": "సహకార సంఘం నుండి రుణం కావాలి. వ్యవసాయం కోసం అవసరం",
+      "label": "Agriculture"
+    },
+    {
+      "text": "కనీస మద్దతు ధర రెండు నెలలుగా చెల్లించలేదు",
+      "label": "Agriculture"
+    },
+    {
+      "text": "రైతు భీమా క్లెయిమ్ పొందాలి. పంట నష్టమైంది",
+      "label": "Agriculture"
+    },
+    {
+      "text": "దయచేసి తెలపండి రైతు భరోసా పథకం డబ్బు జారీ చేయండి",
+      "label": "Agriculture"
+    },
+    {
+      "text": "పంట నష్టం పరిహారం రెండు వారాలుగా రాలేదు. తక్షణం చెల్లించాలి",
+      "label": "Agriculture"
+    },
+    {
+      "text": "సహకార సంఘం నుండి రుణం కావాలి. వ్యవసాయం కోసం అవసరం",
+      "label": "Agriculture"
+    },
+    {
+      "text": "విత్తన సబ్సిడీ అందలేదు. సరైన సమయానికి విత్తనాలు కావాలి",
+      "label": "Agriculture"
+    },
+    {
+      "text": "వినమ్రంగా కోరుకుంటున్నాను రైతు భరోసా పథకం డబ్బు జారీ చేయండి",
+      "label": "Agriculture"
+    },
+    {
+      "text": "విత్తన సబ్సిడీ అందలేదు. సరైన సమయానికి విత్తనాలు కావాలి",
+      "label": "Agriculture"
+    },
+    {
+      "text": "సహకార సంఘం నుండి రుణం కావాలి. వ్యవసాయం కోసం అవసరం",
+      "label": "Agriculture"
+    },
+    {
+      "text": "రైతు భీమా క్లెయిమ్ పొందాలి. పంట నష్టమైంది",
+      "label": "Agriculture"
+    },
+    {
+      "text": "కనీస మద్దతు ధర మూడు నెలలుగా చెల్లించలేదు",
+      "label": "Agriculture"
+    },
+    {
+      "text": "సహకార సంఘం నుండి రుణం కావాలి. వ్యవసాయం కోసం అవసరం",
+      "label": "Agriculture"
+    },
+    {
+      "text": "టీకా కార్యక్రమం సక్రమంగా జరగడం లేదు. పిల్లలకు టీకాలు కావాలి",
+      "label": "Health"
+    },
+    {
+      "text": "వ్యాధి నియంత్రణ కార్యక్రమాలు నిర్వహించాలి",
+      "label": "Health"
+    },
+    {
+      "text": "టీకా కార్యక్రమం సక్రమంగా జరగడం లేదు. పిల్లలకు టీకాలు కావాలి",
+      "label": "Health"
+    },
+    {
+      "text": "108 ఆంబులెన్స్ సేవ బాగా లేదు. త్వరగా మెరుగుపరచాలి",
+      "label": "Health"
+    },
+    {
+      "text": "ప్రాథమిక ఆరోగ్య కేంద్రంలో వైద్యులు హాజరుకావటం లేదు",
+      "label": "Health"
+    },
+    {
+      "text": "వ్యాధి నియంత్రణ కార్యక్రమాలు నిర్వహించాలి",
+      "label": "Health"
+    },
+    {
+      "text": "టీకా కార్యక్రమం సక్రమంగా జరగడం లేదు. పిల్లలకు టీకాలు కావాలి",
+      "label": "Health"
+    },
+    {
+      "text": "ప్రాథమిక ఆరోగ్య కేంద్రంలో వైద్యులు హాజరుకావటం లేదు",
+      "label": "Health"
+    },
+    {
+      "text": "108 ఆంబులెన్స్ సేవ బాగా లేదు. త్వరగా మెరుగుపరచాలి",
+      "label": "Health"
+    },
+    {
+      "text": "వ్యాధి నియంత్రణ కార్యక్రమాలు నిర్వహించాలి",
+      "label": "Health"
+    },
+    {
+      "text": "108 ఆంబులెన్స్ సేవ బాగా లేదు. అత్యవసరం మెరుగుపరచాలి",
+      "label": "Health"
+    },
+    {
+      "text": "ప్రాథమిక ఆరోగ్య కేంద్రంలో వైద్యులు హాజరుకావటం లేదు",
+      "label": "Health"
+    },
+    {
+      "text": "టీకా కార్యక్రమం సక్రమంగా జరగడం లేదు. పిల్లలకు టీకాలు కావాలి",
+      "label": "Health"
+    },
+    {
+      "text": "టీకా కార్యక్రమం సక్రమంగా జరగడం లేదు. పిల్లలకు టీకాలు కావాలి",
+      "label": "Health"
+    },
+    {
+      "text": "వినమ్రంగా కోరుకుంటున్నాను ఉచిత మందులు లభ్యం చేయండి",
+      "label": "Health"
+    },
+    {
+      "text": "108 ఆంబులెన్స్ సేవ బాగా లేదు. అత్యవసరం మెరుగుపరచాలి",
+      "label": "Health"
+    },
+    {
+      "text": "టీకా కార్యక్రమం సక్రమంగా జరగడం లేదు. పిల్లలకు టీకాలు కావాలి",
+      "label": "Health"
+    },
+    {
+      "text": "108 ఆంబులెన్స్ సేవ బాగా లేదు. తక్షణం మెరుగుపరచాలి",
+      "label": "Health"
+    },
+    {
+      "text": "వ్యాధి నియంత్రణ కార్యక్రమాలు నిర్వహించాలి",
+      "label": "Health"
+    },
+    {
+      "text": "టీకా కార్యక్రమం సక్రమంగా జరగడం లేదు. పిల్లలకు టీకాలు కావాలి",
+      "label": "Health"
+    },
+    {
+      "text": "టీకా కార్యక్రమం సక్రమంగా జరగడం లేదు. పిల్లలకు టీకాలు కావాలి",
+      "label": "Health"
+    },
+    {
+      "text": "108 ఆంబులెన్స్ సేవ బాగా లేదు. అత్యవసరం మెరుగుపరచాలి",
+      "label": "Health"
+    },
+    {
+      "text": "టీకా కార్యక్రమం సక్రమంగా జరగడం లేదు. పిల్లలకు టీకాలు కావాలి",
+      "label": "Health"
+    },
+    {
+      "text": "దయచేసి ఉచిత మందులు లభ్యం చేయండి",
+      "label": "Health"
+    },
+    {
+      "text": "బస్ స్టాండ్ దగ్గర మందుల దుకాణంలో స్టాక్ లేదు",
+      "label": "Health"
+    },
+    {
+      "text": "దయచేసి ఉచిత మందులు లభ్యం చేయండి",
+      "label": "Health"
+    },
+    {
+      "text": "దయచేసి ఉచిత మందులు లభ్యం చేయండి",
+      "label": "Health"
+    },
+    {
+      "text": "పాఠశాలలో మందుల దుకాణంలో స్టాక్ లేదు",
+      "label": "Health"
+    },
+    {
+      "text": "వ్యాధి నియంత్రణ కార్యక్రమాలు నిర్వహించాలి",
+      "label": "Health"
+    },
+    {
+      "text": "వ్యాధి నియంత్రణ కార్యక్రమాలు నిర్వహించాలి",
+      "label": "Health"
+    },
+    {
+      "text": "వినమ్రంగా కోరుకుంటున్నాను ఉచిత మందులు లభ్యం చేయండి",
+      "label": "Health"
+    },
+    {
+      "text": "టీకా కార్యక్రమం సక్రమంగా జరగడం లేదు. పిల్లలకు టీకాలు కావాలి",
+      "label": "Health"
+    },
+    {
+      "text": "108 ఆంబులెన్స్ సేవ బాగా లేదు. త్వరగా మెరుగుపరచాలి",
+      "label": "Health"
+    },
+    {
+      "text": "మా గ్రామంలో మందుల దుకాణంలో స్టాక్ లేదు",
+      "label": "Health"
+    },
+    {
+      "text": "వ్యాధి నియంత్రణ కార్యక్రమాలు నిర్వహించాలి",
+      "label": "Health"
+    },
+    {
+      "text": "వ్యాధి నియంత్రణ కార్యక్రమాలు నిర్వహించాలి",
+      "label": "Health"
+    },
+    {
+      "text": "దయచేసి తెలపండి ఉచిత మందులు లభ్యం చేయండి",
+      "label": "Health"
+    },
+    {
+      "text": "దయచేసి ఉచిత మందులు లభ్యం చేయండి",
+      "label": "Health"
+    },
+    {
+      "text": "వ్యాధి నియంత్రణ కార్యక్రమాలు నిర్వహించాలి",
+      "label": "Health"
+    },
+    {
+      "text": "వ్యాధి నియంత్రణ కార్యక్రమాలు నిర్వహించాలి",
+      "label": "Health"
+    },
+    {
+      "text": "టీకా కార్యక్రమం సక్రమంగా జరగడం లేదు. పిల్లలకు టీకాలు కావాలి",
+      "label": "Health"
+    },
+    {
+      "text": "మా గ్రామంలో మందుల దుకాణంలో స్టాక్ లేదు",
+      "label": "Health"
+    },
+    {
+      "text": "వ్యాధి నియంత్రణ కార్యక్రమాలు నిర్వహించాలి",
+      "label": "Health"
+    },
+    {
+      "text": "పాఠశాల భవనం మరమ్మత్తులు అవసరం. రాష్టం పడుతోంది",
+      "label": "Education"
+    },
+    {
+      "text": "మధ్యాహ్న భోజన పథకంలో నాణ్యత లేదు. పిల్లలకు మంచి ఆహారం కావాలి",
+      "label": "Education"
+    },
+    {
+      "text": "దయచేసి తెలపండి విద్యార్థి స్కాలర్‌షిప్ అత్యవసరం జారీ చేయండి",
+      "label": "Education"
+    },
+    {
+      "text": "విద్యార్థి వేతనం గత మూడు నెలలుగా ఖాతాలోకి జమ కాలేదు",
+      "label": "Education"
+    },
+    {
+      "text": "పాఠశాలలో ఉపాధ్యాయులు సరిపోరు. ఎక్కువ ఉపాధ్యాయులు కావాలి",
+      "label": "Education"
+    },
+    {
+      "text": "దయచేసి విద్యార్థి స్కాలర్‌షిప్ శీఘ్రంగా జారీ చేయండి",
+      "label": "Education"
+    },
+    {
+      "text": "పాఠశాల భవనం మరమ్మత్తులు అవసరం. రాష్టం పడుతోంది",
+      "label": "Education"
+    },
+    {
+      "text": "వినమ్రంగా కోరుకుంటున్నాను విద్యార్థి స్కాలర్‌షిప్ అత్యవసరం జారీ చేయండి",
+      "label": "Education"
+    },
+    {
+      "text": "విద్యార్థి వేతనం మూడు నెలలుగా ఖాతాలోకి జమ కాలేదు",
+      "label": "Education"
+    },
+    {
+      "text": "పాఠశాల భవనం మరమ్మత్తులు అవసరం. రాష్టం పడుతోంది",
+      "label": "Education"
+    },
+    {
+      "text": "పాఠశాలలో ఉపాధ్యాయులు సరిపోరు. ఎక్కువ ఉపాధ్యాయులు కావాలి",
+      "label": "Education"
+    },
+    {
+      "text": "పాఠశాల భవనం మరమ్మత్తులు అవసరం. రాష్టం పడుతోంది",
+      "label": "Education"
+    },
+    {
+      "text": "పాఠశాలలో ఉపాధ్యాయులు సరిపోరు. ఎక్కువ ఉపాధ్యాయులు కావాలి",
+      "label": "Education"
+    },
+    {
+      "text": "పాఠశాల భవనం మరమ్మత్తులు అవసరం. రాష్టం పడుతోంది",
+      "label": "Education"
+    },
+    {
+      "text": "వినమ్రంగా కోరుకుంటున్నాను విద్యార్థి స్కాలర్‌షిప్ అత్యవసరం జారీ చేయండి",
+      "label": "Education"
+    },
+    {
+      "text": "పాఠశాలలో ఉపాధ్యాయులు సరిపోరు. ఎక్కువ ఉపాధ్యాయులు కావాలి",
+      "label": "Education"
+    },
+    {
+      "text": "విద్యార్థి వేతనం ఆరు నెలలుగా ఖాతాలోకి జమ కాలేదు",
+      "label": "Education"
+    },
+    {
+      "text": "పాఠశాల భవనం మరమ్మత్తులు అవసరం. రాష్టం పడుతోంది",
+      "label": "Education"
+    },
+    {
+      "text": "మధ్యాహ్న భోజన పథకంలో నాణ్యత లేదు. పిల్లలకు మంచి ఆహారం కావాలి",
+      "label": "Education"
+    },
+    {
+      "text": "మధ్యాహ్న భోజన పథకంలో నాణ్యత లేదు. పిల్లలకు మంచి ఆహారం కావాలి",
+      "label": "Education"
+    },
+    {
+      "text": "పాఠశాల భవనం మరమ్మత్తులు అవసరం. రాష్టం పడుతోంది",
+      "label": "Education"
+    },
+    {
+      "text": "మధ్యాహ్న భోజన పథకంలో నాణ్యత లేదు. పిల్లలకు మంచి ఆహారం కావాలి",
+      "label": "Education"
+    },
+    {
+      "text": "పాఠశాలలో ఉపాధ్యాయులు సరిపోరు. ఎక్కువ ఉపాధ్యాయులు కావాలి",
+      "label": "Education"
+    },
+    {
+      "text": "పాఠశాల భవనం మరమ్మత్తులు అవసరం. రాష్టం పడుతోంది",
+      "label": "Education"
+    },
+    {
+      "text": "పాఠశాల భవనం మరమ్మత్తులు అవసరం. రాష్టం పడుతోంది",
+      "label": "Education"
+    },
+    {
+      "text": "విద్యార్థి వేతనం గత మూడు నెలలుగా ఖాతాలోకి జమ కాలేదు",
+      "label": "Education"
+    },
+    {
+      "text": "మధ్యాహ్న భోజన పథకంలో నాణ్యత లేదు. పిల్లలకు మంచి ఆహారం కావాలి",
+      "label": "Education"
+    },
+    {
+      "text": "పాఠశాల భవనం మరమ్మత్తులు అవసరం. రాష్టం పడుతోంది",
+      "label": "Education"
+    },
+    {
+      "text": "పాఠశాల భవనం మరమ్మత్తులు అవసరం. రాష్టం పడుతోంది",
+      "label": "Education"
+    },
+    {
+      "text": "పాఠశాల భవనం మరమ్మత్తులు అవసరం. రాష్టం పడుతోంది",
+      "label": "Education"
+    },
+    {
+      "text": "విద్యార్థి వేతనం ఆరు నెలలుగా ఖాతాలోకి జమ కాలేదు",
+      "label": "Education"
+    },
+    {
+      "text": "పాఠశాలలో ఉపాధ్యాయులు సరిపోరు. ఎక్కువ ఉపాధ్యాయులు కావాలి",
+      "label": "Education"
+    },
+    {
+      "text": "మధ్యాహ్న భోజన పథకంలో నాణ్యత లేదు. పిల్లలకు మంచి ఆహారం కావాలి",
+      "label": "Education"
+    },
+    {
+      "text": "పాఠశాల భవనం మరమ్మత్తులు అవసరం. రాష్టం పడుతోంది",
+      "label": "Education"
+    },
+    {
+      "text": "విద్యార్థి వేతనం గత మూడు నెలలుగా ఖాతాలోకి జమ కాలేదు",
+      "label": "Education"
+    },
+    {
+      "text": "పాఠశాలలో ఉపాధ్యాయులు సరిపోరు. ఎక్కువ ఉపాధ్యాయులు కావాలి",
+      "label": "Education"
+    },
+    {
+      "text": "విద్యార్థి వేతనం ఆరు నెలలుగా ఖాతాలోకి జమ కాలేదు",
+      "label": "Education"
+    },
+    {
+      "text": "మధ్యాహ్న భోజన పథకంలో నాణ్యత లేదు. పిల్లలకు మంచి ఆహారం కావాలి",
+      "label": "Education"
+    },
+    {
+      "text": "పాఠశాలలో ఉపాధ్యాయులు సరిపోరు. ఎక్కువ ఉపాధ్యాయులు కావాలి",
+      "label": "Education"
+    },
+    {
+      "text": "దయచేసి తెలపండి విద్యార్థి స్కాలర్‌షిప్ ఆలస్యం చేయకుండా జారీ చేయండి",
+      "label": "Education"
+    },
+    {
+      "text": "విద్యార్థి వేతనం పది రోజులుగా ఖాతాలోకి జమ కాలేదు",
+      "label": "Education"
+    },
+    {
+      "text": "పాఠశాల భవనం మరమ్మత్తులు అవసరం. రాష్టం పడుతోంది",
+      "label": "Education"
+    },
+    {
+      "text": "మధ్యాహ్న భోజన పథకంలో నాణ్యత లేదు. పిల్లలకు మంచి ఆహారం కావాలి",
+      "label": "Education"
+    },
+    {
+      "text": "పాఠశాలలో ఉపాధ్యాయులు సరిపోరు. ఎక్కువ ఉపాధ్యాయులు కావాలి",
+      "label": "Education"
+    },
+    {
+      "text": "దయచేసి విద్యార్థి స్కాలర్‌షిప్ త్వరగా జారీ చేయండి",
+      "label": "Education"
+    },
+    {
+      "text": "మధ్యాహ్న భోజన పథకంలో నాణ్యత లేదు. పిల్లలకు మంచి ఆహారం కావాలి",
+      "label": "Education"
+    },
+    {
+      "text": "భవన అనుమతి కోసం పది రోజులుగా క్రితం దరఖాస్తు చేశాను",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "వారానికి ఒక్కసారి మాత్రమే నీటి సరఫరా జరుగుతుంది",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "దయచేసి నీటి కనెక్షన్ శీఘ్రంగా ఇవ్వండి",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "స్థానిక పన్ను బిల్లు అధికంగా ఉంది. పునఃపరిశీలన కావాలి",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "స్థానిక పన్ను బిల్లు అధికంగా ఉంది. పునఃపరిశీలన కావాలి",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "భవన అనుమతి కోసం రెండు వారాలుగా క్రితం దరఖాస్తు చేశాను",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "ఆసుపత్రిలో కాలువలు శుభ్రం చేయాలి. ఆరోగ్య సమస్యలు వస్తున్నాయి",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "దయచేసి తెలపండి నీటి కనెక్షన్ వెంటనే ఇవ్వండి",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "స్థానిక పన్ను బిల్లు అధికంగా ఉంది. పునఃపరిశీలన కావాలి",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "ఆసుపత్రిలో కాలువలు శుభ్రం చేయాలి. ఆరోగ్య సమస్యలు వస్తున్నాయి",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "స్థానిక పన్ను బిల్లు అధికంగా ఉంది. పునఃపరిశీలన కావాలి",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "చెత్త సేకరణ సక్రమంగా జరగడం లేదు",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "వినమ్రంగా కోరుకుంటున్నాను నీటి కనెక్షన్ ఆలస్యం చేయకుండా ఇవ్వండి",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "పంచాయతీ కార్యాలయంలో కాలువలు శుభ్రం చేయాలి. ఆరోగ్య సమస్యలు వస్తున్నాయి",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "స్థానిక పన్ను బిల్లు అధికంగా ఉంది. పునఃపరిశీలన కావాలి",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "వీధి దీపాలు పని చేయడం లేదు. రాత్రి చీకటిగా ఉంది",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "ఆసుపత్రిలో కాలువలు శుభ్రం చేయాలి. ఆరోగ్య సమస్యలు వస్తున్నాయి",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "సర్పంచ్ కార్యాలయంలో కాలువలు శుభ్రం చేయాలి. ఆరోగ్య సమస్యలు వస్తున్నాయి",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "భవన అనుమతి కోసం ఒక నెలగా క్రితం దరఖాస్తు చేశాను",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "భవన అనుమతి కోసం గత మూడు నెలలుగా క్రితం దరఖాస్తు చేశాను",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "చెత్త సేకరణ సక్రమంగా జరగడం లేదు",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "స్థానిక పన్ను బిల్లు అధికంగా ఉంది. పునఃపరిశీలన కావాలి",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "స్థానిక పన్ను బిల్లు అధికంగా ఉంది. పునఃపరిశీలన కావాలి",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "చెత్త సేకరణ సక్రమంగా జరగడం లేదు",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "భవన అనుమతి కోసం ఆరు నెలలుగా క్రితం దరఖాస్తు చేశాను",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "మా గ్రామంలో కాలువలు శుభ్రం చేయాలి. ఆరోగ్య సమస్యలు వస్తున్నాయి",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "ప్రాథమిక ఆరోగ్య కేంద్రంలో కాలువలు శుభ్రం చేయాలి. ఆరోగ్య సమస్యలు వస్తున్నాయి",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "మా వార్డులో కాలువలు శుభ్రం చేయాలి. ఆరోగ్య సమస్యలు వస్తున్నాయి",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "వారానికి ఒక్కసారి మాత్రమే నీటి సరఫరా జరుగుతుంది",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "కృపయా నీటి కనెక్షన్ శీఘ్రంగా ఇవ్వండి",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "భవన అనుమతి కోసం రెండు నెలలుగా క్రితం దరఖాస్తు చేశాను",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "భవన అనుమతి కోసం మూడు నెలలుగా క్రితం దరఖాస్తు చేశాను",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "స్థానిక పన్ను బిల్లు అధికంగా ఉంది. పునఃపరిశీలన కావాలి",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "భవన అనుమతి కోసం రెండు వారాలుగా క్రితం దరఖాస్తు చేశాను",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "స్థానిక పన్ను బిల్లు అధికంగా ఉంది. పునఃపరిశీలన కావాలి",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "భవన అనుమతి కోసం రెండు నెలలుగా క్రితం దరఖాస్తు చేశాను",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "చెత్త సేకరణ సక్రమంగా జరగడం లేదు",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "స్థానిక పన్ను బిల్లు అధికంగా ఉంది. పునఃపరిశీలన కావాలి",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "వీధి దీపాలు పని చేయడం లేదు. రాత్రి చీకటిగా ఉంది",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "స్థానిక పన్ను బిల్లు అధికంగా ఉంది. పునఃపరిశీలన కావాలి",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "కృపయా నీటి కనెక్షన్ అత్యవసరం ఇవ్వండి",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "వినమ్రంగా కోరుకుంటున్నాను కరెంటు మీటర్ మార్చండి. సరిగా పని చేయడం లేదు",
+      "label": "Energy"
+    },
+    {
+      "text": "విద్యుత్ సమస్య రెండు వారాలుగా ఉంది. పరిష్కరించాలి",
+      "label": "Energy"
+    },
+    {
+      "text": "ప్రతిరోజు విద్యుత్తు అంతరాయం ఏర్పడుతుంది",
+      "label": "Energy"
+    },
+    {
+      "text": "ట్రాన్స్‌ఫార్మర్ సమస్య ఉంది. మరమ్మత్తు చేయాలి",
+      "label": "Energy"
+    },
+    {
+      "text": "విద్యుత్ సమస్య గత మూడు నెలలుగా ఉంది. పరిష్కరించాలి",
+      "label": "Energy"
+    },
+    {
+      "text": "విద్యుత్ కనెక్షన్ కోసం దరఖాస్తు చేసాను. తక్షణం ఇవ్వాలి",
+      "label": "Energy"
+    },
+    {
+      "text": "ప్రతిరోజు విద్యుత్తు అంతరాయం ఏర్పడుతుంది",
+      "label": "Energy"
+    },
+    {
+      "text": "ప్రతిరోజు విద్యుత్తు అంతరాయం ఏర్పడుతుంది",
+      "label": "Energy"
+    },
+    {
+      "text": "కరెంటు బిల్లు అధికంగా వచ్చింది. శీఘ్రంగా తనిఖీ చేయండి",
+      "label": "Energy"
+    },
+    {
+      "text": "కృపయా కరెంటు మీటర్ మార్చండి. సరిగా పని చేయడం లేదు",
+      "label": "Energy"
+    },
+    {
+      "text": "కరెంటు బిల్లు అధికంగా వచ్చింది. అత్యవసరం తనిఖీ చేయండి",
+      "label": "Energy"
+    },
+    {
+      "text": "ప్రతిరోజు విద్యుత్తు అంతరాయం ఏర్పడుతుంది",
+      "label": "Energy"
+    },
+    {
+      "text": "దయచేసి కరెంటు మీటర్ మార్చండి. సరిగా పని చేయడం లేదు",
+      "label": "Energy"
+    },
+    {
+      "text": "విద్యుత్ సమస్య రెండు వారాలుగా ఉంది. పరిష్కరించాలి",
+      "label": "Energy"
+    },
+    {
+      "text": "ప్రతిరోజు విద్యుత్తు అంతరాయం ఏర్పడుతుంది",
+      "label": "Energy"
+    },
+    {
+      "text": "విద్యుత్ సమస్య రెండు నెలలుగా ఉంది. పరిష్కరించాలి",
+      "label": "Energy"
+    },
+    {
+      "text": "విద్యుత్ సమస్య పది రోజులుగా ఉంది. పరిష్కరించాలి",
+      "label": "Energy"
+    },
+    {
+      "text": "దయచేసి కరెంటు మీటర్ మార్చండి. సరిగా పని చేయడం లేదు",
+      "label": "Energy"
+    },
+    {
+      "text": "విద్యుత్ కనెక్షన్ కోసం దరఖాస్తు చేసాను. తక్షణం ఇవ్వాలి",
+      "label": "Energy"
+    },
+    {
+      "text": "ట్రాన్స్‌ఫార్మర్ సమస్య ఉంది. మరమ్మత్తు చేయాలి",
+      "label": "Energy"
+    },
+    {
+      "text": "కృపయా కరెంటు మీటర్ మార్చండి. సరిగా పని చేయడం లేదు",
+      "label": "Energy"
+    },
+    {
+      "text": "ప్రతిరోజు విద్యుత్తు అంతరాయం ఏర్పడుతుంది",
+      "label": "Energy"
+    },
+    {
+      "text": "విద్యుత్ సమస్య ఒక నెలగా ఉంది. పరిష్కరించాలి",
+      "label": "Energy"
+    },
+    {
+      "text": "ప్రతిరోజు విద్యుత్తు అంతరాయం ఏర్పడుతుంది",
+      "label": "Energy"
+    },
+    {
+      "text": "విద్యుత్ కనెక్షన్ కోసం దరఖాస్తు చేసాను. అత్యవసరం ఇవ్వాలి",
+      "label": "Energy"
+    },
+    {
+      "text": "విద్యుత్ సమస్య రెండు వారాలుగా ఉంది. పరిష్కరించాలి",
+      "label": "Energy"
+    },
+    {
+      "text": "వినమ్రంగా కోరుకుంటున్నాను కరెంటు మీటర్ మార్చండి. సరిగా పని చేయడం లేదు",
+      "label": "Energy"
+    },
+    {
+      "text": "విద్యుత్ కనెక్షన్ కోసం దరఖాస్తు చేసాను. త్వరగా ఇవ్వాలి",
+      "label": "Energy"
+    },
+    {
+      "text": "విద్యుత్ కనెక్షన్ కోసం దరఖాస్తు చేసాను. తక్షణం ఇవ్వాలి",
+      "label": "Energy"
+    },
+    {
+      "text": "కరెంటు బిల్లు అధికంగా వచ్చింది. వెంటనే తనిఖీ చేయండి",
+      "label": "Energy"
+    },
+    {
+      "text": "దయచేసి కరెంటు మీటర్ మార్చండి. సరిగా పని చేయడం లేదు",
+      "label": "Energy"
+    },
+    {
+      "text": "ట్రాన్స్‌ఫార్మర్ సమస్య ఉంది. మరమ్మత్తు చేయాలి",
+      "label": "Energy"
+    },
+    {
+      "text": "దయచేసి తెలపండి కరెంటు మీటర్ మార్చండి. సరిగా పని చేయడం లేదు",
+      "label": "Energy"
+    },
+    {
+      "text": "ట్రాన్స్‌ఫార్మర్ సమస్య ఉంది. మరమ్మత్తు చేయాలి",
+      "label": "Energy"
+    },
+    {
+      "text": "వినమ్రంగా కోరుకుంటున్నాను కరెంటు మీటర్ మార్చండి. సరిగా పని చేయడం లేదు",
+      "label": "Energy"
+    },
+    {
+      "text": "విద్యుత్ సమస్య పదిహేను రోజులుగా ఉంది. పరిష్కరించాలి",
+      "label": "Energy"
+    },
+    {
+      "text": "కరెంటు బిల్లు అధికంగా వచ్చింది. అత్యవసరం తనిఖీ చేయండి",
+      "label": "Energy"
+    },
+    {
+      "text": "ట్రాన్స్‌ఫార్మర్ సమస్య ఉంది. మరమ్మత్తు చేయాలి",
+      "label": "Energy"
+    },
+    {
+      "text": "కరెంటు బిల్లు అధికంగా వచ్చింది. త్వరగా తనిఖీ చేయండి",
+      "label": "Energy"
+    },
+    {
+      "text": "ట్రాన్స్‌ఫార్మర్ సమస్య ఉంది. మరమ్మత్తు చేయాలి",
+      "label": "Energy"
+    },
+    {
+      "text": "దయచేసి తెలపండి కరెంటు మీటర్ మార్చండి. సరిగా పని చేయడం లేదు",
+      "label": "Energy"
+    },
+    {
+      "text": "ప్రతిరోజు విద్యుత్తు అంతరాయం ఏర్పడుతుంది",
+      "label": "Energy"
+    },
+    {
+      "text": "విద్యుత్ సమస్య గత మూడు నెలలుగా ఉంది. పరిష్కరించాలి",
+      "label": "Energy"
+    },
+    {
+      "text": "ట్రాన్స్‌ఫార్మర్ సమస్య ఉంది. మరమ్మత్తు చేయాలి",
+      "label": "Energy"
+    },
+    {
+      "text": "పోలీసు స్టేషన్‌లో FIR రిజిస్టర్ చేయడం లేదు",
+      "label": "Police"
+    },
+    {
+      "text": "పోలీసు స్టేషన్‌లో ఫిర్యాదు అంగీకరించడం లేదు",
+      "label": "Police"
+    },
+    {
+      "text": "పోలీసు స్టేషన్‌లో FIR రిజిస్టర్ చేయడం లేదు",
+      "label": "Police"
+    },
+    {
+      "text": "పోలీసు స్టేషన్‌లో ఫిర్యాదు అంగీకరించడం లేదు",
+      "label": "Police"
+    },
+    {
+      "text": "పోలీసు స్టేషన్‌లో ఫిర్యాదు అంగీకరించడం లేదు",
+      "label": "Police"
+    },
+    {
+      "text": "వినమ్రంగా కోరుకుంటున్నాను ఆలస్యం చేయకుండా FIR నమోదు చేయండి",
+      "label": "Police"
+    },
+    {
+      "text": "అవినీతి కేసు నమోదు చేయాలి. అధికారి లంచం కోరారు",
+      "label": "Police"
+    },
+    {
+      "text": "అవినీతి కేసు నమోదు చేయాలి. అధికారి లంచం కోరారు",
+      "label": "Police"
+    },
+    {
+      "text": "పోలీసు స్టేషన్‌లో ఫిర్యాదు అంగీకరించడం లేదు",
+      "label": "Police"
+    },
+    {
+      "text": "దయచేసి తెలపండి తక్షణం FIR నమోదు చేయండి",
+      "label": "Police"
+    },
+    {
+      "text": "పోలీసు స్టేషన్‌లో ఫిర్యాదు అంగీకరించడం లేదు",
+      "label": "Police"
+    },
+    {
+      "text": "పోలీసు స్టేషన్‌లో ఫిర్యాదు అంగీకరించడం లేదు",
+      "label": "Police"
+    },
+    {
+      "text": "పోలీసు స్టేషన్‌లో ఫిర్యాదు అంగీకరించడం లేదు",
+      "label": "Police"
+    },
+    {
+      "text": "అవినీతి కేసు నమోదు చేయాలి. అధికారి లంచం కోరారు",
+      "label": "Police"
+    },
+    {
+      "text": "పోలీసు స్టేషన్‌లో ఫిర్యాదు అంగీకరించడం లేదు",
+      "label": "Police"
+    },
+    {
+      "text": "పోలీసు స్టేషన్‌లో FIR రిజిస్టర్ చేయడం లేదు",
+      "label": "Police"
+    },
+    {
+      "text": "దయచేసి అత్యవసరం FIR నమోదు చేయండి",
+      "label": "Police"
+    },
+    {
+      "text": "వినమ్రంగా కోరుకుంటున్నాను త్వరగా FIR నమోదు చేయండి",
+      "label": "Police"
+    },
+    {
+      "text": "పోలీసు స్టేషన్‌లో FIR రిజిస్టర్ చేయడం లేదు",
+      "label": "Police"
+    },
+    {
+      "text": "దయచేసి అత్యవసరం FIR నమోదు చేయండి",
+      "label": "Police"
+    },
+    {
+      "text": "కృపయా త్వరగా FIR నమోదు చేయండి",
+      "label": "Police"
+    },
+    {
+      "text": "అవినీతి కేసు నమోదు చేయాలి. అధికారి లంచం కోరారు",
+      "label": "Police"
+    },
+    {
+      "text": "దయచేసి తెలపండి తక్షణం FIR నమోదు చేయండి",
+      "label": "Police"
+    },
+    {
+      "text": "పోలీసు స్టేషన్‌లో FIR రిజిస్టర్ చేయడం లేదు",
+      "label": "Police"
+    },
+    {
+      "text": "అవినీతి కేసు నమోదు చేయాలి. అధికారి లంచం కోరారు",
+      "label": "Police"
+    },
+    {
+      "text": "అవినీతి కేసు నమోదు చేయాలి. అధికారి లంచం కోరారు",
+      "label": "Police"
+    },
+    {
+      "text": "పోలీసు స్టేషన్‌లో ఫిర్యాదు అంగీకరించడం లేదు",
+      "label": "Police"
+    },
+    {
+      "text": "పోలీసు స్టేషన్‌లో ఫిర్యాదు అంగీకరించడం లేదు",
+      "label": "Police"
+    },
+    {
+      "text": "పోలీసు స్టేషన్‌లో ఫిర్యాదు అంగీకరించడం లేదు",
+      "label": "Police"
+    },
+    {
+      "text": "అవినీతి కేసు నమోదు చేయాలి. అధికారి లంచం కోరారు",
+      "label": "Police"
+    },
+    {
+      "text": "అవినీతి కేసు నమోదు చేయాలి. అధికారి లంచం కోరారు",
+      "label": "Police"
+    },
+    {
+      "text": "వినమ్రంగా కోరుకుంటున్నాను వెంటనే FIR నమోదు చేయండి",
+      "label": "Police"
+    },
+    {
+      "text": "కృపయా ఆలస్యం చేయకుండా FIR నమోదు చేయండి",
+      "label": "Police"
+    },
+    {
+      "text": "దయచేసి తెలపండి అత్యవసరం FIR నమోదు చేయండి",
+      "label": "Police"
+    },
+    {
+      "text": "పోలీసు స్టేషన్‌లో FIR రిజిస్టర్ చేయడం లేదు",
+      "label": "Police"
+    },
+    {
+      "text": "పోలీసు స్టేషన్‌లో FIR రిజిస్టర్ చేయడం లేదు",
+      "label": "Police"
+    },
+    {
+      "text": "పోలీసు స్టేషన్‌లో ఫిర్యాదు అంగీకరించడం లేదు",
+      "label": "Police"
+    },
+    {
+      "text": "దయచేసి తెలపండి శీఘ్రంగా FIR నమోదు చేయండి",
+      "label": "Police"
+    },
+    {
+      "text": "అవినీతి కేసు నమోదు చేయాలి. అధికారి లంచం కోరారు",
+      "label": "Police"
+    },
+    {
+      "text": "పోలీసు స్టేషన్‌లో ఫిర్యాదు అంగీకరించడం లేదు",
+      "label": "Police"
+    },
+    {
+      "text": "అవినీతి కేసు నమోదు చేయాలి. అధికారి లంచం కోరారు",
+      "label": "Police"
+    },
+    {
+      "text": "పోలీసు స్టేషన్‌లో ఫిర్యాదు అంగీకరించడం లేదు",
+      "label": "Police"
+    },
+    {
+      "text": "పోలీసు స్టేషన్‌లో FIR రిజిస్టర్ చేయడం లేదు",
+      "label": "Police"
+    },
+    {
+      "text": "అవినీతి కేసు నమోదు చేయాలి. అధికారి లంచం కోరారు",
+      "label": "Police"
+    },
+    {
+      "text": "పోలీసు స్టేషన్‌లో FIR రిజిస్టర్ చేయడం లేదు",
+      "label": "Police"
+    },
+    {
+      "text": "అవినీతి కేసు నమోదు చేయాలి. అధికారి లంచం కోరారు",
+      "label": "Police"
+    },
+    {
+      "text": "పోలీసు స్టేషన్‌లో FIR రిజిస్టర్ చేయడం లేదు",
+      "label": "Police"
+    },
+    {
+      "text": "పాత వయస్సు పెన్షన్ ఒక నెలగా రాలేదు",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "దయచేసి వైకల్య పెన్షన్ ఆమోదించండి",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "సామాజిక భద్రతా పెన్షన్ పదిహేను రోజులుగా జమ కాలేదు",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "సామాజిక భద్రతా పెన్షన్ మూడు నెలలుగా జమ కాలేదు",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "విధవ పెన్షన్ ఆగిపోయింది. ఆలస్యం చేయకుండా తిరిగి ప్రారంభించాలి",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "విధవ పెన్షన్ ఆగిపోయింది. శీఘ్రంగా తిరిగి ప్రారంభించాలి",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "పాత వయస్సు పెన్షన్ మూడు నెలలుగా రాలేదు",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "విధవ పెన్షన్ ఆగిపోయింది. శీఘ్రంగా తిరిగి ప్రారంభించాలి",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "విధవ పెన్షన్ ఆగిపోయింది. ఆలస్యం చేయకుండా తిరిగి ప్రారంభించాలి",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "విధవ పెన్షన్ ఆగిపోయింది. ఆలస్యం చేయకుండా తిరిగి ప్రారంభించాలి",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "దయచేసి వైకల్య పెన్షన్ ఆమోదించండి",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "విధవ పెన్షన్ ఆగిపోయింది. త్వరగా తిరిగి ప్రారంభించాలి",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "సామాజిక భద్రతా పెన్షన్ ఆరు నెలలుగా జమ కాలేదు",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "సామాజిక భద్రతా పెన్షన్ పది రోజులుగా జమ కాలేదు",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "పాత వయస్సు పెన్షన్ మూడు నెలలుగా రాలేదు",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "పాత వయస్సు పెన్షన్ రెండు వారాలుగా రాలేదు",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "పాత వయస్సు పెన్షన్ ఆరు నెలలుగా రాలేదు",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "కృపయా వైకల్య పెన్షన్ ఆమోదించండి",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "పాత వయస్సు పెన్షన్ మూడు నెలలుగా రాలేదు",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "దయచేసి తెలపండి వైకల్య పెన్షన్ ఆమోదించండి",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "దయచేసి వైకల్య పెన్షన్ ఆమోదించండి",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "దయచేసి తెలపండి వైకల్య పెన్షన్ ఆమోదించండి",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "విధవ పెన్షన్ ఆగిపోయింది. తక్షణం తిరిగి ప్రారంభించాలి",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "విధవ పెన్షన్ ఆగిపోయింది. ఆలస్యం చేయకుండా తిరిగి ప్రారంభించాలి",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "పాత వయస్సు పెన్షన్ ఒక నెలగా రాలేదు",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "విధవ పెన్షన్ ఆగిపోయింది. అత్యవసరం తిరిగి ప్రారంభించాలి",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "దయచేసి వైకల్య పెన్షన్ ఆమోదించండి",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "పాత వయస్సు పెన్షన్ రెండు నెలలుగా రాలేదు",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "దయచేసి వైకల్య పెన్షన్ ఆమోదించండి",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "విధవ పెన్షన్ ఆగిపోయింది. ఆలస్యం చేయకుండా తిరిగి ప్రారంభించాలి",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "దయచేసి వైకల్య పెన్షన్ ఆమోదించండి",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "సామాజిక భద్రతా పెన్షన్ పది రోజులుగా జమ కాలేదు",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "దయచేసి వైకల్య పెన్షన్ ఆమోదించండి",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "దయచేసి వైకల్య పెన్షన్ ఆమోదించండి",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "కృపయా వైకల్య పెన్షన్ ఆమోదించండి",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "విధవ పెన్షన్ ఆగిపోయింది. ఆలస్యం చేయకుండా తిరిగి ప్రారంభించాలి",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "పాత వయస్సు పెన్షన్ ఒక నెలగా రాలేదు",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "వినమ్రంగా కోరుకుంటున్నాను వైకల్య పెన్షన్ ఆమోదించండి",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "సామాజిక భద్రతా పెన్షన్ పదిహేను రోజులుగా జమ కాలేదు",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "కృపయా వైకల్య పెన్షన్ ఆమోదించండి",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "దయచేసి తెలపండి వైకల్య పెన్షన్ ఆమోదించండి",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "పాత వయస్సు పెన్షన్ రెండు వారాలుగా రాలేదు",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "సామాజిక భద్రతా పెన్షన్ గత మూడు నెలలుగా జమ కాలేదు",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "పాత వయస్సు పెన్షన్ మూడు నెలలుగా రాలేదు",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "పాత వయస్సు పెన్షన్ మూడు నెలలుగా రాలేదు",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "పాత వయస్సు పెన్షన్ రెండు వారాలుగా రాలేదు",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "పాత వయస్సు పెన్షన్ ఒక నెలగా రాలేదు",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "గ్రామానికి ఆరు నెలలుగా తాగునీరు రాకపోవడం వల్ల తీవ్ర ఇబ్బందులు",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "సర్పంచ్ కార్యాలయంలో తాగునీటి సౌకర్యం కల్పించాలి",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "మిషన్‌ భగీరథ తాగునీటి సరఫరా మూడు నెలలుగా కాకపోవడంతో సమస్య",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "గ్రామానికి గత మూడు నెలలుగా తాగునీరు రాకపోవడం వల్ల తీవ్ర ఇబ్బందులు",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "గ్రామానికి గత మూడు నెలలుగా తాగునీరు రాకపోవడం వల్ల తీవ్ర ఇబ్బందులు",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "దయచేసి పంచాయతీ కార్యాలయంలో పనులు తక్షణం పూర్తి చేయండి",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "మిషన్‌ భగీరథ తాగునీటి సరఫరా రెండు వారాలుగా కాకపోవడంతో సమస్య",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "ఆసుపత్రిలో తాగునీటి సౌకర్యం కల్పించాలి",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "గ్రామానికి పది రోజులుగా తాగునీరు రాకపోవడం వల్ల తీవ్ర ఇబ్బందులు",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "మిషన్‌ భగీరథ తాగునీటి సరఫరా రెండు వారాలుగా కాకపోవడంతో సమస్య",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "గ్రామానికి ఒక నెలగా తాగునీరు రాకపోవడం వల్ల తీవ్ర ఇబ్బందులు",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "గ్రామానికి పదిహేను రోజులుగా తాగునీరు రాకపోవడం వల్ల తీవ్ర ఇబ్బందులు",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "గ్రామానికి గత మూడు నెలలుగా తాగునీరు రాకపోవడం వల్ల తీవ్ర ఇబ్బందులు",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "గ్రామానికి ఒక నెలగా తాగునీరు రాకపోవడం వల్ల తీవ్ర ఇబ్బందులు",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "మిషన్‌ భగీరథ తాగునీటి సరఫరా పదిహేను రోజులుగా కాకపోవడంతో సమస్య",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "గ్రామానికి పదిహేను రోజులుగా తాగునీరు రాకపోవడం వల్ల తీవ్ర ఇబ్బందులు",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "దయచేసి తెలపండి పంచాయతీ కార్యాలయంలో పనులు అత్యవసరం పూర్తి చేయండి",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "గ్రామానికి పది రోజులుగా తాగునీరు రాకపోవడం వల్ల తీవ్ర ఇబ్బందులు",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "కృపయా పంచాయతీ కార్యాలయంలో పనులు తక్షణం పూర్తి చేయండి",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "పాఠశాలలో తాగునీటి సౌకర్యం కల్పించాలి",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "గ్రామానికి గత మూడు నెలలుగా తాగునీరు రాకపోవడం వల్ల తీవ్ర ఇబ్బందులు",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "సర్పంచ్ కార్యాలయంలో తాగునీటి సౌకర్యం కల్పించాలి",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "వినమ్రంగా కోరుకుంటున్నాను పంచాయతీ కార్యాలయంలో పనులు ఆలస్యం చేయకుండా పూర్తి చేయండి",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "మిషన్‌ భగీరథ తాగునీటి సరఫరా ఆరు నెలలుగా కాకపోవడంతో సమస్య",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "మిషన్‌ భగీరథ తాగునీటి సరఫరా మూడు నెలలుగా కాకపోవడంతో సమస్య",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "దయచేసి పంచాయతీ కార్యాలయంలో పనులు అత్యవసరం పూర్తి చేయండి",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "మిషన్‌ భగీరథ తాగునీటి సరఫరా గత మూడు నెలలుగా కాకపోవడంతో సమస్య",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "మిషన్‌ భగీరథ తాగునీటి సరఫరా పది రోజులుగా కాకపోవడంతో సమస్య",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "ప్రాథమిక ఆరోగ్య కేంద్రంలో తాగునీటి సౌకర్యం కల్పించాలి",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "దయచేసి పంచాయతీ కార్యాలయంలో పనులు తక్షణం పూర్తి చేయండి",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "మిషన్‌ భగీరథ తాగునీటి సరఫరా మూడు నెలలుగా కాకపోవడంతో సమస్య",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "పాఠశాలలో తాగునీటి సౌకర్యం కల్పించాలి",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "గ్రామానికి పదిహేను రోజులుగా తాగునీరు రాకపోవడం వల్ల తీవ్ర ఇబ్బందులు",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "మిషన్‌ భగీరథ తాగునీటి సరఫరా రెండు నెలలుగా కాకపోవడంతో సమస్య",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "కృపయా పంచాయతీ కార్యాలయంలో పనులు వెంటనే పూర్తి చేయండి",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "దయచేసి తెలపండి పంచాయతీ కార్యాలయంలో పనులు త్వరగా పూర్తి చేయండి",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "దయచేసి తెలపండి పంచాయతీ కార్యాలయంలో పనులు శీఘ్రంగా పూర్తి చేయండి",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "మిషన్‌ భగీరథ తాగునీటి సరఫరా గత మూడు నెలలుగా కాకపోవడంతో సమస్య",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "మిషన్‌ భగీరథ తాగునీటి సరఫరా రెండు వారాలుగా కాకపోవడంతో సమస్య",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "గ్రామానికి పది రోజులుగా తాగునీరు రాకపోవడం వల్ల తీవ్ర ఇబ్బందులు",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "గ్రామానికి పది రోజులుగా తాగునీరు రాకపోవడం వల్ల తీవ్ర ఇబ్బందులు",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "ఆసుపత్రిలో తాగునీటి సౌకర్యం కల్పించాలి",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "బస్ స్టాండ్ దగ్గర తాగునీటి సౌకర్యం కల్పించాలి",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "గ్రామానికి ఒక నెలగా తాగునీరు రాకపోవడం వల్ల తీవ్ర ఇబ్బందులు",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "పాఠశాలలో తాగునీటి సౌకర్యం కల్పించాలి",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "గ్రామానికి మూడు నెలలుగా తాగునీరు రాకపోవడం వల్ల తీవ్ర ఇబ్బందులు",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "మిషన్‌ భగీరథ తాగునీటి సరఫరా పదిహేను రోజులుగా కాకపోవడంతో సమస్య",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "బస్ ప్రమాదంలో గాయపడ్డారు. పరిహారం కావాలి",
+      "label": "Transport"
+    },
+    {
+      "text": "డ్రైవింగ్ లైసెన్స్ పరీక్ష తేదీ కావాలి",
+      "label": "Transport"
+    },
+    {
+      "text": "మా వార్డులో రోడ్లు మరమ్మత్తు చేయాలి. గుంతలు పడ్డాయి",
+      "label": "Transport"
+    },
+    {
+      "text": "బస్సు సర్వీస్ లేదు. మా గ్రామానికి బస్సులు నడవాలి",
+      "label": "Transport"
+    },
+    {
+      "text": "బస్ ప్రమాదంలో గాయపడ్డారు. పరిహారం కావాలి",
+      "label": "Transport"
+    },
+    {
+      "text": "బస్సు సర్వీస్ లేదు. మా గ్రామానికి బస్సులు నడవాలి",
+      "label": "Transport"
+    },
+    {
+      "text": "డ్రైవింగ్ లైసెన్స్ పరీక్ష తేదీ కావాలి",
+      "label": "Transport"
+    },
+    {
+      "text": "బస్సు సర్వీస్ లేదు. మా గ్రామానికి బస్సులు నడవాలి",
+      "label": "Transport"
+    },
+    {
+      "text": "డ్రైవింగ్ లైసెన్స్ పరీక్ష తేదీ కావాలి",
+      "label": "Transport"
+    },
+    {
+      "text": "ప్రాథమిక ఆరోగ్య కేంద్రంలో రోడ్లు మరమ్మత్తు చేయాలి. గుంతలు పడ్డాయి",
+      "label": "Transport"
+    },
+    {
+      "text": "బస్ ప్రమాదంలో గాయపడ్డారు. పరిహారం కావాలి",
+      "label": "Transport"
+    },
+    {
+      "text": "పాఠశాలలో రోడ్లు మరమ్మత్తు చేయాలి. గుంతలు పడ్డాయి",
+      "label": "Transport"
+    },
+    {
+      "text": "బస్ ప్రమాదంలో గాయపడ్డారు. పరిహారం కావాలి",
+      "label": "Transport"
+    },
+    {
+      "text": "వాహన రిజిస్ట్రేషన్ ఆలస్యం అవుతోంది. త్వరగా జారీ చేయాలి",
+      "label": "Transport"
+    },
+    {
+      "text": "బస్సు సర్వీస్ లేదు. మా గ్రామానికి బస్సులు నడవాలి",
+      "label": "Transport"
+    },
+    {
+      "text": "వాహన రిజిస్ట్రేషన్ ఆలస్యం అవుతోంది. తక్షణం జారీ చేయాలి",
+      "label": "Transport"
+    },
+    {
+      "text": "ఆసుపత్రిలో రోడ్లు మరమ్మత్తు చేయాలి. గుంతలు పడ్డాయి",
+      "label": "Transport"
+    },
+    {
+      "text": "బస్సు సర్వీస్ లేదు. మా గ్రామానికి బస్సులు నడవాలి",
+      "label": "Transport"
+    },
+    {
+      "text": "బస్సు సర్వీస్ లేదు. మా గ్రామానికి బస్సులు నడవాలి",
+      "label": "Transport"
+    },
+    {
+      "text": "బస్ ప్రమాదంలో గాయపడ్డారు. పరిహారం కావాలి",
+      "label": "Transport"
+    },
+    {
+      "text": "బస్సు సర్వీస్ లేదు. మా గ్రామానికి బస్సులు నడవాలి",
+      "label": "Transport"
+    },
+    {
+      "text": "ప్రాథమిక ఆరోగ్య కేంద్రంలో రోడ్లు మరమ్మత్తు చేయాలి. గుంతలు పడ్డాయి",
+      "label": "Transport"
+    },
+    {
+      "text": "బస్ ప్రమాదంలో గాయపడ్డారు. పరిహారం కావాలి",
+      "label": "Transport"
+    },
+    {
+      "text": "బస్ ప్రమాదంలో గాయపడ్డారు. పరిహారం కావాలి",
+      "label": "Transport"
+    },
+    {
+      "text": "బస్సు సర్వీస్ లేదు. మా గ్రామానికి బస్సులు నడవాలి",
+      "label": "Transport"
+    },
+    {
+      "text": "డ్రైవింగ్ లైసెన్స్ పరీక్ష తేదీ కావాలి",
+      "label": "Transport"
+    },
+    {
+      "text": "డ్రైవింగ్ లైసెన్స్ పరీక్ష తేదీ కావాలి",
+      "label": "Transport"
+    },
+    {
+      "text": "బస్సు సర్వీస్ లేదు. మా గ్రామానికి బస్సులు నడవాలి",
+      "label": "Transport"
+    },
+    {
+      "text": "వాహన రిజిస్ట్రేషన్ ఆలస్యం అవుతోంది. శీఘ్రంగా జారీ చేయాలి",
+      "label": "Transport"
+    },
+    {
+      "text": "ఆసుపత్రిలో రోడ్లు మరమ్మత్తు చేయాలి. గుంతలు పడ్డాయి",
+      "label": "Transport"
+    },
+    {
+      "text": "ప్రాథమిక ఆరోగ్య కేంద్రంలో రోడ్లు మరమ్మత్తు చేయాలి. గుంతలు పడ్డాయి",
+      "label": "Transport"
+    },
+    {
+      "text": "బస్సు సర్వీస్ లేదు. మా గ్రామానికి బస్సులు నడవాలి",
+      "label": "Transport"
+    },
+    {
+      "text": "బస్ ప్రమాదంలో గాయపడ్డారు. పరిహారం కావాలి",
+      "label": "Transport"
+    },
+    {
+      "text": "పంచాయతీ కార్యాలయంలో రోడ్లు మరమ్మత్తు చేయాలి. గుంతలు పడ్డాయి",
+      "label": "Transport"
+    },
+    {
+      "text": "ఆసుపత్రిలో రోడ్లు మరమ్మత్తు చేయాలి. గుంతలు పడ్డాయి",
+      "label": "Transport"
+    },
+    {
+      "text": "వాహన రిజిస్ట్రేషన్ ఆలస్యం అవుతోంది. అత్యవసరం జారీ చేయాలి",
+      "label": "Transport"
+    },
+    {
+      "text": "వాహన రిజిస్ట్రేషన్ ఆలస్యం అవుతోంది. వెంటనే జారీ చేయాలి",
+      "label": "Transport"
+    },
+    {
+      "text": "పాఠశాలలో రోడ్లు మరమ్మత్తు చేయాలి. గుంతలు పడ్డాయి",
+      "label": "Transport"
+    },
+    {
+      "text": "బస్సు సర్వీస్ లేదు. మా గ్రామానికి బస్సులు నడవాలి",
+      "label": "Transport"
+    },
+    {
+      "text": "పాఠశాలలో రోడ్లు మరమ్మత్తు చేయాలి. గుంతలు పడ్డాయి",
+      "label": "Transport"
+    },
+    {
+      "text": "ఆసుపత్రిలో రోడ్లు మరమ్మత్తు చేయాలి. గుంతలు పడ్డాయి",
+      "label": "Transport"
+    },
+    {
+      "text": "ప్రాథమిక ఆరోగ్య కేంద్రంలో రోడ్లు మరమ్మత్తు చేయాలి. గుంతలు పడ్డాయి",
+      "label": "Transport"
+    },
+    {
+      "text": "బస్సు సర్వీస్ లేదు. మా గ్రామానికి బస్సులు నడవాలి",
+      "label": "Transport"
+    },
+    {
+      "text": "వాహన రిజిస్ట్రేషన్ ఆలస్యం అవుతోంది. త్వరగా జారీ చేయాలి",
+      "label": "Transport"
+    },
+    {
+      "text": "బస్సు సర్వీస్ లేదు. మా గ్రామానికి బస్సులు నడవాలి",
+      "label": "Transport"
+    },
+    {
+      "text": "బస్సు సర్వీస్ లేదు. మా గ్రామానికి బస్సులు నడవాలి",
+      "label": "Transport"
+    },
+    {
+      "text": "దయచేసి తెలపండి పొలానికి దారి ఇవ్వడం లేదని సబ్ కలెక్టర్ కు ఫిర్యాదు చేశారు. ఇస్నాపూర్ మండలం అన్నారం గ్రామంలో సర్వే నెంబర్ 144లో ఒక ఎకరం భూమిని సాగు చేయడానికి వెళ్లినప్పుడు ఇతరులు నిరోధించారు",
+      "label": "Revenue"
+    },
+    {
+      "text": "పొలానికి దారి ఇవ్వడం లేదని సబ్ కలెక్టర్ కు ఫిర్యాదు చేశారు. ఇస్నాపూర్ మండలం అన్నారం గ్రామంలో సర్వే నెంబర్ 144లో ఒక ఎకరం భూమిని సాగు చేయడానికి వెళ్లినప్పుడు ఇతరులు నిరోధించారు. ఆలస్యం చేయకుండా చర్య తీసుకోండి",
+      "label": "Revenue"
+    },
+    {
+      "text": "కృపయా విద్యుత్ సమస్య ఉంటే 1912 టోల్ ఫ్రీ నెంబర్ కు ఫోన్ చేసి ఫిర్యాదు చేయవచ్చు. విద్యుత్ బిల్లులు అధికంగా వచ్చినా, కరెంటు మోటరు ట్రాన్స్ఫార్మర్ సమస్య ఉన్నా ఫిర్యాదు చేయవచ్చు",
+      "label": "Energy"
+    },
+    {
+      "text": "విద్యుత్ సమస్య ఉంటే 1912 టోల్ ఫ్రీ నెంబర్ కు ఫోన్ చేసి ఫిర్యాదు చేయవచ్చు. విద్యుత్ బిల్లులు అధికంగా వచ్చినా, కరెంటు మోటరు ట్రాన్స్ఫార్మర్ సమస్య ఉన్నా ఫిర్యాదు చేయవచ్చు. శీఘ్రంగా చర్య తీసుకోండి",
+      "label": "Energy"
+    },
+    {
+      "text": "కృపయా విద్యుత్ సమస్య పరిష్కరించాలని ప్రజావాణిలో ఫిర్యాదు చేశారు. ప్రతిరోజు విద్యుత్తు అంతరాయం ఏర్పడుతూ, ప్రజలు తీవ్ర ఇబ్బందులు పడుతున్నారు",
+      "label": "Energy"
+    },
+    {
+      "text": "విద్యుత్ సమస్య పరిష్కరించాలని ప్రజావాణిలో ఫిర్యాదు చేశారు. ప్రతిరోజు విద్యుత్తు అంతరాయం ఏర్పడుతూ, ప్రజలు తీవ్ర ఇబ్బందులు పడుతున్నారు. తక్షణం చర్య తీసుకోండి",
+      "label": "Energy"
+    },
+    {
+      "text": "వినమ్రంగా కోరుకుంటున్నాను తమకు వారానికి ఒక్కసారి మాత్రమే నీటి సరఫరా జరుగుతుందని యాదాద్రి-భువనగిరి జిల్లా కలెక్టర్‌కు చౌటుప్పల్‌ వాసులు ఫిర్యాదు చేశారు",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "తమకు వారానికి ఒక్కసారి మాత్రమే నీటి సరఫరా జరుగుతుందని యాదాద్రి-భువనగిరి జిల్లా కలెక్టర్‌కు చౌటుప్పల్‌ వాసులు ఫిర్యాదు చేశారు. త్వరగా చర్య తీసుకోండి",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "కృపయా గ్రామానికి నెలరోజులుగా తాగునీరు రాక తీవ్ర ఇబ్బందులు పడుతున్నామని చిట్కుల్‌ గ్రామస్తులు మిషన్‌ భగీరథ అధికారులపై ఆగ్రహం వ్యక్తం చేశారు",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "గ్రామానికి నెలరోజులుగా తాగునీరు రాక తీవ్ర ఇబ్బందులు పడుతున్నామని చిట్కుల్‌ గ్రామస్తులు మిషన్‌ భగీరథ అధికారులపై ఆగ్రహం వ్యక్తం చేశారు. వెంటనే చర్య తీసుకోండి",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "దయచేసి తెలపండి 15రోజులుగా మిషన్‌ భగీరథ తాగునీటి సరఫరా కాకపోవటంతో తండావాసులు ఖాళీబిందెలతో ఆందోళనకు దిగారు",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "15రోజులుగా మిషన్‌ భగీరథ తాగునీటి సరఫరా కాకపోవటంతో తండావాసులు ఖాళీబిందెలతో ఆందోళనకు దిగారు. శీఘ్రంగా చర్య తీసుకోండి",
+      "label": "Panchayat Raj"
+    },
+    {
+      "text": "కృపయా ఓరుగల్లు కోట ప్రాంతవాసులు గత ఆరు రోజులుగా తీవ్ర తాగునీటి ఎద్దడితో అల్లాడుతున్నారు. తక్షణ ప్రత్యామ్నాయ చర్యగా ట్యాంకర్ల ద్వారా నీటి సరఫరా చేయాలని డిమాండ్ చేస్తున్నారు",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "ఓరుగల్లు కోట ప్రాంతవాసులు గత ఆరు రోజులుగా తీవ్ర తాగునీటి ఎద్దడితో అల్లాడుతున్నారు. తక్షణ ప్రత్యామ్నాయ చర్యగా ట్యాంకర్ల ద్వారా నీటి సరఫరా చేయాలని డిమాండ్ చేస్తున్నారు. తక్షణం చర్య తీసుకోండి",
+      "label": "Municipal Administration"
+    },
+    {
+      "text": "దయచేసి పోలీసులు ఏదైనా నేరానికి సంబంధించి సమాచారం తెలిస్తే FIR నమోదు చేస్తారు. FIR అంటే ఫస్ట్‌ ఇన్ఫర్మేషన్‌ రిపోర్టు. ఎఫ్‌ఐఆర్‌లో తేది, ఫిర్యాదు ఇచ్చిన వారిపేరు, సమయం, సెక్షన్లు, నేరం వివరాలు ఉంటాయి",
+      "label": "Police"
+    },
+    {
+      "text": "పోలీసులు ఏదైనా నేరానికి సంబంధించి సమాచారం తెలిస్తే FIR నమోదు చేస్తారు. FIR అంటే ఫస్ట్‌ ఇన్ఫర్మేషన్‌ రిపోర్టు. ఎఫ్‌ఐఆర్‌లో తేది, ఫిర్యాదు ఇచ్చిన వారిపేరు, సమయం, సెక్షన్లు, నేరం వివరాలు ఉంటాయి. త్వరగా చర్య తీసుకోండి",
+      "label": "Police"
+    },
+    {
+      "text": "కృపయా మీ భూమి పోర్టల్ ద్వారా 1-బి, అడంగలు, గ్రామ మ్యాప్‌లు, ఇ-పాస్‌బుక్‌లు చూడవచ్చు. భూ వివాదాల స్థితిని తనిఖీ చేయవచ్చు, మ్యూటేషన్ మరియు భూమి మార్పిడి కోసం దరఖాస్తు చేసుకోవచ్చు",
+      "label": "Revenue"
+    },
+    {
+      "text": "మీ భూమి పోర్టల్ ద్వారా 1-బి, అడంగలు, గ్రామ మ్యాప్‌లు, ఇ-పాస్‌బుక్‌లు చూడవచ్చు. భూ వివాదాల స్థితిని తనిఖీ చేయవచ్చు, మ్యూటేషన్ మరియు భూమి మార్పిడి కోసం దరఖాస్తు చేసుకోవచ్చు. వెంటనే చర్య తీసుకోండి",
+      "label": "Revenue"
+    },
+    {
+      "text": "దయచేసి వ్యవసాయం మరియు సహకారం శాఖకు సంబంధించిన ఫిర్యాదు",
+      "label": "Agriculture"
+    },
+    {
+      "text": "వ్యవసాయం మరియు సహకారం శాఖకు సంబంధించిన ఫిర్యాదు. వెంటనే చర్య తీసుకోండి",
+      "label": "Agriculture"
+    },
+    {
+      "text": "దయచేసి తెలపండి ఆరోగ్యం, వైద్యం మరియు కుటుంబ సంక్షేమం శాఖలో సమస్య",
+      "label": "Health"
+    },
+    {
+      "text": "ఆరోగ్యం, వైద్యం మరియు కుటుంబ సంక్షేమం శాఖలో సమస్య. త్వరగా చర్య తీసుకోండి",
+      "label": "Health"
+    },
+    {
+      "text": "దయచేసి పశుపోషణ, డైరీ అభివృద్ధి మరియు మత్స్య సంపద శాఖ",
+      "label": "Animal Husbandry"
+    },
+    {
+      "text": "పశుపోషణ, డైరీ అభివృద్ధి మరియు మత్స్య సంపద శాఖ. తక్షణం చర్య తీసుకోండి",
+      "label": "Animal Husbandry"
+    },
+    {
+      "text": "దయచేసి వినియోగదారుల వ్యవహారాలు, ఆహారం మరియు సివిల్ సప్లైస్ శాఖ",
+      "label": "Civil Supplies"
+    },
+    {
+      "text": "వినియోగదారుల వ్యవహారాలు, ఆహారం మరియు సివిల్ సప్లైస్ శాఖ. వెంటనే చర్య తీసుకోండి",
+      "label": "Civil Supplies"
+    },
+    {
+      "text": "వినమ్రంగా కోరుకుంటున్నాను మానవ వనరులు (పాఠశాల విద్య) శాఖ",
+      "label": "Education"
+    },
+    {
+      "text": "మానవ వనరులు (పాఠశాల విద్య) శాఖ. తక్షణం చర్య తీసుకోండి",
+      "label": "Education"
+    },
+    {
+      "text": "వినమ్రంగా కోరుకుంటున్నాను పాఠశాల భవనం మరమ్మత్తులు అవసరం. రాష్టం పడుతోంది",
+      "label": "Education"
+    },
+    {
+      "text": "పాఠశాల భవనం మరమ్మత్తులు అవసరం. రాష్టం పడుతోంది. తక్షణం చర్య తీసుకోండి",
+      "label": "Education"
+    },
+    {
+      "text": "వినమ్రంగా కోరుకుంటున్నాను ప్రాథమిక ఆరోగ్య కేంద్రంలో వైద్యులు హాజరుకావటం లేదు",
+      "label": "Health"
+    },
+    {
+      "text": "ప్రాథమిక ఆరోగ్య కేంద్రంలో వైద్యులు హాజరుకావటం లేదు. అత్యవసరం చర్య తీసుకోండి",
+      "label": "Health"
+    },
+    {
+      "text": "దయచేసి మా గ్రామానికి రోడ్లు మరమ్మత్తు చేయాలి. గుంతలు పడ్డాయి",
+      "label": "Transport"
+    },
+    {
+      "text": "మా గ్రామానికి రోడ్లు మరమ్మత్తు చేయాలి. గుంతలు పడ్డాయి. ఆలస్యం చేయకుండా చర్య తీసుకోండి",
+      "label": "Transport"
+    },
+    {
+      "text": "దయచేసి తెలపండి పంట నష్టం పరిహారం ఇవ్వలేదు. రైతు భరోసా పథకం డబ్బు రాలేదు",
+      "label": "Agriculture"
+    },
+    {
+      "text": "పంట నష్టం పరిహారం ఇవ్వలేదు. రైతు భరోసా పథకం డబ్బు రాలేదు. ఆలస్యం చేయకుండా చర్య తీసుకోండి",
+      "label": "Agriculture"
+    },
+    {
+      "text": "వినమ్రంగా కోరుకుంటున్నాను పాత వయస్సు పెన్షన్ గత రెండు నెలలుగా రాలేదు",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "పాత వయస్సు పెన్షన్ గత రెండు నెలలుగా రాలేదు. త్వరగా చర్య తీసుకోండి",
+      "label": "Social Welfare"
+    },
+    {
+      "text": "దయచేసి కుల ధృవీకరణ పత్రం కోసం దరఖాస్తు చేసాను. ఇంకా రాలేదు",
+      "label": "Revenue"
+    },
+    {
+      "text": "కుల ధృవీకరణ పత్రం కోసం దరఖాస్తు చేసాను. ఇంకా రాలేదు. వెంటనే చర్య తీసుకోండి",
+      "label": "Revenue"
+    },
+    {
+      "text": "దయచేసి తెలపండి ఆదాయ ధృవీకరణ పత్రం అవసరం. త్వరగా జారీ చేయాలి",
+      "label": "Revenue"
+    }
+  ]
+}

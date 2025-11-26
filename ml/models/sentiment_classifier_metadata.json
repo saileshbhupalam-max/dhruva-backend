@@ -1,0 +1,22 @@
+{
+  "model": "sentiment_classifier",
+  "version": "1.0",
+  "created": "2025-11-25T22:23:47.361130",
+  "accuracy": 1.0,
+  "top2_accuracy": 1.0,
+  "cv_mean": 0.983375,
+  "classes": [
+    "NORMAL",
+    "MEDIUM",
+    "HIGH",
+    "CRITICAL"
+  ],
+  "num_classes": 4,
+  "train_samples": 12800,
+  "test_samples": 3200,
+  "individual_models": {
+    "lr": 0.9990625,
+    "rf": 0.995625,
+    "svm": 1.0
+  }
+}

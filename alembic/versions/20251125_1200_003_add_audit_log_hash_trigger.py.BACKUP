@@ -1,0 +1,76 @@
+"""Add audit log hash chain trigger for tamper-proof audit trail
+
+Revision ID: 003
+Revises: 20251125_1145_1ebd10a02c5b
+Create Date: 2025-11-25 12:00:00
+
+This migration adds:
+- Database trigger to automatically compute hash chain for audit logs
+- Each audit log entry's current_hash is computed from:
+  - grievance_id
+  - action
+  - timestamp
+  - previous_hash (from the last audit log for the same grievance)
+"""
+from typing import Sequence, Union
+
+from alembic import op
+
+# revision identifiers, used by Alembic.
+revision: str = '003'
+down_revision: Union[str, None] = '20251125_1145_1ebd10a02c5b'
+branch_labels: Union[str, Sequence[str], None] = None
+depends_on: Union[str, Sequence[str], None] = None
+
+
+def upgrade() -> None:
+    """Add audit log hash chain trigger."""
+
+    # Create function to compute hash chain
+    op.execute("""
+    CREATE OR REPLACE FUNCTION compute_audit_log_hash()
+    RETURNS TRIGGER AS $$
+    DECLARE
+        prev_hash VARCHAR(64);
+    BEGIN
+        -- Get the previous hash for this grievance
+        SELECT current_hash INTO prev_hash
+        FROM audit_logs
+        WHERE grievance_id = NEW.grievance_id
+        ORDER BY timestamp DESC
+        LIMIT 1;
+
+        -- Set previous_hash
+        NEW.previous_hash := prev_hash;
+
+        -- Compute current_hash using SHA-256
+        -- Hash = SHA256(grievance_id || action || timestamp || previous_hash)
+        NEW.current_hash := encode(
+            sha256(
+                (NEW.grievance_id::text || NEW.action || NEW.timestamp::text || COALESCE(prev_hash, ''))::bytea
+            ),
+            'hex'
+        );
+
+        RETURN NEW;
+    END;
+    $$ LANGUAGE plpgsql;
+    """)
+
+    # Create trigger
+    op.execute("""
+    CREATE TRIGGER audit_log_hash_chain_trigger
+    BEFORE INSERT ON audit_logs
+    FOR EACH ROW
+    EXECUTE FUNCTION compute_audit_log_hash();
+    """)
+
+
+def downgrade() -> None:
+    """Remove audit log hash chain trigger."""
+
+    # Drop trigger
+    op.execute("DROP TRIGGER IF EXISTS audit_log_hash_chain_trigger ON audit_logs")
+
+    # Drop function
+    op.execute("DROP FUNCTION IF EXISTS compute_audit_log_hash()")

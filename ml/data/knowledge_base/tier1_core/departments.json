@@ -1,0 +1,942 @@
+{
+  "_metadata": {
+    "created": "2025-11-25",
+    "version": "1.0",
+    "description": "Comprehensive department list with Telugu names, keywords, HODs, and sub-departments",
+    "_source": [
+      "docs/data_sets/markdown/PGRS BOOK.md",
+      "docs/data_sets/markdown/List of Depts with HOD.md",
+      "backend/ml/data/extracted/pgrs_book_keywords.json"
+    ],
+    "total_departments": 30,
+    "total_subdepartments": 106,
+    "total_keywords": 709,
+    "schema": "DepartmentSchema"
+  },
+  "departments": [
+    {
+      "id": 1,
+      "name_english": "Agriculture And Co-operation",
+      "name_telugu": "వ్యవసాయం మరియు సహకారం",
+      "code": "AGR",
+      "priority_rank": 8,
+      "typical_volume_pct": 3.5,
+      "subdepartments": [
+        "AP Micro Irrigation Project (APMIP)",
+        "Acharya N.G.Ranga Agricultural University (ANGRAU)",
+        "Agriculture",
+        "Cooperation And Cooperative Societies",
+        "Dr. YSR Horticultural University",
+        "Horticulture",
+        "Marketing",
+        "Rythu Sadhikara Samstha",
+        "Sericulture"
+      ],
+      "hod": "Commissioner of Agriculture",
+      "keywords_english": [
+        "crop", "insurance", "claim", "compensation", "damage", "loss", "premium", "yield", "agriculture",
+        "fertilizer", "subsidy", "distribution", "shortage", "availability", "urea", "dap",
+        "loan", "credit", "kisan", "interest", "waiver", "debt", "repayment", "farmer",
+        "seed", "pesticide", "organic", "irrigation", "cultivation"
+      ],
+      "keywords_telugu": [
+        "పంట", "బీమా", "క్లెయిమ్", "పరిహారం", "నష్టం", "ప్రీమియం", "దిగుబడి", "వ్యవసాయం",
+        "ఎరువులు", "సబ్సిడీ", "పంపిణీ", "కొరత", "లభ్యత", "యూరియా",
+        "రుణం", "క్రెడిట్", "కిసాన్", "వడ్డీ", "మాఫీ", "అప్పు", "రైతు",
+        "విత్తనం", "పురుగుమందు", "సేంద్రీయ", "నీటిపారుదల", "సాగు"
+      ],
+      "common_subjects": [
+        "Crop Insurance",
+        "Fertilizer Distribution",
+        "Agriculture Loans",
+        "Seed Supply",
+        "Pesticide Issues"
+      ]
+    },
+    {
+      "id": 2,
+      "name_english": "Animal Husbandry, Dairy Development And Fisheries",
+      "name_telugu": "పశుపోషణ, డైరీ అభివృద్ధి మరియు మత్స్య సంపద",
+      "code": "AHD",
+      "priority_rank": 22,
+      "typical_volume_pct": 0.8,
+      "subdepartments": [
+        "AP Dairy Development Cooperative Federation (AP DIARY)",
+        "Animal Husbandry",
+        "Fisheries",
+        "Sri Venkateswara Veterinary University"
+      ],
+      "hod": "Commissioner of Animal Husbandry",
+      "keywords_english": [
+        "veterinary", "animal", "health", "doctor", "clinic", "vaccination", "treatment", "livestock",
+        "dairy", "milk", "cooperative", "collection", "price", "cattle",
+        "fish", "fishing", "pond", "license", "aquaculture", "fisherman"
+      ],
+      "keywords_telugu": [
+        "పశువైద్యం", "జంతువు", "ఆరోగ్యం", "డాక్టర్", "క్లినిక్", "టీకా", "చికిత్స", "పశువులు",
+        "డైరీ", "పాలు", "సహకార", "సేకరణ", "ధర",
+        "చేప", "చేపలు పట్టడం", "చెరువు", "లైసెన్సు", "మత్స్య పెంపకం", "జాలర"
+      ],
+      "common_subjects": [
+        "Veterinary Services",
+        "Dairy Development",
+        "Fisheries",
+        "Vaccination Programs"
+      ]
+    },
+    {
+      "id": 3,
+      "name_english": "Backward Classes Welfare",
+      "name_telugu": "వెనుకబడిన తరగతుల సంక్షేమం",
+      "code": "BCW",
+      "priority_rank": 18,
+      "typical_volume_pct": 1.2,
+      "subdepartments": [
+        "AP BC Cooperative Finance Corporation",
+        "BC Welfare",
+        "Kapu Welfare and Development Corporation",
+        "MJPAPBBCW Residential Education Society"
+      ],
+      "hod": "Commissioner of BC Welfare",
+      "keywords_english": [
+        "certificate", "caste", "backward", "class", "bc", "verification", "income",
+        "scholarship", "hostel", "welfare", "scheme", "benefit", "assistance"
+      ],
+      "keywords_telugu": [
+        "సర్టిఫికేట్", "కులం", "వెనుకబడిన", "తరగతి", "బిసి", "ధృవీకరణ", "ఆదాయం",
+        "స్కాలర్‌షిప్", "వసతి గృహం", "సంక్షేమం", "పథకం", "ప్రయోజనం", "సహాయం"
+      ],
+      "common_subjects": [
+        "BC Certificates",
+        "BC Welfare Schemes",
+        "Scholarship Issues",
+        "Hostel Facilities"
+      ]
+    },
+    {
+      "id": 4,
+      "name_english": "Consumer Affairs, Food And Civil Supplies",
+      "name_telugu": "వినియోగదారుల వ్యవహారాలు, ఆహారం మరియు సివిల్ సప్లైస్",
+      "code": "CIV",
+      "priority_rank": 10,
+      "typical_volume_pct": 2.5,
+      "subdepartments": [
+        "AP State Civil Supplies Corporation",
+        "Civil Supplies",
+        "Legal Metrology"
+      ],
+      "hod": "Commissioner of Civil Supplies",
+      "keywords_english": [
+        "ration", "card", "rice", "pds", "subsidy", "food", "grain", "quota", "aadhar", "linking",
+        "shop", "dealer", "price", "quality", "shortage", "fair", "complaint", "supplies"
+      ],
+      "keywords_telugu": [
+        "రేషన్", "కార్డు", "బియ్యం", "పిడిఎస్", "సబ్సిడీ", "ఆహారం", "ధాన్యం", "కోటా", "ఆధార్", "లింకింగ్",
+        "దుకాణం", "డీలర్", "ధర", "నాణ్యత", "కొరత", "న్యాయ వెల", "ఫిర్యాదు", "సరఫరా"
+      ],
+      "common_subjects": [
+        "Ration Card",
+        "Fair Price Shop",
+        "Rice Distribution",
+        "Aadhaar Linking"
+      ]
+    },
+    {
+      "id": 5,
+      "name_english": "Department Of Skills Development And Training",
+      "name_telugu": "నైపుణ్య అభివృద్ధి మరియు శిక్షణ శాఖ",
+      "code": "SKL",
+      "priority_rank": 20,
+      "typical_volume_pct": 0.9,
+      "subdepartments": [
+        "AP State Skill Development Corporation",
+        "Employment and Training",
+        "Technical Education"
+      ],
+      "hod": "Commissioner of Employment & Training",
+      "keywords_english": [
+        "training", "skill", "course", "certificate", "placement", "iti", "polytechnic", "vocational",
+        "employment", "job", "apprentice"
+      ],
+      "keywords_telugu": [
+        "శిక్షణ", "నైపుణ్యం", "కోర్సు", "సర్టిఫికేట్", "ఉద్యోగం", "ఐటిఐ", "పాలీటెక్నిక్", "వృత్తి",
+        "ఉపాధి", "ఉద్యోగం", "అప్రెంటిస్"
+      ],
+      "common_subjects": [
+        "Skill Training Programs",
+        "Course Enrollment",
+        "Certificate Issuance",
+        "Placement Issues"
+      ]
+    },
+    {
+      "id": 6,
+      "name_english": "Disaster Management",
+      "name_telugu": "విపత్తు నిర్వహణ",
+      "code": "DST",
+      "priority_rank": 25,
+      "typical_volume_pct": 0.5,
+      "subdepartments": [
+        "Disaster Management"
+      ],
+      "hod": "Commissioner of Disaster Management",
+      "keywords_english": [
+        "disaster", "relief", "compensation", "flood", "cyclone", "damage", "emergency", "rescue",
+        "calamity", "natural", "crisis"
+      ],
+      "keywords_telugu": [
+        "విపత్తు", "సహాయం", "పరిహారం", "వరద", "తుఫాను", "నష్టం", "అత్యవసరం", "రక్షణ",
+        "ప్రకృతి వైపరీత్యం", "సంక్షోభం"
+      ],
+      "common_subjects": [
+        "Disaster Relief",
+        "Relief Distribution",
+        "Compensation Claims",
+        "Emergency Response"
+      ]
+    },
+    {
+      "id": 7,
+      "name_english": "Energy",
+      "name_telugu": "శక్తి",
+      "code": "ENE",
+      "priority_rank": 6,
+      "typical_volume_pct": 5.2,
+      "subdepartments": [
+        "AP Central Power Distribution Co Ltd (CPDCL)",
+        "AP Eastern Power Distribution Co Ltd (EPDCL)",
+        "AP Southern Power Distribution Co Ltd (SPDCL)",
+        "AP Transco"
+      ],
+      "hod": "CMD, Power Distribution Companies",
+      "keywords_english": [
+        "electricity", "power", "connection", "meter", "bill", "supply", "voltage", "transformer", "outage",
+        "solar", "panel", "renewable", "energy", "current", "load"
+      ],
+      "keywords_telugu": [
+        "విద్యుత్", "పవర్", "కనెక్షన్", "మీటర్", "బిల్లు", "సరఫరా", "వోల్టేజ్", "ట్రాన్స్‌ఫార్మర్", "అంతరాయం",
+        "సౌర", "ప్యానెల్", "పునరుత్పాదక", "శక్తి", "కరెంట్", "లోడ్"
+      ],
+      "common_subjects": [
+        "Electricity Connection",
+        "Power Outage",
+        "Bill Issues",
+        "Meter Problems",
+        "Solar Power"
+      ]
+    },
+    {
+      "id": 8,
+      "name_english": "Environment, Forest, Science And Technology",
+      "name_telugu": "పర్యావరణం, అటవీ, విజ్ఞాన శాస్త్ర మరియు సాంకేతికత",
+      "code": "ENV",
+      "priority_rank": 24,
+      "typical_volume_pct": 0.6,
+      "subdepartments": [
+        "AP Pollution Control Board",
+        "Forest (PCCF)"
+      ],
+      "hod": "Principal Chief Conservator of Forests",
+      "keywords_english": [
+        "forest", "rights", "tribal", "land", "patta", "clearance", "wildlife", "conservation",
+        "environment", "pollution", "approval", "noc", "impact", "tree"
+      ],
+      "keywords_telugu": [
+        "అటవీ", "హక్కులు", "గిరిజన", "భూమి", "పట్టా", "క్లియరెన్స్", "వన్యప్రాణులు", "పరిరక్షణ",
+        "పర్యావరణం", "అనుమతి", "కాలుష్యం", "ఆమోదం", "ఎన్ఓసి", "ప్రభావం", "చెట్టు"
+      ],
+      "common_subjects": [
+        "Forest Rights",
+        "Environmental Clearance",
+        "Pollution Complaints",
+        "Tree Cutting Permission"
+      ]
+    },
+    {
+      "id": 9,
+      "name_english": "Finance",
+      "name_telugu": "ఫైనాన్స్",
+      "code": "FIN",
+      "priority_rank": 11,
+      "typical_volume_pct": 2.3,
+      "subdepartments": [
+        "Finance",
+        "Government Life Insurance",
+        "Life Insurance Corporation",
+        "Pay And Accounts Office",
+        "State Audit",
+        "Treasuries & Accounts",
+        "Works and Accounts"
+      ],
+      "hod": "Principal Secretary Finance",
+      "keywords_english": [
+        "pension", "retirement", "old-age", "widow", "disability", "allowance", "arrears", "payment",
+        "salary", "wages", "increment", "employee", "treasury"
+      ],
+      "keywords_telugu": [
+        "పెన్షన్", "పదవీ విరమణ", "వృద్ధాప్య", "విధవ", "వైకల్యం", "భత్యం", "బకాయిలు", "చెల్లింపు",
+        "జీతం", "వేతనం", "పెంపు", "ఉద్యోగి", "ట్రెజరీ"
+      ],
+      "common_subjects": [
+        "Pension",
+        "Salaries",
+        "Pension Stoppage",
+        "Arrears Payment"
+      ]
+    },
+    {
+      "id": 10,
+      "name_english": "General Administration",
+      "name_telugu": "సాధారణ పరిపాలన",
+      "code": "GAD",
+      "priority_rank": 19,
+      "typical_volume_pct": 1.0,
+      "subdepartments": [
+        "AP Public Service Commission",
+        "Anti-Corruption Bureau",
+        "Information and Public Relation",
+        "Protocol"
+      ],
+      "hod": "Chief Secretary",
+      "keywords_english": [
+        "order", "go", "notification", "circular", "policy", "implementation", "administration",
+        "corruption", "bribe", "complaint"
+      ],
+      "keywords_telugu": [
+        "ఉత్తర్వు", "జిఓ", "నోటిఫికేషన్", "సర్క్యులర్", "విధానం", "అమలు", "పరిపాలన",
+        "అవినీతి", "లంచం", "ఫిర్యాదు"
+      ],
+      "common_subjects": [
+        "Government Orders",
+        "GO Implementation",
+        "Policy Issues",
+        "Corruption Complaints"
+      ]
+    },
+    {
+      "id": 11,
+      "name_english": "Grama Volunteers/Ward Volunteers And Village Secretariats/Ward Secretariats",
+      "name_telugu": "గ్రామ/వార్డు వాలంటీర్లు మరియు గ్రామ/వార్డు సచివాలయాలు",
+      "code": "VOL",
+      "priority_rank": 16,
+      "typical_volume_pct": 1.5,
+      "subdepartments": [
+        "Electronics Delivery Services",
+        "Village Secretariats / Ward Secretariats",
+        "Grama Volunteers / Ward Volunteers"
+      ],
+      "hod": "Special Chief Secretary Panchayat Raj",
+      "keywords_english": [
+        "volunteer", "grama", "ward", "secretariat", "service", "delivery", "complaint",
+        "certificate", "application"
+      ],
+      "keywords_telugu": [
+        "వాలంటీర్", "గ్రామ", "వార్డు", "సచివాలయం", "సేవ", "అందించడం", "ఫిర్యాదు",
+        "సర్టిఫికేట్", "అప్లికేషన్"
+      ],
+      "common_subjects": [
+        "Volunteer Services",
+        "Service Delivery",
+        "Volunteer Complaints",
+        "Certificate Issues"
+      ]
+    },
+    {
+      "id": 12,
+      "name_english": "Health, Medical And Family Welfare",
+      "name_telugu": "ఆరోగ్యం, వైద్యం మరియు కుటుంబ సంక్షేమం",
+      "code": "HLT",
+      "priority_rank": 7,
+      "typical_volume_pct": 4.5,
+      "subdepartments": [
+        "AP State Aids Control Society",
+        "AP State Allied and Healthcare Professions Council",
+        "Andhra Pradesh Medical Services and Infrastructure Development Corporation (APMSIDC)",
+        "Ayush",
+        "Directorate of Secondary Health",
+        "Dr. NTR University of Health Sciences",
+        "Dr. NTR Vaidya Seva Trust",
+        "Drugs Control Administration",
+        "Family Welfare",
+        "Institute of Preventive medicine (IPM) & Food Safety",
+        "Medical Education",
+        "Public Health"
+      ],
+      "hod": "Principal Secretary Health",
+      "keywords_english": [
+        "hospital", "doctor", "treatment", "medicine", "emergency", "bed", "ambulance", "health",
+        "arogyasri", "insurance", "card", "scheme", "claim", "surgery", "patient"
+      ],
+      "keywords_telugu": [
+        "ఆసుపత్రి", "డాక్టర్", "చికిత్స", "మందు", "అత్యవసరం", "మంచం", "అంబులెన్స్", "ఆరోగ్యం",
+        "ఆరోగ్యశ్రీ", "బీమా", "కార్డు", "పథకం", "క్లెయిమ్", "శస్త్రచికిత్స", "రోగి"
+      ],
+      "common_subjects": [
+        "Hospital Services",
+        "Arogyasri",
+        "Doctor Availability",
+        "Medicine Supply",
+        "Emergency Services"
+      ]
+    },
+    {
+      "id": 13,
+      "name_english": "Home (Police)",
+      "name_telugu": "హోం (పోలీస్)",
+      "code": "POL",
+      "priority_rank": 3,
+      "typical_volume_pct": 8.5,
+      "subdepartments": [
+        "Fire Services",
+        "Police",
+        "Sainik Welfare"
+      ],
+      "hod": "Director General of Police",
+      "keywords_english": [
+        "crime", "fir", "police", "complaint", "theft", "assault", "investigation", "case",
+        "law", "order", "peace", "safety", "security", "patrol", "protection", "station"
+      ],
+      "keywords_telugu": [
+        "నేరం", "ఎఫ్ఐఆర్", "పోలీస్", "ఫిర్యాదు", "దొంగతనం", "దాడి", "దర్యాప్తు", "కేసు",
+        "చట్టం", "క్రమం", "శాంతి", "భద్రత", "రక్షణ", "పెట్రోలింగ్", "సంరక్షణ", "స్టేషన్"
+      ],
+      "common_subjects": [
+        "Crime Complaints",
+        "FIR Registration",
+        "Case Investigation",
+        "Police Harassment",
+        "Law and Order"
+      ]
+    },
+    {
+      "id": 14,
+      "name_english": "Housing",
+      "name_telugu": "గృహనిర్మాణం",
+      "code": "HSG",
+      "priority_rank": 13,
+      "typical_volume_pct": 2.0,
+      "subdepartments": [
+        "AP State Housing Corporation Ltd"
+      ],
+      "hod": "Commissioner of Housing",
+      "keywords_english": [
+        "house", "site", "plot", "assignment", "patta", "allotment", "government", "land",
+        "scheme", "subsidy", "construction", "loan", "indiramma", "pmay"
+      ],
+      "keywords_telugu": [
+        "ఇల్లు", "స్థలం", "ప్లాటు", "కేటాయింపు", "పట్టా", "ప్రభుత్వం", "భూమి",
+        "పథకం", "సబ్సిడీ", "నిర్మాణం", "రుణం", "ఇందిరమ్మ", "పిఎంఏవై"
+      ],
+      "common_subjects": [
+        "House Sites",
+        "Housing Schemes",
+        "Site Assignment",
+        "Patta Issues"
+      ]
+    },
+    {
+      "id": 15,
+      "name_english": "Human Resources (Higher Education)",
+      "name_telugu": "మానవ వనరులు (ఉన్నత విద్య)",
+      "code": "HED",
+      "priority_rank": 17,
+      "typical_volume_pct": 1.3,
+      "subdepartments": [
+        "AP State Council for Higher Education",
+        "Collegiate Education"
+      ],
+      "hod": "Commissioner of Collegiate Education",
+      "keywords_english": [
+        "admission", "college", "seat", "counseling", "fee", "scholarship", "course",
+        "degree", "university", "exam"
+      ],
+      "keywords_telugu": [
+        "ప్రవేశం", "కళాశాల", "సీటు", "కౌన్సెలింగ్", "ఫీజు", "స్కాలర్‌షిప్", "కోర్సు",
+        "డిగ్రీ", "విశ్వవిద్యాలయం", "పరీక్ష"
+      ],
+      "common_subjects": [
+        "College Admissions",
+        "Seat Allotment",
+        "Fee Issues",
+        "Counseling Problems"
+      ]
+    },
+    {
+      "id": 16,
+      "name_english": "Human Resources (School Education)",
+      "name_telugu": "మానవ వనరులు (పాఠశాల విద్య)",
+      "code": "EDU",
+      "priority_rank": 9,
+      "typical_volume_pct": 3.0,
+      "subdepartments": [
+        "Board of Intermediate Education",
+        "Intermediate Education",
+        "Samagra Shiksha",
+        "School Education"
+      ],
+      "hod": "Commissioner of School Education",
+      "keywords_english": [
+        "school", "building", "classroom", "toilet", "water", "infrastructure", "facility",
+        "meal", "food", "mdm", "mid-day", "quality", "supply", "children", "teacher"
+      ],
+      "keywords_telugu": [
+        "పాఠశాల", "భవనం", "తరగతి గది", "మరుగుదొడ్డి", "నీరు", "మౌలిక సదుపాయాలు", "సౌకర్యం",
+        "భోజనం", "ఆహారం", "ఎండిఎం", "మధ్యాహ్న", "నాణ్యత", "సరఫరా", "పిల్లలు", "ఉపాధ్యాయుడు"
+      ],
+      "common_subjects": [
+        "School Infrastructure",
+        "Mid-Day Meals",
+        "Building Repairs",
+        "Teacher Issues"
+      ]
+    },
+    {
+      "id": 17,
+      "name_english": "Industries And Commerce",
+      "name_telugu": "పరిశ్రమలు మరియు వాణిజ్యం",
+      "code": "IND",
+      "priority_rank": 21,
+      "typical_volume_pct": 0.9,
+      "subdepartments": [
+        "AP Food Processing Society",
+        "AP State Financial Corporation (APSFC)",
+        "Andhra Pradesh Industrial Infrastructure Corporation (APIIC)",
+        "Handlooms & Textiles",
+        "Industries, Commerce And Export Promotion",
+        "Mines And Geology",
+        "Sugar And Cane"
+      ],
+      "hod": "Commissioner of Industries",
+      "keywords_english": [
+        "license", "permit", "business", "trade", "registration", "noc", "clearance",
+        "industry", "factory", "enterprise"
+      ],
+      "keywords_telugu": [
+        "లైసెన్సు", "అనుమతి", "వ్యాపారం", "వాణిజ్యం", "రిజిస్ట్రేషన్", "ఎన్ఓసి", "క్లియరెన్స్",
+        "పరిశ్రమ", "కర్మాగారం", "సంస్థ"
+      ],
+      "common_subjects": [
+        "Business Licenses",
+        "License Issuance",
+        "NOC Issues",
+        "Registration Problems"
+      ]
+    },
+    {
+      "id": 18,
+      "name_english": "Labour, Factories, Boilers And Insurance Medical Services",
+      "name_telugu": "కార్మిక, కర్మాగారాలు, బాయిలర్లు మరియు బీమా వైద్య సేవలు",
+      "code": "LAB",
+      "priority_rank": 23,
+      "typical_volume_pct": 0.7,
+      "subdepartments": [
+        "Factories",
+        "Labour"
+      ],
+      "hod": "Commissioner of Labour",
+      "keywords_english": [
+        "labour", "worker", "wages", "welfare", "scheme", "safety", "employee",
+        "factory", "compensation", "injury"
+      ],
+      "keywords_telugu": [
+        "కార్మికుడు", "వేతనం", "సంక్షేమం", "పథకం", "భద్రత", "ఉద్యోగి",
+        "కర్మాగారం", "పరిహారం", "గాయం"
+      ],
+      "common_subjects": [
+        "Labour Welfare",
+        "Wage Issues",
+        "Safety Concerns",
+        "Welfare Schemes"
+      ]
+    },
+    {
+      "id": 19,
+      "name_english": "Law",
+      "name_telugu": "చట్టం",
+      "code": "LAW",
+      "priority_rank": 26,
+      "typical_volume_pct": 0.4,
+      "subdepartments": [
+        "Damodaram Sanjivayya National Law University",
+        "Law"
+      ],
+      "hod": "Advocate General",
+      "keywords_english": [
+        "legal", "court", "case", "advocate", "justice", "law", "service",
+        "lawyer", "litigation"
+      ],
+      "keywords_telugu": [
+        "న్యాయ", "న్యాయస్థానం", "కేసు", "న్యాయవాది", "న్యాయం", "చట్టం", "సేవ",
+        "లాయర్", "వ్యాజ్యం"
+      ],
+      "common_subjects": [
+        "Legal Services",
+        "Legal Aid",
+        "Court Cases"
+      ]
+    },
+    {
+      "id": 20,
+      "name_english": "Minorities Welfare",
+      "name_telugu": "మైనారిటీల సంక్షేమం",
+      "code": "MIN",
+      "priority_rank": 27,
+      "typical_volume_pct": 0.3,
+      "subdepartments": [
+        "AP State Christian (Minorities) Finance Corporation",
+        "AP State Minorities Finance Corporation Ltd",
+        "AP State Wakf Board",
+        "Minorities Welfare"
+      ],
+      "hod": "Commissioner of Minorities Welfare",
+      "keywords_english": [
+        "minority", "scheme", "scholarship", "welfare", "subsidy", "benefit",
+        "muslim", "christian"
+      ],
+      "keywords_telugu": [
+        "మైనారిటీ", "పథకం", "స్కాలర్‌షిప్", "సంక్షేమం", "సబ్సిడీ", "ప్రయోజనం",
+        "ముస్లిం", "క్రైస్తవ"
+      ],
+      "common_subjects": [
+        "Minority Schemes",
+        "Scholarship Issues",
+        "Welfare Benefits"
+      ]
+    },
+    {
+      "id": 21,
+      "name_english": "Municipal Administration And Urban Development",
+      "name_telugu": "పురపాలక పరిపాలన మరియు పట్టణ అభివృద్ధి",
+      "code": "MAUD",
+      "priority_rank": 4,
+      "typical_volume_pct": 7.8,
+      "subdepartments": [
+        "AP Housing Board",
+        "AP Township And Infrastructure Development Corporation",
+        "Amaravati Development Corporation Limited (ADCL)",
+        "Andhra Pradesh Capital Region Development Authority (APCRDA)",
+        "Mission For Elimination Of Poverty In Municipal Areas (MEPMA)",
+        "Municipal Administration",
+        "Swacha Andhra Corporation (SAC)"
+      ],
+      "hod": "Municipal Commissioner",
+      "keywords_english": [
+        "water", "supply", "connection", "tap", "pipeline", "shortage", "quality",
+        "drainage", "sewerage", "blockage", "overflow", "sanitation", "cleaning",
+        "road", "pothole", "repair", "maintenance", "street", "light", "construction",
+        "waste", "garbage", "collection", "disposal", "dump"
+      ],
+      "keywords_telugu": [
+        "నీరు", "సరఫరా", "కనెక్షన్", "కుళాయి", "పైప్‌లైన్", "కొరత", "నాణ్యత",
+        "డ్రైనేజీ", "మురుగునీరు", "అడ్డుకట్ట", "పొంగిపొర్లడం", "పారిశుధ్యం", "శుభ్రపరచడం",
+        "రోడ్డు", "గుంత", "మరమ్మతులు", "నిర్వహణ", "వీధి", "లైట్", "నిర్మాణం",
+        "వ్యర్థాలు", "చెత్త", "సేకరణ", "పారవేయడం", "డంప్"
+      ],
+      "common_subjects": [
+        "Water Supply",
+        "Drainage",
+        "Roads",
+        "Solid Waste Management",
+        "Street Lights"
+      ]
+    },
+    {
+      "id": 22,
+      "name_english": "Panchayat Raj And Rural Development",
+      "name_telugu": "పంచాయతీ రాజ్ మరియు గ్రామీణ అభివృద్ధి",
+      "code": "PRD",
+      "priority_rank": 5,
+      "typical_volume_pct": 6.5,
+      "subdepartments": [
+        "Panchayati Raj Directorate",
+        "Panchayati Raj Engineering",
+        "Society For Elimination Of Rural Poverty",
+        "Society for Social Audit, Accountability and Transparency (SSAAT-AP)",
+        "State Election Commission"
+      ],
+      "hod": "Commissioner of Panchayat Raj",
+      "keywords_english": [
+        "rural", "road", "village", "gravel", "repair", "construction", "panchayat",
+        "nregs", "mgnregs", "job", "card", "wages", "work", "employment"
+      ],
+      "keywords_telugu": [
+        "గ్రామీణ", "రోడ్డు", "గ్రామం", "రాయి రోడ్డు", "మరమ్మతులు", "నిర్మాణం", "పంచాయతీ",
+        "ఎన్ఆర్‌ఈజిఎస్", "మగ్నేర్గా", "ఉద్యోగం", "కార్డు", "వేతనం", "పని", "ఉపాధి"
+      ],
+      "common_subjects": [
+        "Rural Roads",
+        "NREGS",
+        "Job Card Issues",
+        "Wage Payment",
+        "Work Allocation"
+      ]
+    },
+    {
+      "id": 23,
+      "name_english": "Planning",
+      "name_telugu": "ప్రణాళిక",
+      "code": "PLN",
+      "priority_rank": 28,
+      "typical_volume_pct": 0.2,
+      "subdepartments": [
+        "Economics and Statistics"
+      ],
+      "hod": "Chief Planning Officer",
+      "keywords_english": [
+        "project", "planning", "development", "implementation", "budget", "approval",
+        "statistics", "survey"
+      ],
+      "keywords_telugu": [
+        "ప్రాజెక్టు", "ప్రణాళిక", "అభివృద్ధి", "అమలు", "బడ్జెట్", "ఆమోదం",
+        "గణాంకాలు", "సర్వే"
+      ],
+      "common_subjects": [
+        "Development Projects",
+        "Project Delays",
+        "Budget Issues"
+      ]
+    },
+    {
+      "id": 24,
+      "name_english": "Revenue (CCLA)",
+      "name_telugu": "రెవెన్యూ",
+      "code": "REV",
+      "priority_rank": 1,
+      "typical_volume_pct": 35.0,
+      "subdepartments": [
+        "Commercial Taxes",
+        "Endowment",
+        "Prohibition and Excise",
+        "Registration and Stamps",
+        "Revenue (CCLA)",
+        "Survey Settlements and Land Records",
+        "Tirumala Tirupati Devasthanam (TTD)"
+      ],
+      "hod": "Chief Commissioner of Land Administration",
+      "keywords_english": [
+        "record", "rights", "ror", "passbook", "pattadar", "land", "document", "mutation", "correction", "name", "extent",
+        "patta", "survey", "title", "deed", "ownership", "property",
+        "resurvey", "sslr", "boundary", "demarcation", "parcel", "lpm",
+        "f-line", "border", "dispute", "field",
+        "encroachment", "illegal", "occupation", "government", "removal", "eviction",
+        "grabbing", "fraud",
+        "certificate", "income", "caste", "residence", "nativity", "birth", "death", "domicile",
+        "assignment", "allotment", "distribution", "eligibility",
+        "temple", "endowment", "prasadam", "donation", "gosala", "lease"
+      ],
+      "keywords_telugu": [
+        "రికార్డు", "హక్కులు", "ఆర్ఓఆర్", "పాస్‌బుక్", "పట్టాదారు", "భూమి", "పత్రం", "మ్యూటేషన్", "దిద్దుబాటు", "పేరు", "విస్తీర్ణం",
+        "పట్టా", "సర్వే", "టైటిల్", "డీడ్", "యాజమాన్యం", "ఆస్తి",
+        "పునర్సర్వే", "ఎస్ఎస్ఎల్ఆర్", "సరిహద్దు", "గుర్తింపు", "పార్సెల్", "ఎల్పిఎం",
+        "ఎఫ్-లైన్", "బోర్డర్", "వివాదం", "ఫీల్డ్",
+        "ఆక్రమణ", "అక్రమ", "ప్రభుత్వం", "తొలగింపు", "తొలగించడం",
+        "గ్రాబింగ్", "మోసం",
+        "సర్టిఫికేట్", "ఆదాయం", "కులం", "నివాసం", "జన్మస్థలం", "జననం", "మరణం", "నివాస",
+        "కేటాయింపు", "పంపిణీ", "అర్హత",
+        "ఆలయం", "ఎండోమెంట్", "ప్రసాదం", "విరాళం", "గోశాల", "లీజు"
+      ],
+      "common_subjects": [
+        "Record of Rights (RoR)",
+        "Land Records",
+        "Resurvey (SSLR)",
+        "F-Lines (Boundary)",
+        "Encroachments",
+        "Land Grabbing",
+        "Patta Issues",
+        "Certificates",
+        "Assignment of Government Land",
+        "Endowment (Temple)"
+      ]
+    },
+    {
+      "id": 25,
+      "name_english": "Social Welfare",
+      "name_telugu": "సామాజిక సంక్షేమం",
+      "code": "SWF",
+      "priority_rank": 12,
+      "typical_volume_pct": 2.2,
+      "subdepartments": [
+        "AP Scheduled Castes Cooperative Finance Corporation (APSCCFC)",
+        "AP Social Welfare Residential Educational Institutions Society (APSWREIS)",
+        "Social Welfare"
+      ],
+      "hod": "Commissioner of Social Welfare",
+      "keywords_english": [
+        "pension", "old-age", "widow", "disability", "allowance", "payment", "social",
+        "welfare", "scheme", "benefit", "subsidy", "assistance", "support"
+      ],
+      "keywords_telugu": [
+        "పెన్షన్", "వృద్ధాప్య", "విధవ", "వైకల్యం", "భత్యం", "చెల్లింపు", "సామాజిక",
+        "సంక్షేమం", "పథకం", "ప్రయోజనం", "సబ్సిడీ", "సహాయం", "మద్దతు"
+      ],
+      "common_subjects": [
+        "Pensions",
+        "Welfare Schemes",
+        "Old Age Pension",
+        "Widow Pension",
+        "Disability Pension"
+      ]
+    },
+    {
+      "id": 26,
+      "name_english": "Transport, Roads And Buildings",
+      "name_telugu": "రవాణా, రోడ్లు మరియు భవనాలు",
+      "code": "TRB",
+      "priority_rank": 14,
+      "typical_volume_pct": 1.9,
+      "subdepartments": [
+        "AP State Road Transport Corporation (APSRTC)",
+        "National Highways Authority of India (NHAI)",
+        "Roads and Buildings (E-in-C)",
+        "Transport"
+      ],
+      "hod": "Transport Commissioner",
+      "keywords_english": [
+        "driving", "license", "dl", "renewal", "learner", "test", "vehicle", "rto",
+        "registration", "rc", "transfer", "ownership", "tax", "permit",
+        "road", "construction", "highway", "bridge", "repair", "maintenance", "quality"
+      ],
+      "keywords_telugu": [
+        "డ్రైవింగ్", "లైసెన్స్", "డిఎల్", "పునరుద్ధరణ", "లర్నర్", "పరీక్ష", "వాహనం", "ఆర్టిఓ",
+        "రిజిస్ట్రేషన్", "ఆర్సి", "బదిలీ", "యాజమాన్యం", "పన్ను", "అనుమతి",
+        "రోడ్డు", "నిర్మాణం", "హైవే", "వంతెన", "మరమ్మతులు", "నిర్వహణ", "నాణ్యత"
+      ],
+      "common_subjects": [
+        "Driving License",
+        "Vehicle Registration",
+        "Road Construction",
+        "License Renewal",
+        "RC Issues"
+      ]
+    },
+    {
+      "id": 27,
+      "name_english": "Tribal Welfare",
+      "name_telugu": "గిరిజన సంక్షేమం",
+      "code": "TRW",
+      "priority_rank": 29,
+      "typical_volume_pct": 0.2,
+      "subdepartments": [
+        "Cooperative Finance AP Scheduled Tribes Corporation",
+        "Tribal Welfare",
+        "Tribal Welfare Engineering",
+        "Tribal Welfare Residential Educational Institutions Society"
+      ],
+      "hod": "Commissioner of Tribal Welfare",
+      "keywords_english": [
+        "tribal", "st", "scheme", "scholarship", "welfare", "forest", "rights",
+        "girijan", "indigenous"
+      ],
+      "keywords_telugu": [
+        "గిరిజన", "ఎస్టి", "పథకం", "స్కాలర్‌షిప్", "సంక్షేమం", "అటవీ", "హక్కులు",
+        "గిరిజన", "స్థానిక"
+      ],
+      "common_subjects": [
+        "Tribal Schemes",
+        "Scholarship Issues",
+        "Forest Rights",
+        "Welfare Benefits"
+      ]
+    },
+    {
+      "id": 28,
+      "name_english": "Water Resources",
+      "name_telugu": "జల వనరులు",
+      "code": "WTR",
+      "priority_rank": 15,
+      "typical_volume_pct": 1.8,
+      "subdepartments": [
+        "AP State Irrigation Development Corporation",
+        "Ground Water",
+        "Rural Water Supply Engineering",
+        "Water Resources (E-In-C)"
+      ],
+      "hod": "Engineer-in-Chief Water Resources",
+      "keywords_english": [
+        "irrigation", "canal", "water", "supply", "agriculture", "crop", "tank", "reservoir",
+        "drinking", "potable", "bore", "well", "quality"
+      ],
+      "keywords_telugu": [
+        "నీటిపారుదల", "కాలువ", "నీరు", "సరఫరా", "వ్యవసాయం", "పంట", "చెరువు", "రిజర్వాయర్",
+        "త్రాగు", "త్రాగదగిన", "బోరు", "బావి", "నాణ్యత"
+      ],
+      "common_subjects": [
+        "Irrigation",
+        "Drinking Water",
+        "Water Supply Issues",
+        "Canal Maintenance",
+        "Tank Repairs"
+      ]
+    },
+    {
+      "id": 29,
+      "name_english": "Women, Children, Disabled And Senior Citizens",
+      "name_telugu": "మహిళలు, పిల్లలు, వైకల్యులు మరియు వృద్ధులు",
+      "code": "WCD",
+      "priority_rank": 30,
+      "typical_volume_pct": 0.1,
+      "subdepartments": [
+        "A P Differently Abled & Senior Citizens Assistance Corporation",
+        "Differently Abled, & Transgender Senior Citizens",
+        "Women Development and Child Welfare"
+      ],
+      "hod": "Commissioner of Women & Child Welfare",
+      "keywords_english": [
+        "women", "welfare", "scheme", "safety", "self-help", "group", "shg", "subsidy",
+        "child", "education", "nutrition", "health", "protection", "anganwadi",
+        "disabled", "disability", "certificate", "assistance"
+      ],
+      "keywords_telugu": [
+        "మహిళ", "సంక్షేమం", "పథకం", "భద్రత", "స్వయం సహాయక", "బృందం", "ఎస్హెచ్జి", "సబ్సిడీ",
+        "పిల్లలు", "విద్య", "పోషణ", "ఆరోగ్యం", "రక్షణ", "అంగన్‌వాడీ",
+        "వైకల్యుడు", "వైకల్యం", "సర్టిఫికేట్", "సహాయం"
+      ],
+      "common_subjects": [
+        "Women Welfare",
+        "Child Welfare",
+        "Disabled Welfare",
+        "SHG Issues",
+        "Anganwadi Services"
+      ]
+    },
+    {
+      "id": 30,
+      "name_english": "Youth Advancement, Tourism And Culture",
+      "name_telugu": "యువజన ఉన్నతి, పర్యాటక మరియు సంస్కృతి",
+      "code": "YTC",
+      "priority_rank": 31,
+      "typical_volume_pct": 0.1,
+      "subdepartments": [
+        "AP State Creativity And Culture Commission",
+        "AP Tourism Development Corporation",
+        "Archaeology And Museums",
+        "Sports Authority of AP",
+        "Youth Services"
+      ],
+      "hod": "Commissioner of Youth Services",
+      "keywords_english": [
+        "sports", "games", "athletics", "tournament", "training", "facility", "stadium",
+        "tourism", "travel", "heritage", "monument", "development"
+      ],
+      "keywords_telugu": [
+        "క్రీడ", "ఆటలు", "అథ్లెటిక్స్", "టోర్నమెంట్", "శిక్షణ", "సదుపాయం", "స్టేడియం",
+        "పర్యాటకం", "ప్రయాణం", "వారసత్వం", "స్మారక చిహ్నం", "అభివృద్ధి"
+      ],
+      "common_subjects": [
+        "Sports",
+        "Tourism",
+        "Sports Facilities",
+        "Tournament Organization",
+        "Tourist Facilities"
+      ]
+    }
+  ],
+  "usage_notes": {
+    "classification": "Use keywords for auto-routing grievances to correct department",
+    "multilingual": "Telugu keywords support Telugu-language grievance processing",
+    "search": "Index both English and Telugu keywords for search functionality",
+    "training": "Use as training data for ML classification models",
+    "priority": "Priority rank determines resource allocation (1=highest priority)",
+    "volume": "Typical volume percentage helps with class balancing in training data"
+  }
+}

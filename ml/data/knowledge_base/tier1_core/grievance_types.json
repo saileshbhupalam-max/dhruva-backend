@@ -1,0 +1,263 @@
+{
+  "_metadata": {
+    "created": "2025-11-25",
+    "version": "1.0",
+    "description": "Comprehensive grievance type taxonomy with Telugu translations and distress levels",
+    "_source": [
+      "docs/data_sets/markdown/PGRS BOOK.md",
+      "backend/ml/data/extracted/pgrs_book_keywords.json",
+      "backend/ml/data/muril_training/training_data_summary.json"
+    ],
+    "total_distress_levels": 4,
+    "total_common_types": 10,
+    "schema": "GrievanceTypeSchema"
+  },
+  "distress_levels": [
+    {
+      "level": "CRITICAL",
+      "value": 4,
+      "description": "Life-threatening or severe distress requiring immediate action",
+      "telugu": "క్రిటికల్",
+      "examples": ["దాడి", "బెదిరింపు", "లంచం", "హింస", "ఆత్మహత్య", "మరణం"],
+      "keywords_english": [
+        "death", "suicide", "violence", "threat", "bribe", "assault", "critical",
+        "emergency", "murder", "attack", "danger", "life"
+      ],
+      "keywords_telugu": [
+        "మరణం", "ఆత్మహత్య", "హింస", "బెదిరింపు", "లంచం", "దాడి", "క్రిటికల్",
+        "అత్యవసరం", "హత్య", "దాడి", "ప్రమాదం", "ప్రాణం"
+      ],
+      "sla_hours": 24,
+      "frequency_pct": 2.5
+    },
+    {
+      "level": "HIGH",
+      "value": 3,
+      "description": "Severe issues requiring urgent attention",
+      "telugu": "హై",
+      "examples": ["అవినీతి", "హాని", "భద్రత", "అవసరం"],
+      "keywords_english": [
+        "corruption", "harassment", "security", "urgent", "severe", "harm",
+        "extortion", "fraud", "illegal", "abuse", "injustice"
+      ],
+      "keywords_telugu": [
+        "అవినీతి", "వేధింపు", "భద్రత", "అత్యవసరం", "తీవ్రమైన", "హాని",
+        "దోపిడీ", "మోసం", "అక్రమ", "దుర్వినియోగం", "అన్యాయం"
+      ],
+      "sla_hours": 72,
+      "frequency_pct": 12.8
+    },
+    {
+      "level": "MEDIUM",
+      "value": 2,
+      "description": "Moderate issues requiring timely resolution",
+      "telugu": "మీడియం",
+      "examples": ["ఆలస్యం", "నాణ్యత", "సమస్య", "అసౌకర్యం"],
+      "keywords_english": [
+        "delay", "quality", "problem", "issue", "concern", "moderate",
+        "pending", "waiting", "slow", "inconvenience"
+      ],
+      "keywords_telugu": [
+        "ఆలస్యం", "నాణ్యత", "సమస్య", "విషయం", "ఆందోళన", "మితమైన",
+        "పెండింగ్", "వేచి ఉన్నా", "నెమ్మది", "అసౌకర్యం"
+      ],
+      "sla_hours": 168,
+      "frequency_pct": 42.3
+    },
+    {
+      "level": "NORMAL",
+      "value": 1,
+      "description": "Routine issues with standard resolution timelines",
+      "telugu": "నార్మల్",
+      "examples": ["సమాచారం", "స్థితి", "సాధారణ", "విచారణ"],
+      "keywords_english": [
+        "information", "status", "query", "routine", "normal", "general",
+        "inquiry", "request", "question", "clarification"
+      ],
+      "keywords_telugu": [
+        "సమాచారం", "స్థితి", "ప్రశ్న", "సాధారణ", "నార్మల్", "సాధారణ",
+        "విచారణ", "అభ్యర్థన", "ప్రశ్న", "స్పష్టీకరణ"
+      ],
+      "sla_hours": 336,
+      "frequency_pct": 42.4
+    }
+  ],
+  "common_grievance_types": [
+    {
+      "type": "Service Not Provided",
+      "telugu": "సేవ అందించలేదు",
+      "description": "Citizen requested service but did not receive it",
+      "department_prevalence": ["Revenue", "Municipal Administration", "Panchayat Raj", "Civil Supplies"],
+      "frequency_pct": 25.3,
+      "typical_distress": "MEDIUM",
+      "examples": [
+        "ROR correction not done",
+        "Water connection not given",
+        "Ration card not issued"
+      ]
+    },
+    {
+      "type": "Delay in Service Delivery",
+      "telugu": "సేవ అందించడంలో ఆలస్యం",
+      "description": "Service approved but delayed beyond SLA",
+      "department_prevalence": ["Revenue", "Civil Supplies", "Police", "Transport"],
+      "frequency_pct": 18.7,
+      "typical_distress": "MEDIUM",
+      "examples": [
+        "Certificate delayed 30+ days",
+        "FIR investigation pending",
+        "Driving license not issued"
+      ]
+    },
+    {
+      "type": "Document/Certificate Not Issued",
+      "telugu": "పత్రం/సర్టిఫికేట్ జారీ చేయలేదు",
+      "description": "Official document or certificate not provided",
+      "department_prevalence": ["Revenue", "BC Welfare", "Social Welfare", "Transport"],
+      "frequency_pct": 15.2,
+      "typical_distress": "MEDIUM",
+      "examples": [
+        "Income certificate not issued",
+        "Caste certificate pending",
+        "Birth certificate not given"
+      ]
+    },
+    {
+      "type": "Quality/Quantity Issue",
+      "telugu": "నాణ్యత/పరిమాణ సమస్య",
+      "description": "Service provided but quality or quantity inadequate",
+      "department_prevalence": ["Civil Supplies", "School Education", "Public Health", "Municipal Administration"],
+      "frequency_pct": 12.1,
+      "typical_distress": "MEDIUM",
+      "examples": [
+        "Poor quality rice in ration",
+        "Mid-day meal quality poor",
+        "Insufficient water supply"
+      ]
+    },
+    {
+      "type": "Officer Behavior/Harassment",
+      "telugu": "అధికారి ప్రవర్తన/వేధింపు",
+      "description": "Officer misconduct, rude behavior, or harassment",
+      "department_prevalence": ["Police", "Revenue", "Municipal Administration", "Transport"],
+      "frequency_pct": 8.5,
+      "typical_distress": "HIGH",
+      "examples": [
+        "Officer used abusive language",
+        "Officer demanded bribe",
+        "Officer threatened citizen"
+      ]
+    },
+    {
+      "type": "Payment/Arrears Not Received",
+      "telugu": "చెల్లింపు/బకాయిలు అందలేదు",
+      "description": "Entitled payment or arrears not disbursed",
+      "department_prevalence": ["Finance", "Social Welfare", "Panchayat Raj", "Agriculture"],
+      "frequency_pct": 7.3,
+      "typical_distress": "HIGH",
+      "examples": [
+        "Pension payment stopped",
+        "NREGS wages not paid",
+        "Crop insurance claim pending"
+      ]
+    },
+    {
+      "type": "Infrastructure/Facility Issue",
+      "telugu": "మౌలిక సదుపాయాల సమస్య",
+      "description": "Physical infrastructure or facility problem",
+      "department_prevalence": ["Municipal Administration", "Panchayat Raj", "School Education", "Water Resources"],
+      "frequency_pct": 6.9,
+      "typical_distress": "MEDIUM",
+      "examples": [
+        "Potholes on road",
+        "Drainage overflow",
+        "School building damaged",
+        "Water pipeline broken"
+      ]
+    },
+    {
+      "type": "Corruption/Bribery",
+      "telugu": "అవినీతి/లంచం",
+      "description": "Officer demanded or took bribe, or corruption reported",
+      "department_prevalence": ["Revenue", "Police", "Transport", "Registration"],
+      "frequency_pct": 2.8,
+      "typical_distress": "CRITICAL",
+      "examples": [
+        "Officer asked for bribe to process patta",
+        "Police demanded money to register FIR",
+        "RTO asked bribe for license"
+      ]
+    },
+    {
+      "type": "Land Disputes",
+      "telugu": "భూ వివాదాలు",
+      "description": "Land ownership, boundary, or encroachment disputes",
+      "department_prevalence": ["Revenue", "Survey", "Housing", "Forest"],
+      "frequency_pct": 2.2,
+      "typical_distress": "HIGH",
+      "examples": [
+        "Neighbor encroached land",
+        "Boundary dispute (F-line)",
+        "Government land grabbing",
+        "Survey errors in SSLR"
+      ]
+    },
+    {
+      "type": "Scheme Benefit Not Received",
+      "telugu": "పథకం ప్రయోజనం లభించలేదు",
+      "description": "Entitled welfare scheme benefit not provided",
+      "department_prevalence": ["Social Welfare", "BC Welfare", "Housing", "Agriculture"],
+      "frequency_pct": 1.0,
+      "typical_distress": "MEDIUM",
+      "examples": [
+        "Old age pension not started",
+        "Housing subsidy not received",
+        "Scholarship not disbursed"
+      ]
+    }
+  ],
+  "status_categories": [
+    {
+      "status": "Registered",
+      "telugu": "నమోదు చేయబడింది",
+      "description": "Grievance received and registered in system"
+    },
+    {
+      "status": "Viewed by officer",
+      "telugu": "అధికారి చూశారు",
+      "description": "Assigned officer has viewed the grievance"
+    },
+    {
+      "status": "Redressed",
+      "telugu": "పరిష్కరించబడింది",
+      "description": "Grievance resolved by officer"
+    },
+    {
+      "status": "Forwarded",
+      "telugu": "ఫార్వార్డ్ చేయబడింది",
+      "description": "Transferred to another department/officer"
+    },
+    {
+      "status": "Court Case",
+      "telugu": "కోర్టు కేసు",
+      "description": "Matter under court jurisdiction"
+    },
+    {
+      "status": "Policy Decision Pending",
+      "telugu": "విధాన నిర్ణయం పెండింగ్",
+      "description": "Requires government policy decision"
+    },
+    {
+      "status": "Reopened",
+      "telugu": "తిరిగి తెరవబడింది",
+      "description": "Reopened after audit due to improper redressal"
+    }
+  ],
+  "usage_notes": {
+    "sentiment_detection": "Use distress_levels for sentiment classification in ML models",
+    "routing": "Use common_grievance_types and department_prevalence for department routing",
+    "sla": "SLA hours define maximum response time for each distress level",
+    "keywords": "Bilingual keywords enable Telugu-English mixed grievance processing",
+    "frequency": "Frequency percentages help with class balancing in training data"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "training_completed": "2025-11-25T22:24:35.235601",
+  "models": {
+    "telugu_classifier_v3": {
+      "test_accuracy": 0.845,
+      "real_world": 0.821,
+      "status": "production_ready"
+    },
+    "lapse_predictor": {
+      "test_accuracy": 0.808,
+      "real_world": "TBD",
+      "status": "ready"
+    },
+    "sentiment_classifier": {
+      "test_accuracy": 1.0,
+      "real_world": 0.8888888888888888,
+      "status": "new"
+    },
+    "classification_fallback": {
+      "test_accuracy": 0.8577405857740585,
+      "real_world": 0.8666666666666667,
+      "status": "new"
+    }
+  },
+  "data_sources": [
+    "knowledge_base/tier1_core/departments.json",
+    "knowledge_base/tier1_core/grievance_types.json",
+    "muril_training/muril_sentiment_training.json",
+    "muril_training/muril_classification_training.json"
+  ]
+}

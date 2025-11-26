@@ -1,0 +1,399 @@
+{
+  "research_metadata": {
+    "research_date": "2025-11-25",
+    "target_region": "Andhra Pradesh, India",
+    "research_goal": "Find individual grievance cases with documented improper handling (lapses) for ML training data",
+    "target_cases": 200,
+    "confidence_threshold": "90%+",
+    "actual_cases_found": 8,
+    "data_quality": "HIGH - from verified news sources and government portals",
+    "limitation": "Individual case-level data is extremely limited in public domain. Most available data is statistical/aggregate."
+  },
+
+  "cases": [
+    {
+      "case_id": "AP-2024-001",
+      "source_url": "https://m.thewire.in/article/government/too-many-delays-false-closures-why-andhras-public-grievance-redressal-system-is-facing-backlash",
+      "source_type": "news",
+      "publication": "The Wire",
+      "publication_date": "April 2025",
+      "confidence": 0.95,
+      "grievance_category": "Land mutation (inherited property)",
+      "department": "Revenue Department",
+      "district": "Alluri Sitaramaraju",
+      "citizen_name": "Narasimayya",
+      "citizen_age": 62,
+      "citizen_occupation": "Farmer",
+      "lapse_type": "Premature closure",
+      "lapse_type_id": 6,
+      "secondary_lapse": "GRA did not speak to citizen directly",
+      "secondary_lapse_id": 1,
+      "lapse_description": "Multiple complaints filed under PGRS with assurances from CM office. Case marked as 'closed' without actual resolution. Citizen received closure message but no action taken on ground.",
+      "outcome": "Unresolved",
+      "duration": "Several months",
+      "additional_context": "Despite filing multiple complaints and receiving assurances from Chief Minister Chandrababu Naidu's office, the inherited land mutation remains pending. Citizen quote: 'I received a message saying that my grievance was closed. But nothing has changed.'"
+    },
+    {
+      "case_id": "AP-2024-002",
+      "source_url": "https://m.thewire.in/article/government/too-many-delays-false-closures-why-andhras-public-grievance-redressal-system-is-facing-backlash",
+      "source_type": "news",
+      "publication": "The Wire",
+      "publication_date": "April 2025",
+      "confidence": 0.95,
+      "grievance_category": "Pension (social welfare)",
+      "department": "Social Welfare Department / Pension Department",
+      "district": "Anantapur",
+      "lapse_type": "Closed without required documents",
+      "lapse_type_id": 4,
+      "secondary_lapse": "Inadequate action taken",
+      "secondary_lapse_id": 8,
+      "lapse_description": "Pension issue marked as 'resolved' in system without any actual action being taken. No verification or documentation of resolution provided.",
+      "outcome": "Unresolved",
+      "additional_context": "Case represents pattern of false closures where officials hastily close complaints without resolving them. Some officials reportedly forced complainants to withdraw grievances in Anantapur district."
+    },
+    {
+      "case_id": "AP-2024-003-AGGREGATE",
+      "source_url": "https://m.thewire.in/article/government/too-many-delays-false-closures-why-andhras-public-grievance-redressal-system-is-facing-backlash",
+      "source_type": "news",
+      "publication": "The Wire",
+      "publication_date": "April 2025",
+      "confidence": 0.92,
+      "grievance_category": "Multiple categories",
+      "department": "Multiple departments",
+      "district": "NTR District",
+      "lapse_type": "Multiple lapses - premature closure, inadequate action",
+      "lapse_type_id": 6,
+      "lapse_description": "District-level handling showed 90% dissatisfaction rate in independent IVRS survey. Officials forced complainants to withdraw grievances.",
+      "outcome": "Systemic failure",
+      "statistical_data": {
+        "dissatisfaction_rate": "90%",
+        "survey_respondents": 15953,
+        "satisfaction_rate": "22%",
+        "survey_type": "Independent IVRS commissioned by government"
+      },
+      "additional_context": "NTR district had one of the highest dissatisfaction rates in the state for grievance resolution quality."
+    },
+    {
+      "case_id": "AP-2024-004-AGGREGATE",
+      "source_url": "https://m.thewire.in/article/government/too-many-delays-false-closures-why-andhras-public-grievance-redressal-system-is-facing-backlash",
+      "source_type": "news",
+      "publication": "The Wire",
+      "publication_date": "April 2025",
+      "confidence": 0.92,
+      "grievance_category": "Multiple categories",
+      "department": "Multiple departments",
+      "district": "Annamayya District",
+      "lapse_type": "Multiple lapses - inordinate delay, inadequate action",
+      "lapse_type_id": 9,
+      "lapse_description": "District-level handling showed 90% dissatisfaction rate. Farmers reported: 'The system has become a mere formality. Officials show no urgency unless pressured.'",
+      "outcome": "Systemic failure",
+      "statistical_data": {
+        "dissatisfaction_rate": "90%",
+        "survey_type": "Independent IVRS commissioned by government"
+      },
+      "additional_context": "Annamayya district had one of the highest dissatisfaction rates alongside NTR district."
+    },
+    {
+      "case_id": "AP-2024-005-AGGREGATE",
+      "source_url": "https://m.thewire.in/article/government/too-many-delays-false-closures-why-andhras-public-grievance-redressal-system-is-facing-backlash",
+      "source_type": "news",
+      "publication": "The Wire",
+      "publication_date": "April 2025",
+      "confidence": 0.90,
+      "grievance_category": "Multiple categories submitted to CM office",
+      "department": "Chief Minister's Grievance Cell",
+      "district": "Statewide",
+      "lapse_type": "Multiple systemic lapses",
+      "lapse_type_id": 8,
+      "lapse_description": "Complaints handled directly by CM's office showed 81% dissatisfaction rate. Of those who approached CM's office directly, 80% reported discontent.",
+      "outcome": "Systemic inadequate handling",
+      "statistical_data": {
+        "total_complaints_cm_cell": 10664,
+        "dissatisfaction_rate": "81%",
+        "direct_approach_discontent": "80%"
+      },
+      "additional_context": "Even the highest level of grievance redressal (CM's office) showed very poor satisfaction rates."
+    },
+    {
+      "case_id": "AP-2024-006-AGGREGATE",
+      "source_url": "https://m.thewire.in/article/government/too-many-delays-false-closures-why-andhras-public-grievance-redressal-system-is-facing-backlash",
+      "source_type": "news",
+      "publication": "The Wire",
+      "publication_date": "April 2025",
+      "confidence": 0.93,
+      "grievance_category": "Multiple - reopened cases",
+      "department": "Multiple departments",
+      "district": "Statewide",
+      "lapse_type": "Wrong/Blank/Not related comments, Premature closure, No proper enquiry conducted",
+      "lapse_type_id": 3,
+      "lapse_description": "29,400 complaints were reopened due to faulty resolutions - indicating improper closure, inadequate investigation, or wrong comments provided initially.",
+      "outcome": "Required reopening",
+      "statistical_data": {
+        "cases_reopened": 29400,
+        "unaudited_applications": 175000,
+        "reason": "Faulty resolutions"
+      },
+      "additional_context": "System-wide quality issue. With 1.75 lakh applications still unaudited and 29,400 complaints reopened, state faces mounting pressure to overhaul grievance machinery."
+    },
+    {
+      "case_id": "AP-2024-007-AGGREGATE",
+      "source_url": "https://thesouthfirst.com/andhrapradesh/burden-from-the-past-delay-in-solving-land-disputes-riles-chandrababu-naidu/",
+      "source_type": "news",
+      "publication": "The South First",
+      "publication_date": "2024",
+      "confidence": 0.88,
+      "grievance_category": "Land disputes",
+      "department": "Revenue Department",
+      "district": "Statewide",
+      "lapse_type": "Inordinate delay, No proper enquiry conducted",
+      "lapse_type_id": 9,
+      "lapse_description": "Inordinate delay in resolution of land disputes piled up during previous government. Faulty Jagananna Bhu Survey gave rise to huge number of disputes over land ownership.",
+      "outcome": "Mass backlog",
+      "statistical_data": {
+        "complaints_october_2024": 53342,
+        "gram_sabhas_held": 13325,
+        "complaints_december_2024": 62732,
+        "total_complaints_revenue": 230000
+      },
+      "additional_context": "Government held Revenue Sadassus twice aiming to resolve even just 5% of cases. Total 2.3 lakh complaints received through revenue department meetings alone."
+    },
+    {
+      "case_id": "AP-2024-008-AGGREGATE",
+      "source_url": "https://egov.org.in/wp-content/uploads/2024/09/Public-Grievance-Redressal-for-Urban-e-Governance-in-Andhra-Pradesh-Insights-from-Guntur-Visakhapatnam.pdf",
+      "source_type": "academic",
+      "publication": "eGov Foundation",
+      "publication_date": "September 2024",
+      "confidence": 0.85,
+      "grievance_category": "Urban services - multiple",
+      "department": "Urban Local Bodies",
+      "district": "Guntur, Visakhapatnam",
+      "lapse_type": "Inordinate delay, Incorrect routing",
+      "lapse_type_id": 9,
+      "secondary_lapse_id": 10,
+      "lapse_description": "Delay in complaint redressal due to incorrect routing - complaints not assigned to right employee due to lack of ward mapping in DIGIT applications. Customer satisfaction rating low due to redressal outside SLA timeframe.",
+      "outcome": "Systemic delays",
+      "additional_context": "Less awareness of DIGIT applications led citizens to use Spandana which is politically well marketed. Technical issues in PuraSeva App caused discontinuation. Complaints received through Spandana resolved within SLA period, but DIGIT applications had routing and assignment issues."
+    }
+  ],
+
+  "statistical_findings": {
+    "statewide_data": {
+      "total_complaints_received": 844933,
+      "officially_resolved": 775660,
+      "official_resolution_rate": "90%",
+      "pending_complaints": 69273,
+      "complaints_reopened_due_to_faulty_resolution": 29400,
+      "unaudited_applications": 175000,
+      "actual_satisfaction_rate": "22%",
+      "dissatisfaction_rate": "78%",
+      "survey_sample_size": 15953
+    },
+    "complaint_sources": {
+      "village_assemblies": 260000,
+      "revenue_department_meetings": 230000,
+      "online_applications": 52475,
+      "cm_grievance_cell": 10664
+    },
+    "district_wise_dissatisfaction": {
+      "NTR_district": "90%",
+      "Annamayya_district": "90%",
+      "CM_office_direct": "81%",
+      "Education_minister_meetings": "81%",
+      "Overall_statewide": "78%"
+    },
+    "top_grievance_categories": [
+      "Revenue issues (land, caste certificates, compensation)",
+      "Pension and social welfare",
+      "Urban services (street lights, drainage, water supply, garbage)",
+      "Electricity supply issues",
+      "Road and infrastructure"
+    ]
+  },
+
+  "lapse_typology_mapping": {
+    "identified_lapses_in_ap_data": [
+      {
+        "lapse_id": 1,
+        "lapse_name": "GRA did not speak to citizen directly",
+        "evidence_strength": "Medium",
+        "cases_indicating": ["AP-2024-001"],
+        "notes": "Implied by premature closures without citizen contact"
+      },
+      {
+        "lapse_id": 3,
+        "lapse_name": "Wrong/Blank/Not related comments",
+        "evidence_strength": "High",
+        "cases_indicating": ["AP-2024-006-AGGREGATE"],
+        "notes": "29,400 cases reopened due to faulty resolutions indicates wrong/inadequate comments"
+      },
+      {
+        "lapse_id": 4,
+        "lapse_name": "Closed without required documents",
+        "evidence_strength": "High",
+        "cases_indicating": ["AP-2024-002", "AP-2024-006-AGGREGATE"],
+        "notes": "Direct evidence of cases marked resolved without documentation"
+      },
+      {
+        "lapse_id": 5,
+        "lapse_name": "No proper enquiry conducted",
+        "evidence_strength": "High",
+        "cases_indicating": ["AP-2024-006-AGGREGATE", "AP-2024-007-AGGREGATE"],
+        "notes": "False closures and faulty resolutions indicate lack of proper enquiry"
+      },
+      {
+        "lapse_id": 6,
+        "lapse_name": "Premature closure",
+        "evidence_strength": "Very High",
+        "cases_indicating": ["AP-2024-001", "AP-2024-002", "AP-2024-003-AGGREGATE"],
+        "notes": "Most prominent lapse identified - systemic issue of marking cases closed without resolution"
+      },
+      {
+        "lapse_id": 8,
+        "lapse_name": "Inadequate action taken",
+        "evidence_strength": "High",
+        "cases_indicating": ["AP-2024-002", "AP-2024-003-AGGREGATE", "AP-2024-004-AGGREGATE"],
+        "notes": "78% dissatisfaction indicates inadequate action in majority of cases"
+      },
+      {
+        "lapse_id": 9,
+        "lapse_name": "Inordinate delay",
+        "evidence_strength": "Very High",
+        "cases_indicating": ["AP-2024-001", "AP-2024-004-AGGREGATE", "AP-2024-007-AGGREGATE", "AP-2024-008-AGGREGATE"],
+        "notes": "Pervasive issue across all districts and departments. Quote: 'Officials show no urgency unless pressured.'"
+      },
+      {
+        "lapse_id": 10,
+        "lapse_name": "Incorrect routing",
+        "evidence_strength": "Medium",
+        "cases_indicating": ["AP-2024-008-AGGREGATE"],
+        "notes": "Technical issues in DIGIT applications causing complaints to be assigned to wrong employees"
+      }
+    ],
+    "lapses_not_identified": [
+      {
+        "lapse_id": 2,
+        "lapse_name": "Not visited site / No field verification",
+        "evidence_strength": "None",
+        "notes": "No specific cases found, though implied by false closures"
+      },
+      {
+        "lapse_id": 7,
+        "lapse_name": "Action not taken as per rules",
+        "evidence_strength": "None",
+        "notes": "No specific evidence found in available sources"
+      },
+      {
+        "lapse_id": 11,
+        "lapse_name": "No action letter issued",
+        "evidence_strength": "None",
+        "notes": "No specific evidence found"
+      },
+      {
+        "lapse_id": 12,
+        "lapse_name": "Poor quality of work",
+        "evidence_strength": "None",
+        "notes": "Not applicable to grievance handling process"
+      },
+      {
+        "lapse_id": 13,
+        "lapse_name": "Beneficiary not contacted",
+        "evidence_strength": "Low",
+        "notes": "Implied by premature closures but no explicit evidence"
+      }
+    ]
+  },
+
+  "sources_searched": [
+    "https://m.thewire.in/article/government/too-many-delays-false-closures-why-andhras-public-grievance-redressal-system-is-facing-backlash",
+    "https://thesouthfirst.com/andhrapradesh/burden-from-the-past-delay-in-solving-land-disputes-riles-chandrababu-naidu/",
+    "https://pgrs.ap.gov.in/",
+    "https://rtgs.ap.gov.in/",
+    "https://services.india.gov.in/service/detail/public-grievance-redressal-system-pgrs-andhra-pradesh",
+    "https://ap.data.gov.in/catalog/ap-state-public-grievance-redressal-and-monitoring-mechanism",
+    "https://cag.gov.in/ag/andhra-pradesh/en/audit-report",
+    "https://egov.org.in/wp-content/uploads/2024/09/Public-Grievance-Redressal-for-Urban-e-Governance-in-Andhra-Pradesh-Insights-from-Guntur-Visakhapatnam.pdf",
+    "https://www.deccanchronicle.com/southern-states/andhra-pradesh/tribals-file-pgrs-complaint-seeking-compensation-for-elephant-damage-in-manyam-1894309",
+    "https://fiscaltransparency.net/public-participation-in-the-audit-process-tracking-the-effects-of-social-audits-in-andhra-pradesh-india/",
+    "https://www.nipfp.org.in/media/medialibrary/2022/01/WP_364_2022.pdf",
+    "https://www.sciencedirect.com/science/article/abs/pii/S0747563216300711",
+    "https://www.researchgate.net/publication/389877821_Redressal_Mechanism_Regarding_Complaints_on_Insurance_Products_Efficient_or_not_Efficient_in_India"
+  ],
+
+  "department_wise_analysis": {
+    "Revenue_Department": {
+      "total_complaints": 230000,
+      "primary_issues": ["Land mutation", "Land disputes", "Caste certificates", "Compensation"],
+      "primary_lapses": ["Inordinate delay", "Premature closure", "No proper enquiry"],
+      "confidence": "High"
+    },
+    "Social_Welfare_Pension": {
+      "primary_issues": ["Pension eligibility", "Payment delays", "False rejections"],
+      "primary_lapses": ["Closed without documents", "Inadequate action", "Beneficiary not contacted"],
+      "confidence": "High"
+    },
+    "Urban_Local_Bodies": {
+      "primary_issues": ["Street lights", "Drainage", "Water supply", "Garbage collection"],
+      "primary_lapses": ["Inordinate delay", "Incorrect routing"],
+      "confidence": "Medium"
+    },
+    "CM_Office": {
+      "total_complaints": 10664,
+      "dissatisfaction_rate": "81%",
+      "primary_lapses": ["Inadequate action", "Premature closure"],
+      "confidence": "High"
+    }
+  },
+
+  "key_insights": {
+    "major_findings": [
+      "Individual case-level data is extremely scarce in public domain - most data is statistical/aggregate",
+      "Premature closure and false marking of 'resolved' is the most prevalent lapse (29,400 cases reopened)",
+      "Inordinate delay is pervasive across all departments and districts",
+      "78% overall dissatisfaction rate vs 90% official resolution rate shows massive gap between claimed and actual resolution",
+      "Revenue department has highest volume of complaints (230,000) with land disputes being primary issue",
+      "District-level handling in NTR and Annamayya shows 90% dissatisfaction - worst performing districts",
+      "Even CM's office direct intervention shows 81% dissatisfaction",
+      "175,000 applications remain unaudited indicating systemic audit failure"
+    ],
+    "data_gaps": [
+      "Very limited individual case details available publicly",
+      "No department-wise lapse classification data found",
+      "CAG audit reports do not focus specifically on PGRS quality",
+      "RTI responses on grievance quality not found in public domain",
+      "No field verification lapse cases documented specifically",
+      "Academic papers focus on system design, not individual lapse cases"
+    ],
+    "recommendations_for_ml_training": [
+      "Use aggregate data to create synthetic training examples based on patterns",
+      "Focus on high-confidence lapse types: Premature closure (6), Inordinate delay (9), Inadequate action (8), No proper enquiry (5)",
+      "Revenue and Social Welfare departments have most documented issues - prioritize these",
+      "Use district-wise dissatisfaction rates as proxy for lapse prevalence",
+      "Consider augmenting data with similar cases from other Indian states",
+      "Monitor The Wire, The Hindu, Deccan Chronicle for ongoing case reports",
+      "File RTI requests for detailed case-level data from PGRS system",
+      "Request access to PGRS audit reports with anonymized case details"
+    ]
+  },
+
+  "summary": "Research conducted across 13+ authoritative sources including government portals (pgrs.ap.gov.in, rtgs.ap.gov.in, CAG), news publications (The Wire, The South First, Deccan Chronicle), and academic research. Found 8 documented cases (2 individual, 6 aggregate) with high confidence (85-95%). Major limitation: Individual case-level data is extremely scarce in public domain. Most available information is statistical/aggregate showing systemic issues rather than case-specific details. Key findings: 29,400 cases reopened due to faulty resolutions, 78% dissatisfaction rate despite 90% official resolution claim, 175,000 unaudited applications. Dominant lapses identified: Premature closure (lapse #6), Inordinate delay (#9), Inadequate action (#8), No proper enquiry (#5), Closed without documents (#4). Revenue Department (230,000 complaints) and land mutation issues are most prominent. NTR and Annamayya districts show worst performance (90% dissatisfaction). For ML training: Recommend using aggregate patterns to create synthetic examples, filing RTI requests for detailed data, and ongoing monitoring of news sources for individual case reports.",
+
+  "research_constraints": {
+    "public_data_limitations": "Government portals (pgrs.ap.gov.in, rtgs.ap.gov.in) require login for case-level details. Only aggregate statistics available publicly.",
+    "cag_audit_scope": "CAG audits focus on financial and program implementation, not grievance handling quality. No specific PGRS quality audit found.",
+    "news_coverage": "News articles report systemic issues and occasional high-profile cases, but rarely provide comprehensive case details with all required fields.",
+    "academic_research": "Academic papers analyze system design and adoption, not individual lapse cases.",
+    "rti_accessibility": "No publicly available RTI responses found on grievance quality lapses. Would require filing new RTI requests.",
+    "confidentiality": "Individual grievance details may be protected under privacy regulations, limiting public disclosure."
+  },
+
+  "next_steps_recommended": [
+    "File RTI requests with AP PGRS for anonymized case-level data on reopened/rejected grievances",
+    "Request access to audit reports of the 175,000 unaudited applications",
+    "Set up alerts for AP grievance-related news from The Hindu, Deccan Chronicle, Eenadu, Sakshi",
+    "Contact eGov Foundation for detailed data from their Guntur-Visakhapatnam study",
+    "Explore MGNREGA social audit reports for documented field verification lapses",
+    "Connect with civil society organizations working on RTI/grievance issues in AP",
+    "Consider primary research: Survey citizens who filed grievances, Interview PGRS officials",
+    "Explore similar grievance data from other states (Karnataka, Maharashtra, Tamil Nadu) to augment dataset"
+  ]
+}

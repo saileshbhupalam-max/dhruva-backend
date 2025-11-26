@@ -1,0 +1,31 @@
+{
+  "version": "3.0",
+  "timestamp": "2025-11-25T21:15:22.277945",
+  "accuracy": 0.8449848024316109,
+  "top3_accuracy": 0.9224924012158054,
+  "top5_accuracy": 0.9483282674772037,
+  "cv_mean": 0.8265358334142945,
+  "num_classes": 15,
+  "classes": [
+    "Agriculture",
+    "Animal Husbandry",
+    "Civil Supplies",
+    "Education",
+    "Energy",
+    "Health",
+    "Housing",
+    "Municipal Administration",
+    "Panchayat Raj",
+    "Police",
+    "Revenue",
+    "Social Welfare",
+    "Transport",
+    "Water Resources",
+    "Women & Child Welfare"
+  ],
+  "individual_models": {
+    "lr": 0.8221884498480243,
+    "rf": 0.6656534954407295,
+    "svm": 0.8465045592705167
+  }
+}

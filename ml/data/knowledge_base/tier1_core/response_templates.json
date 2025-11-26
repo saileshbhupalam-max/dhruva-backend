@@ -1,0 +1,114 @@
+{
+  "_metadata": {
+    "created": "2025-11-25",
+    "version": "1.0",
+    "description": "54 official Telugu response templates for different grievance statuses",
+    "_source": [
+      "docs/reference/markdown/MESSAGES_SENT_TO_PETITIONERS.json",
+      "backend/ml/data/extracted_docs/official_telugu_templates.json"
+    ],
+    "total_templates": 54,
+    "language": "te",
+    "schema": "ResponseTemplateSchema",
+    "full_data_location": "backend/ml/data/extracted_docs/official_telugu_templates.json"
+  },
+  "template_categories": [
+    {
+      "category": "Status Updates",
+      "count": 4,
+      "statuses": ["Registered", "Viewed by officer", "Forwarded", "Redressed"],
+      "description": "Templates for informing citizens about grievance status changes"
+    },
+    {
+      "category": "Court Cases",
+      "count": 3,
+      "subcases": ["Civil case", "Criminal Case", "Others"],
+      "description": "Templates for matters under court jurisdiction"
+    },
+    {
+      "category": "Government Land Allocation",
+      "count": 4,
+      "subcases": ["Poramboku Land", "Govt. Land", "Forest Land", "Agriculture Land"],
+      "description": "Templates for land allocation requests requiring government decision"
+    },
+    {
+      "category": "Scheme Launch Pending",
+      "count": 5,
+      "subcases": ["Pensions", "Ration Cards", "Housing", "Other Schemes"],
+      "description": "Templates for schemes awaiting government launch/approval"
+    },
+    {
+      "category": "Capital/Developmental Works",
+      "count": 20,
+      "subcases": ["Roads", "Drainage", "School Infra", "Health Infra", "Water Supply", "Street Lights", "etc."],
+      "description": "Templates for infrastructure projects dependent on budget allocation"
+    },
+    {
+      "category": "Policy Decisions",
+      "count": 3,
+      "statuses": ["Policy Decision Pending", "Civil in Nature", "Family Disputes"],
+      "description": "Templates for matters requiring policy decisions or outside government purview"
+    },
+    {
+      "category": "Process Updates",
+      "count": 3,
+      "statuses": ["On request by petitioner", "Forwarded to higher authorities", "Under Review"],
+      "description": "Templates for procedural updates"
+    }
+  ],
+  "sample_templates": [
+    {
+      "status": "Registered",
+      "telugu": "ప్రజా సమస్యల పరిష్కార వేదిక\nప్రియమైన అర్జీదారు, మీ అర్జీ [VARIABLE](NO#)ద్వారా  స్వీకరించబడినది.  మీ అర్జీ ని [VARIABLE] ఆఫీసర్ వారికి కేటాయించడం అయినది.",
+      "english": "Dear Petitioner, your grievance [VARIABLE](NO#) has been received and assigned to [VARIABLE] officer.",
+      "variables": ["grievance_number", "officer_name"],
+      "use_case": "Initial acknowledgment when grievance registered"
+    },
+    {
+      "status": "Viewed by officer",
+      "telugu": "ప్రియమైన అర్జీదారు, మీ అర్జీ[VARIABLE](NO#) ను [VARIABLE] అధికారి వారు చూసి ఉన్నారు,వారు త్వరలోనే మీ వద్దకు వచ్చి మీ అర్జీ నీ పరిష్కరించ గలరని తెలియజేయడమైనది.",
+      "english": "Dear Petitioner, your grievance [VARIABLE](NO#) has been viewed by [VARIABLE] officer, who will resolve it soon.",
+      "variables": ["grievance_number", "officer_name"],
+      "use_case": "Officer acknowledged grievance"
+    },
+    {
+      "status": "Redressed",
+      "telugu": "ప్రియమైన అర్జీదారు, మీ అర్జీ [VARIABLE](NO#) పరిష్కరించడం అయినది అని  తెలియజేయడమైనది.",
+      "english": "Dear Petitioner, your grievance [VARIABLE](NO#) has been resolved.",
+      "variables": ["grievance_number"],
+      "use_case": "Grievance marked as resolved"
+    },
+    {
+      "status": "Forwarded",
+      "telugu": "ప్రియమైన అర్జీదారు, మీ అర్జీ [VARIABLE](NO#) [VARIABLE] విభాగం నుండి [VARIABLE] విభాగానికి పంపించాము.",
+      "english": "Dear Petitioner, your grievance [VARIABLE](NO#) has been forwarded from [VARIABLE] department to [VARIABLE] department.",
+      "variables": ["grievance_number", "from_department", "to_department"],
+      "use_case": "Grievance transferred to correct department"
+    },
+    {
+      "status": "Court Case",
+      "telugu": "ప్రియమైన అర్జీదారు,మీ అర్జీ [VARIABLE](NO#) ప్రస్తుతము కోర్టు పరిధిలో ఉండుట వలన   ప్రభుత్వం వారు మీ అర్జీ పరిష్కరించుటకు వీలు పడదు.",
+      "english": "Dear Petitioner, your grievance [VARIABLE](NO#) is under court jurisdiction and cannot be resolved by government.",
+      "variables": ["grievance_number"],
+      "use_case": "Matter is sub-judice"
+    },
+    {
+      "status": "Capital Works",
+      "telugu": "ప్రియమైన అర్జీదారు,  మీ అర్జీ [VARIABLE](NO#) ప్రస్తుతము [VARIABLE] పనులకు సంబంధించి  ఉండుట వలన ఆదాయ వనరుల లభ్యత మరియు స్థానిక అవసరాలను అనుసరించి  ఉన్నందున త్వరలోనే సంబంధిత పనులను చేపట్టగలమని తెలియచేయడమైనది.",
+      "english": "Dear Petitioner, your grievance [VARIABLE](NO#) regarding [VARIABLE] works will be taken up based on budget availability and local priorities.",
+      "variables": ["grievance_number", "work_type"],
+      "use_case": "Infrastructure work dependent on budget"
+    }
+  ],
+  "standard_footer": {
+    "telugu": "మీ అర్జీ గురించి  మరింత సమాచారం   కొరకు మరియు మీ అభిప్రాయం తెలియచేయుట  కొరకు \"మీ కోసం\" కాల్ సెంటర్ (1100 ) కు ఫోన్ చేయండి  లేదా Whatsapp-మనమిత్ర (9552300009) కు Hi అని మెసేజ్ చేయండి.\nధన్యవాదములు\nఆంధ్రప్రదేశ్ ప్రభుత్వము",
+    "english": "For more information about your grievance and to provide feedback, please call Meekosam Call Center (1100) or WhatsApp Manamitra (9552300009) with 'Hi'.\nThank you\nGovernment of Andhra Pradesh"
+  },
+  "usage_notes": {
+    "template_selection": "Use for training ML model to select appropriate template based on grievance status and context",
+    "variable_substitution": "Templates contain [VARIABLE] placeholders that must be replaced with actual values",
+    "bilingual": "All templates are in Telugu; English translations provided for context",
+    "contact_info": "All templates include standard footer with call center (1100) and WhatsApp (9552300009) contacts",
+    "full_dataset": "Complete 54 templates available at: backend/ml/data/extracted_docs/official_telugu_templates.json"
+  }
+}

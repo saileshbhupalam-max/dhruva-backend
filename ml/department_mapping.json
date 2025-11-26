@@ -1,0 +1,447 @@
+{
+  "Agriculture And Co-operation": {
+    "canonical_name": "Agriculture And Co-operation",
+    "dept_code": "AGRI",
+    "name_telugu": "వ్యవసాయం మరియు సహకారం"
+  },
+  "Animal Husbandry, Dairy Development And Fisheries": {
+    "canonical_name": "Animal Husbandry, Dairy Development And Fisheries",
+    "dept_code": "ANI_HUSB",
+    "name_telugu": "పశుపోషణ, డైరీ అభివృద్ధి మరియు మత్స్య సంపద"
+  },
+  "Backward Classes Welfare": {
+    "canonical_name": "Backward Classes Welfare",
+    "dept_code": "BC_WELF",
+    "name_telugu": "వెనుకబడిన తరగతుల సంక్షేమం"
+  },
+  "Consumer Affairs, Food And Civil Supplies": {
+    "canonical_name": "Consumer Affairs, Food And Civil Supplies",
+    "dept_code": "CIVIL_SUP",
+    "name_telugu": "వినియోగదారుల వ్యవహారాలు, ఆహారం మరియు సివిల్ సప్లైస్"
+  },
+  "Department Of Skills Development And Training": {
+    "canonical_name": "Department Of Skills Development And Training",
+    "dept_code": "SKILLS",
+    "name_telugu": "నైపుణ్య అభివృద్ధి మరియు శిక్షణ శాఖ"
+  },
+  "Disaster Management": {
+    "canonical_name": "Disaster Management",
+    "dept_code": "DISASTER",
+    "name_telugu": "విపత్తు నిర్వహణ"
+  },
+  "Energy": {
+    "canonical_name": "Energy",
+    "dept_code": "ENERGY",
+    "name_telugu": "శక్తి"
+  },
+  "Environment, Forest, Science And Technology": {
+    "canonical_name": "Environment, Forest, Science And Technology",
+    "dept_code": "ENVIRON",
+    "name_telugu": "పర్యావరణం, అటవీ, విజ్ఞాన శాస్త్ర మరియు సాంకేతికత"
+  },
+  "Finance": {
+    "canonical_name": "Finance",
+    "dept_code": "FINANCE",
+    "name_telugu": "ఫైనాన్స్"
+  },
+  "General Administration": {
+    "canonical_name": "General Administration",
+    "dept_code": "GENEADMI",
+    "name_telugu": "సాధారణ పరిపాలన"
+  },
+  "Grama Volunteers/Ward Volunteers And Village Secretariats/Ward Secretariats": {
+    "canonical_name": "Grama Volunteers/Ward Volunteers And Village Secretariats/Ward Secretariats",
+    "dept_code": "GVVAVSS",
+    "name_telugu": "గ్రామ/వార్డు వాలంటీర్లు మరియు గ్రామ/వార్డు సచివాలయాలు"
+  },
+  "Health, Medical And Family Welfare": {
+    "canonical_name": "Health, Medical And Family Welfare",
+    "dept_code": "HEALTH",
+    "name_telugu": "ఆరోగ్యం, వైద్యం మరియు కుటుంబ సంక్షేమం"
+  },
+  "Home (Police)": {
+    "canonical_name": "Home (Police)",
+    "dept_code": "HOME",
+    "name_telugu": "హోం (పోలీస్)"
+  },
+  "Home": {
+    "canonical_name": "Home (Police)",
+    "dept_code": "HOME",
+    "name_telugu": "హోం (పోలీస్)"
+  },
+  "Housing": {
+    "canonical_name": "Housing",
+    "dept_code": "HOUSING",
+    "name_telugu": "గృహనిర్మాణం"
+  },
+  "Human Resources (School Education)": {
+    "canonical_name": "Human Resources (Higher Education)",
+    "dept_code": "HUMARESO",
+    "name_telugu": "మానవ వనరులు (పాఠశాల విద్య)"
+  },
+  "Human Resources (Higher Education)": {
+    "canonical_name": "Human Resources (Higher Education)",
+    "dept_code": "HUMARESO",
+    "name_telugu": "మానవ వనరులు (పాఠశాల విద్య)"
+  },
+  "Industries And Commerce": {
+    "canonical_name": "Industries And Commerce",
+    "dept_code": "INDUST",
+    "name_telugu": "పరిశ్రమలు మరియు వాణిజ్యం"
+  },
+  "Labour, Factories, Boilers And Insurance Medical Services": {
+    "canonical_name": "Labour, Factories, Boilers And Insurance Medical Services",
+    "dept_code": "LABOUR",
+    "name_telugu": "కార్మిక, కర్మాగారాలు, బాయిలర్లు మరియు బీమా వైద్య సేవలు"
+  },
+  "Law": {
+    "canonical_name": "Law",
+    "dept_code": "LAW",
+    "name_telugu": "చట్టం"
+  },
+  "Minorities Welfare": {
+    "canonical_name": "Minorities Welfare",
+    "dept_code": "MINOR",
+    "name_telugu": "మైనారిటీల సంక్షేమం"
+  },
+  "Municipal Administration And Urban Development": {
+    "canonical_name": "Municipal Administration And Urban Development",
+    "dept_code": "MUNI",
+    "name_telugu": "పురపాలక పరిపాలన మరియు పట్టణ అభివృద్ధి"
+  },
+  "Panchayat Raj And Rural Development": {
+    "canonical_name": "Panchayat Raj And Rural Development",
+    "dept_code": "PNCHRAJ",
+    "name_telugu": "పంచాయతీ రాజ్ మరియు గ్రామీణ అభివృద్ధి"
+  },
+  "Planning": {
+    "canonical_name": "Planning",
+    "dept_code": "PLANNING",
+    "name_telugu": "ప్రణాళిక"
+  },
+  "Revenue": {
+    "canonical_name": "Revenue (CCLA)",
+    "dept_code": "REVENUE",
+    "name_telugu": "రెవెన్యూ"
+  },
+  "Revenue (CCLA)": {
+    "canonical_name": "Revenue (CCLA)",
+    "dept_code": "REVENUE",
+    "name_telugu": "రెవెన్యూ"
+  },
+  "Social Welfare": {
+    "canonical_name": "Social Welfare",
+    "dept_code": "SOC_WELF",
+    "name_telugu": "సామాజిక సంక్షేమం"
+  },
+  "Transport, Roads And Buildings": {
+    "canonical_name": "Transport, Roads And Buildings",
+    "dept_code": "RNB",
+    "name_telugu": "రవాణా, రోడ్లు మరియు భవనాలు"
+  },
+  "Tribal Welfare": {
+    "canonical_name": "Tribal Welfare",
+    "dept_code": "TRIBAL",
+    "name_telugu": "గిరిజన సంక్షేమం"
+  },
+  "Water Resources (E-In-C)": {
+    "canonical_name": "Water Resources",
+    "dept_code": "WATER",
+    "name_telugu": "జల వనరులు"
+  },
+  "Water Resources": {
+    "canonical_name": "Water Resources",
+    "dept_code": "WATER",
+    "name_telugu": "జల వనరులు"
+  },
+  "Women, Children, Disabled And Senior Citizens": {
+    "canonical_name": "Women, Children, Disabled And Senior Citizens",
+    "dept_code": "WOMEN",
+    "name_telugu": "మహిళలు, పిల్లలు, వైకల్యులు మరియు వృద్ధులు"
+  },
+  "Youth Advancement, Tourism And Culture": {
+    "canonical_name": "Youth Advancement, Tourism And Culture",
+    "dept_code": "YATAC",
+    "name_telugu": "యువజన ఉన్నతి, పర్యాటక మరియు సంస్కృతి"
+  },
+  "Endowment": {
+    "canonical_name": "Endowment",
+    "dept_code": "ENDOW",
+    "name_telugu": null
+  },
+  "Police": {
+    "canonical_name": "Police",
+    "dept_code": "POLICE",
+    "name_telugu": null
+  },
+  "Transport": {
+    "canonical_name": "Transport",
+    "dept_code": "TRANS",
+    "name_telugu": null
+  },
+  "Health": {
+    "canonical_name": "Health",
+    "dept_code": "HEALTH",
+    "name_telugu": null
+  },
+  "Municipal": {
+    "canonical_name": "Municipal",
+    "dept_code": "MUNICIPA",
+    "name_telugu": null
+  },
+  "Panchayati Raj": {
+    "canonical_name": "Panchayati Raj",
+    "dept_code": "PNCHRAJ",
+    "name_telugu": null
+  },
+  "Agriculture": {
+    "canonical_name": "Agriculture",
+    "dept_code": "AGRI",
+    "name_telugu": null
+  },
+  "Education": {
+    "canonical_name": "Education",
+    "dept_code": "EDUCATIO",
+    "name_telugu": null
+  },
+  "Labour": {
+    "canonical_name": "Labour",
+    "dept_code": "LABOUR",
+    "name_telugu": null
+  },
+  "Women & Child": {
+    "canonical_name": "Women & Child",
+    "dept_code": "WOMEN",
+    "name_telugu": null
+  },
+  "Industries": {
+    "canonical_name": "Industries",
+    "dept_code": "INDUST",
+    "name_telugu": null
+  },
+  "Backward Classes": {
+    "canonical_name": "Backward Classes",
+    "dept_code": "BC_WELF",
+    "name_telugu": null
+  },
+  "Animal Husbandry": {
+    "canonical_name": "Animal Husbandry",
+    "dept_code": "ANI_HUSB",
+    "name_telugu": null
+  },
+  "Minority Welfare": {
+    "canonical_name": "Minority Welfare",
+    "dept_code": "MINOWELF",
+    "name_telugu": null
+  },
+  "Tourism": {
+    "canonical_name": "Tourism",
+    "dept_code": "TOURISM",
+    "name_telugu": null
+  },
+  "Marketing": {
+    "canonical_name": "Marketing",
+    "dept_code": "MARKETIN",
+    "name_telugu": null
+  },
+  "Civil Supplies": {
+    "canonical_name": "Civil Supplies",
+    "dept_code": "CIVIL_SUP",
+    "name_telugu": null
+  },
+  "Excise": {
+    "canonical_name": "Excise",
+    "dept_code": "EXCISE",
+    "name_telugu": null
+  },
+  "Information & PR": {
+    "canonical_name": "Information & PR",
+    "dept_code": "I&P",
+    "name_telugu": null
+  },
+  "Handlooms": {
+    "canonical_name": "Handlooms",
+    "dept_code": "HANDLOOM",
+    "name_telugu": null
+  },
+  "Forest": {
+    "canonical_name": "Forest",
+    "dept_code": "FOREST",
+    "name_telugu": null
+  },
+  "Skill Development": {
+    "canonical_name": "Skill Development",
+    "dept_code": "SKILDEVE",
+    "name_telugu": null
+  },
+  "Co-operation": {
+    "canonical_name": "Co-operation",
+    "dept_code": "COOPER",
+    "name_telugu": null
+  },
+  "Legal": {
+    "canonical_name": "Legal",
+    "dept_code": "LEGAL",
+    "name_telugu": null
+  },
+  "Mines": {
+    "canonical_name": "Mines",
+    "dept_code": "MINES",
+    "name_telugu": null
+  },
+  "Survey Settlements and Land Records": {
+    "canonical_name": "Survey Settlements and Land Records",
+    "dept_code": "SSLR",
+    "name_telugu": null
+  },
+  "Employment and Training": {
+    "canonical_name": "Employment and Training",
+    "dept_code": "TRAIN",
+    "name_telugu": null
+  },
+  "Panchayati Raj Directorate": {
+    "canonical_name": "Panchayati Raj Directorate",
+    "dept_code": "PNCHRAJ",
+    "name_telugu": null
+  },
+  "School Education": {
+    "canonical_name": "School Education",
+    "dept_code": "SCH_EDU",
+    "name_telugu": null
+  },
+  "AP State Housing Corporation Ltd": {
+    "canonical_name": "AP State Housing Corporation Ltd",
+    "dept_code": "HOUSING",
+    "name_telugu": null
+  },
+  "Panchayati Raj Engineering": {
+    "canonical_name": "Panchayati Raj Engineering",
+    "dept_code": "PNCHRAJ",
+    "name_telugu": null
+  },
+  "Society For Elimination Of Rural Poverty": {
+    "canonical_name": "Society For Elimination Of Rural Poverty",
+    "dept_code": "SFEORP",
+    "name_telugu": null
+  },
+  "Public Health": {
+    "canonical_name": "Public Health",
+    "dept_code": "HEALTH",
+    "name_telugu": null
+  },
+  "Registrationand Stamps": {
+    "canonical_name": "Registrationand Stamps",
+    "dept_code": "REG",
+    "name_telugu": null
+  },
+  "Rural Water Supply Engineering": {
+    "canonical_name": "Rural Water Supply Engineering",
+    "dept_code": "RWSE",
+    "name_telugu": null
+  },
+  "AP Southern Power Distribution Co Ltd (SPDCL)": {
+    "canonical_name": "AP Southern Power Distribution Co Ltd (SPDCL)",
+    "dept_code": "ASPDCL",
+    "name_telugu": null
+  },
+  "AP Eastern Power Distribution Co Ltd (EPDCL)": {
+    "canonical_name": "AP Eastern Power Distribution Co Ltd (EPDCL)",
+    "dept_code": "AEPDCL",
+    "name_telugu": null
+  },
+  "Secondary Health": {
+    "canonical_name": "Secondary Health",
+    "dept_code": "HEALTH",
+    "name_telugu": null
+  },
+  "AP Central Power Distribution Co Ltd (CPDCL)": {
+    "canonical_name": "AP Central Power Distribution Co Ltd (CPDCL)",
+    "dept_code": "ACPDCL",
+    "name_telugu": null
+  },
+  "AP State Road Transport Corporation (APSRTC)": {
+    "canonical_name": "AP State Road Transport Corporation (APSRTC)",
+    "dept_code": "TRANS",
+    "name_telugu": null
+  },
+  "Roads and Buildings (Ein-C)": {
+    "canonical_name": "Roads and Buildings (Ein-C)",
+    "dept_code": "RNB",
+    "name_telugu": null
+  },
+  "Roads and Buildings": {
+    "canonical_name": "Roads and Buildings (Ein-C)",
+    "dept_code": "RNB",
+    "name_telugu": null
+  },
+  "AP State Skill Development Corporation": {
+    "canonical_name": "AP State Skill Development Corporation",
+    "dept_code": "ASSDC",
+    "name_telugu": null
+  },
+  "Women Development and Child Welfare": {
+    "canonical_name": "Women Development and Child Welfare",
+    "dept_code": "WOMEN",
+    "name_telugu": null
+  },
+  "Municipal Administration": {
+    "canonical_name": "Municipal Administration",
+    "dept_code": "MUNI",
+    "name_telugu": null
+  },
+  "AP Township and Infrastructure Development Corporation": {
+    "canonical_name": "AP Township And Infrastructure Development Corporation",
+    "dept_code": "ATAIDC",
+    "name_telugu": null
+  },
+  "AP Township And Infrastructure Development Corporation": {
+    "canonical_name": "AP Township And Infrastructure Development Corporation",
+    "dept_code": "ATAIDC",
+    "name_telugu": null
+  },
+  "Rural Development": {
+    "canonical_name": "Rural Development",
+    "dept_code": "RURADEVE",
+    "name_telugu": null
+  },
+  "AP Central Power Distribution (CPDCL)": {
+    "canonical_name": "AP Central Power Distribution (CPDCL)",
+    "dept_code": "ACPD",
+    "name_telugu": null
+  },
+  "APCRDA": {
+    "canonical_name": "APCRDA",
+    "dept_code": "APCRDA",
+    "name_telugu": null
+  },
+  "Family Welfare": {
+    "canonical_name": "Family Welfare",
+    "dept_code": "FAMIWELF",
+    "name_telugu": null
+  },
+  "Survey Settlements Land Records": {
+    "canonical_name": "Survey Settlements Land Records",
+    "dept_code": "SSLR",
+    "name_telugu": null
+  },
+  "AP Social Welfare Residential Educational Institutions (APSWREIS)": {
+    "canonical_name": "AP Social Welfare Residential Educational Institutions (APSWREIS)",
+    "dept_code": "SOC_WELF",
+    "name_telugu": null
+  },
+  "Medical Education": {
+    "canonical_name": "Medical Education",
+    "dept_code": "MEDIEDUC",
+    "name_telugu": null
+  },
+  "Registration and Stamps": {
+    "canonical_name": "Registration and Stamps",
+    "dept_code": "REG",
+    "name_telugu": null
+  },
+  "Revenue Ccla": {
+    "canonical_name": "Revenue Ccla",
+    "dept_code": "REVENUE",
+    "name_telugu": null
+  }
+}

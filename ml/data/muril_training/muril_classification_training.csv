@@ -1,0 +1,1242 @@
+text,label
+పంట,Agriculture
+బీమా,Agriculture
+క్లెయిమ్,Agriculture
+పరిహారం,Agriculture
+నష్టం,Agriculture
+ప్రీమియం,Agriculture
+దిగుబడి,Agriculture
+వ్యవసాయం,Agriculture
+crop,Agriculture
+insurance,Agriculture
+claim,Agriculture
+compensation,Agriculture
+damage,Agriculture
+loss,Agriculture
+premium,Agriculture
+yield,Agriculture
+agriculture,Agriculture
+ఎరువులు,Agriculture
+సబ్సిడీ,Agriculture
+పంపిణీ,Agriculture
+కొరత,Agriculture
+లభ్యత,Agriculture
+యూరియా,Agriculture
+fertilizer,Agriculture
+subsidy,Agriculture
+distribution,Agriculture
+shortage,Agriculture
+availability,Agriculture
+urea,Agriculture
+dap,Agriculture
+రుణం,Agriculture
+క్రెడిట్,Agriculture
+కిసాన్,Agriculture
+వడ్డీ,Agriculture
+మాఫీ,Agriculture
+అప్పు,Agriculture
+రైతు,Agriculture
+loan,Agriculture
+credit,Agriculture
+kisan,Agriculture
+interest,Agriculture
+waiver,Agriculture
+debt,Agriculture
+repayment,Agriculture
+farmer,Agriculture
+పశువైద్యం,Animal Husbandry
+జంతువు,Animal Husbandry
+ఆరోగ్యం,Animal Husbandry
+డాక్టర్,Animal Husbandry
+క్లినిక్,Animal Husbandry
+టీకా,Animal Husbandry
+చికిత్స,Animal Husbandry
+పశువులు,Animal Husbandry
+veterinary,Animal Husbandry
+animal,Animal Husbandry
+health,Animal Husbandry
+doctor,Animal Husbandry
+clinic,Animal Husbandry
+vaccination,Animal Husbandry
+treatment,Animal Husbandry
+livestock,Animal Husbandry
+డైరీ,Animal Husbandry
+పాలు,Animal Husbandry
+సహకార,Animal Husbandry
+సేకరణ,Animal Husbandry
+ధర,Animal Husbandry
+సబ్సిడీ,Animal Husbandry
+పశువులు,Animal Husbandry
+dairy,Animal Husbandry
+milk,Animal Husbandry
+cooperative,Animal Husbandry
+collection,Animal Husbandry
+price,Animal Husbandry
+subsidy,Animal Husbandry
+cattle,Animal Husbandry
+చేప,Animal Husbandry
+చేపలు పట్టడం,Animal Husbandry
+చెరువు,Animal Husbandry
+సబ్సిడీ,Animal Husbandry
+లైసెన్సు,Animal Husbandry
+మత్స్య పెంపకం,Animal Husbandry
+జాలర,Animal Husbandry
+fish,Animal Husbandry
+fishing,Animal Husbandry
+pond,Animal Husbandry
+subsidy,Animal Husbandry
+license,Animal Husbandry
+aquaculture,Animal Husbandry
+fisherman,Animal Husbandry
+రేషన్,Civil Supplies
+కార్డు,Civil Supplies
+బియ్యం,Civil Supplies
+పిడిఎస్,Civil Supplies
+సబ్సిడీ,Civil Supplies
+ఆహారం,Civil Supplies
+ధాన్యం,Civil Supplies
+కోటా,Civil Supplies
+ఆధార్,Civil Supplies
+లింకింగ్,Civil Supplies
+ration,Civil Supplies
+card,Civil Supplies
+rice,Civil Supplies
+pds,Civil Supplies
+subsidy,Civil Supplies
+food,Civil Supplies
+grain,Civil Supplies
+quota,Civil Supplies
+aadhar,Civil Supplies
+linking,Civil Supplies
+దుకాణం,Civil Supplies
+డీలర్,Civil Supplies
+ధర,Civil Supplies
+నాణ్యత,Civil Supplies
+కొరత,Civil Supplies
+న్యాయ వెల,Civil Supplies
+ఫిర్యాదు,Civil Supplies
+సరఫరా,Civil Supplies
+shop,Civil Supplies
+dealer,Civil Supplies
+price,Civil Supplies
+quality,Civil Supplies
+shortage,Civil Supplies
+fair,Civil Supplies
+complaint,Civil Supplies
+supplies,Civil Supplies
+విద్యుత్,Energy
+పవర్,Energy
+కనెక్షన్,Energy
+మీటర్,Energy
+బిల్లు,Energy
+సరఫరా,Energy
+వోల్టేజ్,Energy
+ట్రాన్స్‌ఫార్మర్,Energy
+అంతరాయం,Energy
+electricity,Energy
+power,Energy
+connection,Energy
+meter,Energy
+bill,Energy
+supply,Energy
+voltage,Energy
+transformer,Energy
+outage,Energy
+సౌర,Energy
+ప్యానెల్,Energy
+సబ్సిడీ,Energy
+స్థాపన,Energy
+పునరుత్పాదక,Energy
+శక్తి,Energy
+solar,Energy
+panel,Energy
+subsidy,Energy
+installation,Energy
+renewable,Energy
+energy,Energy
+ఆసుపత్రి,Health
+డాక్టర్,Health
+చికిత్స,Health
+మందు,Health
+అత్యవసరం,Health
+మంచం,Health
+అంబులెన్స్,Health
+ఆరోగ్యం,Health
+hospital,Health
+doctor,Health
+treatment,Health
+medicine,Health
+emergency,Health
+bed,Health
+ambulance,Health
+health,Health
+ఆరోగ్యశ్రీ,Health
+ఆరోగ్యం,Health
+బీమా,Health
+కార్డు,Health
+చికిత్స,Health
+పథకం,Health
+క్లెయిమ్,Health
+arogyasri,Health
+health,Health
+insurance,Health
+card,Health
+treatment,Health
+scheme,Health
+claim,Health
+నేరం,Police
+ఎఫ్ఐఆర్,Police
+పోలీస్,Police
+ఫిర్యాదు,Police
+దొంగతనం,Police
+దాడి,Police
+దర్యాప్తు,Police
+కేసు,Police
+crime,Police
+fir,Police
+police,Police
+complaint,Police
+theft,Police
+assault,Police
+investigation,Police
+case,Police
+చట్టం,Police
+క్రమం,Police
+శాంతి,Police
+భద్రత,Police
+రక్షణ,Police
+పెట్రోలింగ్,Police
+సంరక్షణ,Police
+law,Police
+order,Police
+peace,Police
+safety,Police
+security,Police
+patrol,Police
+protection,Police
+ఇల్లు,Housing
+స్థలం,Housing
+ప్లాటు,Housing
+కేటాయింపు,Housing
+పట్టా,Housing
+కేటాయింపు,Housing
+ప్రభుత్వం,Housing
+భూమి,Housing
+house,Housing
+site,Housing
+plot,Housing
+assignment,Housing
+patta,Housing
+allotment,Housing
+government,Housing
+land,Housing
+పథకం,Housing
+సబ్సిడీ,Housing
+నిర్మాణం,Housing
+రుణం,Housing
+ఇందిరమ్మ,Housing
+గృహం,Housing
+పిఎంఏవై,Housing
+scheme,Housing
+subsidy,Housing
+construction,Housing
+loan,Housing
+indiramma,Housing
+housing,Housing
+pmay,Housing
+ప్రవేశం,Education
+కళాశాల,Education
+సీటు,Education
+కౌన్సెలింగ్,Education
+ఫీజు,Education
+స్కాలర్‌షిప్,Education
+కోర్సు,Education
+admission,Education
+college,Education
+seat,Education
+counseling,Education
+fee,Education
+scholarship,Education
+course,Education
+పాఠశాల,Education
+భవనం,Education
+తరగతి గది,Education
+మరుగుదొడ్డి,Education
+నీరు,Education
+మౌలిక సదుపాయాలు,Education
+సౌకర్యం,Education
+school,Education
+building,Education
+classroom,Education
+toilet,Education
+water,Education
+infrastructure,Education
+facility,Education
+భోజనం,Education
+ఆహారం,Education
+ఎండిఎం,Education
+మధ్యాహ్న,Education
+నాణ్యత,Education
+సరఫరా,Education
+పిల్లలు,Education
+meal,Education
+food,Education
+mdm,Education
+mid-day,Education
+quality,Education
+supply,Education
+children,Education
+నీరు,Municipal Administration
+సరఫరా,Municipal Administration
+కనెక్షన్,Municipal Administration
+కుళాయి,Municipal Administration
+పైప్‌లైన్,Municipal Administration
+కొరత,Municipal Administration
+నాణ్యత,Municipal Administration
+water,Municipal Administration
+supply,Municipal Administration
+connection,Municipal Administration
+tap,Municipal Administration
+pipeline,Municipal Administration
+shortage,Municipal Administration
+quality,Municipal Administration
+డ్రైనేజీ,Municipal Administration
+మురుగునీరు,Municipal Administration
+అడ్డుకట్ట,Municipal Administration
+పొంగిపొర్లడం,Municipal Administration
+పారిశుధ్యం,Municipal Administration
+శుభ్రపరచడం,Municipal Administration
+drainage,Municipal Administration
+sewerage,Municipal Administration
+blockage,Municipal Administration
+overflow,Municipal Administration
+sanitation,Municipal Administration
+cleaning,Municipal Administration
+రోడ్డు,Municipal Administration
+గుంత,Municipal Administration
+మరమ్మతులు,Municipal Administration
+నిర్వహణ,Municipal Administration
+వీధి,Municipal Administration
+లైట్,Municipal Administration
+నిర్మాణం,Municipal Administration
+road,Municipal Administration
+pothole,Municipal Administration
+repair,Municipal Administration
+maintenance,Municipal Administration
+street,Municipal Administration
+light,Municipal Administration
+construction,Municipal Administration
+వ్యర్థాలు,Municipal Administration
+చెత్త,Municipal Administration
+సేకరణ,Municipal Administration
+పారవేయడం,Municipal Administration
+డంప్,Municipal Administration
+పారిశుధ్యం,Municipal Administration
+శుభ్రపరచడం,Municipal Administration
+waste,Municipal Administration
+garbage,Municipal Administration
+collection,Municipal Administration
+disposal,Municipal Administration
+dump,Municipal Administration
+sanitation,Municipal Administration
+cleaning,Municipal Administration
+గ్రామీణ,Panchayat Raj
+రోడ్డు,Panchayat Raj
+గ్రామం,Panchayat Raj
+రాయి రోడ్డు,Panchayat Raj
+మరమ్మతులు,Panchayat Raj
+నిర్మాణం,Panchayat Raj
+పంచాయతీ,Panchayat Raj
+rural,Panchayat Raj
+road,Panchayat Raj
+village,Panchayat Raj
+gravel,Panchayat Raj
+repair,Panchayat Raj
+construction,Panchayat Raj
+panchayat,Panchayat Raj
+ఎన్ఆర్‌ఈజిఎస్,Panchayat Raj
+మగ్నేర్గా,Panchayat Raj
+ఉద్యోగం,Panchayat Raj
+కార్డు,Panchayat Raj
+వేతనం,Panchayat Raj
+పని,Panchayat Raj
+ఉపాధి,Panchayat Raj
+nregs,Panchayat Raj
+mgnregs,Panchayat Raj
+job,Panchayat Raj
+card,Panchayat Raj
+wages,Panchayat Raj
+work,Panchayat Raj
+employment,Panchayat Raj
+రికార్డు,Revenue
+హక్కులు,Revenue
+ఆర్ఓఆర్,Revenue
+పాస్‌బుక్,Revenue
+పట్టాదారు,Revenue
+భూమి,Revenue
+పత్రం,Revenue
+మ్యూటేషన్,Revenue
+దిద్దుబాటు,Revenue
+పేరు,Revenue
+విస్తీర్ణం,Revenue
+record,Revenue
+rights,Revenue
+ror,Revenue
+passbook,Revenue
+pattadar,Revenue
+land,Revenue
+document,Revenue
+mutation,Revenue
+correction,Revenue
+name,Revenue
+extent,Revenue
+భూమి,Revenue
+పట్టా,Revenue
+సర్వే,Revenue
+రికార్డు,Revenue
+టైటిల్,Revenue
+డీడ్,Revenue
+యాజమాన్యం,Revenue
+ఆస్తి,Revenue
+land,Revenue
+patta,Revenue
+survey,Revenue
+record,Revenue
+title,Revenue
+deed,Revenue
+ownership,Revenue
+property,Revenue
+పునర్సర్వే,Revenue
+ఎస్ఎస్ఎల్ఆర్,Revenue
+సర్వే,Revenue
+సరిహద్దు,Revenue
+గుర్తింపు,Revenue
+భూమి,Revenue
+పార్సెల్,Revenue
+ఎల్పిఎం,Revenue
+resurvey,Revenue
+sslr,Revenue
+survey,Revenue
+boundary,Revenue
+demarcation,Revenue
+land,Revenue
+parcel,Revenue
+lpm,Revenue
+ఎఫ్-లైన్,Revenue
+సరిహద్దు,Revenue
+బోర్డర్,Revenue
+గుర్తింపు,Revenue
+వివాదం,Revenue
+సర్వే,Revenue
+ఫీల్డ్,Revenue
+f-line,Revenue
+boundary,Revenue
+border,Revenue
+demarcation,Revenue
+dispute,Revenue
+survey,Revenue
+field,Revenue
+ఆక్రమణ,Revenue
+అక్రమ,Revenue
+ఆక్రమణ,Revenue
+ప్రభుత్వం,Revenue
+భూమి,Revenue
+తొలగింపు,Revenue
+తొలగించడం,Revenue
+encroachment,Revenue
+illegal,Revenue
+occupation,Revenue
+government,Revenue
+land,Revenue
+removal,Revenue
+eviction,Revenue
+గ్రాబింగ్,Revenue
+భూమి,Revenue
+అక్రమ,Revenue
+ఆక్రమణ,Revenue
+ఫిర్యాదు,Revenue
+వివాదం,Revenue
+మోసం,Revenue
+grabbing,Revenue
+land,Revenue
+illegal,Revenue
+occupation,Revenue
+complaint,Revenue
+dispute,Revenue
+fraud,Revenue
+పట్టా,Revenue
+పత్రం,Revenue
+జారీ,Revenue
+దిద్దుబాటు,Revenue
+బదిలీ,Revenue
+ఉపవిభజన,Revenue
+మార్పిడి,Revenue
+patta,Revenue
+document,Revenue
+issuance,Revenue
+correction,Revenue
+transfer,Revenue
+subdivision,Revenue
+conversion,Revenue
+సర్టిఫికేట్,Revenue
+ఆదాయం,Revenue
+కులం,Revenue
+నివాసం,Revenue
+జన్మస్థలం,Revenue
+జననం,Revenue
+మరణం,Revenue
+నివాస,Revenue
+certificate,Revenue
+income,Revenue
+caste,Revenue
+residence,Revenue
+nativity,Revenue
+birth,Revenue
+death,Revenue
+domicile,Revenue
+కేటాయింపు,Revenue
+ప్రభుత్వం,Revenue
+భూమి,Revenue
+కేటాయింపు,Revenue
+పట్టా,Revenue
+పంపిణీ,Revenue
+అర్హత,Revenue
+assignment,Revenue
+government,Revenue
+land,Revenue
+allotment,Revenue
+patta,Revenue
+distribution,Revenue
+eligibility,Revenue
+ఆలయం,Revenue
+ఎండోమెంట్,Revenue
+ప్రసాదం,Revenue
+విరాళం,Revenue
+గోశాల,Revenue
+లీజు,Revenue
+ఫిర్యాదు,Revenue
+నిర్వహణ,Revenue
+temple,Revenue
+endowment,Revenue
+prasadam,Revenue
+donation,Revenue
+gosala,Revenue
+lease,Revenue
+complaint,Revenue
+maintenance,Revenue
+పెన్షన్,Social Welfare
+వృద్ధాప్య,Social Welfare
+విధవ,Social Welfare
+వైకల్యం,Social Welfare
+పెన్షన్,Social Welfare
+భత్యం,Social Welfare
+చెల్లింపు,Social Welfare
+సామాజిక,Social Welfare
+pension,Social Welfare
+old-age,Social Welfare
+widow,Social Welfare
+disability,Social Welfare
+pension,Social Welfare
+allowance,Social Welfare
+payment,Social Welfare
+social,Social Welfare
+సంక్షేమం,Social Welfare
+పథకం,Social Welfare
+ప్రయోజనం,Social Welfare
+సబ్సిడీ,Social Welfare
+సహాయం,Social Welfare
+మద్దతు,Social Welfare
+సామాజిక,Social Welfare
+welfare,Social Welfare
+scheme,Social Welfare
+benefit,Social Welfare
+subsidy,Social Welfare
+assistance,Social Welfare
+support,Social Welfare
+social,Social Welfare
+డ్రైవింగ్,Transport
+లైసెన్స్,Transport
+డిఎల్,Transport
+పునరుద్ధరణ,Transport
+లర్నర్,Transport
+పరీక్ష,Transport
+వాహనం,Transport
+ఆర్టిఓ,Transport
+driving,Transport
+license,Transport
+dl,Transport
+renewal,Transport
+learner,Transport
+test,Transport
+vehicle,Transport
+rto,Transport
+రిజిస్ట్రేషన్,Transport
+ఆర్సి,Transport
+వాహనం,Transport
+బదిలీ,Transport
+యాజమాన్యం,Transport
+పన్ను,Transport
+అనుమతి,Transport
+registration,Transport
+rc,Transport
+vehicle,Transport
+transfer,Transport
+ownership,Transport
+tax,Transport
+permit,Transport
+రోడ్డు,Transport
+నిర్మాణం,Transport
+హైవే,Transport
+వంతెన,Transport
+మరమ్మతులు,Transport
+నిర్వహణ,Transport
+నాణ్యత,Transport
+road,Transport
+construction,Transport
+highway,Transport
+bridge,Transport
+repair,Transport
+maintenance,Transport
+quality,Transport
+నీటిపారుదల,Water Resources
+కాలువ,Water Resources
+నీరు,Water Resources
+సరఫరా,Water Resources
+వ్యవసాయం,Water Resources
+పంట,Water Resources
+చెరువు,Water Resources
+రిజర్వాయర్,Water Resources
+irrigation,Water Resources
+canal,Water Resources
+water,Water Resources
+supply,Water Resources
+agriculture,Water Resources
+crop,Water Resources
+tank,Water Resources
+reservoir,Water Resources
+త్రాగు,Water Resources
+నీరు,Water Resources
+త్రాగదగిన,Water Resources
+సరఫరా,Water Resources
+బోరు,Water Resources
+బావి,Water Resources
+నాణ్యత,Water Resources
+drinking,Water Resources
+water,Water Resources
+potable,Water Resources
+supply,Water Resources
+bore,Water Resources
+well,Water Resources
+quality,Water Resources
+పొలానికి దారి ఇవ్వడం లేదని సబ్ కలెక్టర్ కు ఫిర్యాదు చేశారు. ఇస్నాపూర్ మండలం అన్నారం గ్రామంలో సర్వే నెంబర్ 144లో ఒక ఎకరం భూమిని సాగు చేయడానికి వెళ్లినప్పుడు ఇతరులు నిరోధించారు,Revenue
+"విద్యుత్ సమస్య ఉంటే 1912 టోల్ ఫ్రీ నెంబర్ కు ఫోన్ చేసి ఫిర్యాదు చేయవచ్చు. విద్యుత్ బిల్లులు అధికంగా వచ్చినా, కరెంటు మోటరు ట్రాన్స్ఫార్మర్ సమస్య ఉన్నా ఫిర్యాదు చేయవచ్చు",Energy
+"విద్యుత్ సమస్య పరిష్కరించాలని ప్రజావాణిలో ఫిర్యాదు చేశారు. ప్రతిరోజు విద్యుత్తు అంతరాయం ఏర్పడుతూ, ప్రజలు తీవ్ర ఇబ్బందులు పడుతున్నారు",Energy
+తమకు వారానికి ఒక్కసారి మాత్రమే నీటి సరఫరా జరుగుతుందని యాదాద్రి-భువనగిరి జిల్లా కలెక్టర్‌కు చౌటుప్పల్‌ వాసులు ఫిర్యాదు చేశారు,Municipal Administration
+గ్రామానికి నెలరోజులుగా తాగునీరు రాక తీవ్ర ఇబ్బందులు పడుతున్నామని చిట్కుల్‌ గ్రామస్తులు మిషన్‌ భగీరథ అధికారులపై ఆగ్రహం వ్యక్తం చేశారు,Panchayat Raj
+15రోజులుగా మిషన్‌ భగీరథ తాగునీటి సరఫరా కాకపోవటంతో తండావాసులు ఖాళీబిందెలతో ఆందోళనకు దిగారు,Panchayat Raj
+ఓరుగల్లు కోట ప్రాంతవాసులు గత ఆరు రోజులుగా తీవ్ర తాగునీటి ఎద్దడితో అల్లాడుతున్నారు. తక్షణ ప్రత్యామ్నాయ చర్యగా ట్యాంకర్ల ద్వారా నీటి సరఫరా చేయాలని డిమాండ్ చేస్తున్నారు,Municipal Administration
+"పోలీసులు ఏదైనా నేరానికి సంబంధించి సమాచారం తెలిస్తే FIR నమోదు చేస్తారు. FIR అంటే ఫస్ట్‌ ఇన్ఫర్మేషన్‌ రిపోర్టు. ఎఫ్‌ఐఆర్‌లో తేది, ఫిర్యాదు ఇచ్చిన వారిపేరు, సమయం, సెక్షన్లు, నేరం వివరాలు ఉంటాయి",Police
+"మీ భూమి పోర్టల్ ద్వారా 1-బి, అడంగలు, గ్రామ మ్యాప్‌లు, ఇ-పాస్‌బుక్‌లు చూడవచ్చు. భూ వివాదాల స్థితిని తనిఖీ చేయవచ్చు, మ్యూటేషన్ మరియు భూమి మార్పిడి కోసం దరఖాస్తు చేసుకోవచ్చు",Revenue
+వ్యవసాయం మరియు సహకారం శాఖకు సంబంధించిన ఫిర్యాదు,Agriculture
+"ఆరోగ్యం, వైద్యం మరియు కుటుంబ సంక్షేమం శాఖలో సమస్య",Health
+"పశుపోషణ, డైరీ అభివృద్ధి మరియు మత్స్య సంపద శాఖ",Animal Husbandry
+"వినియోగదారుల వ్యవహారాలు, ఆహారం మరియు సివిల్ సప్లైస్ శాఖ",Civil Supplies
+మానవ వనరులు (పాఠశాల విద్య) శాఖ,Education
+పాఠశాల భవనం మరమ్మత్తులు అవసరం. రాష్టం పడుతోంది,Education
+ప్రాథమిక ఆరోగ్య కేంద్రంలో వైద్యులు హాజరుకావటం లేదు,Health
+మా గ్రామానికి రోడ్లు మరమ్మత్తు చేయాలి. గుంతలు పడ్డాయి,Transport
+పంట నష్టం పరిహారం ఇవ్వలేదు. రైతు భరోసా పథకం డబ్బు రాలేదు,Agriculture
+పాత వయస్సు పెన్షన్ గత రెండు నెలలుగా రాలేదు,Social Welfare
+కుల ధృవీకరణ పత్రం కోసం దరఖాస్తు చేసాను. ఇంకా రాలేదు,Revenue
+ఆదాయ ధృవీకరణ పత్రం అవసరం. త్వరగా జారీ చేయాలి,Revenue
+రేషన్ కార్డు కోసం దరఖాస్తు చేసాను. ప్రాసెస్ అవుతోందా తెలపండి,Civil Supplies
+నీటి కనెక్షన్ ఇవ్వాలి. దరఖాస్తు చేసి రెండు నెలలైంది,Municipal Administration
+కరెంటు బిల్లు అధికంగా వచ్చింది. తనిఖీ చేయండి,Energy
+కరెంటు మీటర్ సరిగా పని చేయడం లేదు. మార్చాలి,Energy
+పంచాయతీ కార్యాలయంలో పనులు ఆలస్యం అవుతున్నాయి,Panchayat Raj
+గృహ నిర్మాణ పథకం కింద ఇల్లు కట్టుకోవాలి. సహాయం కావాలి,Housing
+పోలీసు స్టేషన్‌లో FIR రిజిస్టర్ చేయడం లేదు,Police
+బస్సు సర్వీస్ లేదు. మా గ్రామానికి బస్సులు నడవాలి,Transport
+పట్టా పత్రం జారీ చేయాలి. భూమికి చట్టబద్ధ హక్కులు కావాలి,Revenue
+భూ సర్వే తప్పులు సరిదిద్దాలి. సర్వే నంబర్ సరైనది కాదు,Revenue
+విత్తన సబ్సిడీ అందలేదు. సరైన సమయానికి విత్తనాలు కావాలి,Agriculture
+మధ్యాహ్న భోజన పథకంలో నాణ్యత లేదు. పిల్లలకు మంచి ఆహారం కావాలి,Education
+విద్యార్థి వేతనం ఖాతాలోకి జమ కాలేదు. స్కాలర్‌షిప్ డబ్బు కావాలి,Education
+వైద్య సదుపాయాలు లేవు. 108 ఆంబులెన్స్ సేవ బాగా లేదు,Health
+ఉచిత మందులు లభించడం లేదు. మందుల దుకాణంలో స్టాక్ లేదు,Health
+వైకల్య పెన్షన్ కోసం దరఖాస్తు చేసాను. ఆమోదం కావాలి,Social Welfare
+విధవ పెన్షన్ ఆగిపోయింది. తిరిగి ప్రారంభించాలి,Social Welfare
+గృహ సైట్ కేటాయింపు జరగలేదు. నా పేరు లిస్ట్‌లో ఉంది,Housing
+వాణిజ్య లైసెన్స్ పొందాలి. దుకాణం తెరవడానికి అనుమతి కావాలి,Municipal Administration
+భవన అనుమతి కోసం దరఖాస్తు చేసాను. ఆమోదించాలి,Municipal Administration
+స్థానిక పన్ను బిల్లు అధికంగా ఉంది. పునఃపరిశీలన కావాలి,Municipal Administration
+కాలువ శుభ్రం చేయాలి. ఆరోగ్య సమస్యలు వస్తున్నాయి,Municipal Administration
+చెత్త సేకరణ సక్రమంగా జరగడం లేదు,Municipal Administration
+వీధి దీపాలు పని చేయడం లేదు. రాత్రి చీకటిగా ఉంది,Municipal Administration
+రైతు భీమా క్లెయిమ్ పొందాలి. పంట నష్టమైంది,Agriculture
+పంట సేద కనీస మద్దతు ధర రాలేదు. త్వరగా చెల్లించాలి,Agriculture
+పేటేంట్ మందులు అధిక ధరలకు అమ్ముతున్నారు,Health
+బస్ ప్రమాదంలో గాయపడ్డారు. పరిహారం కావాలి,Transport
+డ్రైవింగ్ లైసెన్స్ పొందాలి. పరీక్ష తేదీ కావాలి,Transport
+వాహన రిజిస్ట్రేషన్ ఆలస్యం అవుతోంది. త్వరగా జారీ చేయాలి,Transport
+సహకార సంఘం నుండి రుణం కావాలి. వ్యవసాయం కోసం అవసరం,Agriculture
+ఇంధన సబ్సిడీ అందలేదు. రైతులకు డీజిల్ సబ్సిడీ కావాలి,Agriculture
+సేద మార్కెట్ సౌకర్యాలు లేవు. రైతులకు ఇబ్బంది,Agriculture
+తాతకాలంపు అవినీతి చెక్ పోస్ట్ తొలగించాలి,Police
+నీటి వనరుల శాఖ కాలువలు నిర్వహించడం లేదు. నీటి ధార్ల నిర్వహణ చేయాలి,Water Resources
+వ్యాధి నియంత్రణ కార్యక్రమాలు నిర్వహించాలి. డెంగ్యూ వ్యాపిస్తోంది,Health
+టీకా కార్యక్రమం సక్రమంగా జరగడం లేదు. పిల్లలకు టీకాలు కావాలి,Health
+మత్స్య సంపద శాఖ నుండి చేపల వ్యాపారానికి రుణం కావాలి,Animal Husbandry
+పశువుల వైద్య సౌకర్యాలు లేవు. పశు వైద్య కేంద్రం కావాలి,Animal Husbandry
+విద్యుత్ కనెక్షన్ కోసం దరఖాస్తు చేసాను. త్వరగా ఇవ్వాలి,Energy
+సౌర విద్యుత్ సబ్సిడీ కోసం దరఖాస్తు చేయాలి. సమాచారం కావాలి,Energy
+పొలానికి దారి ఇవ్వడం లేదని సబ్ కలెక్టర్ కు ఫిర్యాదు చేశారు. ఇస్నాపూర్ మండలం అన్నారం గ్రామంలో సర్వే నెంబర్ 144లో ఒక ఎకరం భూమిని సాగు చేయడానికి వెళ్లినప్పుడు ఇతరులు నిరోధించారు,Revenue
+"విద్యుత్ సమస్య ఉంటే 1912 టోల్ ఫ్రీ నెంబర్ కు ఫోన్ చేసి ఫిర్యాదు చేయవచ్చు. విద్యుత్ బిల్లులు అధికంగా వచ్చినా, కరెంటు మోటరు ట్రాన్స్ఫార్మర్ సమస్య ఉన్నా ఫిర్యాదు చేయవచ్చు",Energy
+"విద్యుత్ సమస్య పరిష్కరించాలని ప్రజావాణిలో ఫిర్యాదు చేశారు. ప్రతిరోజు విద్యుత్తు అంతరాయం ఏర్పడుతూ, ప్రజలు తీవ్ర ఇబ్బందులు పడుతున్నారు",Energy
+తమకు వారానికి ఒక్కసారి మాత్రమే నీటి సరఫరా జరుగుతుందని యాదాద్రి-భువనగిరి జిల్లా కలెక్టర్‌కు చౌటుప్పల్‌ వాసులు ఫిర్యాదు చేశారు,Municipal Administration
+గ్రామానికి నెలరోజులుగా తాగునీరు రాక తీవ్ర ఇబ్బందులు పడుతున్నామని చిట్కుల్‌ గ్రామస్తులు మిషన్‌ భగీరథ అధికారులపై ఆగ్రహం వ్యక్తం చేశారు,Panchayat Raj
+15రోజులుగా మిషన్‌ భగీరథ తాగునీటి సరఫరా కాకపోవటంతో తండావాసులు ఖాళీబిందెలతో ఆందోళనకు దిగారు,Panchayat Raj
+ఓరుగల్లు కోట ప్రాంతవాసులు గత ఆరు రోజులుగా తీవ్ర తాగునీటి ఎద్దడితో అల్లాడుతున్నారు. తక్షణ ప్రత్యామ్నాయ చర్యగా ట్యాంకర్ల ద్వారా నీటి సరఫరా చేయాలని డిమాండ్ చేస్తున్నారు,Municipal Administration
+"పోలీసులు ఏదైనా నేరానికి సంబంధించి సమాచారం తెలిస్తే FIR నమోదు చేస్తారు. FIR అంటే ఫస్ట్‌ ఇన్ఫర్మేషన్‌ రిపోర్టు. ఎఫ్‌ఐఆర్‌లో తేది, ఫిర్యాదు ఇచ్చిన వారిపేరు, సమయం, సెక్షన్లు, నేరం వివరాలు ఉంటాయి",Police
+"మీ భూమి పోర్టల్ ద్వారా 1-బి, అడంగలు, గ్రామ మ్యాప్‌లు, ఇ-పాస్‌బుక్‌లు చూడవచ్చు. భూ వివాదాల స్థితిని తనిఖీ చేయవచ్చు, మ్యూటేషన్ మరియు భూమి మార్పిడి కోసం దరఖాస్తు చేసుకోవచ్చు",Revenue
+వ్యవసాయం మరియు సహకారం శాఖకు సంబంధించిన ఫిర్యాదు,Agriculture
+"ఆరోగ్యం, వైద్యం మరియు కుటుంబ సంక్షేమం శాఖలో సమస్య",Health
+"పశుపోషణ, డైరీ అభివృద్ధి మరియు మత్స్య సంపద శాఖ",Animal Husbandry
+"వినియోగదారుల వ్యవహారాలు, ఆహారం మరియు సివిల్ సప్లైస్ శాఖ",Civil Supplies
+మానవ వనరులు (పాఠశాల విద్య) శాఖ,Education
+పాఠశాల భవనం మరమ్మత్తులు అవసరం. రాష్టం పడుతోంది,Education
+ప్రాథమిక ఆరోగ్య కేంద్రంలో వైద్యులు హాజరుకావటం లేదు,Health
+మా గ్రామానికి రోడ్లు మరమ్మత్తు చేయాలి. గుంతలు పడ్డాయి,Transport
+పంట నష్టం పరిహారం ఇవ్వలేదు. రైతు భరోసా పథకం డబ్బు రాలేదు,Agriculture
+పాత వయస్సు పెన్షన్ గత రెండు నెలలుగా రాలేదు,Social Welfare
+కుల ధృవీకరణ పత్రం కోసం దరఖాస్తు చేసాను. ఇంకా రాలేదు,Revenue
+ఆదాయ ధృవీకరణ పత్రం అవసరం. త్వరగా జారీ చేయాలి,Revenue
+రేషన్ కార్డు కోసం దరఖాస్తు చేసాను. ప్రాసెస్ అవుతోందా తెలపండి,Civil Supplies
+నీటి కనెక్షన్ ఇవ్వాలి. దరఖాస్తు చేసి రెండు నెలలైంది,Municipal Administration
+కరెంటు బిల్లు అధికంగా వచ్చింది. తనిఖీ చేయండి,Energy
+కరెంటు మీటర్ సరిగా పని చేయడం లేదు. మార్చాలి,Energy
+పంచాయతీ కార్యాలయంలో పనులు ఆలస్యం అవుతున్నాయి,Panchayat Raj
+గృహ నిర్మాణ పథకం కింద ఇల్లు కట్టుకోవాలి. సహాయం కావాలి,Housing
+పోలీసు స్టేషన్‌లో FIR రిజిస్టర్ చేయడం లేదు,Police
+బస్సు సర్వీస్ లేదు. మా గ్రామానికి బస్సులు నడవాలి,Transport
+పట్టా పత్రం జారీ చేయాలి. భూమికి చట్టబద్ధ హక్కులు కావాలి,Revenue
+భూ సర్వే తప్పులు సరిదిద్దాలి. సర్వే నంబర్ సరైనది కాదు,Revenue
+విత్తన సబ్సిడీ అందలేదు. సరైన సమయానికి విత్తనాలు కావాలి,Agriculture
+మధ్యాహ్న భోజన పథకంలో నాణ్యత లేదు. పిల్లలకు మంచి ఆహారం కావాలి,Education
+విద్యార్థి వేతనం ఖాతాలోకి జమ కాలేదు. స్కాలర్‌షిప్ డబ్బు కావాలి,Education
+వైద్య సదుపాయాలు లేవు. 108 ఆంబులెన్స్ సేవ బాగా లేదు,Health
+ఉచిత మందులు లభించడం లేదు. మందుల దుకాణంలో స్టాక్ లేదు,Health
+వైకల్య పెన్షన్ కోసం దరఖాస్తు చేసాను. ఆమోదం కావాలి,Social Welfare
+విధవ పెన్షన్ ఆగిపోయింది. తిరిగి ప్రారంభించాలి,Social Welfare
+గృహ సైట్ కేటాయింపు జరగలేదు. నా పేరు లిస్ట్‌లో ఉంది,Housing
+వాణిజ్య లైసెన్స్ పొందాలి. దుకాణం తెరవడానికి అనుమతి కావాలి,Municipal Administration
+భవన అనుమతి కోసం దరఖాస్తు చేసాను. ఆమోదించాలి,Municipal Administration
+స్థానిక పన్ను బిల్లు అధికంగా ఉంది. పునఃపరిశీలన కావాలి,Municipal Administration
+కాలువ శుభ్రం చేయాలి. ఆరోగ్య సమస్యలు వస్తున్నాయి,Municipal Administration
+చెత్త సేకరణ సక్రమంగా జరగడం లేదు,Municipal Administration
+వీధి దీపాలు పని చేయడం లేదు. రాత్రి చీకటిగా ఉంది,Municipal Administration
+రైతు భీమా క్లెయిమ్ పొందాలి. పంట నష్టమైంది,Agriculture
+పంట సేద కనీస మద్దతు ధర రాలేదు. త్వరగా చెల్లించాలి,Agriculture
+పేటేంట్ మందులు అధిక ధరలకు అమ్ముతున్నారు,Health
+బస్ ప్రమాదంలో గాయపడ్డారు. పరిహారం కావాలి,Transport
+డ్రైవింగ్ లైసెన్స్ పొందాలి. పరీక్ష తేదీ కావాలి,Transport
+వాహన రిజిస్ట్రేషన్ ఆలస్యం అవుతోంది. త్వరగా జారీ చేయాలి,Transport
+సహకార సంఘం నుండి రుణం కావాలి. వ్యవసాయం కోసం అవసరం,Agriculture
+ఇంధన సబ్సిడీ అందలేదు. రైతులకు డీజిల్ సబ్సిడీ కావాలి,Agriculture
+సేద మార్కెట్ సౌకర్యాలు లేవు. రైతులకు ఇబ్బంది,Agriculture
+తాతకాలంపు అవినీతి చెక్ పోస్ట్ తొలగించాలి,Police
+నీటి వనరుల శాఖ కాలువలు నిర్వహించడం లేదు. నీటి ధార్ల నిర్వహణ చేయాలి,Water Resources
+వ్యాధి నియంత్రణ కార్యక్రమాలు నిర్వహించాలి. డెంగ్యూ వ్యాపిస్తోంది,Health
+టీకా కార్యక్రమం సక్రమంగా జరగడం లేదు. పిల్లలకు టీకాలు కావాలి,Health
+మత్స్య సంపద శాఖ నుండి చేపల వ్యాపారానికి రుణం కావాలి,Animal Husbandry
+పశువుల వైద్య సౌకర్యాలు లేవు. పశు వైద్య కేంద్రం కావాలి,Animal Husbandry
+విద్యుత్ కనెక్షన్ కోసం దరఖాస్తు చేసాను. త్వరగా ఇవ్వాలి,Energy
+సౌర విద్యుత్ సబ్సిడీ కోసం దరఖాస్తు చేయాలి. సమాచారం కావాలి,Energy
+మ్యూటేషన్ జరగలేదు. భూ రికార్డులు సరిదిద్దాలి,Revenue
+కుల ధృవీకరణ పత్రం కోసం దరఖాస్తు చేసాను. గత మూడు నెలలుగా అయింది,Revenue
+దయచేసి తెలపండి రెవిన్యూ సర్టిఫికెట్ తక్షణం జారీ చేయండి,Revenue
+మ్యూటేషన్ జరగలేదు. భూ రికార్డులు సరిదిద్దాలి,Revenue
+భూ సర్వే తప్పులు సరిదిద్దాలి. వెంటనే చర్య తీసుకోండి,Revenue
+భూ సర్వే తప్పులు సరిదిద్దాలి. త్వరగా చర్య తీసుకోండి,Revenue
+ఆదాయ ధృవీకరణ పత్రం కోసం దరఖాస్తు చేసాను. రెండు నెలలుగా అయింది,Revenue
+మరణ ధృవీకరణ పత్రం కోసం దరఖాస్తు చేసాను. రెండు వారాలుగా అయింది,Revenue
+పట్టా పత్రం జారీ చేయాలి. భూమికి చట్టబద్ధ హక్కులు కావాలి,Revenue
+పట్టా పత్రం జారీ చేయాలి. భూమికి చట్టబద్ధ హక్కులు కావాలి,Revenue
+వినమ్రంగా కోరుకుంటున్నాను రెవిన్యూ సర్టిఫికెట్ అత్యవసరం జారీ చేయండి,Revenue
+దయచేసి రెవిన్యూ సర్టిఫికెట్ త్వరగా జారీ చేయండి,Revenue
+కుల ధృవీకరణ పత్రం కోసం దరఖాస్తు చేసాను. పదిహేను రోజులుగా అయింది,Revenue
+మ్యూటేషన్ జరగలేదు. భూ రికార్డులు సరిదిద్దాలి,Revenue
+వినమ్రంగా కోరుకుంటున్నాను రెవిన్యూ సర్టిఫికెట్ శీఘ్రంగా జారీ చేయండి,Revenue
+వినమ్రంగా కోరుకుంటున్నాను రెవిన్యూ సర్టిఫికెట్ అత్యవసరం జారీ చేయండి,Revenue
+భూ సర్వే తప్పులు సరిదిద్దాలి. అత్యవసరం చర్య తీసుకోండి,Revenue
+పట్టా పత్రం జారీ చేయాలి. భూమికి చట్టబద్ధ హక్కులు కావాలి,Revenue
+మ్యూటేషన్ జరగలేదు. భూ రికార్డులు సరిదిద్దాలి,Revenue
+కుల ధృవీకరణ పత్రం కోసం దరఖాస్తు చేసాను. రెండు నెలలుగా అయింది,Revenue
+పట్టా పత్రం జారీ చేయాలి. భూమికి చట్టబద్ధ హక్కులు కావాలి,Revenue
+మ్యూటేషన్ జరగలేదు. భూ రికార్డులు సరిదిద్దాలి,Revenue
+మ్యూటేషన్ జరగలేదు. భూ రికార్డులు సరిదిద్దాలి,Revenue
+ఆదాయ ధృవీకరణ పత్రం కోసం దరఖాస్తు చేసాను. రెండు నెలలుగా అయింది,Revenue
+దయచేసి రెవిన్యూ సర్టిఫికెట్ త్వరగా జారీ చేయండి,Revenue
+పట్టా పత్రం జారీ చేయాలి. భూమికి చట్టబద్ధ హక్కులు కావాలి,Revenue
+భూ సర్వే తప్పులు సరిదిద్దాలి. అత్యవసరం చర్య తీసుకోండి,Revenue
+మ్యూటేషన్ జరగలేదు. భూ రికార్డులు సరిదిద్దాలి,Revenue
+విద్యా సర్టిఫికెట్ కోసం దరఖాస్తు చేసాను. ఒక నెలగా అయింది,Revenue
+మ్యూటేషన్ జరగలేదు. భూ రికార్డులు సరిదిద్దాలి,Revenue
+దయచేసి రెవిన్యూ సర్టిఫికెట్ తక్షణం జారీ చేయండి,Revenue
+పట్టా పత్రం జారీ చేయాలి. భూమికి చట్టబద్ధ హక్కులు కావాలి,Revenue
+విద్యా సర్టిఫికెట్ కోసం దరఖాస్తు చేసాను. రెండు వారాలుగా అయింది,Revenue
+దయచేసి రెవిన్యూ సర్టిఫికెట్ శీఘ్రంగా జారీ చేయండి,Revenue
+విద్యా సర్టిఫికెట్ కోసం దరఖాస్తు చేసాను. ఒక నెలగా అయింది,Revenue
+దయచేసి రెవిన్యూ సర్టిఫికెట్ అత్యవసరం జారీ చేయండి,Revenue
+పట్టా పత్రం కోసం దరఖాస్తు చేసాను. రెండు వారాలుగా అయింది,Revenue
+భూ సర్వే తప్పులు సరిదిద్దాలి. శీఘ్రంగా చర్య తీసుకోండి,Revenue
+పట్టా పత్రం జారీ చేయాలి. భూమికి చట్టబద్ధ హక్కులు కావాలి,Revenue
+మ్యూటేషన్ జరగలేదు. భూ రికార్డులు సరిదిద్దాలి,Revenue
+పట్టా పత్రం జారీ చేయాలి. భూమికి చట్టబద్ధ హక్కులు కావాలి,Revenue
+మరణ ధృవీకరణ పత్రం కోసం దరఖాస్తు చేసాను. పది రోజులుగా అయింది,Revenue
+భూ సర్వే తప్పులు సరిదిద్దాలి. ఆలస్యం చేయకుండా చర్య తీసుకోండి,Revenue
+దయచేసి రెవిన్యూ సర్టిఫికెట్ త్వరగా జారీ చేయండి,Revenue
+కృపయా రైతు భరోసా పథకం డబ్బు జారీ చేయండి,Agriculture
+దయచేసి రైతు భరోసా పథకం డబ్బు జారీ చేయండి,Agriculture
+రైతు భీమా క్లెయిమ్ పొందాలి. పంట నష్టమైంది,Agriculture
+పంట నష్టం పరిహారం గత మూడు నెలలుగా రాలేదు. త్వరగా చెల్లించాలి,Agriculture
+రైతు భీమా క్లెయిమ్ పొందాలి. పంట నష్టమైంది,Agriculture
+విత్తన సబ్సిడీ అందలేదు. సరైన సమయానికి విత్తనాలు కావాలి,Agriculture
+కనీస మద్దతు ధర గత మూడు నెలలుగా చెల్లించలేదు,Agriculture
+సహకార సంఘం నుండి రుణం కావాలి. వ్యవసాయం కోసం అవసరం,Agriculture
+దయచేసి రైతు భరోసా పథకం డబ్బు జారీ చేయండి,Agriculture
+సహకార సంఘం నుండి రుణం కావాలి. వ్యవసాయం కోసం అవసరం,Agriculture
+వినమ్రంగా కోరుకుంటున్నాను రైతు భరోసా పథకం డబ్బు జారీ చేయండి,Agriculture
+విత్తన సబ్సిడీ అందలేదు. సరైన సమయానికి విత్తనాలు కావాలి,Agriculture
+సహకార సంఘం నుండి రుణం కావాలి. వ్యవసాయం కోసం అవసరం,Agriculture
+సహకార సంఘం నుండి రుణం కావాలి. వ్యవసాయం కోసం అవసరం,Agriculture
+సహకార సంఘం నుండి రుణం కావాలి. వ్యవసాయం కోసం అవసరం,Agriculture
+సహకార సంఘం నుండి రుణం కావాలి. వ్యవసాయం కోసం అవసరం,Agriculture
+వినమ్రంగా కోరుకుంటున్నాను రైతు భరోసా పథకం డబ్బు జారీ చేయండి,Agriculture
+విత్తన సబ్సిడీ అందలేదు. సరైన సమయానికి విత్తనాలు కావాలి,Agriculture
+విత్తన సబ్సిడీ అందలేదు. సరైన సమయానికి విత్తనాలు కావాలి,Agriculture
+రైతు భీమా క్లెయిమ్ పొందాలి. పంట నష్టమైంది,Agriculture
+కనీస మద్దతు ధర ఒక నెలగా చెల్లించలేదు,Agriculture
+కనీస మద్దతు ధర పదిహేను రోజులుగా చెల్లించలేదు,Agriculture
+పంట నష్టం పరిహారం రెండు వారాలుగా రాలేదు. వెంటనే చెల్లించాలి,Agriculture
+పంట నష్టం పరిహారం ఒక నెలగా రాలేదు. అత్యవసరం చెల్లించాలి,Agriculture
+విత్తన సబ్సిడీ అందలేదు. సరైన సమయానికి విత్తనాలు కావాలి,Agriculture
+రైతు భీమా క్లెయిమ్ పొందాలి. పంట నష్టమైంది,Agriculture
+విత్తన సబ్సిడీ అందలేదు. సరైన సమయానికి విత్తనాలు కావాలి,Agriculture
+పంట నష్టం పరిహారం పదిహేను రోజులుగా రాలేదు. ఆలస్యం చేయకుండా చెల్లించాలి,Agriculture
+కనీస మద్దతు ధర పదిహేను రోజులుగా చెల్లించలేదు,Agriculture
+సహకార సంఘం నుండి రుణం కావాలి. వ్యవసాయం కోసం అవసరం,Agriculture
+కనీస మద్దతు ధర రెండు నెలలుగా చెల్లించలేదు,Agriculture
+రైతు భీమా క్లెయిమ్ పొందాలి. పంట నష్టమైంది,Agriculture
+దయచేసి తెలపండి రైతు భరోసా పథకం డబ్బు జారీ చేయండి,Agriculture
+పంట నష్టం పరిహారం రెండు వారాలుగా రాలేదు. తక్షణం చెల్లించాలి,Agriculture
+సహకార సంఘం నుండి రుణం కావాలి. వ్యవసాయం కోసం అవసరం,Agriculture
+విత్తన సబ్సిడీ అందలేదు. సరైన సమయానికి విత్తనాలు కావాలి,Agriculture
+వినమ్రంగా కోరుకుంటున్నాను రైతు భరోసా పథకం డబ్బు జారీ చేయండి,Agriculture
+విత్తన సబ్సిడీ అందలేదు. సరైన సమయానికి విత్తనాలు కావాలి,Agriculture
+సహకార సంఘం నుండి రుణం కావాలి. వ్యవసాయం కోసం అవసరం,Agriculture
+రైతు భీమా క్లెయిమ్ పొందాలి. పంట నష్టమైంది,Agriculture
+కనీస మద్దతు ధర మూడు నెలలుగా చెల్లించలేదు,Agriculture
+సహకార సంఘం నుండి రుణం కావాలి. వ్యవసాయం కోసం అవసరం,Agriculture
+టీకా కార్యక్రమం సక్రమంగా జరగడం లేదు. పిల్లలకు టీకాలు కావాలి,Health
+వ్యాధి నియంత్రణ కార్యక్రమాలు నిర్వహించాలి,Health
+టీకా కార్యక్రమం సక్రమంగా జరగడం లేదు. పిల్లలకు టీకాలు కావాలి,Health
+108 ఆంబులెన్స్ సేవ బాగా లేదు. త్వరగా మెరుగుపరచాలి,Health
+ప్రాథమిక ఆరోగ్య కేంద్రంలో వైద్యులు హాజరుకావటం లేదు,Health
+వ్యాధి నియంత్రణ కార్యక్రమాలు నిర్వహించాలి,Health
+టీకా కార్యక్రమం సక్రమంగా జరగడం లేదు. పిల్లలకు టీకాలు కావాలి,Health
+ప్రాథమిక ఆరోగ్య కేంద్రంలో వైద్యులు హాజరుకావటం లేదు,Health
+108 ఆంబులెన్స్ సేవ బాగా లేదు. త్వరగా మెరుగుపరచాలి,Health
+వ్యాధి నియంత్రణ కార్యక్రమాలు నిర్వహించాలి,Health
+108 ఆంబులెన్స్ సేవ బాగా లేదు. అత్యవసరం మెరుగుపరచాలి,Health
+ప్రాథమిక ఆరోగ్య కేంద్రంలో వైద్యులు హాజరుకావటం లేదు,Health
+టీకా కార్యక్రమం సక్రమంగా జరగడం లేదు. పిల్లలకు టీకాలు కావాలి,Health
+టీకా కార్యక్రమం సక్రమంగా జరగడం లేదు. పిల్లలకు టీకాలు కావాలి,Health
+వినమ్రంగా కోరుకుంటున్నాను ఉచిత మందులు లభ్యం చేయండి,Health
+108 ఆంబులెన్స్ సేవ బాగా లేదు. అత్యవసరం మెరుగుపరచాలి,Health
+టీకా కార్యక్రమం సక్రమంగా జరగడం లేదు. పిల్లలకు టీకాలు కావాలి,Health
+108 ఆంబులెన్స్ సేవ బాగా లేదు. తక్షణం మెరుగుపరచాలి,Health
+వ్యాధి నియంత్రణ కార్యక్రమాలు నిర్వహించాలి,Health
+టీకా కార్యక్రమం సక్రమంగా జరగడం లేదు. పిల్లలకు టీకాలు కావాలి,Health
+టీకా కార్యక్రమం సక్రమంగా జరగడం లేదు. పిల్లలకు టీకాలు కావాలి,Health
+108 ఆంబులెన్స్ సేవ బాగా లేదు. అత్యవసరం మెరుగుపరచాలి,Health
+టీకా కార్యక్రమం సక్రమంగా జరగడం లేదు. పిల్లలకు టీకాలు కావాలి,Health
+దయచేసి ఉచిత మందులు లభ్యం చేయండి,Health
+బస్ స్టాండ్ దగ్గర మందుల దుకాణంలో స్టాక్ లేదు,Health
+దయచేసి ఉచిత మందులు లభ్యం చేయండి,Health
+దయచేసి ఉచిత మందులు లభ్యం చేయండి,Health
+పాఠశాలలో మందుల దుకాణంలో స్టాక్ లేదు,Health
+వ్యాధి నియంత్రణ కార్యక్రమాలు నిర్వహించాలి,Health
+వ్యాధి నియంత్రణ కార్యక్రమాలు నిర్వహించాలి,Health
+వినమ్రంగా కోరుకుంటున్నాను ఉచిత మందులు లభ్యం చేయండి,Health
+టీకా కార్యక్రమం సక్రమంగా జరగడం లేదు. పిల్లలకు టీకాలు కావాలి,Health
+108 ఆంబులెన్స్ సేవ బాగా లేదు. త్వరగా మెరుగుపరచాలి,Health
+మా గ్రామంలో మందుల దుకాణంలో స్టాక్ లేదు,Health
+వ్యాధి నియంత్రణ కార్యక్రమాలు నిర్వహించాలి,Health
+వ్యాధి నియంత్రణ కార్యక్రమాలు నిర్వహించాలి,Health
+దయచేసి తెలపండి ఉచిత మందులు లభ్యం చేయండి,Health
+దయచేసి ఉచిత మందులు లభ్యం చేయండి,Health
+వ్యాధి నియంత్రణ కార్యక్రమాలు నిర్వహించాలి,Health
+వ్యాధి నియంత్రణ కార్యక్రమాలు నిర్వహించాలి,Health
+టీకా కార్యక్రమం సక్రమంగా జరగడం లేదు. పిల్లలకు టీకాలు కావాలి,Health
+మా గ్రామంలో మందుల దుకాణంలో స్టాక్ లేదు,Health
+వ్యాధి నియంత్రణ కార్యక్రమాలు నిర్వహించాలి,Health
+పాఠశాల భవనం మరమ్మత్తులు అవసరం. రాష్టం పడుతోంది,Education
+మధ్యాహ్న భోజన పథకంలో నాణ్యత లేదు. పిల్లలకు మంచి ఆహారం కావాలి,Education
+దయచేసి తెలపండి విద్యార్థి స్కాలర్‌షిప్ అత్యవసరం జారీ చేయండి,Education
+విద్యార్థి వేతనం గత మూడు నెలలుగా ఖాతాలోకి జమ కాలేదు,Education
+పాఠశాలలో ఉపాధ్యాయులు సరిపోరు. ఎక్కువ ఉపాధ్యాయులు కావాలి,Education
+దయచేసి విద్యార్థి స్కాలర్‌షిప్ శీఘ్రంగా జారీ చేయండి,Education
+పాఠశాల భవనం మరమ్మత్తులు అవసరం. రాష్టం పడుతోంది,Education
+వినమ్రంగా కోరుకుంటున్నాను విద్యార్థి స్కాలర్‌షిప్ అత్యవసరం జారీ చేయండి,Education
+విద్యార్థి వేతనం మూడు నెలలుగా ఖాతాలోకి జమ కాలేదు,Education
+పాఠశాల భవనం మరమ్మత్తులు అవసరం. రాష్టం పడుతోంది,Education
+పాఠశాలలో ఉపాధ్యాయులు సరిపోరు. ఎక్కువ ఉపాధ్యాయులు కావాలి,Education
+పాఠశాల భవనం మరమ్మత్తులు అవసరం. రాష్టం పడుతోంది,Education
+పాఠశాలలో ఉపాధ్యాయులు సరిపోరు. ఎక్కువ ఉపాధ్యాయులు కావాలి,Education
+పాఠశాల భవనం మరమ్మత్తులు అవసరం. రాష్టం పడుతోంది,Education
+వినమ్రంగా కోరుకుంటున్నాను విద్యార్థి స్కాలర్‌షిప్ అత్యవసరం జారీ చేయండి,Education
+పాఠశాలలో ఉపాధ్యాయులు సరిపోరు. ఎక్కువ ఉపాధ్యాయులు కావాలి,Education
+విద్యార్థి వేతనం ఆరు నెలలుగా ఖాతాలోకి జమ కాలేదు,Education
+పాఠశాల భవనం మరమ్మత్తులు అవసరం. రాష్టం పడుతోంది,Education
+మధ్యాహ్న భోజన పథకంలో నాణ్యత లేదు. పిల్లలకు మంచి ఆహారం కావాలి,Education
+మధ్యాహ్న భోజన పథకంలో నాణ్యత లేదు. పిల్లలకు మంచి ఆహారం కావాలి,Education
+పాఠశాల భవనం మరమ్మత్తులు అవసరం. రాష్టం పడుతోంది,Education
+మధ్యాహ్న భోజన పథకంలో నాణ్యత లేదు. పిల్లలకు మంచి ఆహారం కావాలి,Education
+పాఠశాలలో ఉపాధ్యాయులు సరిపోరు. ఎక్కువ ఉపాధ్యాయులు కావాలి,Education
+పాఠశాల భవనం మరమ్మత్తులు అవసరం. రాష్టం పడుతోంది,Education
+పాఠశాల భవనం మరమ్మత్తులు అవసరం. రాష్టం పడుతోంది,Education
+విద్యార్థి వేతనం గత మూడు నెలలుగా ఖాతాలోకి జమ కాలేదు,Education
+మధ్యాహ్న భోజన పథకంలో నాణ్యత లేదు. పిల్లలకు మంచి ఆహారం కావాలి,Education
+పాఠశాల భవనం మరమ్మత్తులు అవసరం. రాష్టం పడుతోంది,Education
+పాఠశాల భవనం మరమ్మత్తులు అవసరం. రాష్టం పడుతోంది,Education
+పాఠశాల భవనం మరమ్మత్తులు అవసరం. రాష్టం పడుతోంది,Education
+విద్యార్థి వేతనం ఆరు నెలలుగా ఖాతాలోకి జమ కాలేదు,Education
+పాఠశాలలో ఉపాధ్యాయులు సరిపోరు. ఎక్కువ ఉపాధ్యాయులు కావాలి,Education
+మధ్యాహ్న భోజన పథకంలో నాణ్యత లేదు. పిల్లలకు మంచి ఆహారం కావాలి,Education
+పాఠశాల భవనం మరమ్మత్తులు అవసరం. రాష్టం పడుతోంది,Education
+విద్యార్థి వేతనం గత మూడు నెలలుగా ఖాతాలోకి జమ కాలేదు,Education
+పాఠశాలలో ఉపాధ్యాయులు సరిపోరు. ఎక్కువ ఉపాధ్యాయులు కావాలి,Education
+విద్యార్థి వేతనం ఆరు నెలలుగా ఖాతాలోకి జమ కాలేదు,Education
+మధ్యాహ్న భోజన పథకంలో నాణ్యత లేదు. పిల్లలకు మంచి ఆహారం కావాలి,Education
+పాఠశాలలో ఉపాధ్యాయులు సరిపోరు. ఎక్కువ ఉపాధ్యాయులు కావాలి,Education
+దయచేసి తెలపండి విద్యార్థి స్కాలర్‌షిప్ ఆలస్యం చేయకుండా జారీ చేయండి,Education
+విద్యార్థి వేతనం పది రోజులుగా ఖాతాలోకి జమ కాలేదు,Education
+పాఠశాల భవనం మరమ్మత్తులు అవసరం. రాష్టం పడుతోంది,Education
+మధ్యాహ్న భోజన పథకంలో నాణ్యత లేదు. పిల్లలకు మంచి ఆహారం కావాలి,Education
+పాఠశాలలో ఉపాధ్యాయులు సరిపోరు. ఎక్కువ ఉపాధ్యాయులు కావాలి,Education
+దయచేసి విద్యార్థి స్కాలర్‌షిప్ త్వరగా జారీ చేయండి,Education
+మధ్యాహ్న భోజన పథకంలో నాణ్యత లేదు. పిల్లలకు మంచి ఆహారం కావాలి,Education
+భవన అనుమతి కోసం పది రోజులుగా క్రితం దరఖాస్తు చేశాను,Municipal Administration
+వారానికి ఒక్కసారి మాత్రమే నీటి సరఫరా జరుగుతుంది,Municipal Administration
+దయచేసి నీటి కనెక్షన్ శీఘ్రంగా ఇవ్వండి,Municipal Administration
+స్థానిక పన్ను బిల్లు అధికంగా ఉంది. పునఃపరిశీలన కావాలి,Municipal Administration
+స్థానిక పన్ను బిల్లు అధికంగా ఉంది. పునఃపరిశీలన కావాలి,Municipal Administration
+భవన అనుమతి కోసం రెండు వారాలుగా క్రితం దరఖాస్తు చేశాను,Municipal Administration
+ఆసుపత్రిలో కాలువలు శుభ్రం చేయాలి. ఆరోగ్య సమస్యలు వస్తున్నాయి,Municipal Administration
+దయచేసి తెలపండి నీటి కనెక్షన్ వెంటనే ఇవ్వండి,Municipal Administration
+స్థానిక పన్ను బిల్లు అధికంగా ఉంది. పునఃపరిశీలన కావాలి,Municipal Administration
+ఆసుపత్రిలో కాలువలు శుభ్రం చేయాలి. ఆరోగ్య సమస్యలు వస్తున్నాయి,Municipal Administration
+స్థానిక పన్ను బిల్లు అధికంగా ఉంది. పునఃపరిశీలన కావాలి,Municipal Administration
+చెత్త సేకరణ సక్రమంగా జరగడం లేదు,Municipal Administration
+వినమ్రంగా కోరుకుంటున్నాను నీటి కనెక్షన్ ఆలస్యం చేయకుండా ఇవ్వండి,Municipal Administration
+పంచాయతీ కార్యాలయంలో కాలువలు శుభ్రం చేయాలి. ఆరోగ్య సమస్యలు వస్తున్నాయి,Municipal Administration
+స్థానిక పన్ను బిల్లు అధికంగా ఉంది. పునఃపరిశీలన కావాలి,Municipal Administration
+వీధి దీపాలు పని చేయడం లేదు. రాత్రి చీకటిగా ఉంది,Municipal Administration
+ఆసుపత్రిలో కాలువలు శుభ్రం చేయాలి. ఆరోగ్య సమస్యలు వస్తున్నాయి,Municipal Administration
+సర్పంచ్ కార్యాలయంలో కాలువలు శుభ్రం చేయాలి. ఆరోగ్య సమస్యలు వస్తున్నాయి,Municipal Administration
+భవన అనుమతి కోసం ఒక నెలగా క్రితం దరఖాస్తు చేశాను,Municipal Administration
+భవన అనుమతి కోసం గత మూడు నెలలుగా క్రితం దరఖాస్తు చేశాను,Municipal Administration
+చెత్త సేకరణ సక్రమంగా జరగడం లేదు,Municipal Administration
+స్థానిక పన్ను బిల్లు అధికంగా ఉంది. పునఃపరిశీలన కావాలి,Municipal Administration
+స్థానిక పన్ను బిల్లు అధికంగా ఉంది. పునఃపరిశీలన కావాలి,Municipal Administration
+చెత్త సేకరణ సక్రమంగా జరగడం లేదు,Municipal Administration
+భవన అనుమతి కోసం ఆరు నెలలుగా క్రితం దరఖాస్తు చేశాను,Municipal Administration
+మా గ్రామంలో కాలువలు శుభ్రం చేయాలి. ఆరోగ్య సమస్యలు వస్తున్నాయి,Municipal Administration
+ప్రాథమిక ఆరోగ్య కేంద్రంలో కాలువలు శుభ్రం చేయాలి. ఆరోగ్య సమస్యలు వస్తున్నాయి,Municipal Administration
+మా వార్డులో కాలువలు శుభ్రం చేయాలి. ఆరోగ్య సమస్యలు వస్తున్నాయి,Municipal Administration
+వారానికి ఒక్కసారి మాత్రమే నీటి సరఫరా జరుగుతుంది,Municipal Administration
+కృపయా నీటి కనెక్షన్ శీఘ్రంగా ఇవ్వండి,Municipal Administration
+భవన అనుమతి కోసం రెండు నెలలుగా క్రితం దరఖాస్తు చేశాను,Municipal Administration
+భవన అనుమతి కోసం మూడు నెలలుగా క్రితం దరఖాస్తు చేశాను,Municipal Administration
+స్థానిక పన్ను బిల్లు అధికంగా ఉంది. పునఃపరిశీలన కావాలి,Municipal Administration
+భవన అనుమతి కోసం రెండు వారాలుగా క్రితం దరఖాస్తు చేశాను,Municipal Administration
+స్థానిక పన్ను బిల్లు అధికంగా ఉంది. పునఃపరిశీలన కావాలి,Municipal Administration
+భవన అనుమతి కోసం రెండు నెలలుగా క్రితం దరఖాస్తు చేశాను,Municipal Administration
+చెత్త సేకరణ సక్రమంగా జరగడం లేదు,Municipal Administration
+స్థానిక పన్ను బిల్లు అధికంగా ఉంది. పునఃపరిశీలన కావాలి,Municipal Administration
+వీధి దీపాలు పని చేయడం లేదు. రాత్రి చీకటిగా ఉంది,Municipal Administration
+స్థానిక పన్ను బిల్లు అధికంగా ఉంది. పునఃపరిశీలన కావాలి,Municipal Administration
+కృపయా నీటి కనెక్షన్ అత్యవసరం ఇవ్వండి,Municipal Administration
+వినమ్రంగా కోరుకుంటున్నాను కరెంటు మీటర్ మార్చండి. సరిగా పని చేయడం లేదు,Energy
+విద్యుత్ సమస్య రెండు వారాలుగా ఉంది. పరిష్కరించాలి,Energy
+ప్రతిరోజు విద్యుత్తు అంతరాయం ఏర్పడుతుంది,Energy
+ట్రాన్స్‌ఫార్మర్ సమస్య ఉంది. మరమ్మత్తు చేయాలి,Energy
+విద్యుత్ సమస్య గత మూడు నెలలుగా ఉంది. పరిష్కరించాలి,Energy
+విద్యుత్ కనెక్షన్ కోసం దరఖాస్తు చేసాను. తక్షణం ఇవ్వాలి,Energy
+ప్రతిరోజు విద్యుత్తు అంతరాయం ఏర్పడుతుంది,Energy
+ప్రతిరోజు విద్యుత్తు అంతరాయం ఏర్పడుతుంది,Energy
+కరెంటు బిల్లు అధికంగా వచ్చింది. శీఘ్రంగా తనిఖీ చేయండి,Energy
+కృపయా కరెంటు మీటర్ మార్చండి. సరిగా పని చేయడం లేదు,Energy
+కరెంటు బిల్లు అధికంగా వచ్చింది. అత్యవసరం తనిఖీ చేయండి,Energy
+ప్రతిరోజు విద్యుత్తు అంతరాయం ఏర్పడుతుంది,Energy
+దయచేసి కరెంటు మీటర్ మార్చండి. సరిగా పని చేయడం లేదు,Energy
+విద్యుత్ సమస్య రెండు వారాలుగా ఉంది. పరిష్కరించాలి,Energy
+ప్రతిరోజు విద్యుత్తు అంతరాయం ఏర్పడుతుంది,Energy
+విద్యుత్ సమస్య రెండు నెలలుగా ఉంది. పరిష్కరించాలి,Energy
+విద్యుత్ సమస్య పది రోజులుగా ఉంది. పరిష్కరించాలి,Energy
+దయచేసి కరెంటు మీటర్ మార్చండి. సరిగా పని చేయడం లేదు,Energy
+విద్యుత్ కనెక్షన్ కోసం దరఖాస్తు చేసాను. తక్షణం ఇవ్వాలి,Energy
+ట్రాన్స్‌ఫార్మర్ సమస్య ఉంది. మరమ్మత్తు చేయాలి,Energy
+కృపయా కరెంటు మీటర్ మార్చండి. సరిగా పని చేయడం లేదు,Energy
+ప్రతిరోజు విద్యుత్తు అంతరాయం ఏర్పడుతుంది,Energy
+విద్యుత్ సమస్య ఒక నెలగా ఉంది. పరిష్కరించాలి,Energy
+ప్రతిరోజు విద్యుత్తు అంతరాయం ఏర్పడుతుంది,Energy
+విద్యుత్ కనెక్షన్ కోసం దరఖాస్తు చేసాను. అత్యవసరం ఇవ్వాలి,Energy
+విద్యుత్ సమస్య రెండు వారాలుగా ఉంది. పరిష్కరించాలి,Energy
+వినమ్రంగా కోరుకుంటున్నాను కరెంటు మీటర్ మార్చండి. సరిగా పని చేయడం లేదు,Energy
+విద్యుత్ కనెక్షన్ కోసం దరఖాస్తు చేసాను. త్వరగా ఇవ్వాలి,Energy
+విద్యుత్ కనెక్షన్ కోసం దరఖాస్తు చేసాను. తక్షణం ఇవ్వాలి,Energy
+కరెంటు బిల్లు అధికంగా వచ్చింది. వెంటనే తనిఖీ చేయండి,Energy
+దయచేసి కరెంటు మీటర్ మార్చండి. సరిగా పని చేయడం లేదు,Energy
+ట్రాన్స్‌ఫార్మర్ సమస్య ఉంది. మరమ్మత్తు చేయాలి,Energy
+దయచేసి తెలపండి కరెంటు మీటర్ మార్చండి. సరిగా పని చేయడం లేదు,Energy
+ట్రాన్స్‌ఫార్మర్ సమస్య ఉంది. మరమ్మత్తు చేయాలి,Energy
+వినమ్రంగా కోరుకుంటున్నాను కరెంటు మీటర్ మార్చండి. సరిగా పని చేయడం లేదు,Energy
+విద్యుత్ సమస్య పదిహేను రోజులుగా ఉంది. పరిష్కరించాలి,Energy
+కరెంటు బిల్లు అధికంగా వచ్చింది. అత్యవసరం తనిఖీ చేయండి,Energy
+ట్రాన్స్‌ఫార్మర్ సమస్య ఉంది. మరమ్మత్తు చేయాలి,Energy
+కరెంటు బిల్లు అధికంగా వచ్చింది. త్వరగా తనిఖీ చేయండి,Energy
+ట్రాన్స్‌ఫార్మర్ సమస్య ఉంది. మరమ్మత్తు చేయాలి,Energy
+దయచేసి తెలపండి కరెంటు మీటర్ మార్చండి. సరిగా పని చేయడం లేదు,Energy
+ప్రతిరోజు విద్యుత్తు అంతరాయం ఏర్పడుతుంది,Energy
+విద్యుత్ సమస్య గత మూడు నెలలుగా ఉంది. పరిష్కరించాలి,Energy
+ట్రాన్స్‌ఫార్మర్ సమస్య ఉంది. మరమ్మత్తు చేయాలి,Energy
+పోలీసు స్టేషన్‌లో FIR రిజిస్టర్ చేయడం లేదు,Police
+పోలీసు స్టేషన్‌లో ఫిర్యాదు అంగీకరించడం లేదు,Police
+పోలీసు స్టేషన్‌లో FIR రిజిస్టర్ చేయడం లేదు,Police
+పోలీసు స్టేషన్‌లో ఫిర్యాదు అంగీకరించడం లేదు,Police
+పోలీసు స్టేషన్‌లో ఫిర్యాదు అంగీకరించడం లేదు,Police
+వినమ్రంగా కోరుకుంటున్నాను ఆలస్యం చేయకుండా FIR నమోదు చేయండి,Police
+అవినీతి కేసు నమోదు చేయాలి. అధికారి లంచం కోరారు,Police
+అవినీతి కేసు నమోదు చేయాలి. అధికారి లంచం కోరారు,Police
+పోలీసు స్టేషన్‌లో ఫిర్యాదు అంగీకరించడం లేదు,Police
+దయచేసి తెలపండి తక్షణం FIR నమోదు చేయండి,Police
+పోలీసు స్టేషన్‌లో ఫిర్యాదు అంగీకరించడం లేదు,Police
+పోలీసు స్టేషన్‌లో ఫిర్యాదు అంగీకరించడం లేదు,Police
+పోలీసు స్టేషన్‌లో ఫిర్యాదు అంగీకరించడం లేదు,Police
+అవినీతి కేసు నమోదు చేయాలి. అధికారి లంచం కోరారు,Police
+పోలీసు స్టేషన్‌లో ఫిర్యాదు అంగీకరించడం లేదు,Police
+పోలీసు స్టేషన్‌లో FIR రిజిస్టర్ చేయడం లేదు,Police
+దయచేసి అత్యవసరం FIR నమోదు చేయండి,Police
+వినమ్రంగా కోరుకుంటున్నాను త్వరగా FIR నమోదు చేయండి,Police
+పోలీసు స్టేషన్‌లో FIR రిజిస్టర్ చేయడం లేదు,Police
+దయచేసి అత్యవసరం FIR నమోదు చేయండి,Police
+కృపయా త్వరగా FIR నమోదు చేయండి,Police
+అవినీతి కేసు నమోదు చేయాలి. అధికారి లంచం కోరారు,Police
+దయచేసి తెలపండి తక్షణం FIR నమోదు చేయండి,Police
+పోలీసు స్టేషన్‌లో FIR రిజిస్టర్ చేయడం లేదు,Police
+అవినీతి కేసు నమోదు చేయాలి. అధికారి లంచం కోరారు,Police
+అవినీతి కేసు నమోదు చేయాలి. అధికారి లంచం కోరారు,Police
+పోలీసు స్టేషన్‌లో ఫిర్యాదు అంగీకరించడం లేదు,Police
+పోలీసు స్టేషన్‌లో ఫిర్యాదు అంగీకరించడం లేదు,Police
+పోలీసు స్టేషన్‌లో ఫిర్యాదు అంగీకరించడం లేదు,Police
+అవినీతి కేసు నమోదు చేయాలి. అధికారి లంచం కోరారు,Police
+అవినీతి కేసు నమోదు చేయాలి. అధికారి లంచం కోరారు,Police
+వినమ్రంగా కోరుకుంటున్నాను వెంటనే FIR నమోదు చేయండి,Police
+కృపయా ఆలస్యం చేయకుండా FIR నమోదు చేయండి,Police
+దయచేసి తెలపండి అత్యవసరం FIR నమోదు చేయండి,Police
+పోలీసు స్టేషన్‌లో FIR రిజిస్టర్ చేయడం లేదు,Police
+పోలీసు స్టేషన్‌లో FIR రిజిస్టర్ చేయడం లేదు,Police
+పోలీసు స్టేషన్‌లో ఫిర్యాదు అంగీకరించడం లేదు,Police
+దయచేసి తెలపండి శీఘ్రంగా FIR నమోదు చేయండి,Police
+అవినీతి కేసు నమోదు చేయాలి. అధికారి లంచం కోరారు,Police
+పోలీసు స్టేషన్‌లో ఫిర్యాదు అంగీకరించడం లేదు,Police
+అవినీతి కేసు నమోదు చేయాలి. అధికారి లంచం కోరారు,Police
+పోలీసు స్టేషన్‌లో ఫిర్యాదు అంగీకరించడం లేదు,Police
+పోలీసు స్టేషన్‌లో FIR రిజిస్టర్ చేయడం లేదు,Police
+అవినీతి కేసు నమోదు చేయాలి. అధికారి లంచం కోరారు,Police
+పోలీసు స్టేషన్‌లో FIR రిజిస్టర్ చేయడం లేదు,Police
+అవినీతి కేసు నమోదు చేయాలి. అధికారి లంచం కోరారు,Police
+పోలీసు స్టేషన్‌లో FIR రిజిస్టర్ చేయడం లేదు,Police
+పాత వయస్సు పెన్షన్ ఒక నెలగా రాలేదు,Social Welfare
+దయచేసి వైకల్య పెన్షన్ ఆమోదించండి,Social Welfare
+సామాజిక భద్రతా పెన్షన్ పదిహేను రోజులుగా జమ కాలేదు,Social Welfare
+సామాజిక భద్రతా పెన్షన్ మూడు నెలలుగా జమ కాలేదు,Social Welfare
+విధవ పెన్షన్ ఆగిపోయింది. ఆలస్యం చేయకుండా తిరిగి ప్రారంభించాలి,Social Welfare
+విధవ పెన్షన్ ఆగిపోయింది. శీఘ్రంగా తిరిగి ప్రారంభించాలి,Social Welfare
+పాత వయస్సు పెన్షన్ మూడు నెలలుగా రాలేదు,Social Welfare
+విధవ పెన్షన్ ఆగిపోయింది. శీఘ్రంగా తిరిగి ప్రారంభించాలి,Social Welfare
+విధవ పెన్షన్ ఆగిపోయింది. ఆలస్యం చేయకుండా తిరిగి ప్రారంభించాలి,Social Welfare
+విధవ పెన్షన్ ఆగిపోయింది. ఆలస్యం చేయకుండా తిరిగి ప్రారంభించాలి,Social Welfare
+దయచేసి వైకల్య పెన్షన్ ఆమోదించండి,Social Welfare
+విధవ పెన్షన్ ఆగిపోయింది. త్వరగా తిరిగి ప్రారంభించాలి,Social Welfare
+సామాజిక భద్రతా పెన్షన్ ఆరు నెలలుగా జమ కాలేదు,Social Welfare
+సామాజిక భద్రతా పెన్షన్ పది రోజులుగా జమ కాలేదు,Social Welfare
+పాత వయస్సు పెన్షన్ మూడు నెలలుగా రాలేదు,Social Welfare
+పాత వయస్సు పెన్షన్ రెండు వారాలుగా రాలేదు,Social Welfare
+పాత వయస్సు పెన్షన్ ఆరు నెలలుగా రాలేదు,Social Welfare
+కృపయా వైకల్య పెన్షన్ ఆమోదించండి,Social Welfare
+పాత వయస్సు పెన్షన్ మూడు నెలలుగా రాలేదు,Social Welfare
+దయచేసి తెలపండి వైకల్య పెన్షన్ ఆమోదించండి,Social Welfare
+దయచేసి వైకల్య పెన్షన్ ఆమోదించండి,Social Welfare
+దయచేసి తెలపండి వైకల్య పెన్షన్ ఆమోదించండి,Social Welfare
+విధవ పెన్షన్ ఆగిపోయింది. తక్షణం తిరిగి ప్రారంభించాలి,Social Welfare
+విధవ పెన్షన్ ఆగిపోయింది. ఆలస్యం చేయకుండా తిరిగి ప్రారంభించాలి,Social Welfare
+పాత వయస్సు పెన్షన్ ఒక నెలగా రాలేదు,Social Welfare
+విధవ పెన్షన్ ఆగిపోయింది. అత్యవసరం తిరిగి ప్రారంభించాలి,Social Welfare
+దయచేసి వైకల్య పెన్షన్ ఆమోదించండి,Social Welfare
+పాత వయస్సు పెన్షన్ రెండు నెలలుగా రాలేదు,Social Welfare
+దయచేసి వైకల్య పెన్షన్ ఆమోదించండి,Social Welfare
+విధవ పెన్షన్ ఆగిపోయింది. ఆలస్యం చేయకుండా తిరిగి ప్రారంభించాలి,Social Welfare
+దయచేసి వైకల్య పెన్షన్ ఆమోదించండి,Social Welfare
+సామాజిక భద్రతా పెన్షన్ పది రోజులుగా జమ కాలేదు,Social Welfare
+దయచేసి వైకల్య పెన్షన్ ఆమోదించండి,Social Welfare
+దయచేసి వైకల్య పెన్షన్ ఆమోదించండి,Social Welfare
+కృపయా వైకల్య పెన్షన్ ఆమోదించండి,Social Welfare
+విధవ పెన్షన్ ఆగిపోయింది. ఆలస్యం చేయకుండా తిరిగి ప్రారంభించాలి,Social Welfare
+పాత వయస్సు పెన్షన్ ఒక నెలగా రాలేదు,Social Welfare
+వినమ్రంగా కోరుకుంటున్నాను వైకల్య పెన్షన్ ఆమోదించండి,Social Welfare
+సామాజిక భద్రతా పెన్షన్ పదిహేను రోజులుగా జమ కాలేదు,Social Welfare
+కృపయా వైకల్య పెన్షన్ ఆమోదించండి,Social Welfare
+దయచేసి తెలపండి వైకల్య పెన్షన్ ఆమోదించండి,Social Welfare
+పాత వయస్సు పెన్షన్ రెండు వారాలుగా రాలేదు,Social Welfare
+సామాజిక భద్రతా పెన్షన్ గత మూడు నెలలుగా జమ కాలేదు,Social Welfare
+పాత వయస్సు పెన్షన్ మూడు నెలలుగా రాలేదు,Social Welfare
+పాత వయస్సు పెన్షన్ మూడు నెలలుగా రాలేదు,Social Welfare
+పాత వయస్సు పెన్షన్ రెండు వారాలుగా రాలేదు,Social Welfare
+పాత వయస్సు పెన్షన్ ఒక నెలగా రాలేదు,Social Welfare
+గ్రామానికి ఆరు నెలలుగా తాగునీరు రాకపోవడం వల్ల తీవ్ర ఇబ్బందులు,Panchayat Raj
+సర్పంచ్ కార్యాలయంలో తాగునీటి సౌకర్యం కల్పించాలి,Panchayat Raj
+మిషన్‌ భగీరథ తాగునీటి సరఫరా మూడు నెలలుగా కాకపోవడంతో సమస్య,Panchayat Raj
+గ్రామానికి గత మూడు నెలలుగా తాగునీరు రాకపోవడం వల్ల తీవ్ర ఇబ్బందులు,Panchayat Raj
+గ్రామానికి గత మూడు నెలలుగా తాగునీరు రాకపోవడం వల్ల తీవ్ర ఇబ్బందులు,Panchayat Raj
+దయచేసి పంచాయతీ కార్యాలయంలో పనులు తక్షణం పూర్తి చేయండి,Panchayat Raj
+మిషన్‌ భగీరథ తాగునీటి సరఫరా రెండు వారాలుగా కాకపోవడంతో సమస్య,Panchayat Raj
+ఆసుపత్రిలో తాగునీటి సౌకర్యం కల్పించాలి,Panchayat Raj
+గ్రామానికి పది రోజులుగా తాగునీరు రాకపోవడం వల్ల తీవ్ర ఇబ్బందులు,Panchayat Raj
+మిషన్‌ భగీరథ తాగునీటి సరఫరా రెండు వారాలుగా కాకపోవడంతో సమస్య,Panchayat Raj
+గ్రామానికి ఒక నెలగా తాగునీరు రాకపోవడం వల్ల తీవ్ర ఇబ్బందులు,Panchayat Raj
+గ్రామానికి పదిహేను రోజులుగా తాగునీరు రాకపోవడం వల్ల తీవ్ర ఇబ్బందులు,Panchayat Raj
+గ్రామానికి గత మూడు నెలలుగా తాగునీరు రాకపోవడం వల్ల తీవ్ర ఇబ్బందులు,Panchayat Raj
+గ్రామానికి ఒక నెలగా తాగునీరు రాకపోవడం వల్ల తీవ్ర ఇబ్బందులు,Panchayat Raj
+మిషన్‌ భగీరథ తాగునీటి సరఫరా పదిహేను రోజులుగా కాకపోవడంతో సమస్య,Panchayat Raj
+గ్రామానికి పదిహేను రోజులుగా తాగునీరు రాకపోవడం వల్ల తీవ్ర ఇబ్బందులు,Panchayat Raj
+దయచేసి తెలపండి పంచాయతీ కార్యాలయంలో పనులు అత్యవసరం పూర్తి చేయండి,Panchayat Raj
+గ్రామానికి పది రోజులుగా తాగునీరు రాకపోవడం వల్ల తీవ్ర ఇబ్బందులు,Panchayat Raj
+కృపయా పంచాయతీ కార్యాలయంలో పనులు తక్షణం పూర్తి చేయండి,Panchayat Raj
+పాఠశాలలో తాగునీటి సౌకర్యం కల్పించాలి,Panchayat Raj
+గ్రామానికి గత మూడు నెలలుగా తాగునీరు రాకపోవడం వల్ల తీవ్ర ఇబ్బందులు,Panchayat Raj
+సర్పంచ్ కార్యాలయంలో తాగునీటి సౌకర్యం కల్పించాలి,Panchayat Raj
+వినమ్రంగా కోరుకుంటున్నాను పంచాయతీ కార్యాలయంలో పనులు ఆలస్యం చేయకుండా పూర్తి చేయండి,Panchayat Raj
+మిషన్‌ భగీరథ తాగునీటి సరఫరా ఆరు నెలలుగా కాకపోవడంతో సమస్య,Panchayat Raj
+మిషన్‌ భగీరథ తాగునీటి సరఫరా మూడు నెలలుగా కాకపోవడంతో సమస్య,Panchayat Raj
+దయచేసి పంచాయతీ కార్యాలయంలో పనులు అత్యవసరం పూర్తి చేయండి,Panchayat Raj
+మిషన్‌ భగీరథ తాగునీటి సరఫరా గత మూడు నెలలుగా కాకపోవడంతో సమస్య,Panchayat Raj
+మిషన్‌ భగీరథ తాగునీటి సరఫరా పది రోజులుగా కాకపోవడంతో సమస్య,Panchayat Raj
+ప్రాథమిక ఆరోగ్య కేంద్రంలో తాగునీటి సౌకర్యం కల్పించాలి,Panchayat Raj
+దయచేసి పంచాయతీ కార్యాలయంలో పనులు తక్షణం పూర్తి చేయండి,Panchayat Raj
+మిషన్‌ భగీరథ తాగునీటి సరఫరా మూడు నెలలుగా కాకపోవడంతో సమస్య,Panchayat Raj
+పాఠశాలలో తాగునీటి సౌకర్యం కల్పించాలి,Panchayat Raj
+గ్రామానికి పదిహేను రోజులుగా తాగునీరు రాకపోవడం వల్ల తీవ్ర ఇబ్బందులు,Panchayat Raj
+మిషన్‌ భగీరథ తాగునీటి సరఫరా రెండు నెలలుగా కాకపోవడంతో సమస్య,Panchayat Raj
+కృపయా పంచాయతీ కార్యాలయంలో పనులు వెంటనే పూర్తి చేయండి,Panchayat Raj
+దయచేసి తెలపండి పంచాయతీ కార్యాలయంలో పనులు త్వరగా పూర్తి చేయండి,Panchayat Raj
+దయచేసి తెలపండి పంచాయతీ కార్యాలయంలో పనులు శీఘ్రంగా పూర్తి చేయండి,Panchayat Raj
+మిషన్‌ భగీరథ తాగునీటి సరఫరా గత మూడు నెలలుగా కాకపోవడంతో సమస్య,Panchayat Raj
+మిషన్‌ భగీరథ తాగునీటి సరఫరా రెండు వారాలుగా కాకపోవడంతో సమస్య,Panchayat Raj
+గ్రామానికి పది రోజులుగా తాగునీరు రాకపోవడం వల్ల తీవ్ర ఇబ్బందులు,Panchayat Raj
+గ్రామానికి పది రోజులుగా తాగునీరు రాకపోవడం వల్ల తీవ్ర ఇబ్బందులు,Panchayat Raj
+ఆసుపత్రిలో తాగునీటి సౌకర్యం కల్పించాలి,Panchayat Raj
+బస్ స్టాండ్ దగ్గర తాగునీటి సౌకర్యం కల్పించాలి,Panchayat Raj
+గ్రామానికి ఒక నెలగా తాగునీరు రాకపోవడం వల్ల తీవ్ర ఇబ్బందులు,Panchayat Raj
+పాఠశాలలో తాగునీటి సౌకర్యం కల్పించాలి,Panchayat Raj
+గ్రామానికి మూడు నెలలుగా తాగునీరు రాకపోవడం వల్ల తీవ్ర ఇబ్బందులు,Panchayat Raj
+మిషన్‌ భగీరథ తాగునీటి సరఫరా పదిహేను రోజులుగా కాకపోవడంతో సమస్య,Panchayat Raj
+బస్ ప్రమాదంలో గాయపడ్డారు. పరిహారం కావాలి,Transport
+డ్రైవింగ్ లైసెన్స్ పరీక్ష తేదీ కావాలి,Transport
+మా వార్డులో రోడ్లు మరమ్మత్తు చేయాలి. గుంతలు పడ్డాయి,Transport
+బస్సు సర్వీస్ లేదు. మా గ్రామానికి బస్సులు నడవాలి,Transport
+బస్ ప్రమాదంలో గాయపడ్డారు. పరిహారం కావాలి,Transport
+బస్సు సర్వీస్ లేదు. మా గ్రామానికి బస్సులు నడవాలి,Transport
+డ్రైవింగ్ లైసెన్స్ పరీక్ష తేదీ కావాలి,Transport
+బస్సు సర్వీస్ లేదు. మా గ్రామానికి బస్సులు నడవాలి,Transport
+డ్రైవింగ్ లైసెన్స్ పరీక్ష తేదీ కావాలి,Transport
+ప్రాథమిక ఆరోగ్య కేంద్రంలో రోడ్లు మరమ్మత్తు చేయాలి. గుంతలు పడ్డాయి,Transport
+బస్ ప్రమాదంలో గాయపడ్డారు. పరిహారం కావాలి,Transport
+పాఠశాలలో రోడ్లు మరమ్మత్తు చేయాలి. గుంతలు పడ్డాయి,Transport
+బస్ ప్రమాదంలో గాయపడ్డారు. పరిహారం కావాలి,Transport
+వాహన రిజిస్ట్రేషన్ ఆలస్యం అవుతోంది. త్వరగా జారీ చేయాలి,Transport
+బస్సు సర్వీస్ లేదు. మా గ్రామానికి బస్సులు నడవాలి,Transport
+వాహన రిజిస్ట్రేషన్ ఆలస్యం అవుతోంది. తక్షణం జారీ చేయాలి,Transport
+ఆసుపత్రిలో రోడ్లు మరమ్మత్తు చేయాలి. గుంతలు పడ్డాయి,Transport
+బస్సు సర్వీస్ లేదు. మా గ్రామానికి బస్సులు నడవాలి,Transport
+బస్సు సర్వీస్ లేదు. మా గ్రామానికి బస్సులు నడవాలి,Transport
+బస్ ప్రమాదంలో గాయపడ్డారు. పరిహారం కావాలి,Transport
+బస్సు సర్వీస్ లేదు. మా గ్రామానికి బస్సులు నడవాలి,Transport
+ప్రాథమిక ఆరోగ్య కేంద్రంలో రోడ్లు మరమ్మత్తు చేయాలి. గుంతలు పడ్డాయి,Transport
+బస్ ప్రమాదంలో గాయపడ్డారు. పరిహారం కావాలి,Transport
+బస్ ప్రమాదంలో గాయపడ్డారు. పరిహారం కావాలి,Transport
+బస్సు సర్వీస్ లేదు. మా గ్రామానికి బస్సులు నడవాలి,Transport
+డ్రైవింగ్ లైసెన్స్ పరీక్ష తేదీ కావాలి,Transport
+డ్రైవింగ్ లైసెన్స్ పరీక్ష తేదీ కావాలి,Transport
+బస్సు సర్వీస్ లేదు. మా గ్రామానికి బస్సులు నడవాలి,Transport
+వాహన రిజిస్ట్రేషన్ ఆలస్యం అవుతోంది. శీఘ్రంగా జారీ చేయాలి,Transport
+ఆసుపత్రిలో రోడ్లు మరమ్మత్తు చేయాలి. గుంతలు పడ్డాయి,Transport
+ప్రాథమిక ఆరోగ్య కేంద్రంలో రోడ్లు మరమ్మత్తు చేయాలి. గుంతలు పడ్డాయి,Transport
+బస్సు సర్వీస్ లేదు. మా గ్రామానికి బస్సులు నడవాలి,Transport
+బస్ ప్రమాదంలో గాయపడ్డారు. పరిహారం కావాలి,Transport
+పంచాయతీ కార్యాలయంలో రోడ్లు మరమ్మత్తు చేయాలి. గుంతలు పడ్డాయి,Transport
+ఆసుపత్రిలో రోడ్లు మరమ్మత్తు చేయాలి. గుంతలు పడ్డాయి,Transport
+వాహన రిజిస్ట్రేషన్ ఆలస్యం అవుతోంది. అత్యవసరం జారీ చేయాలి,Transport
+వాహన రిజిస్ట్రేషన్ ఆలస్యం అవుతోంది. వెంటనే జారీ చేయాలి,Transport
+పాఠశాలలో రోడ్లు మరమ్మత్తు చేయాలి. గుంతలు పడ్డాయి,Transport
+బస్సు సర్వీస్ లేదు. మా గ్రామానికి బస్సులు నడవాలి,Transport
+పాఠశాలలో రోడ్లు మరమ్మత్తు చేయాలి. గుంతలు పడ్డాయి,Transport
+ఆసుపత్రిలో రోడ్లు మరమ్మత్తు చేయాలి. గుంతలు పడ్డాయి,Transport
+ప్రాథమిక ఆరోగ్య కేంద్రంలో రోడ్లు మరమ్మత్తు చేయాలి. గుంతలు పడ్డాయి,Transport
+బస్సు సర్వీస్ లేదు. మా గ్రామానికి బస్సులు నడవాలి,Transport
+వాహన రిజిస్ట్రేషన్ ఆలస్యం అవుతోంది. త్వరగా జారీ చేయాలి,Transport
+బస్సు సర్వీస్ లేదు. మా గ్రామానికి బస్సులు నడవాలి,Transport
+బస్సు సర్వీస్ లేదు. మా గ్రామానికి బస్సులు నడవాలి,Transport
+దయచేసి తెలపండి పొలానికి దారి ఇవ్వడం లేదని సబ్ కలెక్టర్ కు ఫిర్యాదు చేశారు. ఇస్నాపూర్ మండలం అన్నారం గ్రామంలో సర్వే నెంబర్ 144లో ఒక ఎకరం భూమిని సాగు చేయడానికి వెళ్లినప్పుడు ఇతరులు నిరోధించారు,Revenue
+పొలానికి దారి ఇవ్వడం లేదని సబ్ కలెక్టర్ కు ఫిర్యాదు చేశారు. ఇస్నాపూర్ మండలం అన్నారం గ్రామంలో సర్వే నెంబర్ 144లో ఒక ఎకరం భూమిని సాగు చేయడానికి వెళ్లినప్పుడు ఇతరులు నిరోధించారు. ఆలస్యం చేయకుండా చర్య తీసుకోండి,Revenue
+"కృపయా విద్యుత్ సమస్య ఉంటే 1912 టోల్ ఫ్రీ నెంబర్ కు ఫోన్ చేసి ఫిర్యాదు చేయవచ్చు. విద్యుత్ బిల్లులు అధికంగా వచ్చినా, కరెంటు మోటరు ట్రాన్స్ఫార్మర్ సమస్య ఉన్నా ఫిర్యాదు చేయవచ్చు",Energy
+"విద్యుత్ సమస్య ఉంటే 1912 టోల్ ఫ్రీ నెంబర్ కు ఫోన్ చేసి ఫిర్యాదు చేయవచ్చు. విద్యుత్ బిల్లులు అధికంగా వచ్చినా, కరెంటు మోటరు ట్రాన్స్ఫార్మర్ సమస్య ఉన్నా ఫిర్యాదు చేయవచ్చు. శీఘ్రంగా చర్య తీసుకోండి",Energy
+"కృపయా విద్యుత్ సమస్య పరిష్కరించాలని ప్రజావాణిలో ఫిర్యాదు చేశారు. ప్రతిరోజు విద్యుత్తు అంతరాయం ఏర్పడుతూ, ప్రజలు తీవ్ర ఇబ్బందులు పడుతున్నారు",Energy
+"విద్యుత్ సమస్య పరిష్కరించాలని ప్రజావాణిలో ఫిర్యాదు చేశారు. ప్రతిరోజు విద్యుత్తు అంతరాయం ఏర్పడుతూ, ప్రజలు తీవ్ర ఇబ్బందులు పడుతున్నారు. తక్షణం చర్య తీసుకోండి",Energy
+వినమ్రంగా కోరుకుంటున్నాను తమకు వారానికి ఒక్కసారి మాత్రమే నీటి సరఫరా జరుగుతుందని యాదాద్రి-భువనగిరి జిల్లా కలెక్టర్‌కు చౌటుప్పల్‌ వాసులు ఫిర్యాదు చేశారు,Municipal Administration
+తమకు వారానికి ఒక్కసారి మాత్రమే నీటి సరఫరా జరుగుతుందని యాదాద్రి-భువనగిరి జిల్లా కలెక్టర్‌కు చౌటుప్పల్‌ వాసులు ఫిర్యాదు చేశారు. త్వరగా చర్య తీసుకోండి,Municipal Administration
+కృపయా గ్రామానికి నెలరోజులుగా తాగునీరు రాక తీవ్ర ఇబ్బందులు పడుతున్నామని చిట్కుల్‌ గ్రామస్తులు మిషన్‌ భగీరథ అధికారులపై ఆగ్రహం వ్యక్తం చేశారు,Panchayat Raj
+గ్రామానికి నెలరోజులుగా తాగునీరు రాక తీవ్ర ఇబ్బందులు పడుతున్నామని చిట్కుల్‌ గ్రామస్తులు మిషన్‌ భగీరథ అధికారులపై ఆగ్రహం వ్యక్తం చేశారు. వెంటనే చర్య తీసుకోండి,Panchayat Raj
+దయచేసి తెలపండి 15రోజులుగా మిషన్‌ భగీరథ తాగునీటి సరఫరా కాకపోవటంతో తండావాసులు ఖాళీబిందెలతో ఆందోళనకు దిగారు,Panchayat Raj
+15రోజులుగా మిషన్‌ భగీరథ తాగునీటి సరఫరా కాకపోవటంతో తండావాసులు ఖాళీబిందెలతో ఆందోళనకు దిగారు. శీఘ్రంగా చర్య తీసుకోండి,Panchayat Raj
+కృపయా ఓరుగల్లు కోట ప్రాంతవాసులు గత ఆరు రోజులుగా తీవ్ర తాగునీటి ఎద్దడితో అల్లాడుతున్నారు. తక్షణ ప్రత్యామ్నాయ చర్యగా ట్యాంకర్ల ద్వారా నీటి సరఫరా చేయాలని డిమాండ్ చేస్తున్నారు,Municipal Administration
+ఓరుగల్లు కోట ప్రాంతవాసులు గత ఆరు రోజులుగా తీవ్ర తాగునీటి ఎద్దడితో అల్లాడుతున్నారు. తక్షణ ప్రత్యామ్నాయ చర్యగా ట్యాంకర్ల ద్వారా నీటి సరఫరా చేయాలని డిమాండ్ చేస్తున్నారు. తక్షణం చర్య తీసుకోండి,Municipal Administration
+"దయచేసి పోలీసులు ఏదైనా నేరానికి సంబంధించి సమాచారం తెలిస్తే FIR నమోదు చేస్తారు. FIR అంటే ఫస్ట్‌ ఇన్ఫర్మేషన్‌ రిపోర్టు. ఎఫ్‌ఐఆర్‌లో తేది, ఫిర్యాదు ఇచ్చిన వారిపేరు, సమయం, సెక్షన్లు, నేరం వివరాలు ఉంటాయి",Police
+"పోలీసులు ఏదైనా నేరానికి సంబంధించి సమాచారం తెలిస్తే FIR నమోదు చేస్తారు. FIR అంటే ఫస్ట్‌ ఇన్ఫర్మేషన్‌ రిపోర్టు. ఎఫ్‌ఐఆర్‌లో తేది, ఫిర్యాదు ఇచ్చిన వారిపేరు, సమయం, సెక్షన్లు, నేరం వివరాలు ఉంటాయి. త్వరగా చర్య తీసుకోండి",Police
+"కృపయా మీ భూమి పోర్టల్ ద్వారా 1-బి, అడంగలు, గ్రామ మ్యాప్‌లు, ఇ-పాస్‌బుక్‌లు చూడవచ్చు. భూ వివాదాల స్థితిని తనిఖీ చేయవచ్చు, మ్యూటేషన్ మరియు భూమి మార్పిడి కోసం దరఖాస్తు చేసుకోవచ్చు",Revenue
+"మీ భూమి పోర్టల్ ద్వారా 1-బి, అడంగలు, గ్రామ మ్యాప్‌లు, ఇ-పాస్‌బుక్‌లు చూడవచ్చు. భూ వివాదాల స్థితిని తనిఖీ చేయవచ్చు, మ్యూటేషన్ మరియు భూమి మార్పిడి కోసం దరఖాస్తు చేసుకోవచ్చు. వెంటనే చర్య తీసుకోండి",Revenue
+దయచేసి వ్యవసాయం మరియు సహకారం శాఖకు సంబంధించిన ఫిర్యాదు,Agriculture
+వ్యవసాయం మరియు సహకారం శాఖకు సంబంధించిన ఫిర్యాదు. వెంటనే చర్య తీసుకోండి,Agriculture
+"దయచేసి తెలపండి ఆరోగ్యం, వైద్యం మరియు కుటుంబ సంక్షేమం శాఖలో సమస్య",Health
+"ఆరోగ్యం, వైద్యం మరియు కుటుంబ సంక్షేమం శాఖలో సమస్య. త్వరగా చర్య తీసుకోండి",Health
+"దయచేసి పశుపోషణ, డైరీ అభివృద్ధి మరియు మత్స్య సంపద శాఖ",Animal Husbandry
+"పశుపోషణ, డైరీ అభివృద్ధి మరియు మత్స్య సంపద శాఖ. తక్షణం చర్య తీసుకోండి",Animal Husbandry
+"దయచేసి వినియోగదారుల వ్యవహారాలు, ఆహారం మరియు సివిల్ సప్లైస్ శాఖ",Civil Supplies
+"వినియోగదారుల వ్యవహారాలు, ఆహారం మరియు సివిల్ సప్లైస్ శాఖ. వెంటనే చర్య తీసుకోండి",Civil Supplies
+వినమ్రంగా కోరుకుంటున్నాను మానవ వనరులు (పాఠశాల విద్య) శాఖ,Education
+మానవ వనరులు (పాఠశాల విద్య) శాఖ. తక్షణం చర్య తీసుకోండి,Education
+వినమ్రంగా కోరుకుంటున్నాను పాఠశాల భవనం మరమ్మత్తులు అవసరం. రాష్టం పడుతోంది,Education
+పాఠశాల భవనం మరమ్మత్తులు అవసరం. రాష్టం పడుతోంది. తక్షణం చర్య తీసుకోండి,Education
+వినమ్రంగా కోరుకుంటున్నాను ప్రాథమిక ఆరోగ్య కేంద్రంలో వైద్యులు హాజరుకావటం లేదు,Health
+ప్రాథమిక ఆరోగ్య కేంద్రంలో వైద్యులు హాజరుకావటం లేదు. అత్యవసరం చర్య తీసుకోండి,Health
+దయచేసి మా గ్రామానికి రోడ్లు మరమ్మత్తు చేయాలి. గుంతలు పడ్డాయి,Transport
+మా గ్రామానికి రోడ్లు మరమ్మత్తు చేయాలి. గుంతలు పడ్డాయి. ఆలస్యం చేయకుండా చర్య తీసుకోండి,Transport
+దయచేసి తెలపండి పంట నష్టం పరిహారం ఇవ్వలేదు. రైతు భరోసా పథకం డబ్బు రాలేదు,Agriculture
+పంట నష్టం పరిహారం ఇవ్వలేదు. రైతు భరోసా పథకం డబ్బు రాలేదు. ఆలస్యం చేయకుండా చర్య తీసుకోండి,Agriculture
+వినమ్రంగా కోరుకుంటున్నాను పాత వయస్సు పెన్షన్ గత రెండు నెలలుగా రాలేదు,Social Welfare
+పాత వయస్సు పెన్షన్ గత రెండు నెలలుగా రాలేదు. త్వరగా చర్య తీసుకోండి,Social Welfare
+దయచేసి కుల ధృవీకరణ పత్రం కోసం దరఖాస్తు చేసాను. ఇంకా రాలేదు,Revenue
+కుల ధృవీకరణ పత్రం కోసం దరఖాస్తు చేసాను. ఇంకా రాలేదు. వెంటనే చర్య తీసుకోండి,Revenue
+దయచేసి తెలపండి ఆదాయ ధృవీకరణ పత్రం అవసరం. త్వరగా జారీ చేయాలి,Revenue

@@ -1,0 +1,352 @@
+{
+  "_metadata": {
+    "created": "2025-11-25",
+    "version": "1.0",
+    "description": "12 standardized lapse categories for improper redressal classification",
+    "_source": [
+      "docs/reference/markdown/Improper Redressal lapses.md",
+      "backend/ml/data/extracted/audit_reports.json",
+      "backend/ml/data/extracted_docs/lapse_definitions.json"
+    ],
+    "total_lapses": 13,
+    "behavioral_lapses": 5,
+    "procedural_lapses": 8,
+    "schema": "LapseDefinitionSchema"
+  },
+  "lapses": [
+    {
+      "id": 1,
+      "name": "GRA did not speak directly with the citizen",
+      "telugu": "GRA స్వయంగా స్టిజన్తో మాట్లాడలేదు",
+      "type": "procedural",
+      "severity": "high",
+      "description": "Officer closed grievance without calling citizen to verify resolution",
+      "frequency_pct": 42.19,
+      "rank": 1,
+      "examples": [
+        "Officer marked case resolved without speaking to applicant",
+        "No telephonic verification done before closure",
+        "GRA did not contact citizen at any point"
+      ],
+      "detection_keywords": [
+        "did not call",
+        "no contact",
+        "did not speak",
+        "no phone call",
+        "మాట్లాడలేదు",
+        "కాల్ చేయలేదు",
+        "సంప్రదించలేదు"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Not visited site / No field verification",
+      "telugu": "సైట్ సందర్శన లేదు / క్షేత్ర పరిశీలన చేయలేదు",
+      "type": "procedural",
+      "severity": "high",
+      "description": "Officer marked resolved without physical site inspection",
+      "frequency_pct": 15.83,
+      "rank": 2,
+      "examples": [
+        "Survey officer marked resolved without site visit",
+        "Revenue officer closed case without field inspection",
+        "No physical verification of work completion"
+      ],
+      "detection_keywords": [
+        "no site visit",
+        "not visited",
+        "no inspection",
+        "no field verification",
+        "సైట్ వెళ్ళలేదు",
+        "తనిఖీ చేయలేదు",
+        "పరిశీలన లేదు"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Wrong / Blank / Not related to grievance closure comments",
+      "telugu": "తప్పు / ఖాళీ / సంబంధం లేని ముగింపు వ్యాఖ్యలు",
+      "type": "procedural",
+      "severity": "critical",
+      "description": "Endorsement comment wrong, blank, or not related to actual grievance",
+      "frequency_pct": 12.44,
+      "rank": 3,
+      "examples": [
+        "Blank endorsement uploaded",
+        "Future tense used ('will be done') instead of completion status",
+        "Comment not related to actual grievance"
+      ],
+      "detection_keywords": [
+        "blank",
+        "wrong comment",
+        "not related",
+        "future tense",
+        "will be done",
+        "ఖాళీ",
+        "తప్పు వ్యాఖ్య",
+        "సంబంధం లేదు"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "GRA did not speak properly / scolded / used abusive language",
+      "telugu": "GRA సరిగా మాట్లాడలేదు / తిట్టారు / అసభ్యంగా మాట్లాడారు",
+      "type": "behavioral",
+      "severity": "critical",
+      "description": "Officer used rude, abusive, or unprofessional language with citizen",
+      "frequency_pct": 8.75,
+      "rank": 4,
+      "examples": [
+        "Officer used rude language with citizen",
+        "GRA scolded applicant instead of helping",
+        "Abusive behavior reported during interaction"
+      ],
+      "detection_keywords": [
+        "rude",
+        "scolded",
+        "abusive",
+        "bad language",
+        "misbehaved",
+        "తిట్టారు",
+        "అసభ్యంగా",
+        "దురుసుగా"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Wrong department assignment / Not under jurisdiction",
+      "telugu": "తప్పు డిపార్ట్మెంట్ / పరిధిలో లేదు",
+      "type": "procedural",
+      "severity": "medium",
+      "description": "Case wrongly marked as not under officer's department or jurisdiction",
+      "frequency_pct": 6.83,
+      "rank": 5,
+      "examples": [
+        "Case wrongly marked as 'not under our department'",
+        "Jurisdiction issue - passed to wrong department",
+        "Officer refused claiming not their responsibility"
+      ],
+      "detection_keywords": [
+        "not our department",
+        "wrong department",
+        "not under jurisdiction",
+        "మా డిపార్ట్మెంట్ కాదు",
+        "పరిధిలో లేదు",
+        "బాధ్యత కాదు"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Improper enquiry photo / enquiry report / redressal flag uploaded",
+      "telugu": "సరికాని విచారణ ఫోటో / విచారణ నివేదిక / పరిష్కార ఫ్లాగ్",
+      "type": "procedural",
+      "severity": "high",
+      "description": "Uploaded incorrect, irrelevant, or incomplete evidence documents",
+      "frequency_pct": 6.22,
+      "rank": 6,
+      "examples": [
+        "Uploaded incorrect or irrelevant photos as evidence",
+        "Enquiry report incomplete or not matching grievance",
+        "Redressal flag marked wrong"
+      ],
+      "detection_keywords": [
+        "wrong photo",
+        "irrelevant document",
+        "incomplete report",
+        "తప్పు ఫోటో",
+        "సంబంధం లేని పత్రం",
+        "అసంపూర్ణ నివేదిక"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "GRA did not provide endorsement personally",
+      "telugu": "GRA స్వయంగా ఎండార్స్మెంట్ ఇవ్వలేదు",
+      "type": "procedural",
+      "severity": "medium",
+      "description": "Junior officer provided endorsement instead of responsible GRA",
+      "frequency_pct": 6.05,
+      "rank": 7,
+      "examples": [
+        "Junior officer provided endorsement instead of GRA",
+        "Endorsement delegated to lower official",
+        "No personal endorsement from responsible officer"
+      ],
+      "detection_keywords": [
+        "delegated",
+        "junior officer",
+        "not personally",
+        "స్వయంగా కాదు",
+        "అధికారి ఇవ్వలేదు",
+        "బదిలీ చేశారు"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "GRA did not spend time explaining issue to applicant",
+      "telugu": "GRA అర్జిదారునికి వివరించడానికి సమయం కేటాయించలేదు",
+      "type": "procedural",
+      "severity": "medium",
+      "description": "Officer did not explain resolution process or clarify issues with citizen",
+      "frequency_pct": 6.05,
+      "rank": 8,
+      "examples": [
+        "Officer did not explain resolution process to citizen",
+        "No time spent clarifying issues with applicant",
+        "Rushed through case without proper explanation"
+      ],
+      "detection_keywords": [
+        "no explanation",
+        "did not clarify",
+        "rushed",
+        "no time",
+        "వివరించలేదు",
+        "సమయం ఇవ్వలేదు",
+        "తొందరపడ్డారు"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "GRA closed by forwarding to lower-level official instead of resolving",
+      "telugu": "GRA పరిష్కరించకుండా దిగువ అధికారికి ఫార్వార్డ్ చేశారు",
+      "type": "procedural",
+      "severity": "high",
+      "description": "Senior officer delegated to junior without actually resolving the issue",
+      "frequency_pct": 3.74,
+      "rank": 9,
+      "examples": [
+        "Tahsildar forwarded case to VRO and closed it",
+        "Senior officer delegated to junior without resolution",
+        "Case forwarded downward without solving"
+      ],
+      "detection_keywords": [
+        "forwarded",
+        "delegated",
+        "sent to VRO",
+        "passed to junior",
+        "ఫార్వార్డ్ చేశారు",
+        "బదిలీ చేశారు",
+        "అందించారు"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "GRA intentionally avoided work / refused service",
+      "telugu": "GRA ఉద్దేశపూర్వకంగా పని చేయకుండా ఆపారు",
+      "type": "behavioral",
+      "severity": "critical",
+      "description": "Officer intentionally stopped work or asked citizen to return repeatedly",
+      "frequency_pct": 3.52,
+      "rank": 10,
+      "examples": [
+        "Officer said 'come again later' repeatedly",
+        "Work intentionally stopped by saying officer not available",
+        "Site work not happening - asked to return multiple times"
+      ],
+      "detection_keywords": [
+        "come again",
+        "not available",
+        "intentionally stopped",
+        "avoided work",
+        "మళ్ళీ రండి",
+        "లేరు",
+        "ఉద్దేశపూర్వకంగా ఆపారు"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "GRA threatened / pleaded / persuaded applicant",
+      "telugu": "GRA బెదిరించారు / బాధపడారు / ఒప్పించారు",
+      "type": "behavioral",
+      "severity": "critical",
+      "description": "Officer threatened, pleaded, or persuaded citizen to accept incomplete work",
+      "frequency_pct": 1.70,
+      "rank": 11,
+      "examples": [
+        "Officer threatened citizen if complaint not withdrawn",
+        "GRA pleaded to close case without proper resolution",
+        "Citizen persuaded to accept incomplete work"
+      ],
+      "detection_keywords": [
+        "threatened",
+        "pleaded",
+        "persuaded",
+        "forced",
+        "బెదిరించారు",
+        "బాధపడారు",
+        "ఒత్తిడి చేశారు"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "GRA did not work and involved political persons",
+      "telugu": "GRA పని చేయకుండా రాజకీయ వ్యక్తులను చేర్చారు",
+      "type": "behavioral",
+      "severity": "critical",
+      "description": "Political interference caused work stoppage or improper handling",
+      "frequency_pct": 0.65,
+      "rank": 12,
+      "examples": [
+        "Political interference caused work stoppage",
+        "Officer involved political persons causing trouble",
+        "Political pressure led to improper handling"
+      ],
+      "detection_keywords": [
+        "political",
+        "MLA",
+        "MP",
+        "politician",
+        "interference",
+        "రాజకీయ",
+        "ఎమ్మెల్యే",
+        "జోక్యం"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "GRA took bribe / asked for bribe / stopped work for not paying",
+      "telugu": "GRA లంచం తీసుకున్నారు / అడిగారు / చెల్లించనందుకు పని ఆపారు",
+      "type": "behavioral",
+      "severity": "critical",
+      "description": "Bribe demanded, taken, or work stopped due to non-payment",
+      "frequency_pct": 0.44,
+      "rank": 13,
+      "examples": [
+        "Bribe demanded to complete work",
+        "Work stopped because bribe not paid",
+        "Officer took money for service delivery"
+      ],
+      "detection_keywords": [
+        "bribe",
+        "money demanded",
+        "corruption",
+        "payment asked",
+        "లంచం",
+        "డబ్బు అడిగారు",
+        "అవినీతి"
+      ]
+    }
+  ],
+  "summary": {
+    "total_lapses": 13,
+    "behavioral_count": 5,
+    "procedural_count": 8,
+    "behavioral_frequency_pct": 15.06,
+    "procedural_frequency_pct": 84.94,
+    "top_3_lapses": [
+      "GRA did not speak directly with the citizen (42.19%)",
+      "Not visited site / No field verification (15.83%)",
+      "Wrong / Blank / Not related closure comments (12.44%)"
+    ],
+    "critical_severity_count": 6,
+    "high_severity_count": 4,
+    "medium_severity_count": 3
+  },
+  "usage_notes": {
+    "classification": "Use for multi-label lapse prediction in audit cases",
+    "detection": "Use detection_keywords for automated lapse identification from audit feedback",
+    "severity": "Critical lapses require immediate action and potential disciplinary measures",
+    "training": "Frequency percentages help with class balancing in imbalanced datasets",
+    "bilingual": "Telugu names and keywords enable processing of Telugu audit reports"
+  }
+}

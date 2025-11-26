@@ -1,0 +1,1988 @@
+openapi: 3.0.3
+info:
+  title: Dhruva PGRS API
+  version: 1.0.0
+  description: |
+    Andhra Pradesh Public Grievance Redressal System (PGRS) API
+
+    **Core Innovation**: Verification-First Architecture
+    - Citizens MUST approve before case closure
+    - Immutable audit trail (tamper-proof)
+    - Multi-channel intake (web, mobile, WhatsApp, SMS, voice)
+
+    **Philosophy**: Antifragile, Modular, Test-Driven Development
+
+    ## API Versioning Policy
+
+    **Current Version**: v1.0 (Stable)
+    **Base URL**: `https://api.dhruva.ap.gov.in/v1`
+
+    ### Version Support Lifecycle
+
+    | Version | Status        | Launch Date | Deprecation Date | Sunset Date  |
+    |---------|---------------|-------------|------------------|--------------|
+    | v1.0    | Stable        | 2025-12-01  | TBD              | TBD          |
+    | v2.0    | Planned       | 2026-06-01  | -                | -            |
+
+    ### Support Phases
+
+    1. **Stable** (Current)
+       - Fully supported with bug fixes and security patches
+       - Backward-compatible changes only
+       - No breaking changes
+
+    2. **Deprecated** (When v2.0 launches)
+       - v1.0 remains operational for 12 months after v2.0 launch
+       - Security patches only (no new features)
+       - Response headers include deprecation warnings
+       - Clients encouraged to migrate to v2.0
+
+    3. **Sunset** (12 months after deprecation)
+       - v1.0 API shut down
+       - All requests return HTTP 410 Gone
+       - Clients must upgrade to v2.0
+
+    ### Deprecation Headers
+
+    When v1.0 is deprecated, all responses include:
+
+    ```
+    Deprecation: true
+    Sunset: Sat, 31 Dec 2026 23:59:59 GMT
+    Link: <https://api.dhruva.ap.gov.in/v2>; rel="successor-version"
+    Warning: 299 - "API v1.0 is deprecated. Migrate to v2.0 by 2026-12-31."
+    ```
+
+    ### Breaking vs Non-Breaking Changes
+
+    **Non-Breaking** (allowed in v1.x):
+    - Adding new endpoints
+    - Adding new optional parameters
+    - Adding new response fields
+    - Adding new enum values (with unknown handling)
+
+    **Breaking** (requires v2.0):
+    - Removing endpoints
+    - Removing request/response fields
+    - Changing field types
+    - Changing authentication methods
+    - Changing error response format
+
+    ### Version Negotiation
+
+    Clients can specify version via:
+    1. URL path (recommended): `/v1/grievances`
+    2. Accept header: `Accept: application/vnd.dhruva.v1+json`
+    3. Custom header: `X-API-Version: 1`
+
+    If no version specified, latest stable version (v1.0) is used.
+
+  contact:
+    name: Dhruva PGRS Team
+    email: support@dhruva.ap.gov.in
+  license:
+    name: MIT
+    url: https://opensource.org/licenses/MIT
+
+servers:
+  - url: http://localhost:8000
+    description: Local development server
+  - url: https://api-staging.dhruva.ap.gov.in
+    description: Staging environment
+  - url: https://api.dhruva.ap.gov.in
+    description: Production environment
+
+tags:
+  - name: Health
+    description: Health check endpoints
+  - name: Authentication
+    description: User authentication and authorization
+  - name: Grievances
+    description: Grievance submission and management
+  - name: Districts
+    description: District information
+  - name: Departments
+    description: Department information
+  - name: Public Access
+    description: Public grievance tracking (no authentication required)
+  - name: Jobs
+    description: Async job status tracking
+  - name: Real-Time (v1.1)
+    description: WebSocket and SSE endpoints (future)
+
+x-deprecation-policy:
+  minimum_support_months: 12
+  deprecation_notice_advance_months: 6
+  sunset_notice_advance_months: 3
+
+x-rate-limits:
+  citizen:
+    grievance_submission: "10 per hour"
+    public_tracking: "20 per hour"
+    otp_request: "3 per 5 minutes"
+  officer:
+    read: "200 per minute"
+    write: "50 per minute"
+  supervisor:
+    read: "500 per minute"
+    write: "100 per minute"
+    bulk_operations: "10 per hour"
+  admin:
+    unlimited: true
+
+x-future-features:
+  websocket:
+    version: "1.1"
+    endpoint: "wss://api.dhruva.ap.gov.in/v1/ws/grievances"
+    description: |
+      Real-time grievance updates via WebSocket (planned for v1.1).
+
+      **Use Cases**:
+      - Live dashboard updates for officers
+      - Real-time notifications for supervisors
+      - Push notifications for citizens (via web app)
+
+      **Connection Flow**:
+      1. Client connects: `wss://api.dhruva.ap.gov.in/v1/ws/grievances?token=<JWT>`
+      2. Server validates JWT token
+      3. Client subscribes to channels: `{"action": "subscribe", "channels": ["district:05", "department:HLTH"]}`
+      4. Server pushes updates: `{"event": "grievance_updated", "data": {...}}`
+
+      **Event Types**:
+      - `grievance_created` - New grievance submitted
+      - `grievance_updated` - Status/assignment changed
+      - `grievance_resolved` - Marked as resolved
+      - `grievance_verified` - Citizen verified resolution
+      - `department_stats_updated` - Dashboard metrics updated
+
+      **Alternative**: Server-Sent Events (SSE) at `/v1/sse/grievances` for simpler one-way push
+
+    authentication:
+      type: "JWT"
+      location: "query parameter or Sec-WebSocket-Protocol header"
+
+paths:
+  # ==========================================
+  # HEALTH CHECK ENDPOINTS
+  # ==========================================
+
+  /health:
+    get:
+      tags:
+        - Health
+      summary: Basic health check
+      description: |
+        Check if API is responding.
+
+        **Performance Budget**: p95 < 50ms
+      operationId: getHealth
+      responses:
+        '200':
+          description: API is healthy
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HealthResponse'
+              example:
+                status: "healthy"
+                timestamp: "2025-11-24T10:30:00Z"
+                version: "1.0.0"
+
+  /health/database:
+    get:
+      tags:
+        - Health
+      summary: Database health check
+      description: |
+        Check database connectivity and measure latency.
+
+        **Performance Budget**: p95 < 100ms
+      operationId: getDatabaseHealth
+      responses:
+        '200':
+          description: Database is healthy
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DatabaseHealthResponse'
+              example:
+                status: "healthy"
+                latency_ms: 45.23
+                connection_pool_size: 10
+                connections_in_use: 3
+                database_url: "localhost/dhruva_pgrs"
+        '503':
+          description: Database is unhealthy
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                error: "Service Unavailable"
+                message: "Database connection failed"
+                status_code: 503
+
+  # ==========================================
+  # AUTHENTICATION ENDPOINTS
+  # ==========================================
+
+  /api/v1/auth/login:
+    post:
+      tags:
+        - Authentication
+      summary: Officer login
+      description: |
+        Authenticate officer and return JWT token.
+
+        **Performance Budget**: p95 < 500ms
+        **Rate Limit**: 5 attempts per minute per IP
+      operationId: loginOfficer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/LoginRequest'
+            example:
+              username: "officer_vijayawada"
+              password: "password123"
+      responses:
+        '200':
+          description: Login successful
+          headers:
+            X-RateLimit-Limit:
+              $ref: '#/components/headers/X-RateLimit-Limit'
+            X-RateLimit-Remaining:
+              $ref: '#/components/headers/X-RateLimit-Remaining'
+            X-RateLimit-Reset:
+              $ref: '#/components/headers/X-RateLimit-Reset'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LoginResponse'
+              example:
+                access_token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+                token_type: "bearer"
+                expires_in: 3600
+                user:
+                  id: "550e8400-e29b-41d4-a716-446655440000"
+                  username: "officer_vijayawada"
+                  full_name: "Ramesh Kumar"
+                  role: "officer"
+                  department:
+                    id: 1
+                    code: "REV"
+                    name: "Revenue Department"
+                  district:
+                    id: 5
+                    code: "05"
+                    name: "Krishna"
+        '401':
+          description: Invalid credentials
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                error: "Unauthorized"
+                message: "Invalid username or password"
+                status_code: 401
+        '429':
+          $ref: '#/components/responses/TooManyRequests'
+
+  /api/v1/auth/logout:
+    post:
+      tags:
+        - Authentication
+      summary: Officer logout
+      description: |
+        Logout officer and invalidate token.
+
+        **Performance Budget**: p95 < 200ms
+      operationId: logoutOfficer
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Logout successful
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Logged out successfully"
+        '401':
+          $ref: '#/components/responses/UnauthorizedError'
+
+  /api/v1/auth/me:
+    get:
+      tags:
+        - Authentication
+      summary: Get current user
+      description: |
+        Get currently authenticated user details.
+
+        **Performance Budget**: p95 < 200ms
+      operationId: getCurrentUser
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: User details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserResponse'
+        '401':
+          $ref: '#/components/responses/UnauthorizedError'
+
+  # ==========================================
+  # GRIEVANCE ENDPOINTS
+  # ==========================================
+
+  /api/v1/grievances:
+    post:
+      tags:
+        - Grievances
+      summary: Submit new grievance
+      description: |
+        Submit a new grievance (citizen or officer).
+
+        **Performance Budget**: p95 < 1000ms
+        **Rate Limit**: 10 submissions per hour per citizen phone number
+
+        **Antifragile Features**:
+        - Graceful degradation: If NLP unavailable, saves without department assignment
+        - Idempotency: Duplicate submissions within 1 hour return existing grievance
+        - Offline support: Returns 202 Accepted if async processing enabled
+
+        **Idempotency**: Use `Idempotency-Key` header to prevent duplicate submissions.
+        If not provided, system uses SHA-256 hash of (phone + text) to detect duplicates.
+      operationId: submitGrievance
+      parameters:
+        - name: Idempotency-Key
+          in: header
+          required: false
+          description: Client-generated unique key to prevent duplicate submissions
+          schema:
+            type: string
+            format: uuid
+          example: "550e8400-e29b-41d4-a716-446655440000"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/GrievanceCreateRequest'
+            example:
+              citizen_name: "Rajesh Kumar"
+              citizen_phone: "+919876543210"
+              citizen_email: "rajesh@example.com"
+              citizen_address: "Plot 123, MG Road, Vijayawada, Krishna District"
+              district_code: "05"
+              grievance_text: "ప్రభుత్వ ఆసుపత్రిలో డాక్టర్లు అందుబాటులో లేరు. నా తల్లి గత 3 రోజులుగా అనారోగ్యంతో ఉంది కానీ చికిత్స లేదు."
+              language: "te"
+              channel: "web"
+              latitude: 16.5062
+              longitude: 80.6480
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                data:
+                  $ref: '#/components/schemas/GrievanceCreateRequest'
+                attachments:
+                  type: array
+                  items:
+                    type: string
+                    format: binary
+                  maxItems: 5
+      responses:
+        '201':
+          description: Grievance submitted successfully
+          headers:
+            Location:
+              description: URL of created grievance
+              schema:
+                type: string
+                example: /api/v1/grievances/550e8400-e29b-41d4-a716-446655440000
+            X-RateLimit-Limit:
+              $ref: '#/components/headers/X-RateLimit-Limit'
+            X-RateLimit-Remaining:
+              $ref: '#/components/headers/X-RateLimit-Remaining'
+            X-RateLimit-Reset:
+              $ref: '#/components/headers/X-RateLimit-Reset'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GrievanceResponse'
+              example:
+                id: "550e8400-e29b-41d4-a716-446655440000"
+                grievance_id: "PGRS-2025-05-00001"
+                citizen_name: "Rajesh Kumar"
+                citizen_phone: "+919876543210"
+                status: "submitted"
+                priority: "high"
+                department:
+                  id: 2
+                  code: "HLTH"
+                  name: "Health Department"
+                  name_telugu: "ఆరోగ్య శాఖ"
+                district:
+                  id: 5
+                  code: "05"
+                  name: "Krishna"
+                sla_days: 7
+                due_date: "2025-12-01T10:30:00Z"
+                created_at: "2025-11-24T10:30:00Z"
+        '202':
+          description: Grievance accepted for processing (async mode)
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Grievance submitted. Processing in background."
+                  job_id:
+                    type: string
+                    format: uuid
+                    example: "550e8400-e29b-41d4-a716-446655440000"
+                  status_url:
+                    type: string
+                    example: "/api/v1/jobs/550e8400-e29b-41d4-a716-446655440000"
+        '400':
+          $ref: '#/components/responses/ValidationError'
+        '401':
+          $ref: '#/components/responses/UnauthorizedError'
+        '429':
+          $ref: '#/components/responses/TooManyRequests'
+
+    get:
+      tags:
+        - Grievances
+      summary: List grievances
+      description: |
+        Get paginated list of grievances with filters.
+
+        **Performance Budget**: p95 < 500ms
+        **Authorization**: Officers see assigned grievances, Admins see all
+      operationId: listGrievances
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: page
+          in: query
+          description: Page number (1-indexed)
+          schema:
+            type: integer
+            minimum: 1
+            default: 1
+        - name: page_size
+          in: query
+          description: Items per page
+          schema:
+            type: integer
+            minimum: 10
+            maximum: 100
+            default: 50
+        - name: status
+          in: query
+          description: Filter by status
+          schema:
+            type: string
+            enum: [submitted, assigned, in_progress, resolved, verified, closed, rejected]
+        - name: priority
+          in: query
+          description: Filter by priority
+          schema:
+            type: string
+            enum: [critical, high, normal]
+        - name: district_code
+          in: query
+          description: Filter by district code
+          schema:
+            type: string
+        - name: department_id
+          in: query
+          description: Filter by department ID
+          schema:
+            type: integer
+        - name: search
+          in: query
+          description: Search in grievance text and citizen name
+          schema:
+            type: string
+        - name: sort_by
+          in: query
+          description: Sort field
+          schema:
+            type: string
+            enum: [created_at, due_date, priority]
+            default: created_at
+        - name: sort_order
+          in: query
+          description: Sort order
+          schema:
+            type: string
+            enum: [asc, desc]
+            default: desc
+        - name: updated_since
+          in: query
+          description: Only return grievances updated after this timestamp (polling optimization)
+          schema:
+            type: string
+            format: date-time
+          example: "2025-11-24T10:30:00Z"
+      responses:
+        '200':
+          description: List of grievances
+          headers:
+            X-RateLimit-Limit:
+              $ref: '#/components/headers/X-RateLimit-Limit'
+            X-RateLimit-Remaining:
+              $ref: '#/components/headers/X-RateLimit-Remaining'
+            X-RateLimit-Reset:
+              $ref: '#/components/headers/X-RateLimit-Reset'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GrievanceListResponse'
+        '304':
+          description: Not Modified (no updates since last poll)
+        '401':
+          $ref: '#/components/responses/UnauthorizedError'
+
+  /api/v1/grievances/{grievance_id}:
+    get:
+      tags:
+        - Grievances
+      summary: Get grievance by ID
+      description: |
+        Get detailed information about a specific grievance.
+
+        **Performance Budget**: p95 < 300ms
+        **Authorization**: Officers can view assigned grievances, Admins can view all
+      operationId: getGrievanceById
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: grievance_id
+          in: path
+          required: true
+          description: Grievance UUID or public ID (PGRS-YYYY-DD-NNNNN)
+          schema:
+            type: string
+          examples:
+            uuid:
+              value: "550e8400-e29b-41d4-a716-446655440000"
+            public_id:
+              value: "PGRS-2025-05-00001"
+      responses:
+        '200':
+          description: Grievance details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GrievanceDetailResponse'
+        '404':
+          $ref: '#/components/responses/NotFoundError'
+        '401':
+          $ref: '#/components/responses/UnauthorizedError'
+        '403':
+          $ref: '#/components/responses/ForbiddenError'
+
+    patch:
+      tags:
+        - Grievances
+      summary: Update grievance
+      description: |
+        Update grievance status, assignment, or resolution.
+
+        **Performance Budget**: p95 < 500ms
+        **Authorization**: Officers can update assigned grievances, Supervisors can reassign
+        **Audit Trail**: All updates logged in audit_logs table
+      operationId: updateGrievance
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: grievance_id
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/GrievanceUpdateRequest'
+            example:
+              status: "in_progress"
+              resolution_notes: "Inspected site. Scheduling repair work."
+      responses:
+        '200':
+          description: Grievance updated successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GrievanceResponse'
+        '400':
+          $ref: '#/components/responses/ValidationError'
+        '401':
+          $ref: '#/components/responses/UnauthorizedError'
+        '403':
+          $ref: '#/components/responses/ForbiddenError'
+        '404':
+          $ref: '#/components/responses/NotFoundError'
+
+  /api/v1/grievances/bulk:
+    patch:
+      tags:
+        - Grievances
+      summary: Bulk update grievances (supervisor/admin only)
+      description: |
+        Update multiple grievances in a single request.
+
+        **Authorization**: supervisor, admin
+        **Use Cases**:
+        - Reassign 50 grievances when officer goes on leave
+        - Bulk status update (e.g., mark 20 as "closed" after verification)
+        - Mass department reassignment after reorganization
+
+        **Performance**: Max 100 grievances per request
+        **Atomicity**: If any update fails, entire batch rolls back
+        **Performance Budget**: p95 < 3000ms for 100 grievances
+      operationId: bulkUpdateGrievances
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/BulkUpdateRequest'
+            examples:
+              reassign_officer:
+                summary: Reassign grievances to new officer
+                value:
+                  grievance_ids:
+                    - "PGRS-2025-05-00001"
+                    - "PGRS-2025-05-00002"
+                    - "PGRS-2025-05-00015"
+                  updates:
+                    assigned_officer_id: "550e8400-e29b-41d4-a716-446655440000"
+                    audit_reason: "Original officer on medical leave. Reassigned to backup officer."
+              bulk_close:
+                summary: Bulk close verified grievances
+                value:
+                  grievance_ids:
+                    - "PGRS-2025-05-00003"
+                    - "PGRS-2025-05-00007"
+                    - "PGRS-2025-05-00009"
+                  updates:
+                    status: "closed"
+                    audit_reason: "Batch closure after citizen verification"
+      responses:
+        '200':
+          description: Bulk update completed
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BulkUpdateResponse'
+        '207':
+          description: Partial success (some updates failed)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BulkUpdateResponse'
+        '400':
+          $ref: '#/components/responses/ValidationError'
+        '403':
+          $ref: '#/components/responses/ForbiddenError'
+
+  # ==========================================
+  # PUBLIC ACCESS ENDPOINTS
+  # ==========================================
+
+  /api/v1/grievances/public/{grievance_id}/request-otp:
+    post:
+      tags:
+        - Public Access
+      summary: Request OTP for public grievance tracking
+      description: |
+        Step 1 of public tracking: Request OTP to be sent to registered phone.
+
+        **Security**:
+        - Phone number must match grievance submission
+        - OTP valid for 5 minutes
+        - Rate limit: 3 OTP requests per 5 minutes per phone
+        - After 3 failed OTP verifications, require new OTP request
+
+        **Flow**:
+        1. User enters grievance ID + phone number
+        2. System validates grievance exists and phone matches
+        3. System generates 6-digit OTP
+        4. System sends OTP via SMS (fallback: WhatsApp)
+        5. System returns masked phone + expiry time
+      operationId: requestGrievanceTrackingOTP
+      parameters:
+        - name: grievance_id
+          in: path
+          required: true
+          description: Public grievance ID (PGRS-YYYY-DD-NNNNN)
+          schema:
+            type: string
+            pattern: '^PGRS-\d{4}-\d{2}-\d{5}$'
+          example: "PGRS-2025-05-00001"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - phone
+              properties:
+                phone:
+                  type: string
+                  pattern: '^\+91[6-9]\d{9}$'
+                  description: Citizen phone number (must match grievance)
+            example:
+              phone: "+919876543210"
+      responses:
+        '200':
+          description: OTP sent successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OTPResponse'
+              example:
+                message: "OTP sent to +91****3210"
+                expires_in_seconds: 300
+                retry_allowed_in_seconds: 0
+                remaining_attempts: 3
+        '404':
+          description: Grievance not found or phone number mismatch
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                error: "Not Found"
+                message: "Grievance not found or phone number does not match"
+                status_code: 404
+        '429':
+          $ref: '#/components/responses/TooManyRequests'
+
+  /api/v1/grievances/public/{grievance_id}:
+    get:
+      tags:
+        - Public Access
+      summary: Get grievance status (public view)
+      description: |
+        Step 2 of public tracking: Retrieve grievance status using OTP.
+
+        **Security**:
+        - OTP valid for 5 minutes from generation
+        - Max 3 failed OTP attempts before requiring new OTP
+        - After successful verification, OTP is invalidated
+        - Phone number must match grievance submission
+
+        **Public View (PII Protection)**:
+        - No officer names or contact details
+        - No internal notes/comments
+        - Only status updates visible to citizen
+      operationId: getGrievancePublic
+      parameters:
+        - name: grievance_id
+          in: path
+          required: true
+          schema:
+            type: string
+            pattern: '^PGRS-\d{4}-\d{2}-\d{5}$'
+        - name: phone
+          in: query
+          required: true
+          description: Citizen phone number
+          schema:
+            type: string
+            pattern: '^\+91[6-9]\d{9}$'
+          example: "+919876543210"
+        - name: otp
+          in: query
+          required: true
+          description: 6-digit OTP received via SMS
+          schema:
+            type: string
+            pattern: '^\d{6}$'
+          example: "123456"
+      responses:
+        '200':
+          description: Grievance status (public view)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GrievancePublicResponse'
+        '401':
+          description: Invalid OTP
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OTPErrorResponse'
+              example:
+                error: "Unauthorized"
+                message: "Invalid OTP"
+                remaining_attempts: 2
+                status_code: 401
+        '429':
+          description: Too many failed attempts
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+              example:
+                error: "Too Many Requests"
+                message: "Too many failed OTP attempts. Request a new OTP."
+                status_code: 429
+
+  # ==========================================
+  # ASYNC JOB ENDPOINTS
+  # ==========================================
+
+  /api/v1/jobs/{job_id}:
+    get:
+      tags:
+        - Jobs
+      summary: Get async job status
+      description: |
+        Check status of background job (e.g., grievance processing, bulk operations).
+
+        **Performance Budget**: p95 < 100ms
+        **Job Retention**: Jobs deleted after 24 hours
+      operationId: getJobStatus
+      parameters:
+        - name: job_id
+          in: path
+          required: true
+          description: Job UUID returned from async endpoint
+          schema:
+            type: string
+            format: uuid
+          example: "550e8400-e29b-41d4-a716-446655440000"
+      responses:
+        '200':
+          description: Job status
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/JobStatusResponse'
+        '404':
+          description: Job not found (may have expired after 24 hours)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+
+  # ==========================================
+  # DISTRICT ENDPOINTS
+  # ==========================================
+
+  /api/v1/districts:
+    get:
+      tags:
+        - Districts
+      summary: List all districts
+      description: |
+        Get list of all 13 Andhra Pradesh districts.
+
+        **Performance Budget**: p95 < 100ms
+        **Caching**: Response cached for 24 hours
+      operationId: listDistricts
+      responses:
+        '200':
+          description: List of districts
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/DistrictResponse'
+                  total:
+                    type: integer
+                    example: 13
+              example:
+                data:
+                  - id: 1
+                    code: "01"
+                    name: "Anantapur"
+                  - id: 5
+                    code: "05"
+                    name: "Krishna"
+                total: 13
+
+  # ==========================================
+  # DEPARTMENT ENDPOINTS
+  # ==========================================
+
+  /api/v1/departments:
+    get:
+      tags:
+        - Departments
+      summary: List all departments
+      description: |
+        Get list of all 26 government departments.
+
+        **Performance Budget**: p95 < 100ms
+        **Caching**: Response cached for 24 hours
+      operationId: listDepartments
+      responses:
+        '200':
+          description: List of departments
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/DepartmentResponse'
+                  total:
+                    type: integer
+                    example: 26
+
+  # ==========================================
+  # REAL-TIME ENDPOINTS (FUTURE v1.1)
+  # ==========================================
+
+  /api/v1/sse/grievances:
+    get:
+      tags:
+        - Real-Time (v1.1)
+      summary: Server-Sent Events stream for grievance updates
+      description: |
+        **Status**: Future feature (v1.1)
+        Simpler alternative to WebSocket for one-way server-to-client updates.
+
+        Client connection:
+        ```javascript
+        const eventSource = new EventSource('/api/v1/sse/grievances?token=JWT_TOKEN');
+
+        eventSource.addEventListener('grievance_created', (e) => {
+          const data = JSON.parse(e.data);
+          console.log('New grievance:', data.grievance_id);
+        });
+        ```
+      parameters:
+        - name: token
+          in: query
+          required: true
+          schema:
+            type: string
+        - name: district_code
+          in: query
+          required: false
+          schema:
+            type: string
+          description: Filter events by district
+        - name: department_code
+          in: query
+          required: false
+          schema:
+            type: string
+          description: Filter events by department
+      responses:
+        '200':
+          description: SSE stream
+          content:
+            text/event-stream:
+              schema:
+                type: string
+
+# ==========================================
+# COMPONENTS
+# ==========================================
+
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+      description: JWT token obtained from /api/v1/auth/login
+
+  schemas:
+    # ==========================================
+    # COMMON SCHEMAS
+    # ==========================================
+
+    HealthResponse:
+      type: object
+      required:
+        - status
+        - timestamp
+        - version
+      properties:
+        status:
+          type: string
+          enum: [healthy, degraded, unhealthy]
+          description: Overall system health
+        timestamp:
+          type: string
+          format: date-time
+          description: Current server time (ISO 8601)
+        version:
+          type: string
+          description: API version
+          example: "1.0.0"
+
+    DatabaseHealthResponse:
+      type: object
+      required:
+        - status
+        - latency_ms
+        - connection_pool_size
+        - connections_in_use
+      properties:
+        status:
+          type: string
+          enum: [healthy, unhealthy]
+        latency_ms:
+          type: number
+          format: float
+          description: Database query latency in milliseconds
+          example: 45.23
+        connection_pool_size:
+          type: integer
+          description: Total connections in pool
+          example: 10
+        connections_in_use:
+          type: integer
+          description: Currently active connections
+          example: 3
+        database_url:
+          type: string
+          description: Masked database URL (no password)
+          example: "localhost/dhruva_pgrs"
+
+    ErrorResponse:
+      type: object
+      required:
+        - error
+        - message
+        - status_code
+      properties:
+        error:
+          type: string
+          description: Error type (e.g., "Validation Error", "Unauthorized")
+          example: "Validation Error"
+        message:
+          type: string
+          description: Human-readable error message
+          example: "Invalid phone number format"
+        status_code:
+          type: integer
+          description: HTTP status code
+          example: 400
+        details:
+          type: object
+          description: Additional error details (validation errors, etc.)
+          additionalProperties: true
+        retry_after:
+          type: integer
+          description: Seconds until retry allowed (for rate limits)
+          example: 60
+
+    ValidationErrorDetail:
+      type: object
+      required:
+        - field
+        - message
+      properties:
+        field:
+          type: string
+          description: Field name that failed validation
+          example: "citizen_phone"
+        message:
+          type: string
+          description: Validation error message
+          example: "Invalid phone format. Use +91XXXXXXXXXX"
+        code:
+          type: string
+          description: Machine-readable error code
+          example: "INVALID_PHONE_FORMAT"
+
+    # ==========================================
+    # AUTHENTICATION SCHEMAS
+    # ==========================================
+
+    LoginRequest:
+      type: object
+      required:
+        - username
+        - password
+      properties:
+        username:
+          type: string
+          minLength: 3
+          maxLength: 100
+          example: "officer_vijayawada"
+        password:
+          type: string
+          format: password
+          minLength: 8
+          example: "password123"
+
+    LoginResponse:
+      type: object
+      required:
+        - access_token
+        - token_type
+        - expires_in
+        - user
+      properties:
+        access_token:
+          type: string
+          description: JWT access token
+          example: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+        token_type:
+          type: string
+          enum: [bearer]
+          example: "bearer"
+        expires_in:
+          type: integer
+          description: Token expiry time in seconds
+          example: 3600
+        user:
+          $ref: '#/components/schemas/UserResponse'
+
+    UserResponse:
+      type: object
+      required:
+        - id
+        - username
+        - full_name
+        - role
+      properties:
+        id:
+          type: string
+          format: uuid
+          example: "550e8400-e29b-41d4-a716-446655440000"
+        username:
+          type: string
+          example: "officer_vijayawada"
+        email:
+          type: string
+          format: email
+          example: "officer.vijayawada@dhruva.ap.gov.in"
+        full_name:
+          type: string
+          example: "Ramesh Kumar"
+        phone:
+          type: string
+          pattern: '^\+91[6-9]\d{9}$'
+          example: "+919876543211"
+        role:
+          type: string
+          enum: [officer, supervisor, admin]
+          example: "officer"
+        department:
+          $ref: '#/components/schemas/DepartmentResponse'
+        district:
+          $ref: '#/components/schemas/DistrictResponse'
+        is_active:
+          type: boolean
+          example: true
+        last_login_at:
+          type: string
+          format: date-time
+          nullable: true
+
+    # ==========================================
+    # GRIEVANCE SCHEMAS
+    # ==========================================
+
+    GrievanceCreateRequest:
+      type: object
+      required:
+        - citizen_name
+        - citizen_phone
+        - citizen_address
+        - district_code
+        - grievance_text
+        - language
+        - channel
+      properties:
+        citizen_name:
+          type: string
+          minLength: 2
+          maxLength: 100
+          example: "Rajesh Kumar"
+        citizen_phone:
+          type: string
+          pattern: '^\+91[6-9]\d{9}$'
+          example: "+919876543210"
+        citizen_email:
+          type: string
+          format: email
+          nullable: true
+          example: "rajesh@example.com"
+        citizen_address:
+          type: string
+          minLength: 10
+          maxLength: 500
+          example: "Plot 123, MG Road, Vijayawada, Krishna District"
+        district_code:
+          type: string
+          pattern: '^[0-9]{2}$'
+          description: District code (01-13)
+          example: "05"
+        grievance_text:
+          type: string
+          minLength: 20
+          maxLength: 5000
+          description: Detailed grievance description
+          example: "Government hospital doctors are not available. My mother has been sick for 3 days but no treatment."
+        language:
+          type: string
+          enum: [te, en, hi]
+          description: Language code (te=Telugu, en=English, hi=Hindi)
+          example: "te"
+        department_id:
+          type: integer
+          nullable: true
+          description: Department ID (optional, will be auto-assigned by NLP if not provided)
+          example: 2
+        subject:
+          type: string
+          maxLength: 500
+          nullable: true
+          example: "No doctors in government hospital"
+        channel:
+          type: string
+          enum: [web, mobile, whatsapp, sms, voice]
+          example: "web"
+        latitude:
+          type: number
+          format: float
+          minimum: -90
+          maximum: 90
+          nullable: true
+          example: 16.5062
+        longitude:
+          type: number
+          format: float
+          minimum: -180
+          maximum: 180
+          nullable: true
+          example: 80.6480
+        metadata:
+          type: object
+          additionalProperties: true
+          description: Additional metadata (user_agent, ip_address, etc.)
+
+    GrievanceUpdateRequest:
+      type: object
+      properties:
+        status:
+          type: string
+          enum: [assigned, in_progress, resolved, verified, closed, rejected]
+        assigned_officer_id:
+          type: string
+          format: uuid
+          nullable: true
+        department_id:
+          type: integer
+          nullable: true
+          description: For manual department reassignment (supervisor only)
+        resolution_text:
+          type: string
+          minLength: 20
+          maxLength: 5000
+          nullable: true
+        resolution_notes:
+          type: string
+          maxLength: 2000
+          nullable: true
+
+    GrievanceResponse:
+      type: object
+      required:
+        - id
+        - grievance_id
+        - citizen_name
+        - citizen_phone
+        - status
+        - priority
+        - district
+        - sla_days
+        - due_date
+        - created_at
+      properties:
+        id:
+          type: string
+          format: uuid
+          example: "550e8400-e29b-41d4-a716-446655440000"
+        grievance_id:
+          type: string
+          pattern: '^PGRS-\d{4}-\d{2}-\d{5}$'
+          example: "PGRS-2025-05-00001"
+        citizen_name:
+          type: string
+          example: "Rajesh Kumar"
+        citizen_phone:
+          type: string
+          example: "+919876543210"
+        citizen_email:
+          type: string
+          nullable: true
+        citizen_address:
+          type: string
+        status:
+          type: string
+          enum: [submitted, assigned, in_progress, resolved, verified, closed, rejected]
+        priority:
+          type: string
+          enum: [critical, high, normal]
+        department:
+          $ref: '#/components/schemas/DepartmentResponse'
+          nullable: true
+        district:
+          $ref: '#/components/schemas/DistrictResponse'
+        assigned_officer:
+          $ref: '#/components/schemas/UserResponse'
+          nullable: true
+        sla_days:
+          type: integer
+          example: 7
+        due_date:
+          type: string
+          format: date-time
+        grievance_text:
+          type: string
+        language:
+          type: string
+        channel:
+          type: string
+        created_at:
+          type: string
+          format: date-time
+        updated_at:
+          type: string
+          format: date-time
+        resolved_at:
+          type: string
+          format: date-time
+          nullable: true
+        verified_at:
+          type: string
+          format: date-time
+          nullable: true
+
+    GrievanceDetailResponse:
+      allOf:
+        - $ref: '#/components/schemas/GrievanceResponse'
+        - type: object
+          properties:
+            attachments:
+              type: array
+              items:
+                $ref: '#/components/schemas/AttachmentResponse'
+            audit_logs:
+              type: array
+              items:
+                $ref: '#/components/schemas/AuditLogResponse'
+            verifications:
+              type: array
+              items:
+                $ref: '#/components/schemas/VerificationResponse'
+
+    GrievanceListResponse:
+      type: object
+      required:
+        - data
+        - pagination
+      properties:
+        data:
+          type: array
+          items:
+            $ref: '#/components/schemas/GrievanceResponse'
+        pagination:
+          $ref: '#/components/schemas/PaginationResponse'
+
+    GrievancePublicResponse:
+      type: object
+      required:
+        - grievance_id
+        - status
+        - submitted_at
+        - department
+        - district
+      properties:
+        grievance_id:
+          type: string
+          pattern: '^PGRS-\d{4}-\d{2}-\d{5}$'
+        status:
+          type: string
+          enum: [submitted, assigned, in_progress, resolved, verified, closed, rejected]
+        submitted_at:
+          type: string
+          format: date-time
+        estimated_resolution_date:
+          type: string
+          format: date-time
+          nullable: true
+        department:
+          type: object
+          properties:
+            code:
+              type: string
+            name:
+              type: string
+            name_telugu:
+              type: string
+              nullable: true
+        district:
+          type: object
+          properties:
+            code:
+              type: string
+            name:
+              type: string
+        status_history:
+          type: array
+          items:
+            type: object
+            properties:
+              status:
+                type: string
+              timestamp:
+                type: string
+                format: date-time
+              message:
+                type: string
+
+    PaginationResponse:
+      type: object
+      required:
+        - page
+        - page_size
+        - total_items
+        - total_pages
+      properties:
+        page:
+          type: integer
+          example: 1
+        page_size:
+          type: integer
+          example: 50
+        total_items:
+          type: integer
+          example: 1234
+        total_pages:
+          type: integer
+          example: 25
+        has_next:
+          type: boolean
+          example: true
+        has_previous:
+          type: boolean
+          example: false
+
+    # ==========================================
+    # BULK OPERATIONS
+    # ==========================================
+
+    BulkUpdateRequest:
+      type: object
+      required:
+        - grievance_ids
+        - updates
+      properties:
+        grievance_ids:
+          type: array
+          items:
+            type: string
+            pattern: '^PGRS-\d{4}-\d{2}-\d{5}$'
+          minItems: 1
+          maxItems: 100
+          description: List of grievance IDs to update (max 100)
+        updates:
+          type: object
+          description: Fields to update (applied to all grievances)
+          properties:
+            status:
+              type: string
+              enum: [assigned, in_progress, resolved, verified, closed, rejected]
+            department_id:
+              type: integer
+            assigned_officer_id:
+              type: string
+              format: uuid
+            audit_reason:
+              type: string
+              maxLength: 500
+              description: Reason for bulk update (required)
+          required:
+            - audit_reason
+
+    BulkUpdateResponse:
+      type: object
+      required:
+        - message
+        - updated_count
+        - failed_count
+        - results
+      properties:
+        message:
+          type: string
+        updated_count:
+          type: integer
+        failed_count:
+          type: integer
+        results:
+          type: array
+          items:
+            type: object
+            properties:
+              grievance_id:
+                type: string
+              status:
+                type: string
+                enum: [success, failed]
+              error:
+                type: string
+                nullable: true
+
+    # ==========================================
+    # DISTRICT & DEPARTMENT SCHEMAS
+    # ==========================================
+
+    DistrictResponse:
+      type: object
+      required:
+        - id
+        - code
+        - name
+      properties:
+        id:
+          type: integer
+          example: 5
+        code:
+          type: string
+          pattern: '^[0-9]{2}$'
+          example: "05"
+        name:
+          type: string
+          example: "Krishna"
+
+    DepartmentResponse:
+      type: object
+      required:
+        - id
+        - code
+        - name
+        - sla_days
+      properties:
+        id:
+          type: integer
+          example: 2
+        code:
+          type: string
+          example: "HLTH"
+        name:
+          type: string
+          example: "Health Department"
+        name_telugu:
+          type: string
+          nullable: true
+          example: "ఆరోగ్య శాఖ"
+        description:
+          type: string
+          nullable: true
+        sla_days:
+          type: integer
+          description: Default SLA in days
+          example: 7
+
+    # ==========================================
+    # ATTACHMENT, AUDIT, VERIFICATION SCHEMAS
+    # ==========================================
+
+    AttachmentResponse:
+      type: object
+      required:
+        - id
+        - file_name
+        - file_type
+        - file_url
+      properties:
+        id:
+          type: string
+          format: uuid
+        file_name:
+          type: string
+        file_type:
+          type: string
+          enum: [image/jpeg, image/png, application/pdf, audio/mpeg, video/mp4]
+        file_size_bytes:
+          type: integer
+        file_url:
+          type: string
+          format: uri
+        attachment_type:
+          type: string
+          enum: [before, after, evidence, document]
+          nullable: true
+        uploaded_at:
+          type: string
+          format: date-time
+
+    AuditLogResponse:
+      type: object
+      required:
+        - id
+        - action
+        - created_at
+      properties:
+        id:
+          type: string
+          format: uuid
+        action:
+          type: string
+          enum: [CREATED, UPDATED, ASSIGNED, RESOLVED, VERIFIED, CLOSED, REJECTED, ESCALATED, REOPENED]
+        actor:
+          $ref: '#/components/schemas/UserResponse'
+          nullable: true
+        old_value:
+          type: object
+          nullable: true
+        new_value:
+          type: object
+          nullable: true
+        reason:
+          type: string
+          nullable: true
+        created_at:
+          type: string
+          format: date-time
+
+    VerificationResponse:
+      type: object
+      required:
+        - id
+        - verification_method
+        - message_sent_at
+        - citizen_response
+      properties:
+        id:
+          type: string
+          format: uuid
+        verification_method:
+          type: string
+          enum: [whatsapp, sms, call, email]
+        phone_number:
+          type: string
+          nullable: true
+        message_sent_at:
+          type: string
+          format: date-time
+        citizen_response:
+          type: string
+          enum: [approved, rejected, pending]
+        citizen_rating:
+          type: integer
+          minimum: 1
+          maximum: 5
+          nullable: true
+        response_received_at:
+          type: string
+          format: date-time
+          nullable: true
+
+    # ==========================================
+    # OTP SCHEMAS
+    # ==========================================
+
+    OTPResponse:
+      type: object
+      required:
+        - message
+        - expires_in_seconds
+        - remaining_attempts
+      properties:
+        message:
+          type: string
+          description: Confirmation message with masked phone
+          example: "OTP sent to +91****3210"
+        expires_in_seconds:
+          type: integer
+          description: OTP validity period (always 300 seconds = 5 minutes)
+          example: 300
+        retry_allowed_in_seconds:
+          type: integer
+          description: Seconds before next OTP request allowed (rate limiting)
+          example: 0
+        remaining_attempts:
+          type: integer
+          description: Number of OTP requests remaining in current window
+          minimum: 0
+          maximum: 3
+          example: 3
+
+    OTPErrorResponse:
+      type: object
+      required:
+        - error
+        - message
+        - remaining_attempts
+        - status_code
+      properties:
+        error:
+          type: string
+        message:
+          type: string
+        remaining_attempts:
+          type: integer
+          description: Number of OTP verification attempts remaining before lockout
+          minimum: 0
+          maximum: 3
+        status_code:
+          type: integer
+
+    # ==========================================
+    # JOB SCHEMAS
+    # ==========================================
+
+    JobStatusResponse:
+      type: object
+      required:
+        - job_id
+        - status
+        - created_at
+      properties:
+        job_id:
+          type: string
+          format: uuid
+        status:
+          type: string
+          enum: [pending, processing, completed, failed]
+        created_at:
+          type: string
+          format: date-time
+        completed_at:
+          type: string
+          format: date-time
+          nullable: true
+        result:
+          type: object
+          nullable: true
+          description: Job result (e.g., created grievance)
+        error:
+          type: string
+          nullable: true
+          description: Error message if job failed
+
+  # ==========================================
+  # REUSABLE RESPONSES
+  # ==========================================
+
+  responses:
+    ValidationError:
+      description: Validation error (invalid input)
+      content:
+        application/json:
+          schema:
+            allOf:
+              - $ref: '#/components/schemas/ErrorResponse'
+              - type: object
+                properties:
+                  details:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/ValidationErrorDetail'
+          example:
+            error: "Validation Error"
+            message: "Invalid input data"
+            status_code: 400
+            details:
+              - field: "citizen_phone"
+                message: "Invalid phone format. Use +91XXXXXXXXXX"
+                code: "INVALID_PHONE_FORMAT"
+              - field: "grievance_text"
+                message: "Minimum 20 characters required"
+                code: "MIN_LENGTH_VIOLATION"
+
+    UnauthorizedError:
+      description: Unauthorized (invalid or missing token)
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+          example:
+            error: "Unauthorized"
+            message: "Invalid or expired token"
+            status_code: 401
+
+    ForbiddenError:
+      description: Forbidden (insufficient permissions)
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+          example:
+            error: "Forbidden"
+            message: "You do not have permission to access this resource"
+            status_code: 403
+
+    NotFoundError:
+      description: Resource not found
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+          example:
+            error: "Not Found"
+            message: "Grievance not found"
+            status_code: 404
+
+    TooManyRequests:
+      description: Too many requests (rate limit exceeded)
+      headers:
+        X-RateLimit-Limit:
+          description: Maximum requests allowed in current window
+          schema:
+            type: integer
+            example: 100
+        X-RateLimit-Remaining:
+          description: Requests remaining in current window
+          schema:
+            type: integer
+            example: 0
+        X-RateLimit-Reset:
+          description: Unix timestamp when rate limit resets
+          schema:
+            type: integer
+            format: int64
+            example: 1732450800
+        Retry-After:
+          description: Seconds until rate limit resets
+          schema:
+            type: integer
+            example: 45
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+          example:
+            error: "Too Many Requests"
+            message: "Rate limit exceeded: 100 requests per minute. Try again in 45 seconds."
+            status_code: 429
+
+    InternalServerError:
+      description: Internal server error
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+          example:
+            error: "Internal Server Error"
+            message: "An unexpected error occurred. Please try again later."
+            status_code: 500
+
+    ServiceUnavailable:
+      description: Service unavailable (external service failure)
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+          example:
+            error: "Service Unavailable"
+            message: "NLP service is temporarily unavailable. Grievance saved without department assignment."
+            status_code: 503
+            details:
+              service: "nlp"
+              fallback: "manual_assignment_required"
+
+    InsufficientStorage:
+      description: Insufficient storage (upload quota exceeded)
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+          example:
+            error: "Insufficient Storage"
+            message: "File upload quota exceeded. Please contact administrator."
+            status_code: 507
+            details:
+              quota_mb: 1000
+              used_mb: 1000
+              file_size_mb: 5
+
+    Gone:
+      description: Resource no longer available (API version sunset)
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/ErrorResponse'
+          example:
+            error: "Gone"
+            message: "API v1.0 has been sunset. Please upgrade to v2.0."
+            status_code: 410
+            details:
+              sunset_date: "2026-12-31"
+              migration_guide: "https://docs.dhruva.ap.gov.in/migration-v2"
+
+    DeprecatedResponse:
+      description: Success (but API version deprecated)
+      headers:
+        Deprecation:
+          schema:
+            type: string
+            enum: ["true"]
+          description: Indicates API version is deprecated
+        Sunset:
+          schema:
+            type: string
+            format: http-date
+          description: Date when this API version will be shut down (HTTP date format)
+          example: "Sat, 31 Dec 2026 23:59:59 GMT"
+        Link:
+          schema:
+            type: string
+          description: Link to successor version
+          example: '<https://api.dhruva.ap.gov.in/v2>; rel="successor-version"'
+        Warning:
+          schema:
+            type: string
+          description: Human-readable deprecation warning
+          example: '299 - "API v1.0 is deprecated. Migrate to v2.0 by 2026-12-31."'
+
+  # ==========================================
+  # REUSABLE HEADERS
+  # ==========================================
+
+  headers:
+    X-RateLimit-Limit:
+      description: Maximum requests allowed in current window
+      schema:
+        type: integer
+      example: 100
+    X-RateLimit-Remaining:
+      description: Requests remaining in current window
+      schema:
+        type: integer
+      example: 95
+    X-RateLimit-Reset:
+      description: Unix timestamp (seconds since epoch) when rate limit window resets
+      schema:
+        type: integer
+        format: int64
+      example: 1732450800

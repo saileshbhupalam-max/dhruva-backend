@@ -1,0 +1,1050 @@
+{
+  "metadata": {
+    "total_unique_departments": 83,
+    "total_name_variations": 89,
+    "sources": [
+      "pgrs_book_keywords",
+      "officer_performance",
+      "call_center_satisfaction",
+      "audit_reports"
+    ],
+    "extraction_date": "2025-11-25"
+  },
+  "departments": {
+    "agriculture and co operation": {
+      "name_english": "Agriculture And Co-operation",
+      "name_telugu": "వ్యవసాయం మరియు సహకారం",
+      "sources": [
+        "pgrs_book_keywords"
+      ],
+      "total_count": 1,
+      "name_variations": [
+        "Agriculture And Co-operation"
+      ],
+      "dept_code": "AGRI"
+    },
+    "animal husbandry dairy development and fisheries": {
+      "name_english": "Animal Husbandry, Dairy Development And Fisheries",
+      "name_telugu": "పశుపోషణ, డైరీ అభివృద్ధి మరియు మత్స్య సంపద",
+      "sources": [
+        "pgrs_book_keywords"
+      ],
+      "total_count": 1,
+      "name_variations": [
+        "Animal Husbandry, Dairy Development And Fisheries"
+      ],
+      "dept_code": "ANI_HUSB"
+    },
+    "backward classes welfare": {
+      "name_english": "Backward Classes Welfare",
+      "name_telugu": "వెనుకబడిన తరగతుల సంక్షేమం",
+      "sources": [
+        "pgrs_book_keywords"
+      ],
+      "total_count": 1,
+      "name_variations": [
+        "Backward Classes Welfare"
+      ],
+      "dept_code": "BC_WELF"
+    },
+    "consumer affairs food and civil supplies": {
+      "name_english": "Consumer Affairs, Food And Civil Supplies",
+      "name_telugu": "వినియోగదారుల వ్యవహారాలు, ఆహారం మరియు సివిల్ సప్లైస్",
+      "sources": [
+        "pgrs_book_keywords"
+      ],
+      "total_count": 1,
+      "name_variations": [
+        "Consumer Affairs, Food And Civil Supplies"
+      ],
+      "dept_code": "CIVIL_SUP"
+    },
+    "department of skills development and training": {
+      "name_english": "Department Of Skills Development And Training",
+      "name_telugu": "నైపుణ్య అభివృద్ధి మరియు శిక్షణ శాఖ",
+      "sources": [
+        "pgrs_book_keywords"
+      ],
+      "total_count": 1,
+      "name_variations": [
+        "Department Of Skills Development And Training"
+      ],
+      "dept_code": "SKILLS"
+    },
+    "disaster management": {
+      "name_english": "Disaster Management",
+      "name_telugu": "విపత్తు నిర్వహణ",
+      "sources": [
+        "pgrs_book_keywords",
+        "call_center_satisfaction"
+      ],
+      "total_count": 916,
+      "name_variations": [
+        "Disaster Management"
+      ],
+      "dept_code": "DISASTER"
+    },
+    "energy": {
+      "name_english": "Energy",
+      "name_telugu": "శక్తి",
+      "sources": [
+        "officer_performance",
+        "pgrs_book_keywords"
+      ],
+      "total_count": 13,
+      "name_variations": [
+        "Energy"
+      ],
+      "dept_code": "ENERGY"
+    },
+    "environment forest science and technology": {
+      "name_english": "Environment, Forest, Science And Technology",
+      "name_telugu": "పర్యావరణం, అటవీ, విజ్ఞాన శాస్త్ర మరియు సాంకేతికత",
+      "sources": [
+        "pgrs_book_keywords"
+      ],
+      "total_count": 1,
+      "name_variations": [
+        "Environment, Forest, Science And Technology"
+      ],
+      "dept_code": "ENVIRON"
+    },
+    "finance": {
+      "name_english": "Finance",
+      "name_telugu": "ఫైనాన్స్",
+      "sources": [
+        "officer_performance",
+        "pgrs_book_keywords"
+      ],
+      "total_count": 11,
+      "name_variations": [
+        "Finance"
+      ],
+      "dept_code": "FINANCE"
+    },
+    "general administration": {
+      "name_english": "General Administration",
+      "name_telugu": "సాధారణ పరిపాలన",
+      "sources": [
+        "officer_performance",
+        "pgrs_book_keywords"
+      ],
+      "total_count": 181,
+      "name_variations": [
+        "General Administration"
+      ],
+      "dept_code": "GENEADMI"
+    },
+    "grama volunteers/ward volunteers and village secretariats/ward secretariats": {
+      "name_english": "Grama Volunteers/Ward Volunteers And Village Secretariats/Ward Secretariats",
+      "name_telugu": "గ్రామ/వార్డు వాలంటీర్లు మరియు గ్రామ/వార్డు సచివాలయాలు",
+      "sources": [
+        "pgrs_book_keywords"
+      ],
+      "total_count": 1,
+      "name_variations": [
+        "Grama Volunteers/Ward Volunteers And Village Secretariats/Ward Secretariats"
+      ],
+      "dept_code": "GVVAVSS"
+    },
+    "health medical and family welfare": {
+      "name_english": "Health, Medical And Family Welfare",
+      "name_telugu": "ఆరోగ్యం, వైద్యం మరియు కుటుంబ సంక్షేమం",
+      "sources": [
+        "pgrs_book_keywords"
+      ],
+      "total_count": 1,
+      "name_variations": [
+        "Health, Medical And Family Welfare"
+      ],
+      "dept_code": "HEALTH"
+    },
+    "home": {
+      "name_english": "Home (Police)",
+      "name_telugu": "హోం (పోలీస్)",
+      "sources": [
+        "officer_performance",
+        "pgrs_book_keywords"
+      ],
+      "total_count": 5,
+      "name_variations": [
+        "Home (Police)",
+        "Home"
+      ],
+      "dept_code": "HOME"
+    },
+    "housing": {
+      "name_english": "Housing",
+      "name_telugu": "గృహనిర్మాణం",
+      "sources": [
+        "officer_performance",
+        "pgrs_book_keywords"
+      ],
+      "total_count": 4,
+      "name_variations": [
+        "Housing"
+      ],
+      "dept_code": "HOUSING"
+    },
+    "human resources": {
+      "name_english": "Human Resources (Higher Education)",
+      "name_telugu": "మానవ వనరులు (పాఠశాల విద్య)",
+      "sources": [
+        "pgrs_book_keywords"
+      ],
+      "total_count": 2,
+      "name_variations": [
+        "Human Resources (School Education)",
+        "Human Resources (Higher Education)"
+      ],
+      "dept_code": "HUMARESO"
+    },
+    "industries and commerce": {
+      "name_english": "Industries And Commerce",
+      "name_telugu": "పరిశ్రమలు మరియు వాణిజ్యం",
+      "sources": [
+        "pgrs_book_keywords"
+      ],
+      "total_count": 1,
+      "name_variations": [
+        "Industries And Commerce"
+      ],
+      "dept_code": "INDUST"
+    },
+    "labour factories boilers and insurance medical services": {
+      "name_english": "Labour, Factories, Boilers And Insurance Medical Services",
+      "name_telugu": "కార్మిక, కర్మాగారాలు, బాయిలర్లు మరియు బీమా వైద్య సేవలు",
+      "sources": [
+        "pgrs_book_keywords"
+      ],
+      "total_count": 1,
+      "name_variations": [
+        "Labour, Factories, Boilers And Insurance Medical Services"
+      ],
+      "dept_code": "LABOUR"
+    },
+    "law": {
+      "name_english": "Law",
+      "name_telugu": "చట్టం",
+      "sources": [
+        "pgrs_book_keywords"
+      ],
+      "total_count": 1,
+      "name_variations": [
+        "Law"
+      ],
+      "dept_code": "LAW"
+    },
+    "minorities welfare": {
+      "name_english": "Minorities Welfare",
+      "name_telugu": "మైనారిటీల సంక్షేమం",
+      "sources": [
+        "pgrs_book_keywords"
+      ],
+      "total_count": 1,
+      "name_variations": [
+        "Minorities Welfare"
+      ],
+      "dept_code": "MINOR"
+    },
+    "municipal administration and urban development": {
+      "name_english": "Municipal Administration And Urban Development",
+      "name_telugu": "పురపాలక పరిపాలన మరియు పట్టణ అభివృద్ధి",
+      "sources": [
+        "pgrs_book_keywords"
+      ],
+      "total_count": 1,
+      "name_variations": [
+        "Municipal Administration And Urban Development"
+      ],
+      "dept_code": "MUNI"
+    },
+    "panchayat raj and rural development": {
+      "name_english": "Panchayat Raj And Rural Development",
+      "name_telugu": "పంచాయతీ రాజ్ మరియు గ్రామీణ అభివృద్ధి",
+      "sources": [
+        "pgrs_book_keywords"
+      ],
+      "total_count": 1,
+      "name_variations": [
+        "Panchayat Raj And Rural Development"
+      ],
+      "dept_code": "PNCHRAJ"
+    },
+    "planning": {
+      "name_english": "Planning",
+      "name_telugu": "ప్రణాళిక",
+      "sources": [
+        "pgrs_book_keywords"
+      ],
+      "total_count": 1,
+      "name_variations": [
+        "Planning"
+      ],
+      "dept_code": "PLANNING"
+    },
+    "revenue": {
+      "name_english": "Revenue (CCLA)",
+      "name_telugu": "రెవెన్యూ",
+      "sources": [
+        "officer_performance",
+        "pgrs_book_keywords",
+        "call_center_satisfaction",
+        "audit_reports"
+      ],
+      "total_count": 31636,
+      "name_variations": [
+        "Revenue",
+        "Revenue (CCLA)"
+      ],
+      "dept_code": "REVENUE"
+    },
+    "social welfare": {
+      "name_english": "Social Welfare",
+      "name_telugu": "సామాజిక సంక్షేమం",
+      "sources": [
+        "officer_performance",
+        "pgrs_book_keywords",
+        "call_center_satisfaction"
+      ],
+      "total_count": 330,
+      "name_variations": [
+        "Social Welfare"
+      ],
+      "dept_code": "SOC_WELF"
+    },
+    "transport roads and buildings": {
+      "name_english": "Transport, Roads And Buildings",
+      "name_telugu": "రవాణా, రోడ్లు మరియు భవనాలు",
+      "sources": [
+        "pgrs_book_keywords"
+      ],
+      "total_count": 1,
+      "name_variations": [
+        "Transport, Roads And Buildings"
+      ],
+      "dept_code": "RNB"
+    },
+    "tribal welfare": {
+      "name_english": "Tribal Welfare",
+      "name_telugu": "గిరిజన సంక్షేమం",
+      "sources": [
+        "officer_performance",
+        "pgrs_book_keywords"
+      ],
+      "total_count": 9,
+      "name_variations": [
+        "Tribal Welfare"
+      ],
+      "dept_code": "TRIBAL"
+    },
+    "water resources": {
+      "name_english": "Water Resources",
+      "name_telugu": "జల వనరులు",
+      "sources": [
+        "officer_performance",
+        "pgrs_book_keywords",
+        "call_center_satisfaction"
+      ],
+      "total_count": 379,
+      "name_variations": [
+        "Water Resources (E-In-C)",
+        "Water Resources"
+      ],
+      "dept_code": "WATER"
+    },
+    "women children disabled and senior citizens": {
+      "name_english": "Women, Children, Disabled And Senior Citizens",
+      "name_telugu": "మహిళలు, పిల్లలు, వైకల్యులు మరియు వృద్ధులు",
+      "sources": [
+        "pgrs_book_keywords"
+      ],
+      "total_count": 1,
+      "name_variations": [
+        "Women, Children, Disabled And Senior Citizens"
+      ],
+      "dept_code": "WOMEN"
+    },
+    "youth advancement tourism and culture": {
+      "name_english": "Youth Advancement, Tourism And Culture",
+      "name_telugu": "యువజన ఉన్నతి, పర్యాటక మరియు సంస్కృతి",
+      "sources": [
+        "pgrs_book_keywords"
+      ],
+      "total_count": 1,
+      "name_variations": [
+        "Youth Advancement, Tourism And Culture"
+      ],
+      "dept_code": "YATAC"
+    },
+    "endowment": {
+      "name_english": "Endowment",
+      "name_telugu": null,
+      "sources": [
+        "officer_performance",
+        "call_center_satisfaction",
+        "audit_reports"
+      ],
+      "total_count": 559,
+      "name_variations": [
+        "Endowment"
+      ],
+      "dept_code": "ENDOW"
+    },
+    "police": {
+      "name_english": "Police",
+      "name_telugu": null,
+      "sources": [
+        "officer_performance",
+        "call_center_satisfaction",
+        "audit_reports"
+      ],
+      "total_count": 644,
+      "name_variations": [
+        "Police"
+      ],
+      "dept_code": "POLICE"
+    },
+    "transport": {
+      "name_english": "Transport",
+      "name_telugu": null,
+      "sources": [
+        "officer_performance"
+      ],
+      "total_count": 10,
+      "name_variations": [
+        "Transport"
+      ],
+      "dept_code": "TRANS"
+    },
+    "health": {
+      "name_english": "Health",
+      "name_telugu": null,
+      "sources": [
+        "officer_performance"
+      ],
+      "total_count": 17,
+      "name_variations": [
+        "Health"
+      ],
+      "dept_code": "HEALTH"
+    },
+    "municipal": {
+      "name_english": "Municipal",
+      "name_telugu": null,
+      "sources": [
+        "officer_performance"
+      ],
+      "total_count": 9,
+      "name_variations": [
+        "Municipal"
+      ],
+      "dept_code": "MUNICIPA"
+    },
+    "panchayati raj": {
+      "name_english": "Panchayati Raj",
+      "name_telugu": null,
+      "sources": [
+        "officer_performance",
+        "audit_reports"
+      ],
+      "total_count": 7,
+      "name_variations": [
+        "Panchayati Raj"
+      ],
+      "dept_code": "PNCHRAJ"
+    },
+    "agriculture": {
+      "name_english": "Agriculture",
+      "name_telugu": null,
+      "sources": [
+        "officer_performance",
+        "call_center_satisfaction"
+      ],
+      "total_count": 1369,
+      "name_variations": [
+        "Agriculture"
+      ],
+      "dept_code": "AGRI"
+    },
+    "education": {
+      "name_english": "Education",
+      "name_telugu": null,
+      "sources": [
+        "officer_performance"
+      ],
+      "total_count": 94,
+      "name_variations": [
+        "Education"
+      ],
+      "dept_code": "EDUCATIO"
+    },
+    "labour": {
+      "name_english": "Labour",
+      "name_telugu": null,
+      "sources": [
+        "officer_performance",
+        "call_center_satisfaction"
+      ],
+      "total_count": 459,
+      "name_variations": [
+        "Labour"
+      ],
+      "dept_code": "LABOUR"
+    },
+    "women & child": {
+      "name_english": "Women & Child",
+      "name_telugu": null,
+      "sources": [
+        "officer_performance"
+      ],
+      "total_count": 3,
+      "name_variations": [
+        "Women & Child"
+      ],
+      "dept_code": "WOMEN"
+    },
+    "industries": {
+      "name_english": "Industries",
+      "name_telugu": null,
+      "sources": [
+        "officer_performance"
+      ],
+      "total_count": 5,
+      "name_variations": [
+        "Industries"
+      ],
+      "dept_code": "INDUST"
+    },
+    "backward classes": {
+      "name_english": "Backward Classes",
+      "name_telugu": null,
+      "sources": [
+        "officer_performance"
+      ],
+      "total_count": 5,
+      "name_variations": [
+        "Backward Classes"
+      ],
+      "dept_code": "BC_WELF"
+    },
+    "animal husbandry": {
+      "name_english": "Animal Husbandry",
+      "name_telugu": null,
+      "sources": [
+        "officer_performance",
+        "call_center_satisfaction"
+      ],
+      "total_count": 327,
+      "name_variations": [
+        "Animal Husbandry"
+      ],
+      "dept_code": "ANI_HUSB"
+    },
+    "minority welfare": {
+      "name_english": "Minority Welfare",
+      "name_telugu": null,
+      "sources": [
+        "officer_performance"
+      ],
+      "total_count": 8,
+      "name_variations": [
+        "Minority Welfare"
+      ],
+      "dept_code": "MINOWELF"
+    },
+    "tourism": {
+      "name_english": "Tourism",
+      "name_telugu": null,
+      "sources": [
+        "officer_performance"
+      ],
+      "total_count": 11,
+      "name_variations": [
+        "Tourism"
+      ],
+      "dept_code": "TOURISM"
+    },
+    "marketing": {
+      "name_english": "Marketing",
+      "name_telugu": null,
+      "sources": [
+        "officer_performance",
+        "audit_reports"
+      ],
+      "total_count": 2,
+      "name_variations": [
+        "Marketing"
+      ],
+      "dept_code": "MARKETIN"
+    },
+    "civil supplies": {
+      "name_english": "Civil Supplies",
+      "name_telugu": null,
+      "sources": [
+        "officer_performance",
+        "call_center_satisfaction",
+        "audit_reports"
+      ],
+      "total_count": 992,
+      "name_variations": [
+        "Civil Supplies"
+      ],
+      "dept_code": "CIVIL_SUP"
+    },
+    "excise": {
+      "name_english": "Excise",
+      "name_telugu": null,
+      "sources": [
+        "officer_performance"
+      ],
+      "total_count": 2,
+      "name_variations": [
+        "Excise"
+      ],
+      "dept_code": "EXCISE"
+    },
+    "information & pr": {
+      "name_english": "Information & PR",
+      "name_telugu": null,
+      "sources": [
+        "officer_performance"
+      ],
+      "total_count": 6,
+      "name_variations": [
+        "Information & PR"
+      ],
+      "dept_code": "I&P"
+    },
+    "handlooms": {
+      "name_english": "Handlooms",
+      "name_telugu": null,
+      "sources": [
+        "officer_performance"
+      ],
+      "total_count": 3,
+      "name_variations": [
+        "Handlooms"
+      ],
+      "dept_code": "HANDLOOM"
+    },
+    "forest": {
+      "name_english": "Forest",
+      "name_telugu": null,
+      "sources": [
+        "officer_performance"
+      ],
+      "total_count": 6,
+      "name_variations": [
+        "Forest"
+      ],
+      "dept_code": "FOREST"
+    },
+    "skill development": {
+      "name_english": "Skill Development",
+      "name_telugu": null,
+      "sources": [
+        "officer_performance"
+      ],
+      "total_count": 1,
+      "name_variations": [
+        "Skill Development"
+      ],
+      "dept_code": "SKILDEVE"
+    },
+    "co operation": {
+      "name_english": "Co-operation",
+      "name_telugu": null,
+      "sources": [
+        "officer_performance"
+      ],
+      "total_count": 8,
+      "name_variations": [
+        "Co-operation"
+      ],
+      "dept_code": "COOPER"
+    },
+    "legal": {
+      "name_english": "Legal",
+      "name_telugu": null,
+      "sources": [
+        "officer_performance"
+      ],
+      "total_count": 1,
+      "name_variations": [
+        "Legal"
+      ],
+      "dept_code": "LEGAL"
+    },
+    "mines": {
+      "name_english": "Mines",
+      "name_telugu": null,
+      "sources": [
+        "officer_performance"
+      ],
+      "total_count": 2,
+      "name_variations": [
+        "Mines"
+      ],
+      "dept_code": "MINES"
+    },
+    "survey settlements and land records": {
+      "name_english": "Survey Settlements and Land Records",
+      "name_telugu": null,
+      "sources": [
+        "call_center_satisfaction",
+        "audit_reports"
+      ],
+      "total_count": 20837,
+      "name_variations": [
+        "Survey Settlements and Land Records"
+      ],
+      "dept_code": "SSLR"
+    },
+    "employment and training": {
+      "name_english": "Employment and Training",
+      "name_telugu": null,
+      "sources": [
+        "call_center_satisfaction"
+      ],
+      "total_count": 11989,
+      "name_variations": [
+        "Employment and Training"
+      ],
+      "dept_code": "TRAIN"
+    },
+    "panchayati raj directorate": {
+      "name_english": "Panchayati Raj Directorate",
+      "name_telugu": null,
+      "sources": [
+        "call_center_satisfaction"
+      ],
+      "total_count": 3655,
+      "name_variations": [
+        "Panchayati Raj Directorate"
+      ],
+      "dept_code": "PNCHRAJ"
+    },
+    "school education": {
+      "name_english": "School Education",
+      "name_telugu": null,
+      "sources": [
+        "call_center_satisfaction",
+        "audit_reports"
+      ],
+      "total_count": 3154,
+      "name_variations": [
+        "School Education"
+      ],
+      "dept_code": "SCH_EDU"
+    },
+    "ap state housing corporation ltd": {
+      "name_english": "AP State Housing Corporation Ltd",
+      "name_telugu": null,
+      "sources": [
+        "call_center_satisfaction"
+      ],
+      "total_count": 1676,
+      "name_variations": [
+        "AP State Housing Corporation Ltd"
+      ],
+      "dept_code": "HOUSING"
+    },
+    "panchayati raj engineering": {
+      "name_english": "Panchayati Raj Engineering",
+      "name_telugu": null,
+      "sources": [
+        "call_center_satisfaction"
+      ],
+      "total_count": 1429,
+      "name_variations": [
+        "Panchayati Raj Engineering"
+      ],
+      "dept_code": "PNCHRAJ"
+    },
+    "society for elimination of rural poverty": {
+      "name_english": "Society For Elimination Of Rural Poverty",
+      "name_telugu": null,
+      "sources": [
+        "call_center_satisfaction",
+        "audit_reports"
+      ],
+      "total_count": 1253,
+      "name_variations": [
+        "Society For Elimination Of Rural Poverty"
+      ],
+      "dept_code": "SFEORP"
+    },
+    "public health": {
+      "name_english": "Public Health",
+      "name_telugu": null,
+      "sources": [
+        "call_center_satisfaction",
+        "audit_reports"
+      ],
+      "total_count": 891,
+      "name_variations": [
+        "Public Health"
+      ],
+      "dept_code": "HEALTH"
+    },
+    "registrationand stamps": {
+      "name_english": "Registrationand Stamps",
+      "name_telugu": null,
+      "sources": [
+        "call_center_satisfaction"
+      ],
+      "total_count": 651,
+      "name_variations": [
+        "Registrationand Stamps"
+      ],
+      "dept_code": "REG"
+    },
+    "rural water supply engineering": {
+      "name_english": "Rural Water Supply Engineering",
+      "name_telugu": null,
+      "sources": [
+        "call_center_satisfaction"
+      ],
+      "total_count": 637,
+      "name_variations": [
+        "Rural Water Supply Engineering"
+      ],
+      "dept_code": "RWSE"
+    },
+    "ap southern power distribution co ltd": {
+      "name_english": "AP Southern Power Distribution Co Ltd (SPDCL)",
+      "name_telugu": null,
+      "sources": [
+        "call_center_satisfaction"
+      ],
+      "total_count": 456,
+      "name_variations": [
+        "AP Southern Power Distribution Co Ltd (SPDCL)"
+      ],
+      "dept_code": "ASPDCL"
+    },
+    "ap eastern power distribution co ltd": {
+      "name_english": "AP Eastern Power Distribution Co Ltd (EPDCL)",
+      "name_telugu": null,
+      "sources": [
+        "call_center_satisfaction"
+      ],
+      "total_count": 563,
+      "name_variations": [
+        "AP Eastern Power Distribution Co Ltd (EPDCL)"
+      ],
+      "dept_code": "AEPDCL"
+    },
+    "secondary health": {
+      "name_english": "Secondary Health",
+      "name_telugu": null,
+      "sources": [
+        "call_center_satisfaction"
+      ],
+      "total_count": 484,
+      "name_variations": [
+        "Secondary Health"
+      ],
+      "dept_code": "HEALTH"
+    },
+    "ap central power distribution co ltd": {
+      "name_english": "AP Central Power Distribution Co Ltd (CPDCL)",
+      "name_telugu": null,
+      "sources": [
+        "call_center_satisfaction"
+      ],
+      "total_count": 488,
+      "name_variations": [
+        "AP Central Power Distribution Co Ltd (CPDCL)"
+      ],
+      "dept_code": "ACPDCL"
+    },
+    "ap state road transport corporation": {
+      "name_english": "AP State Road Transport Corporation (APSRTC)",
+      "name_telugu": null,
+      "sources": [
+        "call_center_satisfaction"
+      ],
+      "total_count": 454,
+      "name_variations": [
+        "AP State Road Transport Corporation (APSRTC)"
+      ],
+      "dept_code": "TRANS"
+    },
+    "roads and buildings": {
+      "name_english": "Roads and Buildings (Ein-C)",
+      "name_telugu": null,
+      "sources": [
+        "call_center_satisfaction",
+        "audit_reports"
+      ],
+      "total_count": 376,
+      "name_variations": [
+        "Roads and Buildings (Ein-C)",
+        "Roads and Buildings"
+      ],
+      "dept_code": "RNB"
+    },
+    "ap state skill development corporation": {
+      "name_english": "AP State Skill Development Corporation",
+      "name_telugu": null,
+      "sources": [
+        "call_center_satisfaction"
+      ],
+      "total_count": 348,
+      "name_variations": [
+        "AP State Skill Development Corporation"
+      ],
+      "dept_code": "ASSDC"
+    },
+    "women development and child welfare": {
+      "name_english": "Women Development and Child Welfare",
+      "name_telugu": null,
+      "sources": [
+        "call_center_satisfaction",
+        "audit_reports"
+      ],
+      "total_count": 343,
+      "name_variations": [
+        "Women Development and Child Welfare"
+      ],
+      "dept_code": "WOMEN"
+    },
+    "municipal administration": {
+      "name_english": "Municipal Administration",
+      "name_telugu": null,
+      "sources": [
+        "call_center_satisfaction",
+        "audit_reports"
+      ],
+      "total_count": 299,
+      "name_variations": [
+        "Municipal Administration"
+      ],
+      "dept_code": "MUNI"
+    },
+    "ap township and infrastructure development corporation": {
+      "name_english": "AP Township And Infrastructure Development Corporation",
+      "name_telugu": null,
+      "sources": [
+        "call_center_satisfaction",
+        "audit_reports"
+      ],
+      "total_count": 554,
+      "name_variations": [
+        "AP Township and Infrastructure Development Corporation",
+        "AP Township And Infrastructure Development Corporation"
+      ],
+      "dept_code": "ATAIDC"
+    },
+    "rural development": {
+      "name_english": "Rural Development",
+      "name_telugu": null,
+      "sources": [
+        "call_center_satisfaction"
+      ],
+      "total_count": 5835,
+      "name_variations": [
+        "Rural Development"
+      ],
+      "dept_code": "RURADEVE"
+    },
+    "ap central power distribution": {
+      "name_english": "AP Central Power Distribution (CPDCL)",
+      "name_telugu": null,
+      "sources": [
+        "audit_reports"
+      ],
+      "total_count": 1,
+      "name_variations": [
+        "AP Central Power Distribution (CPDCL)"
+      ],
+      "dept_code": "ACPD"
+    },
+    "apcrda": {
+      "name_english": "APCRDA",
+      "name_telugu": null,
+      "sources": [
+        "audit_reports"
+      ],
+      "total_count": 1,
+      "name_variations": [
+        "APCRDA"
+      ],
+      "dept_code": "APCRDA"
+    },
+    "family welfare": {
+      "name_english": "Family Welfare",
+      "name_telugu": null,
+      "sources": [
+        "audit_reports"
+      ],
+      "total_count": 1,
+      "name_variations": [
+        "Family Welfare"
+      ],
+      "dept_code": "FAMIWELF"
+    },
+    "survey settlements land records": {
+      "name_english": "Survey Settlements Land Records",
+      "name_telugu": null,
+      "sources": [
+        "audit_reports"
+      ],
+      "total_count": 1,
+      "name_variations": [
+        "Survey Settlements Land Records"
+      ],
+      "dept_code": "SSLR"
+    },
+    "ap social welfare residential educational institutions": {
+      "name_english": "AP Social Welfare Residential Educational Institutions (APSWREIS)",
+      "name_telugu": null,
+      "sources": [
+        "audit_reports"
+      ],
+      "total_count": 1,
+      "name_variations": [
+        "AP Social Welfare Residential Educational Institutions (APSWREIS)"
+      ],
+      "dept_code": "SOC_WELF"
+    },
+    "medical education": {
+      "name_english": "Medical Education",
+      "name_telugu": null,
+      "sources": [
+        "audit_reports"
+      ],
+      "total_count": 1,
+      "name_variations": [
+        "Medical Education"
+      ],
+      "dept_code": "MEDIEDUC"
+    },
+    "registration and stamps": {
+      "name_english": "Registration and Stamps",
+      "name_telugu": null,
+      "sources": [
+        "audit_reports"
+      ],
+      "total_count": 1,
+      "name_variations": [
+        "Registration and Stamps"
+      ],
+      "dept_code": "REG"
+    },
+    "revenue ccla": {
+      "name_english": "Revenue Ccla",
+      "name_telugu": null,
+      "sources": [
+        "audit_reports"
+      ],
+      "total_count": 1,
+      "name_variations": [
+        "Revenue Ccla"
+      ],
+      "dept_code": "REVENUE"
+    }
+  }
+}

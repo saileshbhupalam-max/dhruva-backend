@@ -1,0 +1,75 @@
+{
+  "_metadata": {
+    "created": "2025-11-25",
+    "version": "1.0",
+    "description": "Tier 3 Reference Data Summary - Supporting reference data for DHRUVA system",
+    "tier": "tier3_reference",
+    "priority": "medium",
+    "access_frequency": "as_needed"
+  },
+  "overview": {
+    "description": "Supporting reference data including officer hierarchies, district information, service catalogs, and SLA rules",
+    "total_files": 4,
+    "file_status": {
+      "officer_hierarchy.json": "to_be_created",
+      "district_data.json": "to_be_created",
+      "service_catalog.json": "to_be_created",
+      "sla_rules.json": "to_be_created"
+    },
+    "data_sources": {
+      "officer_hierarchy": "docs/data_sets/markdown/List of Depts with HOD.md",
+      "district_data": "backend/ml/data/extracted/call_center_satisfaction.json + audit reports",
+      "service_catalog": "docs/data_sets/markdown/Service Registration reference.md + PGRS BOOK.md",
+      "sla_rules": "tier1_core/grievance_types.json + domain knowledge"
+    }
+  },
+  "planned_content": {
+    "officer_hierarchy": {
+      "description": "106+ HODs across 30 departments with reporting chains",
+      "estimated_records": 106,
+      "key_fields": ["designation", "department", "level", "reports_to", "handles_grievances"],
+      "use_cases": ["grievance_assignment", "escalation", "routing"],
+      "extraction_method": "Parse 'List of Depts with HOD.md' (5 pages, table format)"
+    },
+    "district_data": {
+      "description": "26 AP districts with mandals, satisfaction scores, and audit data",
+      "estimated_records": 26,
+      "key_fields": ["district_name", "district_code", "mandals", "satisfaction_score", "improper_percentage"],
+      "use_cases": ["geographic_routing", "district_analytics", "satisfaction_tracking"],
+      "extraction_method": "Consolidate from call_center_satisfaction.json + constituency_preaudit data"
+    },
+    "service_catalog": {
+      "description": "200+ government services from PGRS book with SLAs and requirements",
+      "estimated_records": 200,
+      "key_fields": ["service_id", "service_name", "department", "typical_sla_days", "documents_required"],
+      "use_cases": ["service_identification", "subject_classification", "sla_mapping"],
+      "extraction_method": "Parse 'Service Registration reference.md' (96 revenue services) + PGRS BOOK subjects"
+    },
+    "sla_rules": {
+      "description": "SLA timelines and escalation rules by type and distress level",
+      "estimated_records": 50,
+      "key_fields": ["rule_id", "distress_level", "sla_hours", "escalation_hours", "escalation_to"],
+      "use_cases": ["sla_calculation", "deadline_tracking", "breach_detection"],
+      "extraction_method": "Formalize from distress_levels in grievance_types.json + domain rules"
+    }
+  },
+  "implementation_priority": {
+    "immediate": ["sla_rules.json"],
+    "high": ["district_data.json"],
+    "medium": ["officer_hierarchy.json", "service_catalog.json"]
+  },
+  "notes": [
+    "Tier 3 files are referenced by Tier 1 core logic but not loaded on every request",
+    "These files provide context for routing, assignment, and analytics",
+    "SLA rules are most critical for production deployment",
+    "Officer hierarchy needed for proper grievance assignment workflow",
+    "District data enables geographic analytics and comparisons",
+    "Service catalog enables fine-grained subject classification beyond departments"
+  ],
+  "interim_solution": {
+    "sla_hours": "Use default SLA from tier1_core/grievance_types.json → distress_levels → sla_hours",
+    "officer_assignment": "Use HOD field from tier1_core/departments.json as default assignment",
+    "district_info": "District names available in tier4_audit files (guntur_audit, constituency_preaudit)",
+    "services": "Use common_subjects from tier1_core/departments.json as service proxy"
+  }
+}

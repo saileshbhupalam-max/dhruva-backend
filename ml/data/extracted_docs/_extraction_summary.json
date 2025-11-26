@@ -1,0 +1,30 @@
+{
+  "extracted_at": "2025-11-25T21:47:35.746194",
+  "output_directory": "D:\\projects\\dhruva\\backend\\ml\\data\\extracted_docs",
+  "files_created": [
+    {
+      "filename": "department_list.json",
+      "records": 1
+    },
+    {
+      "filename": "grievance_statuses.json",
+      "records": 0
+    },
+    {
+      "filename": "lapse_definitions.json",
+      "records": 12
+    },
+    {
+      "filename": "official_telugu_templates.json",
+      "records": 54
+    },
+    {
+      "filename": "response_template_training.json",
+      "records": 23
+    },
+    {
+      "filename": "service_list.json",
+      "records": 7
+    }
+  ]
+}
