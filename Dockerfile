@@ -9,6 +9,7 @@ RUN apt-get update && apt-get install -y \
     gcc \
     libpq-dev \
     g++ \
+    curl \
     && rm -rf /var/lib/apt/lists/*
 
 # Copy requirements first for caching
@@ -27,8 +28,9 @@ ENV PYTHONPATH=/app:/app/ml
 ENV PYTHONUNBUFFERED=1
 ENV PYTHONDONTWRITEBYTECODE=1
 
-# Railway uses dynamic PORT
+# Railway uses dynamic PORT - default to 8000
+ENV PORT=8000
 EXPOSE 8000
 
-# Startup script with debugging
-CMD ["sh", "-c", "echo 'PORT=$PORT' && echo 'Starting uvicorn...' && python -c 'from app.main import app; print(\"Import successful\")' && exec uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8000}"]
+# Simple direct uvicorn start
+CMD uvicorn app.main:app --host 0.0.0.0 --port $PORT
