@@ -9,12 +9,10 @@ from contextlib import asynccontextmanager
 from typing import AsyncGenerator
 from uuid import uuid4
 
-from fastapi import Depends, FastAPI, Request, Response
-from sqlalchemy import text
-from sqlalchemy.ext.asyncio import AsyncSession
+from fastapi import FastAPI, Request, Response
 
 from app.config import settings
-from app.database.connection import close_db, get_db_session, init_db
+from app.database.connection import close_db, init_db
 from app.middleware.cors import configure_cors
 from app.middleware.deprecation import configure_deprecation_middleware
 from app.middleware.error_handler import configure_error_handlers
@@ -33,16 +31,28 @@ async def lifespan(app: FastAPI) -> AsyncGenerator[None, None]:
     """Application lifespan handler.
 
     Handles startup and shutdown events.
+    Railway-compatible: Gracefully handles missing services.
     """
     # Startup
     logger.info(f"Starting {settings.APP_NAME} v{settings.APP_VERSION}")
-    await init_db()
-    logger.info("Database initialized")
+    logger.info(f"Environment: {settings.ENVIRONMENT}")
+
+    # Try to initialize database, but don't fail if not available
+    try:
+        await init_db()
+        logger.info("Database initialized successfully")
+    except Exception as e:
+        logger.warning(f"Database initialization failed (will retry on first request): {e}")
+
     yield
+
     # Shutdown
     logger.info("Shutting down...")
-    await close_db()
-    logger.info("Database connection closed")
+    try:
+        await close_db()
+        logger.info("Database connection closed")
+    except Exception as e:
+        logger.warning(f"Error closing database: {e}")
 
 
 # Create FastAPI app
@@ -180,26 +190,19 @@ async def root() -> dict[str, str]:
     }
 
 
-# Simple health check (backward compatibility)
+# Simple health check (Railway-compatible - no DB dependency)
 @app.get("/health")
-async def health_check(db: AsyncSession = Depends(get_db_session)) -> dict[str, str]:
-    """Quick health check endpoint.
+async def health_check() -> dict[str, str]:
+    """Quick health check endpoint for Railway/load balancers.
 
-    For detailed health info, use /health/database.
+    This endpoint does NOT check database - it only confirms the app is running.
+    For detailed health info including DB, use /health/database.
     """
-    try:
-        result = await db.execute(text("SELECT 1"))
-        result.scalar()
-        return {
-            "status": "healthy",
-            "database": "connected",
-            "environment": settings.ENVIRONMENT,
-        }
-    except Exception as e:
-        return {
-            "status": "unhealthy",
-            "database": "disconnected",
-            "error": str(e),
-        }
+    return {
+        "status": "healthy",
+        "app": settings.APP_NAME,
+        "version": settings.APP_VERSION,
+        "environment": settings.ENVIRONMENT,
+    }
 
 

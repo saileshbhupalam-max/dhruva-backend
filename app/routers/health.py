@@ -60,10 +60,12 @@ async def database_health_check() -> Dict[str, Any]:
     return health
 
 
-@router.get("/health")
+@router.get("/health/full")
 async def general_health_check() -> Dict[str, Any]:
     """
-    General application health check.
+    Full application health check (database + redis).
+
+    Note: Use /health for basic health check (Railway/load balancers).
 
     Returns:
         {
@@ -77,22 +79,32 @@ async def general_health_check() -> Dict[str, Any]:
     db_service = get_db_service()
 
     # Check database health
-    db_health = {"connected": False, "status": "unknown"}
+    db_health: Dict[str, Any] = {"connected": False, "status": "unknown"}
     overall_status = "healthy"
 
     if db_service is not None:
-        db_health = await db_service.health_check()
-        if db_health["status"] != "healthy":
+        try:
+            db_health = await db_service.health_check()
+            if db_health.get("status") != "healthy":
+                overall_status = "degraded"
+        except Exception as e:
+            db_health = {"connected": False, "error": str(e), "status": "unhealthy"}
             overall_status = "degraded"
     else:
         overall_status = "degraded"
-        db_health = {"connected": False, "error": "Database not initialized"}
+        db_health = {"connected": False, "error": "Database not initialized", "status": "unhealthy"}
 
     # Check Redis health
-    rate_limiter = get_rate_limiter()
-    redis_health = await rate_limiter.health_check()
-    if redis_health.get("status") == "unhealthy":
-        # Redis unhealthy is degraded, not critical (we have in-memory fallback)
+    redis_health: Dict[str, Any] = {"status": "unknown"}
+    try:
+        rate_limiter = get_rate_limiter()
+        redis_health = await rate_limiter.health_check()
+        if redis_health.get("status") == "unhealthy":
+            # Redis unhealthy is degraded, not critical (we have in-memory fallback)
+            if overall_status == "healthy":
+                overall_status = "degraded"
+    except Exception as e:
+        redis_health = {"status": "unhealthy", "error": str(e)}
         if overall_status == "healthy":
             overall_status = "degraded"
 

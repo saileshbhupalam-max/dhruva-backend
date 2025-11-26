@@ -78,7 +78,11 @@ class Settings(BaseSettings):
     PASSWORD_HASH_ROUNDS: int = int(os.getenv("PASSWORD_HASH_ROUNDS", "12"))
 
     # CORS Configuration - all as strings, parsed in properties
-    CORS_ORIGINS: str = "http://localhost:3000,http://localhost:5173,http://localhost:5174,http://localhost:5175,http://localhost:5176,http://localhost:5177,http://localhost:5178,http://localhost:5179,http://127.0.0.1:3000"
+    # Includes Vercel deployment domains
+    CORS_ORIGINS: str = os.getenv(
+        "CORS_ORIGINS",
+        "http://localhost:3000,http://localhost:5173,http://localhost:5174,http://localhost:5175,http://localhost:5176,http://localhost:5177,http://localhost:5178,http://localhost:5179,http://127.0.0.1:3000,https://dhruva-demo.vercel.app,https://*.vercel.app"
+    )
     CORS_ALLOW_CREDENTIALS: bool = True
     CORS_ALLOW_METHODS: str = "GET,POST,PATCH,DELETE,OPTIONS"
     CORS_ALLOW_HEADERS: str = "Authorization,Content-Type,Idempotency-Key,X-Request-ID"
