@@ -45,6 +45,102 @@ class GrievanceProcessor:
     DUPLICATE_THRESHOLD = 0.85
     SIMILAR_CASE_THRESHOLD = 0.70
 
+    # Telugu keyword boosting for departments
+    # Maps keywords (Telugu and English) to department with confidence boost
+    KEYWORD_DEPARTMENT_MAP = {
+        # Social Welfare Department
+        "పెన్షన్": ("Social Welfare", 0.85),
+        "pension": ("Social Welfare", 0.85),
+        "వృద్ధాప్య": ("Social Welfare", 0.85),
+        "old age": ("Social Welfare", 0.85),
+        "వితంతువు": ("Social Welfare", 0.85),
+        "widow": ("Social Welfare", 0.85),
+        "వికలాంగులు": ("Social Welfare", 0.85),
+        "disabled": ("Social Welfare", 0.85),
+        "disability": ("Social Welfare", 0.85),
+        "సంక్షేమ": ("Social Welfare", 0.80),
+        "welfare": ("Social Welfare", 0.80),
+        "ఆసరా": ("Social Welfare", 0.85),
+        "aasara": ("Social Welfare", 0.85),
+
+        # Civil Supplies Department
+        "రేషన్": ("Civil Supplies", 0.90),
+        "ration": ("Civil Supplies", 0.90),
+        "బియ్యం": ("Civil Supplies", 0.85),
+        "rice": ("Civil Supplies", 0.80),
+        "కిరోసిన్": ("Civil Supplies", 0.85),
+        "kerosene": ("Civil Supplies", 0.85),
+        "రేషన్ కార్డు": ("Civil Supplies", 0.90),
+        "ration card": ("Civil Supplies", 0.90),
+        "fair price": ("Civil Supplies", 0.85),
+        "pds": ("Civil Supplies", 0.85),
+
+        # Revenue Department
+        "భూమి": ("Revenue", 0.85),
+        "land": ("Revenue", 0.80),
+        "land registration": ("Revenue", 0.92),  # Higher priority to avoid ration substring match
+        "land records": ("Revenue", 0.92),
+        "పట్టా": ("Revenue", 0.90),
+        "patta": ("Revenue", 0.90),
+        "సర్వే": ("Revenue", 0.85),
+        "survey": ("Revenue", 0.80),
+        "ఆక్రమణ": ("Revenue", 0.85),
+        "encroachment": ("Revenue", 0.85),
+        "రిజిస్ట్రేషన్": ("Revenue", 0.80),
+        "registration": ("Revenue", 0.75),
+
+        # Municipal Administration
+        "రోడ్డు": ("Municipal Administration", 0.85),
+        "road": ("Municipal Administration", 0.80),
+        "గుంతలు": ("Municipal Administration", 0.85),
+        "pothole": ("Municipal Administration", 0.85),
+        "వీధి లైట్": ("Municipal Administration", 0.85),
+        "street light": ("Municipal Administration", 0.85),
+        "drainage": ("Municipal Administration", 0.85),
+        "డ్రైనేజీ": ("Municipal Administration", 0.85),
+        "చెత్త": ("Municipal Administration", 0.80),
+        "garbage": ("Municipal Administration", 0.80),
+
+        # Water Resources / Panchayat Raj
+        "నీటి": ("Water Resources", 0.85),
+        "water supply": ("Water Resources", 0.85),
+        "నీరు": ("Water Resources", 0.80),
+        "water": ("Water Resources", 0.70),
+        "బోరు": ("Water Resources", 0.85),
+        "borewell": ("Water Resources", 0.85),
+
+        # Police
+        "పోలీస్": ("Police", 0.85),
+        "police": ("Police", 0.85),
+        "fir": ("Police", 0.90),
+        "దొంగతనం": ("Police", 0.85),
+        "theft": ("Police", 0.85),
+        "robbery": ("Police", 0.85),
+
+        # Education
+        "స్కూల్": ("Education", 0.85),
+        "school": ("Education", 0.85),
+        "టీచర్": ("Education", 0.85),
+        "teacher": ("Education", 0.85),
+        "విద్య": ("Education", 0.80),
+        "education": ("Education", 0.80),
+
+        # Health
+        "ఆసుపత్రి": ("Health", 0.85),
+        "hospital": ("Health", 0.85),
+        "వైద్యం": ("Health", 0.85),
+        "doctor": ("Health", 0.85),
+        "medicine": ("Health", 0.80),
+        "మందులు": ("Health", 0.80),
+
+        # Housing
+        "ఇల్లు": ("Housing", 0.80),
+        "house": ("Housing", 0.75),
+        "గృహ": ("Housing", 0.85),
+        "housing": ("Housing", 0.85),
+        "site": ("Housing", 0.75),
+    }
+
     # Confidence calibration factors (to avoid over-promising)
     # These account for: small test set, synthetic training data, real-world variance
     CONFIDENCE_CALIBRATION = {
@@ -274,16 +370,62 @@ class GrievanceProcessor:
 
         return result
 
+    def _keyword_boost(self, text: str) -> Optional[Tuple[str, float]]:
+        """
+        Check text against keyword map for high-confidence department matches.
+        Returns (department, confidence) if keyword match found, None otherwise.
+
+        This helps overcome ML model limitations with Telugu text by using
+        explicit keyword matching as a pre-filter.
+        """
+        text_lower = text.lower()
+
+        # Track best keyword match
+        best_match = None
+        best_confidence = 0.0
+
+        for keyword, (department, confidence) in self.KEYWORD_DEPARTMENT_MAP.items():
+            if keyword.lower() in text_lower:
+                # Prefer longer keyword matches (more specific)
+                # and higher confidence scores
+                keyword_score = confidence * (1 + len(keyword) / 100)  # Slight boost for longer keywords
+                if keyword_score > best_confidence:
+                    best_confidence = confidence  # Use original confidence, not boosted
+                    best_match = (department, confidence)
+
+        return best_match
+
     def _classify(self, text: str) -> Dict:
-        """Classify grievance to department with confidence-based fallback."""
+        """Classify grievance to department with keyword boosting and confidence-based fallback."""
         result = {
             "department": None,
             "confidence": 0.0,
             "method": None,
-            "top_3": []
+            "top_3": [],
+            "needs_manual_review": False
         }
 
+        # Step 1: Try keyword boosting first (especially helpful for Telugu)
+        keyword_match = self._keyword_boost(text)
+        if keyword_match:
+            keyword_dept, keyword_conf = keyword_match
+            # If we have a high-confidence keyword match, use it directly
+            if keyword_conf >= self.CLASSIFICATION_HIGH_CONFIDENCE:
+                result["department"] = keyword_dept
+                result["confidence"] = keyword_conf
+                result["method"] = "keyword_boost"
+                result["top_3"] = [{"department": keyword_dept, "confidence": keyword_conf}]
+                print(f"[CLASSIFY] Keyword boost: {keyword_dept} ({keyword_conf:.0%})")
+                return result
+
+        # Step 2: Try ML classifiers
         if not self.classifier or not self.classifier_vectorizer:
+            # Fallback to keyword match if models not loaded
+            if keyword_match:
+                result["department"] = keyword_match[0]
+                result["confidence"] = keyword_match[1]
+                result["method"] = "keyword_boost_fallback"
+                result["top_3"] = [{"department": keyword_match[0], "confidence": keyword_match[1]}]
             return result
 
         try:
@@ -308,9 +450,19 @@ class GrievanceProcessor:
             ]
             result["method"] = "primary_classifier"
 
-            # Use fallback if confidence is low
+            # Step 3: If ML confidence is low, consider keyword boost or fallback
             if result["confidence"] < self.CLASSIFICATION_LOW_CONFIDENCE:
-                if self.fallback_model and self.fallback_vectorizer:
+                # First try keyword boost
+                if keyword_match and keyword_match[1] > result["confidence"]:
+                    result["department"] = keyword_match[0]
+                    result["confidence"] = keyword_match[1]
+                    result["method"] = "keyword_boost"
+                    # Update top_3 to include keyword match
+                    result["top_3"].insert(0, {"department": keyword_match[0], "confidence": keyword_match[1]})
+                    result["top_3"] = result["top_3"][:3]
+                    print(f"[CLASSIFY] Keyword boost (low ML conf): {keyword_match[0]} ({keyword_match[1]:.0%})")
+                # Then try fallback classifier
+                elif self.fallback_model and self.fallback_vectorizer:
                     X_fb = self.fallback_vectorizer.transform([text])
                     proba_fb = self.fallback_model.predict_proba(X_fb)[0]
                     top_idx_fb = np.argmax(proba_fb)
@@ -321,102 +473,245 @@ class GrievanceProcessor:
                         result["confidence"] = fb_conf
                         result["method"] = "fallback_classifier"
 
+            # Step 4: Even with medium confidence, keyword boost can override if it matches a different dept
+            elif result["confidence"] < self.CLASSIFICATION_HIGH_CONFIDENCE:
+                if keyword_match and keyword_match[1] >= result["confidence"]:
+                    # Keyword match is as confident or more confident than ML
+                    result["department"] = keyword_match[0]
+                    result["confidence"] = keyword_match[1]
+                    result["method"] = "keyword_boost"
+                    print(f"[CLASSIFY] Keyword override (medium ML conf): {keyword_match[0]} ({keyword_match[1]:.0%})")
+
             # Flag for manual review if still low confidence
             if result["confidence"] < self.CLASSIFICATION_LOW_CONFIDENCE:
                 result["needs_manual_review"] = True
 
         except Exception as e:
             result["error"] = str(e)
+            # Fallback to keyword match on error
+            if keyword_match:
+                result["department"] = keyword_match[0]
+                result["confidence"] = keyword_match[1]
+                result["method"] = "keyword_boost_error_fallback"
 
         return result
 
+    # Comprehensive distress keyword dictionary
+    DISTRESS_KEYWORDS = {
+        "CRITICAL": [
+            # Telugu critical keywords
+            "చనిపోతున్నాము", "ఆత్మహత్య", "ఆకలి", "చనిపోతాను", "మరణం",
+            "బతకలేను", "తినడానికి ఏమీ లేదు", "పిల్లలు ఆకలి", "అసహాయం",
+            # English critical keywords
+            "dying", "suicide", "starving", "will die", "death",
+            "cannot survive", "nothing to eat", "children hungry", "helpless",
+            "life threat", "emergency", "critical condition", "desperate"
+        ],
+        "HIGH": [
+            # Telugu high-urgency keywords
+            "నెలలుగా", "రాలేదు", "ఆగిపోయింది", "పూర్తిగా", "అత్యవసర",
+            "వెంటనే", "తీవ్ర", "చాలా కష్టం", "బాధపడుతున్నాము",
+            # English high-urgency keywords
+            "months", "not received", "stopped", "completely", "urgent",
+            "immediately", "severe", "very difficult", "suffering",
+            "delayed", "long pending", "no action", "ignored"
+        ],
+        "MEDIUM": [
+            # Telugu medium keywords
+            "సమస్య", "ఇబ్బంది", "చికాకు", "అసౌకర్యం", "తప్పు",
+            # English medium keywords - removed "complaint" as it's too generic
+            "problem", "issue", "inconvenience", "trouble",
+            "difficulty", "incorrect", "wrong", "not working"
+        ]
+    }
+
     def _analyze_sentiment(self, text: str) -> Dict:
-        """Analyze distress level of grievance."""
+        """Analyze distress level of grievance with enhanced keyword detection."""
         result = {
             "distress_level": "NORMAL",
             "confidence": 0.0,
             "signals": []
         }
 
-        if not self.sentiment_model or not self.sentiment_vectorizer:
-            return result
+        text_lower = text.lower()
 
-        try:
-            X = self.sentiment_vectorizer.transform([text])
-            proba = self.sentiment_model.predict_proba(X)[0]
-            pred_idx = np.argmax(proba)
+        # Step 1: Detect distress signals from keywords
+        detected_signals = []
+        highest_level = "NORMAL"
+        level_priority = {"CRITICAL": 3, "HIGH": 2, "MEDIUM": 1, "NORMAL": 0}
 
-            # Apply calibration factor to avoid over-promising
-            calibration = self.CONFIDENCE_CALIBRATION["sentiment"]
-            raw_conf = float(proba[pred_idx])
-            calibrated_conf = raw_conf * calibration
+        for level, keywords in self.DISTRESS_KEYWORDS.items():
+            for kw in keywords:
+                if kw.lower() in text_lower:
+                    detected_signals.append({"keyword": kw, "level": level})
+                    if level_priority[level] > level_priority[highest_level]:
+                        highest_level = level
 
-            result["distress_level"] = self.sentiment_labels.inverse_transform([pred_idx])[0]
-            result["confidence"] = calibrated_conf
+        result["signals"] = detected_signals
 
-            # Detect distress signals
-            distress_keywords = {
-                "CRITICAL": ["చనిపోతున్నాము", "ఆత్మహత్య", "ఆకలి", "dying", "suicide", "starving"],
-                "HIGH": ["నెలలుగా", "రాలేదు", "months", "not received", "pending"],
-                "MEDIUM": ["సమస్య", "problem", "issue", "complaint"]
-            }
+        # Step 2: Try ML model if available
+        ml_level = "NORMAL"
+        ml_confidence = 0.0
 
-            text_lower = text.lower()
-            for level, keywords in distress_keywords.items():
-                for kw in keywords:
-                    if kw.lower() in text_lower:
-                        result["signals"].append({"keyword": kw, "level": level})
+        if self.sentiment_model and self.sentiment_vectorizer:
+            try:
+                X = self.sentiment_vectorizer.transform([text])
+                proba = self.sentiment_model.predict_proba(X)[0]
+                pred_idx = np.argmax(proba)
 
-        except Exception as e:
-            result["error"] = str(e)
+                # Apply calibration factor
+                calibration = self.CONFIDENCE_CALIBRATION["sentiment"]
+                raw_conf = float(proba[pred_idx])
+                ml_confidence = raw_conf * calibration
+
+                ml_level = self.sentiment_labels.inverse_transform([pred_idx])[0]
+            except Exception as e:
+                result["error"] = str(e)
+
+        # Step 3: Combine ML and keyword-based detection
+        # Use the higher severity level between ML and keyword detection
+        if level_priority[highest_level] > level_priority[ml_level]:
+            # Keyword detection found higher severity
+            result["distress_level"] = highest_level
+            # Confidence based on number of signals
+            signal_count = len([s for s in detected_signals if s["level"] == highest_level])
+            result["confidence"] = min(0.95, 0.70 + 0.05 * signal_count)
+            result["method"] = "keyword_override"
+        elif ml_confidence > 0.5:
+            # ML model is confident
+            result["distress_level"] = ml_level
+            result["confidence"] = ml_confidence
+            result["method"] = "ml_classifier"
+        elif detected_signals:
+            # Low ML confidence but we have keyword signals
+            result["distress_level"] = highest_level
+            result["confidence"] = 0.65
+            result["method"] = "keyword_fallback"
+        else:
+            # Default to ML result
+            result["distress_level"] = ml_level if ml_confidence > 0 else "NORMAL"
+            result["confidence"] = ml_confidence if ml_confidence > 0 else 0.5
+            result["method"] = "ml_default"
 
         return result
 
+    # Rule-based lapse risk factors
+    LAPSE_RISK_PATTERNS = {
+        # High-risk patterns (0.7+ risk)
+        "pending_months": {
+            "keywords": ["నెలలుగా", "months", "నెలల", "weeks", "వారాలుగా"],
+            "lapse": "Undue Delay",
+            "base_risk": 0.75
+        },
+        "repeated_complaint": {
+            "keywords": ["again", "మళ్ళీ", "repeated", "multiple times", "పలుసార్లు"],
+            "lapse": "Improper Process",
+            "base_risk": 0.80
+        },
+        "no_response": {
+            "keywords": ["no response", "స్పందన లేదు", "no reply", "ignored", "నిర్లక్ష్యం"],
+            "lapse": "Non-Responsive Officer",
+            "base_risk": 0.85
+        },
+        "bribery": {
+            "keywords": ["bribe", "లంచం", "corruption", "అవినీతి", "money demanded"],
+            "lapse": "Corruption/Misconduct",
+            "base_risk": 0.90
+        },
+        # Medium-risk patterns (0.4-0.7 risk)
+        "document_issues": {
+            "keywords": ["rejected", "తిరస్కరించారు", "wrong", "incorrect", "తప్పు"],
+            "lapse": "Improper Documentation",
+            "base_risk": 0.55
+        },
+        "partial_resolution": {
+            "keywords": ["partial", "incomplete", "పూర్తి కాలేదు", "half", "partly"],
+            "lapse": "Incomplete Resolution",
+            "base_risk": 0.60
+        },
+        "transferred": {
+            "keywords": ["transferred", "బదిలీ", "sent to", "referred", "పంపారు"],
+            "lapse": "Improper Routing",
+            "base_risk": 0.45
+        },
+        # Department-specific risks
+        "revenue_risk": {
+            "keywords": ["encroachment", "ఆక్రమణ", "land grab", "survey", "సర్వే"],
+            "lapse": "Property Documentation Lapse",
+            "base_risk": 0.50,
+            "departments": ["Revenue"]
+        },
+        "welfare_risk": {
+            "keywords": ["pension", "పెన్షన్", "benefit", "ration", "రేషన్"],
+            "lapse": "Benefit Disbursement Lapse",
+            "base_risk": 0.55,
+            "departments": ["Social Welfare", "Civil Supplies"]
+        }
+    }
+
     def _predict_lapse(self, text: str, department: str = None) -> Dict:
-        """Predict likelihood of improper redressal."""
+        """Predict likelihood of improper redressal using rule-based system."""
         result = {
             "risk_score": 0.0,
             "likely_lapses": [],
             "risk_level": "LOW"
         }
 
-        if not self.lapse_model or not self.lapse_vectorizer:
-            return result
+        text_lower = text.lower()
+        detected_lapses = []
 
-        try:
-            # Combine text with department for prediction
-            combined = f"{text} {department or ''}"
-            X = self.lapse_vectorizer.transform([combined])
+        # Check each risk pattern
+        for pattern_name, pattern_config in self.LAPSE_RISK_PATTERNS.items():
+            # Check department filter if present
+            if "departments" in pattern_config:
+                if department and department not in pattern_config["departments"]:
+                    continue
 
-            # Multi-label prediction
-            if hasattr(self.lapse_model, "predict_proba"):
-                proba = self.lapse_model.predict_proba(X)
+            # Check for keywords
+            for keyword in pattern_config["keywords"]:
+                if keyword.lower() in text_lower:
+                    lapse_info = {
+                        "lapse": pattern_config["lapse"],
+                        "probability": pattern_config["base_risk"],
+                        "trigger": keyword
+                    }
+                    # Avoid duplicates
+                    if not any(l["lapse"] == lapse_info["lapse"] for l in detected_lapses):
+                        detected_lapses.append(lapse_info)
+                    break
 
-                # Handle multi-label output
-                if isinstance(proba, list):
-                    for i, p in enumerate(proba):
-                        if p[0][1] > 0.3:  # Threshold for lapse likelihood
-                            lapse_name = self.lapse_definitions.get("lapses", [{}])[i].get("name", f"Lapse_{i}")
-                            result["likely_lapses"].append({
-                                "lapse": lapse_name,
-                                "probability": float(p[0][1])
-                            })
-                else:
-                    result["risk_score"] = float(np.max(proba))
+        # Calculate overall risk
+        if detected_lapses:
+            result["likely_lapses"] = [
+                {"lapse": l["lapse"], "probability": l["probability"]}
+                for l in detected_lapses
+            ]
+            result["risk_score"] = max(l["probability"] for l in detected_lapses)
 
-            # Calculate overall risk
-            if result["likely_lapses"]:
-                result["risk_score"] = max(l["probability"] for l in result["likely_lapses"])
+            # Apply cumulative risk boost for multiple lapses
+            if len(detected_lapses) > 1:
+                result["risk_score"] = min(0.95, result["risk_score"] + 0.1 * (len(detected_lapses) - 1))
 
-            if result["risk_score"] > 0.7:
-                result["risk_level"] = "HIGH"
-            elif result["risk_score"] > 0.4:
-                result["risk_level"] = "MEDIUM"
-            else:
-                result["risk_level"] = "LOW"
+        # Determine risk level
+        if result["risk_score"] > 0.7:
+            result["risk_level"] = "HIGH"
+        elif result["risk_score"] > 0.4:
+            result["risk_level"] = "MEDIUM"
+        else:
+            result["risk_level"] = "LOW"
 
-        except Exception as e:
-            result["error"] = str(e)
+        # Try ML model if available (for future enhancement)
+        if self.lapse_model and self.lapse_vectorizer:
+            try:
+                combined = f"{text} {department or ''}"
+                X = self.lapse_vectorizer.transform([combined])
+                if hasattr(self.lapse_model, "predict_proba"):
+                    proba = self.lapse_model.predict_proba(X)
+                    ml_score = float(np.max(proba)) if not isinstance(proba, list) else 0.0
+                    # Combine ML and rule-based scores
+                    result["risk_score"] = max(result["risk_score"], ml_score)
+            except Exception:
+                pass  # Fallback to rule-based only
 
         return result
 
