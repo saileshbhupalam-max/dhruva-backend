@@ -31,11 +31,8 @@ ENV PYTHONPATH=/app:/app/ml
 ENV PYTHONUNBUFFERED=1
 ENV PYTHONDONTWRITEBYTECODE=1
 
-# Default port (Railway overrides via PORT env var)
-ENV PORT=8000
-
 # Railway sets PORT env var dynamically
 EXPOSE 8000
 
-# Shell form CMD - allows $PORT expansion at runtime
-CMD uvicorn app.main:app --host 0.0.0.0 --port $PORT
+# Use Python entry point that reads PORT from environment
+CMD ["python", "run.py"]
